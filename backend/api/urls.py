@@ -13,7 +13,7 @@ router.register('users', views.UserView)
 urlpatterns = [
     path('', schema_view),
     path('', include(router.urls)),
-    # path('auth', auth_view.obtain_auth_token),
-    path('auth/', include('rest_auth.urls'))
+    path('auth/', include('rest_auth.urls')),
+    path('auth/signup/', include('rest_auth.registration.urls')),
 ]
 # router.register('auth', auth_view.obtain_auth_token)
