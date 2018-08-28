@@ -3,3 +3,5 @@ frontend/.gitignore
 frontend/README.md
 vapp/__pycache__/
 static/
+api/__pycache__/
+api/migrations/
