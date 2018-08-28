@@ -5,3 +5,8 @@ vapp/__pycache__/
 static/
 api/__pycache__/
 api/migrations/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
