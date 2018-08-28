@@ -2,3 +2,4 @@ frontend/node_modules
 frontend/.gitignore
 frontend/README.md
 vapp/__pycache__/
+static/
