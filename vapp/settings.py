@@ -25,7 +25,10 @@ SECRET_KEY = '_3xuwh9*r=d&=y@zujngcbg(6^c!1p1w1gdx%x^-h9u8od*s)h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'vyou.eu-west-2.elasticbeanstalk.com',
+]
 
 
 # Application definition
@@ -38,6 +41,20 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webpack_loader',
+    'api',
+    'rest_framework',
+    'rest_framework_swagger',
+    'rest_framework.authtoken',
+    'rest_auth',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.linkedin',
+    'allauth.socialaccount.providers.linkedin_oauth2',
+    'rest_auth.registration',
+    
 ]
 
 MIDDLEWARE = [
@@ -79,6 +96,14 @@ WEBPACK_LOADER = {
         }
 }
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+
+}
+
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
@@ -88,7 +113,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -108,7 +132,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+WEBSITES_ENABLE_APP_SERVICE_STORAGE=True
+WEBSITE_AUTH_ENABLED=True
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
@@ -123,7 +148,21 @@ USE_L10N = True
 
 USE_TZ = True
 
+AUTH_USER_MODEL = 'api.User'
 
+AUTHENTICATION_BACKENDS = [
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+
+ACCOUNT_EMAIL_REQUIRED = True
+
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 2
+
+ACCOUNT_UNIQUE_EMAIL = True
+
+ACCOUNT_USERNAME_REQUIRED = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
