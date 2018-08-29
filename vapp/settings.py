@@ -51,11 +51,14 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.linkedin',
     'allauth.socialaccount.providers.linkedin_oauth2',
     'rest_auth.registration',
     
 ]
+
+SITE_ID = 'vyou-dev.y3ir2hfkwd.eu-west-2.elasticbeanstalk.com'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -151,6 +154,7 @@ USE_TZ = True
 # AUTH_USER_MODEL = 'api.User'
 
 AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
