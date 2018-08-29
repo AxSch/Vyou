@@ -4,9 +4,10 @@ frontend/README.md
 vapp/__pycache__/
 static/
 api/__pycache__/
-api/migrations/
+api/migrations/__pycache__/
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
