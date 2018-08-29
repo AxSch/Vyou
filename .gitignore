@@ -5,6 +5,7 @@ vapp/__pycache__/
 static/
 api/__pycache__/
 api/migrations/__pycache__/
+vapp/management/commands/__pycache__/
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
