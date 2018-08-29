@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'vyou-dev.y3ir2hfkwd.eu-west-2.elasticbeanstalk.com'
+    'vyou-dev.eu-west-2.elasticbeanstalk.com'
 ]
 
 
@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     
 ]
 
-SITE_ID = 'vyou-dev.y3ir2hfkwd.eu-west-2.elasticbeanstalk.com'
+SITE_ID = 'vyou-dev.eu-west-2.elasticbeanstalk.com'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
