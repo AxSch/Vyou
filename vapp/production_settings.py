@@ -1,6 +1,5 @@
 from .settings import *
 
-SITE_ID = 'vyou-staging.eu-west-2.elasticbeanstalk.com'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "assets"),
