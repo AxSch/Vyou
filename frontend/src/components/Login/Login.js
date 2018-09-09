@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
 
 class LoginPage extends React.Component {
@@ -18,7 +18,7 @@ class LoginPage extends React.Component {
                 </div>
                 <div className="form-group">
                     <button className="btn btn-primary">Login</button>
-                    {/* <Link to="/register" className="btn btn-link">Register</Link> */}
+                    <Link to="/register" className="btn btn-link">Register</Link>
                 </div>
             </form>
         </div>
