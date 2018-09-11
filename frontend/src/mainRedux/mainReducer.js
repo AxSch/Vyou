@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { loginReducer } from '../Login/redux/reducer';
+import { loginReducer } from '../components/Login/redux/reducer';
 
 
 const storeState = {
