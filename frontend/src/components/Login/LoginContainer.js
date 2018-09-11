@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Login from './Login';
+import loginDispatcher from './redux/dispatchers';
 
 const mapStateToProps = (state, ownProps) => ({
     userID: state.login,
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-    dispatch: () => {
-      dispatch(actionCreator)
-    }
+    login: loginDispatcher(dispatch),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
 
