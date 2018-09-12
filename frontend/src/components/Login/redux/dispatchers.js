@@ -26,7 +26,9 @@ const logoutDispatcher = () => {
   }
 }
 
-export const loginDispatchers = {
+export {
   loginDispatcher,
   logoutDispatcher,
 };
+
+// export default loginDispatchers;
