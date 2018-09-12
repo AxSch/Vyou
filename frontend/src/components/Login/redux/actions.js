@@ -1,11 +1,11 @@
-import { actionTypes } from './actionTypes';
+import actionTypes from './actionTypes';
 
 
 const loginRequest = (email,password) => ({
   type: actionTypes.REQUEST_LOGIN,
 });
 
-const loginSuccess = (email,password,) => ({
+const loginSuccess = (email,password) => ({
   type: actionTypes.LOGIN_SUCCESS,
   payload: {
     email
@@ -24,9 +24,11 @@ const loggedOut = () => ({
   type: actionTypes.LOGGED_OUT,
 });
 
-export const loginActions = {
+const loginActions = {
   loginRequest,
   loginSuccess,
   loginFailure,
   loggedOut
 }
+
+export default loginActions;
