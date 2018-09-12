@@ -1,15 +1,7 @@
-import config from 'config';
+// import config from 'config';
 // import { authHeader } from '../helpers/auth-header';
 
-const userService = {
-  login,
-  logout,
-  // signup,
-  // getAll,
-  // getById,
-  // update,
-  // delete: deleteUser
-};
+
 
 
 
@@ -37,11 +29,11 @@ const login = (email, password) => {
       password
     })
   };
-  return fetch(`${config.apiUrl}/api/auth/login/`, requestOptions)
+  return fetch(`http://127.0.0.1:8000/api/auth/login/`, requestOptions)
     .then(handleResponse)
-    .then((email)=> {
+    .then((email) => {
       if (email.token) {
-        localStorage.setIte('email', JSON.stringify(email));
+        localStorage.setItem('email', JSON.stringify(email));
       }
       return email;
     });
@@ -50,5 +42,15 @@ const login = (email, password) => {
 const logout = () => {
   localStorage.removeItem('email');
 }
+
+const userService = {
+  login,
+  logout,
+  // signup,
+  // getAll,
+  // getById,
+  // update,
+  // delete: deleteUser
+};
 
 export default userService;
