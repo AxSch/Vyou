@@ -1,16 +1,8 @@
 import { combineReducers } from 'redux';
 import { loginReducer } from '../components/Login/redux/reducer';
 
-
-const storeState = {
+const appReducer = combineReducers({
   login: loginReducer
-}
-
-const appReducer = (state) => combineReducers({
-  loginReducer
 })
 
-export {
-  appReducer,
-  storeState,
-}
+export default appReducer;
