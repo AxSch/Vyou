@@ -2,7 +2,7 @@ import actionTypes from './actionTypes';
 
 
 const loginRequest = (email,password) => ({
-  type: actionTypes.REQUEST_LOGIN,
+  type: actionTypes.LOGIN_REQUEST,
 });
 
 const loginSuccess = (email,password) => ({
