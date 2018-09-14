@@ -49,7 +49,7 @@ class LoginPage extends PureComponent {
                 <h2>Login</h2>
                 <form name="form">
                     <div>
-                        <label htmlFor="username">Username</label>
+                        <label htmlFor="username">Email</label>
                         <input type="text" className="form-control" value={email} name="email" onChange={this.handleChange}/>
                     </div>
                     <div>
