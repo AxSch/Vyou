@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import NotFound from './components/ErrorPages/NotFound';
 import appStore from './store/store';
 import LoginContainer from './components/Login/LoginContainer';
+import ProfileContainer from './components/AccountPage/Profile/ProfileContainer';
 import './App.css';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             <Route exact path="/accounts/login" component={LoginContainer} />
+            <Route exact path="/accounts/profile/" component={ProfileContainer} />
             <Route component={NotFound} />
           </Switch>
         </BrowserRouter>
