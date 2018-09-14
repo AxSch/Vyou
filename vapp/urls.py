@@ -22,4 +22,5 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name="index.html")),
     path('api/', include('api.urls')),
     path('accounts/', include('allauth.urls')),
+    path('accounts/profile/', TemplateView.as_view(template_name="./account/profile.html")),
 ]
