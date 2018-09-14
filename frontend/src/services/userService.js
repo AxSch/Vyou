@@ -14,7 +14,7 @@ const handleResponse = (response) => {
         window.location.reload(true);
       }
       const error = (data && data.message) || response.statusText;
-      return Promise.rejecte(error);
+      return Promise.reject(error);
     }
     return data;
   });
@@ -23,7 +23,7 @@ const handleResponse = (response) => {
 const login = (email, password) => {
   const requestOptions  = {
     method: 'POST',
-    headers: { 'Content-Type': 'applicatio/json'},
+    headers: { 'Content-Type': 'application/json'},
     body: JSON.stringify({
       email,
       password
@@ -31,8 +31,8 @@ const login = (email, password) => {
   };
   return fetch(`http://127.0.0.1:8000/api/auth/login/`, requestOptions)
     .then(handleResponse)
-    .then((email) => {
-      if (email.token) {
+    .then((email, key) => {
+      if (key) {
         localStorage.setItem('email', JSON.stringify(email));
       }
       return email;
