@@ -1,14 +1,17 @@
 import actionTypes from './actionTypes';
 
 
-const loginRequest = (email,password) => ({
+const loginRequest = (email, password) => ({
   type: actionTypes.LOGIN_REQUEST,
+  payload: {
+    email,
+  }
 });
 
-const loginSuccess = (email,password) => ({
+const loginSuccess = (token) => ({
   type: actionTypes.LOGIN_SUCCESS,
   payload: {
-    email
+    token
   },
 });
 
