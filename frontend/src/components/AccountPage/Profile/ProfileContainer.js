@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import Profile from './Profile';
 
 const mapStateToProps = (state, ownProps) => ({
-    userID: state.login,
+    userEmail: state.login.userEmail,
 });
 
 const ProfileContainer = connect(mapStateToProps)(Profile);
