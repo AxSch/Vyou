@@ -29,7 +29,7 @@ const login = (email, password) => {
       password
     })
   };
-  return fetch(`http://127.0.0.1:8000/api/auth/login/`, requestOptions)
+  return fetch(`/api/auth/login/`, requestOptions)
     .then(handleResponse)
     .then((email, key) => {
       if (key) {
