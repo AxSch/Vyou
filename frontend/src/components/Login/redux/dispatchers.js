@@ -13,7 +13,7 @@ const loginDispatcher = (email, password) => {
       .then(
         user => {
           dispatch(loginActions.loginSuccess(user));
-          history.push('/');
+          history.push('/accounts/profile/');
         },
         error => {
           dispatch(loginActions.loginFailure(error.toString()));
