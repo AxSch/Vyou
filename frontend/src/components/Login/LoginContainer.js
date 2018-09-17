@@ -1,11 +1,14 @@
 import { connect } from 'react-redux';
 import LoginPage from './Login';
 import { bindActionCreators } from 'redux';
+import { withRouter } from 'react-router-dom';
 import {loginDispatcher, logoutDispatcher} from './redux/dispatchers';
 
-const mapStateToProps = (state, ownProps) => ({
-    userID: state.login,
-});
+const mapStateToProps = (state, ownProps) => {
+    return {
+        userID: state.login,
+    }
+};
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return { 
@@ -15,7 +18,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     }
 } 
 
-const LoginContainer = connect(mapStateToProps, mapDispatchToProps)(LoginPage);
+const LoginContainer = withRouter(connect(mapStateToProps, mapDispatchToProps)(LoginPage));
 
 export default LoginContainer;
 
