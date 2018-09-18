@@ -6,7 +6,7 @@ import {loginDispatcher, logoutDispatcher} from './redux/dispatchers';
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        userID: state.login,
+        userLogin: state.login,
     }
 };
 
