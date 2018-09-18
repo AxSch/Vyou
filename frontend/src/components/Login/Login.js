@@ -1,26 +1,27 @@
-import React, { PureComponent } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Link, Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router';
 // import { connect } from 'react-redux';
 
-class LoginPage extends PureComponent {
+class LoginPage extends Component {
     constructor(props) {
         super(props);
         // this.props.logoutDispatcher();
-
         this.state = {
             email: '',
-            password: '', 
-            submitted: '',
+            password: '',
         };
-        // this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    // componentDidUpdate(prevProps,prevState) {
-    //     if (prevState.email ) {
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.userLogin.token !== this.props.userLogin.token) {
+            this.redirectToTarget();
+        }
+    }
 
-    //     }
-    // }
+    redirectToTarget = () => {
+        this.props.history.push('/accounts/profile');
+    }
 
     handleChange = (event) => {
         const { name, value } = event.target;
@@ -28,37 +29,40 @@ class LoginPage extends PureComponent {
             [name]: value
         });
     }
+    
     handleSubmit = (event) => {
         event.preventDefault();
         const { email, password } = this.state;
-        this.setState({
-            submitted: true,
-        });
         if (email && password) {
             this.props.loginAction(email, password);
-            console.log('hi');
+            // if (this.props.userLogin.loggedIn === true){
+            //     this.setState({
+            //         toProfile: true
+            //     });
+            //     console.log(this.state.toProfile);
+            // }
+            // return;
         }
+        return;
     }
 
     render() {
-        const { email, password, submitted } = this.state;
-        console.log('email', email);
-        console.log('password', password);
+        const { email, password} = this.state;
         return (
-            <div className="col-md-6 col-md-offset-3">
+            <div>
                 <h2>Login</h2>
                 <form name="form">
                     <div>
-                        <label htmlFor="username">Email</label>
-                        <input type="text" className="form-control" value={email} name="email" onChange={this.handleChange}/>
+                        <label htmlFor="email">Email</label>
+                        <input type="text" value={email} name="email" onChange={this.handleChange}/>
                     </div>
                     <div>
                         <label htmlFor="password">Password</label>
-                        <input type="password" className="form-control" value={password} name="password" onChange={this.handleChange}/>
+                        <input type="password" value={password} name="password" onChange={this.handleChange}/>
                     </div>
-                    <div className="form-group">
-                        <button className="btn btn-primary" onClick={this.handleSubmit}>Login</button>
-                        <Link to="/register" className="btn btn-link">Register</Link>
+                    <div>
+                        <button onClick={this.handleSubmit}>Login</button>
+                        <Link to="/register">Register</Link>
                     </div>
                 </form>
             </div>
