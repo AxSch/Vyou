@@ -1,6 +1,6 @@
 import loginActions from '../redux/actions';
 import userService from '../../../services/userService';
-import history from '../../../helpers/history';
+// import history from '../../../helpers/history';
 // import
 
 
@@ -13,7 +13,6 @@ const loginDispatcher = (email, password) => {
       .then(
         user => {
           dispatch(loginActions.loginSuccess(user));
-          history.push('/accounts/profile/');
         },
         error => {
           dispatch(loginActions.loginFailure(error.toString()));
