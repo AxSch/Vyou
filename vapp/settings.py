@@ -56,7 +56,6 @@ INSTALLED_APPS = [
     # 'allauth.socialaccount.providers.linkedin_oauth2',
     'rest_auth.registration',
     'corsheaders',
-    'knox',
 ]
 
 SITE_ID = 1
@@ -106,10 +105,9 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'knox.auth.TokenAuthentication',
-        # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-        # 'rest_framework.authentication.BasicAuthentication',
-        # 'rest_framework.authentication.SessionAuthentication',
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
     ],
 
 }
@@ -223,7 +221,8 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 
-LOGIN_REDIRECT_URL = "/accounts/profile/"
+LOGIN_URL = "/"
+LOGIN_REDIRECT_URL = "/"
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'assets'),
