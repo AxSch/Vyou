@@ -12,6 +12,6 @@ router = routers.DefaultRouter()
 urlpatterns = [
     path('', schema_view),
     path('', include(router.urls)),
-    # path('auth/', include('knox.urls')),
+    path('auth/', include('rest_auth.urls')),
     # path('auth/signup/', include('rest_auth.registration.urls')),
 ]
