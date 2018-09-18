@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'vyou.eu-west-2.elasticbeanstalk.com'
+    'vyou.eu-west-2.elasticbeanstalk.com',
     'vyou-dev.eu-west-2.elasticbeanstalk.com',
     'vyou-staging.eu-west-2.elasticbeanstalk.com',
 ]
