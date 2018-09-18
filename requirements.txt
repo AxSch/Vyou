@@ -1,6 +1,6 @@
 aniso8601==3.0.2
 asn1crypto==0.24.0
-astroid==1.6.5
+astroid==2.0.4
 awsebcli==3.14.5
 blessed==1.15.0
 botocore==1.8.36
@@ -19,11 +19,15 @@ Cython==0.28.3
 defusedxml==0.5.0
 Django==2.0.5
 django-allauth==0.36.0
+django-cors-headers==2.4.0
 django-progressive-web-app==0.1.1
 django-rest-auth==0.9.3
+django-rest-knox==3.1.5
 django-rest-swagger==2.2.0
 django-webpack-loader==0.6.0
 djangorestframework==3.8.2
+djangorestframework-jwt==1.11.0
+djangorestframework-simplejwt==3.2.3
 docker==3.5.0
 docker-compose==1.21.2
 docker-pycreds==0.3.0
@@ -59,7 +63,8 @@ psycopg2==2.7.5
 pyasn1==0.4.2
 pycparser==2.18
 pycrypto==2.6.1
-pylint==1.9.2
+PyJWT==1.6.4
+pylint==2.1.1
 pyOpenSSL==18.0.0
 PySocks==1.6.8
 python-dateutil==2.6.1
@@ -78,6 +83,7 @@ SQLAlchemy==1.2.8
 tabulate==0.7.5
 termcolor==1.1.0
 texttable==0.9.1
+typed-ast==1.1.0
 uritemplate==3.0.0
 urllib3==1.22
 waitress==1.1.0
