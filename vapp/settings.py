@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+from datetime import timedelta
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'webpack_loader',
     'api',
+    'users_api',
     'rest_framework',
     'rest_framework_swagger',
     'rest_framework.authtoken',
@@ -129,7 +131,10 @@ DATABASES = {
     }
 }
 
-
+JWT_AUTH = {
+    'JWT_AUTH_HEADER_PREFIX': 'JWT',
+    'JWT_EXPIRATION_DELTA': timedelta(seconds=300)
+}
 
 
 # Password validation
@@ -166,7 +171,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-# AUTH_USER_MODEL = 'api.User'
+AUTH_USER_MODEL = 'users_api.CustomUser'
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
