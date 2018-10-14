@@ -5,5 +5,5 @@ schema_view = get_swagger_view(title='Vyou Api')
 
 urlpatterns = [
   path('', schema_view),
-  path('accounts/', include('users_api.urls'))
+  path('', include('users_api.urls'))
 ]
