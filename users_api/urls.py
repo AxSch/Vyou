@@ -7,5 +7,4 @@ router.register('users', views.UserListView)
 
 urlpatterns = [
   path('', include(router.urls)),
-  # path('',views.UserListView.as_view()),
 ]
