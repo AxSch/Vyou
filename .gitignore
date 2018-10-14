@@ -12,3 +12,5 @@ vapp/management/commands/__pycache__/
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
+users_api/__pycache__/
+users_api/migrations/__pycache__/
