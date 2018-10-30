@@ -1,0 +1,43 @@
+[{
+        "pk": 1,
+        "model": "personality_api.EnergyMappingCategories",
+        "fields": {
+            "category_name": "Belief"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "personality_api.EnergyMappingCategories",
+        "fields": {
+            "category_name": "Integrity"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "personality_api.EnergyMappingCategories",
+        "fields": {
+            "category_name": "Belonging"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "personality_api.EnergyMappingCategories",
+        "fields": {
+            "category_name": "Freedom"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "personality_api.EnergyMappingCategories",
+        "fields": {
+            "category_name": "Engagement"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "personality_api.EnergyMappingCategories",
+        "fields": {
+            "category_name": "Aliveness"
+        }
+    }
+]

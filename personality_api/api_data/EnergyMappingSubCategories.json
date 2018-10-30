@@ -1,0 +1,229 @@
+[{
+        "pk": 1,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Purpose",
+            "EnergyMappingCategories": {
+                "pk": 1,
+                "category_name": "Belief"
+            }
+        }
+
+    },
+    {
+        "pk": 2,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Hope",
+            "EnergyMappingCategories": {
+                "pk": 1,
+                "category_name": "Belief"
+            }
+        }
+
+    },
+    {
+        "pk": 3,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Optimism",
+            "EnergyMappingCategories": {
+                "pk": 1,
+                "category_name": "Belief"
+            }
+        }
+
+    },
+    {
+        "pk": 4,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Confidence",
+            "EnergyMappingCategories": {
+                "pk": 2,
+                "category_name": "Integrity"
+            }
+        }
+
+    },
+    {
+        "pk": 5,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Self Belief",
+            "EnergyMappingCategories": {
+                "pk": 2,
+                "category_name": "Integrity"
+            }
+        }
+
+    },
+    {
+        "pk": 6,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Authenticity",
+            "EnergyMappingCategories": {
+                "pk": 2,
+                "category_name": "Integrity"
+            }
+        }
+
+    },
+    {
+        "pk": 7,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Inclusion",
+            "EnergyMappingCategories": {
+                "pk": 2,
+                "category_name": "Belonging"
+            }
+        }
+
+    },
+    {
+        "pk": 8,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Connection",
+            "EnergyMappingCategories": {
+                "pk": 2,
+                "category_name": "Belonging"
+            }
+        }
+
+    },
+    {
+        "pk": 8,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Trust",
+            "EnergyMappingCategories": {
+                "pk": 2,
+                "category_name": "Belonging"
+            }
+        }
+
+    },
+    {
+        "pk": 9,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Fearlessness",
+            "EnergyMappingCategories": {
+                "pk": 3,
+                "category_name": "Freedom"
+            }
+        }
+
+    },
+    {
+        "pk": 10,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Autonomy",
+            "EnergyMappingCategories": {
+                "pk": 3,
+                "category_name": "Freedom"
+            }
+        }
+
+    },
+    {
+        "pk": 10,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Control",
+            "EnergyMappingCategories": {
+                "pk": 3,
+                "category_name": "Freedom"
+            }
+        }
+
+    },
+    {
+        "pk": 11,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Vigor",
+            "EnergyMappingCategories": {
+                "pk": 3,
+                "category_name": "Engagement"
+            }
+        }
+
+    },
+    {
+        "pk": 12,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Dedication",
+            "EnergyMappingCategories": {
+                "pk": 3,
+                "category_name": "Engagement"
+            }
+        }
+
+    },
+    {
+        "pk": 13,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Flow",
+            "EnergyMappingCategories": {
+                "pk": 3,
+                "category_name": "Engagement"
+            }
+        }
+
+    },
+    {
+        "pk": 14,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Alertness",
+            "EnergyMappingCategories": {
+                "pk": 4,
+                "category_name": "Aliveness"
+            }
+        }
+
+    },
+    {
+        "pk": 15,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Presence",
+            "EnergyMappingCategories": {
+                "pk": 4,
+                "category_name": "Aliveness"
+            }
+        }
+
+    },
+    {
+        "pk": 15,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Presence",
+            "EnergyMappingCategories": {
+                "pk": 4,
+                "category_name": "Aliveness"
+            }
+        }
+
+    },
+    {
+        "pk": 16,
+        "model": "personality_api.EnergyMappingSubCategories",
+        "fields": {
+            "category_name": "Sparkiness",
+            "EnergyMappingCategories": {
+                "pk": 4,
+                "category_name": "Aliveness"
+            }
+        }
+
+    }
+]

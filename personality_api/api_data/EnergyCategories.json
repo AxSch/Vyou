@@ -1,0 +1,17 @@
+[{
+        "pk": 1,
+        "model": "personality_api.EnergyCategories",
+        "fields": {
+            "category_name": "Energy Levels",
+            "category_desc": "Your overall level of energy at work"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "personality_api.EnergyCategories",
+        "fields": {
+            "category_name": "Energy Flow",
+            "category_desc": "Your overall energetic flow with others; how you influence and are influenced by others’ energy"
+        }
+    }
+]

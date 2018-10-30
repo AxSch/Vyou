@@ -1,0 +1,34 @@
+[{
+        "pk": 1,
+        "model": "personality_api.EnergyFlowCategories",
+        "fields": {
+            "EnergyFlow": {
+                "pk": 1,
+                "category_name": "Energy Flow"
+            },
+            "category_name": "Out"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "personality_api.EnergyFlowCategories",
+        "fields": {
+            "EnergyFlow": {
+                "pk": 1,
+                "category_name": "Energy Flow"
+            },
+            "category_name": "In"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "personality_api.EnergyFlowCategories",
+        "fields": {
+            "EnergyFlow": {
+                "pk": 1,
+                "category_name": "Energy Flow"
+            },
+            "category_name": "Management"
+        }
+    }
+]

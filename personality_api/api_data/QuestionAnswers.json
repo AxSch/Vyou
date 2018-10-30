@@ -1,0 +1,49 @@
+[{
+        "pk": 1,
+        "model": "personality_api.QuestionAnswers",
+        "fields": {
+            "answerText": "Strongly Disagree",
+            "score": -3
+        }
+    },
+    {
+        "pk": 2,
+        "model": "personality_api.QuestionAnswers",
+        "fields": {
+            "answerText": "Slightly Disagree",
+            "score": -2
+        }
+    },
+    {
+        "pk": 3,
+        "model": "personality_api.QuestionAnswers",
+        "fields": {
+            "answerText": "Disagree",
+            "score": -1
+        }
+    },
+    {
+        "pk": 4,
+        "model": "personality_api.QuestionAnswers",
+        "fields": {
+            "answerText": "Agree",
+            "score": 1
+        }
+    },
+    {
+        "pk": 5,
+        "model": "personality_api.QuestionAnswers",
+        "fields": {
+            "answerText": "Slightly Agree",
+            "score": 2
+        }
+    },
+    {
+        "pk": 6,
+        "model": "personality_api.QuestionAnswers",
+        "fields": {
+            "answerText": "Strongly Agree",
+            "score": 3
+        }
+    }
+].
