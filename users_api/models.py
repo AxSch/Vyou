@@ -3,7 +3,6 @@ from django.db import models
 # Create your models here.
 
 class CustomUser(AbstractUser):
-  name = models.CharField(blank=True, max_length=255)
   email = models.EmailField(unique=True)
 
   def __str__(self):
