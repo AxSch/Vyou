@@ -1,0 +1,85 @@
+[{
+        "id": 1,
+        "fields": {
+            "question": "I have a lot of energy at work.",
+            "category_name": "Energy Levels"
+        }
+    },
+    {
+        "id": 2,
+        "fields": {
+            "question": "Day-to-day I feel energised.",
+            "category_name": "Energy Levels"
+        }
+    },
+    {
+        "id": 3,
+        "fields": {
+            "question": "Work feels like a constant struggle.",
+            "category_name": "Energy Levels"
+        }
+    },
+    {
+        "id": 4,
+        "fields": {
+            "question": "I feel drained from my work.",
+            "category_name": "Energy Levels"
+        }
+    },
+    {
+        "id": 5,
+        "fields": {
+            "question": "My work gives me a lot of energy.",
+            "category_name": "Energy Levels"
+        }
+    },
+    {
+        "id": 6,
+        "fields": {
+            "question": "I have no energy at work.",
+            "category_name": "Energy Levels"
+        }
+    },
+    {
+        "id": 7,
+        "fields": {
+            "question": "I feel high in energy.",
+            "category_name": "Energy Levels"
+        }
+    },
+    {
+        "id": 8,
+        "fields": {
+            "question": "I am motivated in my day-to-day.",
+            "category_name": "Energy Levels"
+        }
+    },
+    {
+        "id": 9,
+        "fields": {
+            "question": "Others have more energy at work than me.",
+            "category_name": "Energy Levels"
+        }
+    },
+    {
+        "id": 10,
+        "fields": {
+            "question": "I tend to bring more positive energy to work than others.",
+            "category_name": "Energy Levels"
+        }
+    },
+    {
+        "id": 11,
+        "fields": {
+            "question": "I dread going to work on a daily basis.",
+            "category_name": "Energy Levels"
+        }
+    },
+    {
+        "id": 12,
+        "fields": {
+            "question": "I tend to leave work feeling positive.",
+            "category_name": "Energy Levels"
+        }
+    }
+]
