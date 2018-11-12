@@ -1,0 +1,211 @@
+[{
+        "id": 1,
+        "fields": {
+            "question": "I make a positive difference to the energy of others.",
+            "EnergyFlowCategories": {
+                "id": 1,
+                "category_name": "Out"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 2,
+        "fields": {
+            "question": "I feel I might be bringing down the energy of others.",
+            "EnergyFlowCategories": {
+                "id": 1,
+                "category_name": "Out"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 3,
+        "fields": {
+            "question": "I influence the energy of others in a positive way.",
+            "EnergyFlowCategories": {
+                "id": 1,
+                "category_name": "Out"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 4,
+        "fields": {
+            "question": "I currently don’t seem to help others feel energized.",
+            "EnergyFlowCategories": {
+                "id": 1,
+                "category_name": "Out"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 5,
+        "fields": {
+            "question": "My impact on others is negative.",
+            "EnergyFlowCategories": {
+                "id": 1,
+                "category_name": "Out"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 6,
+        "fields": {
+            "question": "I get a boost in my energy from the people I work with.",
+            "EnergyFlowCategories": {
+                "id": 2,
+                "category_name": "In"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 7,
+        "fields": {
+            "question": "I get a lot of energy from the people I work with.",
+            "EnergyFlowCategories": {
+                "id": 2,
+                "category_name": "In"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 8,
+        "fields": {
+            "question": "Other people at work drain my energy.",
+            "EnergyFlowCategories": {
+                "id": 2,
+                "category_name": "In"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 9,
+        "fields": {
+            "question": "I dread going to work on a daily basis.",
+            "EnergyFlowCategories": {
+                "id": 2,
+                "category_name": "In"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 10,
+        "fields": {
+            "question": "I am aware of my day-to-day energy",
+            "EnergyFlowCategories": {
+                "id": 3,
+                "category_name": "Management"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 11,
+        "fields": {
+            "question": "I don’t think much about my energy at work.",
+            "EnergyFlowCategories": {
+                "id": 3,
+                "category_name": "Management"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 12,
+        "fields": {
+            "question": "I take quick action to improve my overall energy when it dips.",
+            "EnergyFlowCategories": {
+                "id": 3,
+                "category_name": "Management"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 13,
+        "fields": {
+            "question": "I tend to endure things that drain my energy for too long.",
+            "EnergyFlowCategories": {
+                "id": 3,
+                "category_name": "Management"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 14,
+        "fields": {
+            "question": "I don’t have much control to improve my energy.",
+            "EnergyFlowCategories": {
+                "id": 3,
+                "category_name": "Management"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    },
+    {
+        "id": 15,
+        "fields": {
+            "question": "I am able to take charge of how energized I feel.",
+            "EnergyFlowCategories": {
+                "id": 3,
+                "category_name": "Management"
+            },
+            "EnergyFlow": {
+                "id": 1,
+                "category_name": "Energy Flow"
+            }
+        }
+    }
+]
