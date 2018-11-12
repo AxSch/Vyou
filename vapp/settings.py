@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'webpack_loader',
     'api',
     'users_api',
+    'personality_api',
     'rest_framework',
     'knox',
     'rest_framework_swagger',
