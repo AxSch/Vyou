@@ -15,3 +15,5 @@ const requestQuestionsDispatcher = () => {
       );
   }
 }
+
+export default requestQuestionsDispatcher;
