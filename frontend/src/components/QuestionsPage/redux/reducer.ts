@@ -4,7 +4,7 @@ import { Reducer, Action } from 'redux';
 interface QuestionAction extends Action {
   payload: {
     questions: Array<Questions>,
-    error: string | null,
+    error?: string | null,
     
   }
 }
@@ -48,4 +48,9 @@ const questionsReducer: Reducer<QuestionsState> = (state: QuestionsState = intit
     default:
       return state;
   }
+}
+
+export {
+  intitialState,
+  questionsReducer
 }
