@@ -16,3 +16,5 @@ users_api/__pycache__/
 users_api/migrations/__pycache__/
 personality_api/__pycache__/
 personality_api/migrations/__pycache__/
+user_profile/__pycache__/
+user_profile/migrations/__pycache__/
