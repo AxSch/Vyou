@@ -3,7 +3,7 @@ import { Action } from 'redux';
 
 interface QuestionAction extends Action {
   payload: {
-    questions: Array<Questions>,
+    questions?: Array<Questions>,
     error?: string | null,
     
   }
@@ -32,10 +32,9 @@ const questionRequestSuccess = (questions): QuestionAction => ({
   }
 });
 
-const questionRequestFailure = (questions, error): QuestionAction => ({
+const questionRequestFailure = (error): QuestionAction => ({
   type: actionTypes.FETCH_QUESTIONS_FAILURE,
   payload: {
-    questions,
     error
   }
 });
