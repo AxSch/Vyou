@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'users_api',
     'personality_api',
     'user_profile',
+    'question_ans',
     'rest_framework',
     'knox',
     'rest_framework_swagger',
