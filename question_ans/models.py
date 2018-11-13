@@ -1,4 +1,5 @@
 from django.db import models
+from user_profile.models import Profile
 
 # Create your models here.
 class PersonalityAnswers(models.Model):
@@ -8,6 +9,7 @@ class PersonalityAnswers(models.Model):
   scale_alpha = models.IntegerField()
   answer_text = models.CharField(max_length=16)
   answer_score = models.IntegerField()
+  profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
 
 
   def __str__(self):
@@ -19,6 +21,7 @@ class EnergyLevelAnswers(models.Model):
   category_name = models.CharField(max_length=32)
   answer_text = models.CharField(max_length=16)
   answer_score = models.IntegerField()
+  profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
 
 
   def __str__(self):
@@ -31,6 +34,7 @@ class EnergyFlowAnswers(models.Model):
   subcategory_name = models.CharField(max_length=32)
   answer_text = models.CharField(max_length=16)
   answer_score = models.IntegerField()
+  profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
 
 
   def __str__(self):
@@ -43,6 +47,7 @@ class EnergyMappingAnswers(models.Model):
   subcategory_name = models.CharField(max_length=32)
   answer_text = models.CharField(max_length=16)
   answer_score = models.IntegerField()
+  profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
 
 
   def __str__(self):
