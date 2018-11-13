@@ -19,3 +19,5 @@ class Profile(models.Model):
   gitHub_profile = models.URLField(max_length=200)
   instagram_profile = models.URLField(max_length=200)
 
+  def __str__(self):
+    return self.name
