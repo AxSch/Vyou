@@ -12,3 +12,38 @@ class PersonalityAnswers(models.Model):
 
   def __str__(self):
     return self.answer_score
+
+class EnergyLevelAnswers(models.Model):
+  questionId = models.IntegerField()
+  question = models.CharField(max_length=64)
+  category_name = models.CharField(max_length=32)
+  answer_text = models.CharField(max_length=16)
+  answer_score = models.IntegerField()
+
+
+  def __str__(self):
+    return self.answer_score
+
+class EnergyFlowAnswers(models.Model):
+  questionId = models.IntegerField()
+  question = models.CharField(max_length=64)
+  category_name = models.CharField(max_length=32)
+  subcategory_name = models.CharField(max_length=32)
+  answer_text = models.CharField(max_length=16)
+  answer_score = models.IntegerField()
+
+
+  def __str__(self):
+    return self.answer_score
+
+class EnergyMappingAnswers(models.Model):
+  questionId = models.IntegerField()
+  question = models.CharField(max_length=64)
+  category_name = models.CharField(max_length=32)
+  subcategory_name = models.CharField(max_length=32)
+  answer_text = models.CharField(max_length=16)
+  answer_score = models.IntegerField()
+
+
+  def __str__(self):
+    return self.answer_score
