@@ -10,14 +10,14 @@ class PersonalityQuestionsPage extends Component {
     }
 
     render() {
-        const { questions } = this.props;
+        const { personalityQuestions } = this.props;
         return (
             <div>
                 <h2>Questions</h2>
                 <div>
                     <h4>Progress</h4>
                 </div>
-                <PersonalityQuestions questions={questions} />
+                <PersonalityQuestions questions={personalityQuestions} />
             </div>
         );
     }
@@ -25,7 +25,7 @@ class PersonalityQuestionsPage extends Component {
 
 PersonalityQuestionsPage.PropTypes = {
     fetchPersonalityQuestions: PropTypes.func,
-    questions: PropTypes.array
+    personalityQuestions: PropTypes.array
 }
 
 export default PersonalityQuestionsPage;
