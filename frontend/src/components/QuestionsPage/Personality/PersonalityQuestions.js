@@ -9,6 +9,8 @@ class PersonalityQuestions extends Component {
                     <Fragment>
                         <li key={question.id}>
                             {question.fields.question}
+                            {question.fields.QuestionCategory.id}
+                            {question.fields.QuestionCategory.category_name}
                             <div>
                                 <label htmlFor="stronglyAgree">Strongly Agree</label>
                                 <input type="radio" name="answers" value={3} id="stronglyAgree" /> 
