@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 
 class PersonalityQuestions extends Component {
     Question(questions) {
-        return questions.map((question) => {
+        const categories = 16;
+            return questions.filter((question) => question.fields.QuestionCategory.id === 1).map((question) => {
                 return (
                     <Fragment>
                         <li key={question.id}>
@@ -28,7 +29,7 @@ class PersonalityQuestions extends Component {
                         </li>
                     </Fragment>
                 );
-        });
+        })
     }
     render() {
         const { questions } = this.props;
