@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import QuestionsPage from './QuestionsPage';
 import { bindActionCreators } from 'redux';
+import { withRouter } from 'react-router-dom';
 import requestQuestionsDispatcher from './redux/dispatchers';
 
 const mapStateToProps = (state, ownProps) => {
@@ -15,6 +16,6 @@ const mapDispatchToProps = dispatch => (
     }, dispatch)
 );
 
-const PersonalityQuestionsPageContainer = connect(mapStateToProps, mapDispatchToProps)(QuestionsPage);
+const QuestionsPageContainer = withRouter(connect(mapStateToProps, mapDispatchToProps)(QuestionsPage));
 
-export default PersonalityQuestionsPageContainer;
+export default QuestionsPageContainer;
