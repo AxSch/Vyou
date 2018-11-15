@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 class PersonalityQuestions extends Component {
     Question(questions) {
-        const categories = 16;
             return questions.filter((question) => question.fields.QuestionCategory.id === 1).map((question) => {
                 return (
                     <Fragment>
