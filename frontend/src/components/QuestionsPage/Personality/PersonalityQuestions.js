@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 class PersonalityQuestions extends Component {
 
     render() {
+        const { questions } = this.props;
         return (
             <div>
                 <h2>Personality Questions</h2>
-                
             </div>
         );
     }
