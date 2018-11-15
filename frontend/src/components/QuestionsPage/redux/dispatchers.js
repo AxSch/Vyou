@@ -6,11 +6,11 @@ const requestQuestionsDispatcher = () => {
     dispatch(questionRequestActions.questionRequest);
     questionsService.personalityQuestions()
       .then(
-        questions => {
-          dispatch(questionRequestActions.questionRequestSuccess(questions));
+        response => {
+          dispatch(questionRequestActions.questionRequestSuccess(response.data));
         },
         error => {
-          dispatch(questionRequestActions.questionRequestFailure(error));
+          dispatch(questionRequestActions.questionRequestFailure(error.data));
         }
       );
   }
