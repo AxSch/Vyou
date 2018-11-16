@@ -10,18 +10,19 @@ class PersonalityQuestions extends Component {
 
         this.state = {
             categoryCount: 1
-        }
+        };
+
         this.handlePageClick = this.handlePageClick.bind(this);
     }
 
-    // componentDidUpdate(prevProps, prevState) {
-    //     // console.log(this.state.categoryCount);
-    //     if (this.state.categoryCount !== prevState.categoryCount) {
-    //         console.log(prevState.categoryCount);
-    //         this.handlePageClick();
-    //         // console.log('hi');
-    //     }
-    // }
+    handleNextButton(count) {
+        if (count === 1 || count < 16) {
+            return <button onClick={this.handlePageClick}>Next</button>
+        } else {
+            return <button onClick={this.handleSubmit}>Submit</button>
+        }
+    }
+
     handlePageClick(callback) {
         console.log('fire', this.state.categoryCount);
         this.setState (prevState => {
@@ -41,7 +42,7 @@ class PersonalityQuestions extends Component {
             <div>
                 <h2>Personality Questions</h2>
                 <QuestionFactory questionsArray={questions} index={categoryCount} />
-                <button onClick={this.handlePageClick}>Next</button>
+                {this.handleNextButton(categoryCount)}
                 {/* <ReactPaginate 
                     previousLabel={"previous"}
                     nextLabel={"next"}
