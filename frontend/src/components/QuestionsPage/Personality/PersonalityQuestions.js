@@ -36,13 +36,11 @@ class PersonalityQuestions extends Component {
 
     render() {
         const { questions } = this.props;
+        const { categoryCount } = this.state;
         return (
             <div>
                 <h2>Personality Questions</h2>
-                <QuestionFactory questionsArray={questions} index={1} />
-                <QuestionFactory questionsArray={questions} index={2} />
-                <QuestionFactory questionsArray={questions} index={3} />
-                <QuestionFactory questionsArray={questions} index={4} />
+                <QuestionFactory questionsArray={questions} index={categoryCount} />
                 <button onClick={this.handlePageClick}>Next</button>
                 {/* <ReactPaginate 
                     previousLabel={"previous"}
