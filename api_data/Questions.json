@@ -1993,7 +1993,7 @@
             "sign": "positive",
             "QuestionCategory": {
                 "category_name": "emotionality",
-                "id": 14,
+                "id": 16,
                 "scale_alpha": 0.76,
                 "factor": "Q4: Tension"
             }
@@ -2006,7 +2006,7 @@
             "sign": "positive",
             "QuestionCategory": {
                 "category_name": "emotionality",
-                "id": 14,
+                "id": 16,
                 "scale_alpha": 0.76,
                 "factor": "Q4: Tension"
             }
@@ -2015,11 +2015,11 @@
     {
         "id": 156,
         "fields": {
-            "question": "Am annoyed by others' mistakes.",
+            "question": "Am quick to judge others.",
             "sign": "positive",
             "QuestionCategory": {
                 "category_name": "emotionality",
-                "id": 14,
+                "id": 16,
                 "scale_alpha": 0.76,
                 "factor": "Q4: Tension"
             }
@@ -2028,11 +2028,11 @@
     {
         "id": 157,
         "fields": {
-            "question": "Am easily put out.",
+            "question": "Am annoyed by others' mistakes.",
             "sign": "positive",
             "QuestionCategory": {
                 "category_name": "emotionality",
-                "id": 14,
+                "id": 16,
                 "scale_alpha": 0.76,
                 "factor": "Q4: Tension"
             }
@@ -2041,11 +2041,11 @@
     {
         "id": 158,
         "fields": {
-            "question": "Can't stand being contradicted.",
+            "question": "Am easily put out.",
             "sign": "positive",
             "QuestionCategory": {
                 "category_name": "emotionality",
-                "id": 14,
+                "id": 16,
                 "scale_alpha": 0.76,
                 "factor": "Q4: Tension"
             }
@@ -2054,11 +2054,11 @@
     {
         "id": 159,
         "fields": {
-            "question": "Judge people by their appearance.",
+            "question": "Can't stand being contradicted.",
             "sign": "positive",
             "QuestionCategory": {
                 "category_name": "emotionality",
-                "id": 14,
+                "id": 16,
                 "scale_alpha": 0.76,
                 "factor": "Q4: Tension"
             }
@@ -2067,11 +2067,11 @@
     {
         "id": 160,
         "fields": {
-            "question": "Am not easily annoyed.",
-            "sign": "negitive",
+            "question": "Judge people by their appearance.",
+            "sign": "positive",
             "QuestionCategory": {
                 "category_name": "emotionality",
-                "id": 14,
+                "id": 16,
                 "scale_alpha": 0.76,
                 "factor": "Q4: Tension"
             }
@@ -2080,11 +2080,11 @@
     {
         "id": 161,
         "fields": {
-            "question": "Try to forgive and forget.",
+            "question": "Am not easily annoyed.",
             "sign": "negitive",
             "QuestionCategory": {
                 "category_name": "emotionality",
-                "id": 14,
+                "id": 16,
                 "scale_alpha": 0.76,
                 "factor": "Q4: Tension"
             }
@@ -2093,11 +2093,24 @@
     {
         "id": 162,
         "fields": {
+            "question": "Try to forgive and forget.",
+            "sign": "negitive",
+            "QuestionCategory": {
+                "category_name": "emotionality",
+                "id": 16,
+                "scale_alpha": 0.76,
+                "factor": "Q4: Tension"
+            }
+        }
+    },
+    {
+        "id": 163,
+        "fields": {
             "question": "Have a good word for everyone.",
             "sign": "negitive",
             "QuestionCategory": {
                 "category_name": "emotionality",
-                "id": 14,
+                "id": 16,
                 "scale_alpha": 0.76,
                 "factor": "Q4: Tension"
             }
