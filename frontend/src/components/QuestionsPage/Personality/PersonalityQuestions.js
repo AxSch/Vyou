@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import QuestionFactory from '../Question/QuestionFactory';
 // import ReactPaginate from 'react-paginate';
@@ -43,15 +43,6 @@ class PersonalityQuestions extends Component {
                 <h2>Personality Questions</h2>
                 <QuestionFactory questionsArray={questions} index={categoryCount} />
                 {this.handleNextButton(categoryCount)}
-                {/* <ReactPaginate 
-                    previousLabel={"previous"}
-                    nextLabel={"next"}
-                    breakLabel={"..."}
-                    pageCount={8}
-                    onPageChange={this.handlePageClick(this.state.categoryCount)}
-                    marginPagesDisplayed={2}
-                    pageRangeDisplayed={8}
-                /> */}
             </div>
         );
     }
