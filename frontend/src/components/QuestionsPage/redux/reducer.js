@@ -1,28 +1,4 @@
 import actionTypes from './actionTypes';
-// import { Reducer } from 'redux';
-
-// interface QuestionAction extends Action {
-//   payload: {
-//     questions: Array<Questions>,
-//     error?: string | null,
-    
-//   }
-// }
-
-// interface QuestionFields {
-//   question: String,
-//   subcategory: String,
-//   category: String,
-// }
-
-// interface Questions {
-//   id: Number,
-//   fields: QuestionFields,
-// }
-
-// interface QuestionsState {
-//   questions: Array<Questions>,
-// }
 
 const intitialState = {
   personalityQuestions: [],
