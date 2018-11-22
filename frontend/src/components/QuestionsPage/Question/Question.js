@@ -11,7 +11,7 @@ class Question extends Component {
           <Fragment>
               <li key={question.id}>
                 {question.fields.question}
-                <Answers />
+                <Answers questionId={question.id} />
             </li>
           </Fragment>
         );
