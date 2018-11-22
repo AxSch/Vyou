@@ -7,17 +7,17 @@ class Answers extends Component {
         return (
             <div>
                 <label htmlFor="stronglyAgree">Strongly Agree</label>
-                <input type="radio" name="answers" value={3} id="stronglyAgree" /> 
-                <label htmlFor="stronglyAgree">Slightly Agree</label>
-                <input type="radio" name="answers" value={2} id="stronglyAgree" />  
-                <label htmlFor="stronglyAgree">Agree</label>
-                <input type="radio" name="answers" value={1} id="stronglyAgree" />  
-                <label htmlFor="stronglyAgree">Disagree</label>
-                <input type="radio" name="answers" value={-1} id="stronglyAgree" />  
-                <label htmlFor="stronglyAgree">Slightly Disagree</label>
-                <input type="radio" name="answers" value={-2} id="stronglyAgree" />  
-                <label htmlFor="stronglyAgree">Strongly Disagree</label>
-                <input type="radio" name="answers" value={-3} id="stronglyAgree" />                         
+                <input type="radio" name="answers-stronglyAgree" value={3} id="stronglyAgree" /> 
+                <label htmlFor="slightlyAgree">Slightly Agree</label>
+                <input type="radio" name="answers-slightlyAgree" value={2} id="slightlyAgree" />  
+                <label htmlFor="agree">Agree</label>
+                <input type="radio" name="answers-agree" value={1} id="agree" />  
+                <label htmlFor="disagree">Disagree</label>
+                <input type="radio" name="answers-disagree" value={-1} id="disagree" />  
+                <label htmlFor="slightlyDisagree">Slightly Disagree</label>
+                <input type="radio" name="answers-slightlyDisagree" value={-2} id="slightlyDisagree" />  
+                <label htmlFor="stronglyDisagree">Strongly Disagree</label>
+                <input type="radio" name="answers-stronglyDisagree" value={-3} id="stronglyDisagree" />                         
             </div>
         );
     }
