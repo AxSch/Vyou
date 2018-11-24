@@ -3,6 +3,7 @@ import QuestionsPage from './QuestionsPage';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'react-router-dom';
 import requestQuestionsDispatcher from './redux/dispatchers';
+import answersDispatchers from '../Answers/redux/dispatchers';
 
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -13,6 +14,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => (
     bindActionCreators({
         fetchPersonalityQuestions: requestQuestionsDispatcher,
+        resetAllAnswers: answersDispatchers.resetAllAnswersDispatcher
     }, dispatch)
 );
 

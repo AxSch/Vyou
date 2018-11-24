@@ -1,17 +1,22 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import Answers from '../../Answers/Answers';
+import AnswersContainer from '../../Answers/AnswersContainer';
 
 
 class Question extends Component {
     render() {
         const { question } = this.props;
-        // console.log(question.fields);
+
         return (
           <Fragment>
               <li key={question.id}>
                 {question.fields.question}
-                <Answers questionId={question.id} />
+                <AnswersContainer 
+                    questionId={question.id}
+                    categoryId={question.fields.QuestionCategory.id}
+                    questionText={question.fields.question}
+                    questionSign={question.fields.sign}
+                />
             </li>
           </Fragment>
         );

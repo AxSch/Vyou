@@ -1,32 +1,40 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 
 class Answers extends Component {
     render() {
-        const { questionId } = this.props;
+        const { categoryId, questionId, setAnswer, questionText, questionSign } = this.props;
         return (
             <div>
                 <label htmlFor={`stronglyAgree-${questionId}`}>Strongly Agree</label>
-                <input type="radio" name={`stronglyAgree-${questionId}`} value={3} id={`stronglyAgree-${questionId}`} /> 
-                <label htmlFor={`slightlyAgree-${questionId}`}>Slightly Agree</label>
-                <input type="radio" name={`slightlyAgree-${questionId}`} value={2} id={`slightlyAgree-${questionId}`} />  
+                <input type="radio" name={`answers-${questionId}`} value={3} id={`stronglyAgree-${questionId}`} onChange={(e) => setAnswer(categoryId, e.target.value, questionId, questionText, questionSign)}/> 
+                
+                <label htmlFor="slightlyAgree">Slightly Agree</label>
+                <input type="radio" name={`answers-${questionId}`} value={2} id={`slightlyAgree-${questionId}`} onChange={(e) => setAnswer(categoryId, e.target.value, questionId, questionText, questionSign)}/>  
+                
                 <label htmlFor={`agree-${questionId}`}>Agree</label>
-                <input type="radio" name={`agree-${questionId}`} value={1} id={`agree-${questionId}`} />  
+                <input type="radio" name={`answers-${questionId}`} value={1} id={`agree-${questionId}`} onChange={(e) => setAnswer(categoryId, e.target.value, questionId, questionText, questionSign)} />  
+                
                 <label htmlFor={`disagree-${questionId}`}>Disagree</label>
-                <input type="radio" name={`disagree-${questionId}`} value={-1} id={`disagree-${questionId}`} />  
+                <input type="radio" name={`answers-${questionId}`} value={-1} id={`disagree-${questionId}`} onChange={(e) => setAnswer(categoryId, e.target.value, questionId, questionText, questionSign)} />  
+                
                 <label htmlFor={`slightlyDisagree-${questionId}`}>Slightly Disagree</label>
-                <input type="radio" name={`slightlyDisagree-${questionId}`} value={-2} id={`slightlyDisagree-${questionId}`} />  
+                <input type="radio" name={`answers-${questionId}`} value={-2} id={`slightlyDisagree-${questionId}`} onChange={(e) => setAnswer(categoryId, e.target.value, questionId, questionText, questionSign)} />  
+                
                 <label htmlFor={`stronglyDisagree-${questionId}`}>Strongly Disagree</label>
-                <input type="radio" name={`stronglyDisagree-${questionId}`} value={-3} id={`stronglyDisagree-${questionId}`} />                         
+                <input type="radio" name={`answers-${questionId}`} value={-3} id={`stronglyDisagree-${questionId}`} onChange={(e) => setAnswer(categoryId, e.target.value, questionId, questionText, questionSign)} />                         
             </div>
         );
     }
 }
 
 Answers.PropTypes = {
-    someOnChangeFunc: PropTypes.func,
-    questionId: PropTypes.number
+    setAnswer: PropTypes.func,
+    questionId: PropTypes.number,
+    categoryId: PropTypes.number,
+    questionText: PropTypes.string,
+    questionSign: PropTypes.string,
 }
 
 export default Answers;

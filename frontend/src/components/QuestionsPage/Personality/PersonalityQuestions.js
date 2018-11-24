@@ -14,6 +14,10 @@ class PersonalityQuestions extends Component {
 
         this.handlePageClick = this.handlePageClick.bind(this);
     }
+    componentDidMount() {
+        const { resetAllAnswers } = this.props;
+        resetAllAnswers();
+    }
 
     handleNextButton(count) {
         if (count === 1 || count < 16) {
@@ -49,7 +53,8 @@ class PersonalityQuestions extends Component {
 }
 
 PersonalityQuestions.PropTypes = {
-    questions: PropTypes.array
+    questions: PropTypes.array,
+    resetAllAnswers: PropTypes.func
 }
 
 export default PersonalityQuestions;
