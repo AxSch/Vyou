@@ -1,10 +1,22 @@
 import answerActions from './actions';
 
 
-const setAnswerDispatcher = (answer) => {
+const setAnswerDispatcher = (categoryId, answerValue, questionId, question, questionSign) => {
   return dispatch => {
-    dispatch(answerActions.setAnswer(answer));
+    dispatch(answerActions.setAnswer(categoryId, Number(answerValue), questionId, question, questionSign));
   }
 }
 
-export default setAnswerDispatcher;
+const resetAllAnswersDispatcher = () => {
+  return dispatch => {
+    dispatch(answerActions.resetAllAnswers());
+  }
+}
+
+const answersDispatchers = {
+  setAnswerDispatcher,
+  resetAllAnswersDispatcher
+};
+
+export default answersDispatchers;
+
