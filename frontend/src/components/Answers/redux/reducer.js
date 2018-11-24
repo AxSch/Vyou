@@ -16,10 +16,6 @@ const selectorTest = (state, userAnswer, categoryId) => {
     };
   }
 
-  // console.log(newState);
-  // if (newState.answered) {
-  //     newState.answered[categoryId][userAnswer.questionId - 1] = userAnswer
-  //   }
   return newState;
 }
 
@@ -27,14 +23,6 @@ const answersReducer = (state=initialState, action) => {
   switch(action.type){
     case actionTypes.SET_ANSWER:
       return selectorTest(state, action.payload.userAnswer, action.payload.categoryId);
-      // return { 
-      //   answered: {
-      //     ...state.answered,
-      //     // ...state.answered[action.payload.categoryId],
-      //     [action.payload.categoryId]: [...state.answered[action.payload.categoryId], action.payload.userAnswer]
-      //   }
-      // }
-      // return selectorTest(state, action.payload.categoryId, action.payload.userAnswer)
     case actionTypes.SAVE_ANSWERS:
       return {
         ...state
