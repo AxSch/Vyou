@@ -12,9 +12,13 @@ const renderQuestion = (questions, category_id) => {
 
 const renderQuestionCategory = (questions, index) => {
   const questionList = questions.filter((question) => question.fields.QuestionCategory.id === index);
-  return (
-    <h3>{questionList[0].fields.QuestionCategory.category_name}</h3>
-  );
+  console.log(questionList[0].fields);
+  if (questionList[0].fields) {
+    return (
+        <h3>{questionList[0].fields.QuestionCategory.category_name}</h3>
+      );
+  }
+  return null;
 }
 
 class QuestionFactory extends Component {
@@ -22,7 +26,7 @@ class QuestionFactory extends Component {
     const { questionsArray, index } = this.props;
     return (
       <div>
-        {renderQuestionCategory(questionsArray, index)}
+        {/* {renderQuestionCategory(questionsArray, index)} */}
       <ul>
        {renderQuestion(questionsArray, index)}
       </ul>
