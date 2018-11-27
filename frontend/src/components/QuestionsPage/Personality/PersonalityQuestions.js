@@ -13,6 +13,7 @@ class PersonalityQuestions extends Component {
         };
 
         this.handlePageClick = this.handlePageClick.bind(this);
+        this.handleBackPageClick = this.handleBackPageClick.bind(this);
     }
     componentDidMount() {
         const { resetAllAnswers } = this.props;
@@ -27,6 +28,14 @@ class PersonalityQuestions extends Component {
         }
     }
 
+    handleBackButton(count) {
+        if (count === 1) {
+            return null;
+        } else {
+            return <button onClick={this.handleBackPageClick}>Back</button>
+        }
+    }
+
     handlePageClick(callback) {
         const { validateAnswers, answers, questions, categoryCount } = this.props;
         const questionCategory = questions.filter((question) => question.fields.QuestionCategory.id === categoryCount);
@@ -34,9 +43,25 @@ class PersonalityQuestions extends Component {
         
         console.log('fire', this.state.categoryCount);
         this.setState (prevState => {
-            console.log(prevState.categoryCount);
+            // console.log(prevState.categoryCount);
             return {
                 categoryCount: prevState.categoryCount + 1
+            }
+        }, () => {
+            console.log('fired', this.state.categoryCount);
+        });
+    }
+
+    handleBackPageClick(callback) {
+        // const { validateAnswers, answers, questions, categoryCount } = this.props;
+        // const questionCategory = questions.filter((question) => question.fields.QuestionCategory.id === categoryCount);
+        // validateAnswers(answers.answered, questionCategory);
+        
+        // console.log('fire', this.state.categoryCount);
+        this.setState (prevState => {
+            // console.log(prevState.categoryCount);
+            return {
+                categoryCount: prevState.categoryCount - 1
             }
         }, () => {
             console.log('fired', this.state.categoryCount);
@@ -51,6 +76,7 @@ class PersonalityQuestions extends Component {
             <div>
                 <h2>Personality Questions</h2>
                 <QuestionFactory questionsArray={questions} index={categoryCount} />
+                {this.handleBackButton(categoryCount)}
                 {this.handleNextButton(categoryCount)}
             </div>
         );
