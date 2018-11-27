@@ -28,6 +28,10 @@ class PersonalityQuestions extends Component {
     }
 
     handlePageClick(callback) {
+        const { validateAnswers, answers, questions, categoryCount } = this.props;
+        const questionCategory = questions.filter((question) => question.fields.QuestionCategory.id === categoryCount);
+        validateAnswers(answers.answered, questionCategory);
+        
         console.log('fire', this.state.categoryCount);
         this.setState (prevState => {
             console.log(prevState.categoryCount);
@@ -42,6 +46,7 @@ class PersonalityQuestions extends Component {
     render() {
         const { questions } = this.props;
         const { categoryCount } = this.state;
+ 
         return (
             <div>
                 <h2>Personality Questions</h2>
@@ -52,8 +57,9 @@ class PersonalityQuestions extends Component {
     }
 }
 
-PersonalityQuestions.PropTypes = {
+PersonalityQuestions.propTypes = {
     questions: PropTypes.array,
+    answers: PropTypes.object,
     resetAllAnswers: PropTypes.func
 }
 
