@@ -7,6 +7,12 @@ const setAnswerDispatcher = (categoryId, answerValue, questionId, question, ques
   }
 }
 
+const validateAnswersDispatcher = (answers, questions) => {
+  return dispatch => {
+    dispatch(answerActions.validateAnswers(answers, questions))
+  }
+}
+
 const resetAllAnswersDispatcher = () => {
   return dispatch => {
     dispatch(answerActions.resetAllAnswers());
@@ -15,7 +21,8 @@ const resetAllAnswersDispatcher = () => {
 
 const answersDispatchers = {
   setAnswerDispatcher,
-  resetAllAnswersDispatcher
+  resetAllAnswersDispatcher,
+  validateAnswersDispatcher
 };
 
 export default answersDispatchers;
