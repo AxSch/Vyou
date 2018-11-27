@@ -13,13 +13,18 @@ const setAnswer = (categoryId, answerValue, questionId, question, questionSign) 
   }
 });
 
+const validateAnswers = () => ({
+  type: actionTypes.VALIDATE_ANSWERS
+});
+
 const resetAllAnswers = () => ({
   type: actionTypes.RESET_ANSWERS
 });
 
 const answerActions = {
   setAnswer,
-  resetAllAnswers
+  resetAllAnswers,
+  validateAnswers
 };
 
 export default answerActions;
