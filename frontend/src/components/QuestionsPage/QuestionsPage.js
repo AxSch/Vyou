@@ -10,22 +10,23 @@ class PersonalityQuestionsPage extends Component {
     }
 
     render() {
-        const { personalityQuestions, resetAllAnswers } = this.props;
+        const { personalityQuestions, resetAllAnswers, answers, validateAnswers } = this.props;
         return (
             <div>
                 <h2>Questions</h2>
                 <div>
                     <h4>Progress</h4>
                 </div>
-                <PersonalityQuestions questions={personalityQuestions} resetAllAnswers={resetAllAnswers}/>
+                <PersonalityQuestions validateAnswers={validateAnswers} questions={personalityQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>
             </div>
         );
     }
 }
 
-PersonalityQuestionsPage.PropTypes = {
+PersonalityQuestionsPage.propTypes = {
     fetchPersonalityQuestions: PropTypes.func,
-    personalityQuestions: PropTypes.array
+    personalityQuestions: PropTypes.array,
+    answers: PropTypes.object
 }
 
 export default PersonalityQuestionsPage;
