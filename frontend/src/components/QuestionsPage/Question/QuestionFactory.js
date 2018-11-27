@@ -12,7 +12,7 @@ const renderQuestion = (questions, category_id) => {
 
 const renderQuestionCategory = (questions, index) => {
   const questionList = questions.filter((question) => question.fields.QuestionCategory.id === index);
-  console.log(questionList[0].fields);
+  // console.log(questionList[0].fields);
   if (questionList[0].fields) {
     return (
         <h3>{questionList[0].fields.QuestionCategory.category_name}</h3>
