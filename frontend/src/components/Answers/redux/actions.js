@@ -14,8 +14,12 @@ const setAnswer = (categoryId, answerValue, questionId, question, questionSign, 
   }
 });
 
-const validateAnswers = () => ({
-  type: actionTypes.VALIDATE_ANSWERS
+const validateAnswers = (answers, questions) => ({
+  type: actionTypes.VALIDATE_ANSWERS,
+  payload: {
+    answers,
+    questions
+  }
 });
 
 const resetAllAnswers = () => ({
