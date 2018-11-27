@@ -27,6 +27,10 @@ const answersReducer = (state=initialState, action) => {
       return {
         ...state
       }
+    case actionTypes.VALIDATE_ANSWERS:
+      return {
+        ...state
+      }
     case actionTypes.RESET_ANSWERS:
       return initialState;
     default:
