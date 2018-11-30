@@ -7,9 +7,9 @@ const setAnswerDispatcher = (categoryId, answerValue, questionId, question, ques
   }
 }
 
-const validateAnswersDispatcher = (answers, questions) => {
+const validateAnswersDispatcher = (answers, questions, categoryId) => {
   return dispatch => {
-    dispatch(answerActions.validateAnswers(answers, questions))
+    dispatch(answerActions.validateAnswers(answers, questions, categoryId))
   }
 }
 
