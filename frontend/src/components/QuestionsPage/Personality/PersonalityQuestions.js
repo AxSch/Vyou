@@ -9,7 +9,8 @@ class PersonalityQuestions extends Component {
         super(props);
 
         this.state = {
-            categoryCount: 1
+            categoryCount: 1,
+            questionType: 'PS'
         };
 
         this.handlePageClick = this.handlePageClick.bind(this);
@@ -37,19 +38,18 @@ class PersonalityQuestions extends Component {
     }
 
     handlePageClick(callback) {
-        const { validateAnswers, answers, questions, categoryCount } = this.props;
-        const questionCategory = questions.filter((question) => question.fields.QuestionCategory.id === categoryCount);
-        validateAnswers(answers.answered, questionCategory);
-        
-        console.log('fire', this.state.categoryCount);
-        this.setState (prevState => {
-            // console.log(prevState.categoryCount);
-            return {
-                categoryCount: prevState.categoryCount + 1
-            }
-        }, () => {
-            console.log('fired', this.state.categoryCount);
-        });
+        const { answers } = this.props;
+
+        if (answers.isValid === true) {
+            console.log('fire', this.state.categoryCount);
+            this.setState (prevState => {
+                return {
+                    categoryCount: prevState.categoryCount + 1
+                }
+            }, () => {
+                console.log('fired', this.state.categoryCount);
+            });
+        }
     }
 
     handleBackPageClick(callback) {
@@ -70,12 +70,12 @@ class PersonalityQuestions extends Component {
 
     render() {
         const { questions } = this.props;
-        const { categoryCount } = this.state;
+        const { categoryCount, questionType } = this.state;
  
         return (
             <div>
                 <h2>Personality Questions</h2>
-                <QuestionFactory questionsArray={questions} index={categoryCount} />
+                <QuestionFactory questionsArray={questions} categoryId={categoryCount} questionType={questionType} />
                 {this.handleBackButton(categoryCount)}
                 {this.handleNextButton(categoryCount)}
             </div>
