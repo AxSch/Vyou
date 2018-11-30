@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import PersonalityQuestions from './Personality/PersonalityQuestions';
 
 
-class PersonalityQuestionsPage extends Component {
+class QuestionsPage extends Component {
     componentDidMount() {
         const { fetchPersonalityQuestions } = this.props;
         fetchPersonalityQuestions();
@@ -23,10 +23,10 @@ class PersonalityQuestionsPage extends Component {
     }
 }
 
-PersonalityQuestionsPage.propTypes = {
+QuestionsPage.propTypes = {
     fetchPersonalityQuestions: PropTypes.func,
     personalityQuestions: PropTypes.array,
     answers: PropTypes.object
 }
 
-export default PersonalityQuestionsPage;
+export default QuestionsPage;
