@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Question from './Question';
 
-const renderQuestion = (questions, category_id) => {
-  return questions.filter((question) => question.fields.QuestionCategory.id === category_id).map((question) => {
+const renderQuestion = (questions, categoryId, questionType) => {
+  return questions.filter((question) => question.fields.QuestionCategory.id === categoryId).map((question) => {
       return (
-          <Question question={question}/>
+          <Question question={question} questionType={questionType}/>
       );
   })
 }
 
-const renderQuestionCategory = (questions, index) => {
-  const questionList = questions.filter((question) => question.fields.QuestionCategory.id === index);
+const renderQuestionCategory = (questions, categoryId) => {
+  const questionList = questions.filter((question) => question.fields.QuestionCategory.id === categoryId);
   // console.log(questionList[0].fields);
   if (questionList[0].fields) {
     return (
@@ -23,21 +23,22 @@ const renderQuestionCategory = (questions, index) => {
 
 class QuestionFactory extends Component {
   render() {
-    const { questionsArray, index } = this.props;
+    const { questionsArray, categoryId, questionType } = this.props;
     return (
       <div>
         {/* {renderQuestionCategory(questionsArray, index)} */}
       <ul>
-       {renderQuestion(questionsArray, index)}
+       {renderQuestion(questionsArray, categoryId, questionType)}
       </ul>
     </div>
     );
   }
 }
 
-QuestionFactory.PropTypes = {
+QuestionFactory.propTypes = {
   questionsArray: PropTypes.array,
-  index: PropTypes.number
+  categoryId: PropTypes.number,
+  questionType: PropTypes.string,
 }
 
 export default QuestionFactory;
