@@ -14,11 +14,12 @@ const setAnswer = (categoryId, answerValue, questionId, question, questionSign, 
   }
 });
 
-const validateAnswers = (answers, questions) => ({
+const validateAnswers = (answers, questions, categoryId) => ({
   type: actionTypes.VALIDATE_ANSWERS,
   payload: {
     answers,
-    questions
+    questions,
+    categoryId
   }
 });
 
