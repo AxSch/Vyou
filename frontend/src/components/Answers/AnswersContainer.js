@@ -6,13 +6,15 @@ import answersDispatchers from './redux/dispatchers';
 
 const mapStateToProps = (state, ownProps) => {
     return {
-      personalityAnswers: state.answers,
+      answers: state.answers,
+      personalityQuestions: state.questions.personalityQuestions
     }
 };
 
 const mapDispatchToProps = dispatch => (
     bindActionCreators({
         setAnswer: answersDispatchers.setAnswerDispatcher,
+        validateAnswers: answersDispatchers.validateAnswersDispatcher
     }, dispatch)
 );
 
