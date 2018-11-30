@@ -10,14 +10,14 @@ class PersonalityQuestionsPage extends Component {
     }
 
     render() {
-        const { personalityQuestions, resetAllAnswers, answers, validateAnswers } = this.props;
+        const { personalityQuestions, resetAllAnswers, answers } = this.props;
         return (
             <div>
                 <h2>Questions</h2>
                 <div>
                     <h4>Progress</h4>
                 </div>
-                <PersonalityQuestions validateAnswers={validateAnswers} questions={personalityQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>
+                <PersonalityQuestions questions={personalityQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>
             </div>
         );
     }
