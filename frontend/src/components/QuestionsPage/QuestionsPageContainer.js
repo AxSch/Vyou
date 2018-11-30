@@ -15,8 +15,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => (
     bindActionCreators({
         fetchPersonalityQuestions: requestQuestionsDispatcher,
-        resetAllAnswers: answersDispatchers.resetAllAnswersDispatcher,
-        validateAnswers: answersDispatchers.validateAnswersDispatcher
+        resetAllAnswers: answersDispatchers.resetAllAnswersDispatcher
     }, dispatch)
 );
 
