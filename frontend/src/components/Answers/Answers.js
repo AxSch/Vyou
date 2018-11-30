@@ -30,7 +30,7 @@ class Answers extends Component {
                 <label htmlFor={`stronglyAgree-${questionId}`}>Strongly Agree</label>
                 <input type="radio" name={`answers-${questionId}`} value={3} id={`stronglyAgree-${questionId}`} onChange={(e) => this.handleOnChange(e)}/> 
                 
-                <label htmlFor="slightlyAgree">Slightly Agree</label>
+                <label htmlFor={`slightlyAgree-${questionId}`}>Slightly Agree</label>
                 <input type="radio" name={`answers-${questionId}`} value={2} id={`slightlyAgree-${questionId}`} onChange={(e) => this.handleOnChange(e)}/>  
                 
                 <label htmlFor={`agree-${questionId}`}>Agree</label>
