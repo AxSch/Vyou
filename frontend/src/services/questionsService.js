@@ -5,8 +5,14 @@ const personalityQuestions = () => {
   .get("/api/v1/questions/personality/")
 }
 
+const energyLevelQuestions = () => {
+  return request
+  .get("/api/v1/questions/energy_level/")
+}
+
 
 const questionsService = {
-  personalityQuestions
+  personalityQuestions,
+  energyLevelQuestions
 }
 export default questionsService;
