@@ -1,7 +1,7 @@
 import questionRequestActions from './actions';
 import questionsService from '../../../services/questionsService';
 
-const requestQuestionsDispatcher = () => {
+const requestPSQuestionsDispatcher = () => {
   return dispatch => {
     dispatch(questionRequestActions.questionRequest);
     questionsService.personalityQuestions()
@@ -16,4 +16,4 @@ const requestQuestionsDispatcher = () => {
   }
 }
 
-export default requestQuestionsDispatcher;
+export default requestPSQuestionsDispatcher;
