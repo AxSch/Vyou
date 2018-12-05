@@ -1,13 +1,13 @@
 import questionRequestActions from './actions';
 import questionsService from '../../../services/questionsService';
 
-const requestPSQuestionsDispatcher = () => {
+const requestPSQuestionsDispatcher = (category) => {
   return dispatch => {
     dispatch(questionRequestActions.questionRequest);
     questionsService.personalityQuestions()
       .then(
         response => {
-          dispatch(questionRequestActions.questionRequestSuccess(response.data));
+          dispatch(questionRequestActions.questionRequestSuccess(response.data, category));
         },
         error => {
           dispatch(questionRequestActions.questionRequestFailure(error.data));
@@ -16,13 +16,13 @@ const requestPSQuestionsDispatcher = () => {
   }
 }
 
-const requestELQuestionsDispatcher = () => {
+const requestELQuestionsDispatcher = (category) => {
   return dispatch => {
     dispatch(questionRequestActions.questionRequest);
     questionsService.energyLevelQuestions()
       .then(
         response => {
-          dispatch(questionRequestActions.questionRequestSuccess(response.data));
+          dispatch(questionRequestActions.questionRequestSuccess(response.data, category));
         },
         error => {
           dispatch(questionRequestActions.questionRequestFailure(error.data));
