@@ -8,7 +8,7 @@ class EnergyFlowQuestions extends Component {
         super(props);
 
         this.state = {
-            categoryCount: 1,
+            categoryId: 1,
             questionType: 'EF',
             subCategory: true
         };
@@ -21,53 +21,53 @@ class EnergyFlowQuestions extends Component {
         resetAllAnswers();
     }
 
-    handleNextButton(count) {
-        if (count === 1 || count < 16) {
+    handleNextButton(categoryId) {
+        if (categoryId === 1 || categoryId < 3) {
             return <button onClick={this.handlePageClick}>Next</button>
-        } else {
+        } else if (categoryId === 3) {
             return <button onClick={this.handleSubmit}>Submit</button>
         }
     }
 
-    handleBackButton(count) {
-        if (count === 1) {
+    handleBackButton(categoryId) {
+        if (categoryId === 1) {
             return null;
         } else {
             return <button onClick={this.handleBackPageClick}>Back</button>
         }
     }
 
-    handlePageClick(callback) {
+    handlePageClick() {
         const { answers } = this.props;
+        const { categoryId } = this.state;
 
-        if (answers.isValid === true) {
-            console.log('fire', this.state.categoryCount);
+        if (answers.answeredEnergyFlow[categoryId].isValid === true) {
             this.setState (prevState => {
                 return {
-                    categoryCount: prevState.categoryCount + 1
+                    categoryId: prevState.categoryId + 1
                 }
             }, () => {});
         }
     }
 
-    handleBackPageClick(callback) {
+    handleBackPageClick() {
         this.setState (prevState => {
             return {
-                categoryCount: prevState.categoryCount - 1
+                categoryId: prevState.categoryId - 1
             }
         }, () => {});
     }
 
     render() {
         const { questions } = this.props;
-        const { categoryCount, questionType, subCategory } = this.state;
+        const { categoryId, questionType, subCategory } = this.state;
  
         return (
             <div>
-                <h2>Energy Level Questions</h2>
-                <QuestionFactory questionsArray={questions} categoryId={categoryCount} questionType={questionType} subCategory={subCategory}/>
-                {this.handleBackButton(categoryCount)}
-                {this.handleNextButton(categoryCount)}
+                <h2>Energy Flow Questions</h2>
+                <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType} subCategory={subCategory}/>
+                {this.handleBackButton(categoryId)}
+                {this.handleNextButton(categoryId)}
             </div>
         );
     }
