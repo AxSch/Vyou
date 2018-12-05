@@ -9,7 +9,7 @@ class PersonalityQuestions extends Component {
         super(props);
 
         this.state = {
-            categoryCount: 1,
+            categoryId: 1,
             questionType: 'PS',
         };
 
@@ -39,46 +39,38 @@ class PersonalityQuestions extends Component {
 
     handlePageClick(callback) {
         const { answers } = this.props;
-        const { categoryCount } = this.state;
+        const { categoryId } = this.state;
         
-        if (answers.answeredPersonality[categoryCount].isValid === true) {
-            console.log('fire', this.state.categoryCount);
+        if (answers.answeredPersonality[categoryId].isValid === true) {
+            console.log('fire', this.state.categoryId);
             this.setState (prevState => {
                 return {
-                    categoryCount: prevState.categoryCount + 1
+                    categoryId: prevState.categoryId + 1
                 }
             }, () => {
-                console.log('fired', this.state.categoryCount);
+                console.log('fired', this.state.categoryId);
             });
         }
     }
 
     handleBackPageClick(callback) {
-        // const { validateAnswers, answers, questions, categoryCount } = this.props;
-        // const questionCategory = questions.filter((question) => question.fields.QuestionCategory.id === categoryCount);
-        // validateAnswers(answers.answered, questionCategory);
-        
-        // console.log('fire', this.state.categoryCount);
         this.setState (prevState => {
-            // console.log(prevState.categoryCount);
             return {
-                categoryCount: prevState.categoryCount - 1
+                categoryId: prevState.categoryId - 1
             }
-        }, () => {
-            console.log('fired', this.state.categoryCount);
-        });
+        }, () => {});
     }
 
     render() {
         const { questions } = this.props;
-        const { categoryCount, questionType } = this.state;
+        const { categoryId, questionType } = this.state;
  
         return (
             <div>
                 <h2>Personality Questions</h2>
-                <QuestionFactory questionsArray={questions} categoryId={categoryCount} questionType={questionType}/>
-                {this.handleBackButton(categoryCount)}
-                {this.handleNextButton(categoryCount)}
+                <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType}/>
+                {this.handleBackButton(categoryId)}
+                {this.handleNextButton(categoryId)}
             </div>
         );
     }
