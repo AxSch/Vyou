@@ -25,10 +25,11 @@ const questionRequest = () => ({
   type: actionTypes.REQUEST_QUESTIONS
 });
 
-const questionRequestSuccess = (questions) => ({
+const questionRequestSuccess = (questions, category) => ({
   type: actionTypes.FETCH_QUESTIONS_SUCCESS,
   payload: {
-    questions
+    questions,
+    category
   }
 });
 
