@@ -46,10 +46,26 @@ const requestELQuestionsDispatcher = (category) => {
   }
 }
 
+const requestEMQuestionsDispatcher = (category) => {
+  return dispatch => {
+    dispatch(questionRequestActions.questionRequest);
+    questionsService.energyMappingQuestions()
+      .then(
+        response => {
+          dispatch(questionRequestActions.questionRequestSuccess(response.data, category));
+        },
+        error => {
+          dispatch(questionRequestActions.questionRequestFailure(error.data));
+        }
+      );
+  }
+}
+
 const questionsDispatchers = {
   requestPSQuestionsDispatcher,
   requestEFQuestionsDispatcher,
-  requestELQuestionsDispatcher
+  requestELQuestionsDispatcher,
+  requestEMQuestionsDispatcher
 }
 
 export default questionsDispatchers;
