@@ -4,7 +4,7 @@
             "question": "I make a positive difference to the energy of others.",
             "subCategory": "Out",
             "id": 1,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -13,7 +13,7 @@
             "question": "I feel I might be bringing down the energy of others.",
             "subCategory": "Out",
             "id": 1,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -22,7 +22,7 @@
             "question": "I influence the energy of others in a positive way.",
             "subCategory": "Out",
             "id": 1,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -31,7 +31,7 @@
             "question": "I currently don’t seem to help others feel energized.",
             "subCategory": "Out",
             "id": 1,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -40,7 +40,7 @@
             "question": "My impact on others is negative.",
             "subCategory": "Out",
             "id": 1,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -49,7 +49,7 @@
             "question": "I get a boost in my energy from the people I work with.",
             "subCategory": "In",
             "id": 2,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -58,7 +58,7 @@
             "question": "I get a lot of energy from the people I work with.",
             "subCategory": "In",
             "id": 2,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -67,7 +67,7 @@
             "question": "Other people at work drain my energy.",
             "subCategory": "In",
             "id": 2,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -76,7 +76,7 @@
             "question": "I dread going to work on a daily basis.",
             "subCategory": "In",
             "id": 2,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -85,7 +85,7 @@
             "question": "I am aware of my day-to-day energy",
             "subCategory": "Management",
             "id": 3,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -94,7 +94,7 @@
             "question": "I don’t think much about my energy at work.",
             "subCategory": "Management",
             "id": 3,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -103,7 +103,7 @@
             "question": "I take quick action to improve my overall energy when it dips.",
             "subCategory": "Management",
             "id": 3,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -112,7 +112,7 @@
             "question": "I tend to endure things that drain my energy for too long.",
             "subCategory": "Management",
             "id": 3,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -121,7 +121,7 @@
             "question": "I don’t have much control to improve my energy.",
             "subCategory": "Management",
             "id": 3,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     },
     {
@@ -130,7 +130,7 @@
             "question": "I am able to take charge of how energized I feel.",
             "subCategory": "Management",
             "id": 3,
-            "category": "Energy Flow"
+            "category_name": "Energy Flow"
         }
     }
 ]
