@@ -8,65 +8,40 @@ class EnergyLevelQuestions extends Component {
         super(props);
 
         this.state = {
-            categoryCount: 1,
+            categoryId: 1,
             questionType: 'EL',
-            subCategory: true
+            subCategory: true,
+            isValid: null
         };
 
-        this.handlePageClick = this.handlePageClick.bind(this);
-        this.handleBackPageClick = this.handleBackPageClick.bind(this);
+        this.handleIsValid = this.handleIsValid.bind(this);
     }
+    
     componentDidMount() {
         const { resetAllAnswers } = this.props;
         resetAllAnswers();
     }
-
-    handleNextButton(count) {
-        if (count === 1 || count < 16) {
-            return <button onClick={this.handlePageClick}>Next</button>
-        } else {
-            return <button onClick={this.handleSubmit}>Submit</button>
-        }
-    }
-
-    handleBackButton(count) {
-        if (count === 1) {
-            return null;
-        } else {
-            return <button onClick={this.handleBackPageClick}>Back</button>
-        }
-    }
-
-    handlePageClick(callback) {
+    
+    handleIsValid(categoryId) {
         const { answers } = this.props;
-
-        if (answers.isValid === true) {
+        if (answers.answeredEnergyLevel[categoryId].isValid === true) {
             this.setState (prevState => {
                 return {
-                    categoryCount: prevState.categoryCount + 1
+                    isValid: true
                 }
             }, () => {});
         }
     }
 
-    handleBackPageClick(callback) {
-        this.setState (prevState => {
-            return {
-                categoryCount: prevState.categoryCount - 1
-            }
-        }, () => {});
-    }
-
     render() {
         const { questions } = this.props;
-        const { categoryCount, questionType, subCategory } = this.state;
+        const { categoryId, questionType, subCategory, isValid } = this.state;
  
         return (
             <div>
                 <h2>Energy Level Questions</h2>
-                <QuestionFactory questionsArray={questions} categoryId={categoryCount} questionType={questionType} subCategory={subCategory}/>
-                {this.handleBackButton(categoryCount)}
-                {this.handleNextButton(categoryCount)}
+                <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType} subCategory={subCategory}/>
+                {isValid === true ? <button onClick={this.handleSubmit}>Submit</button> : <button onClick={this.handleIsValid(categoryId)}>Next</button>}
             </div>
         );
     }
