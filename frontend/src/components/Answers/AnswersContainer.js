@@ -9,6 +9,7 @@ const mapStateToProps = (state, ownProps) => {
       answers: state.answers,
       personalityQuestions: state.questions.personalityQuestions,
       energyFlowQuestions: state.questions.energyFlowQuestions,
+      energyLevelQuestions: state.questions.energyLevelQuestions,
     }
 };
 
