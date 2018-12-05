@@ -1,15 +1,15 @@
 import answerActions from './actions';
 
 
-const setAnswerDispatcher = (categoryId, answerValue, questionId, question, questionSign, lastUpdated) => {
+const setAnswerDispatcher = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType) => {
   return dispatch => {
-    dispatch(answerActions.setAnswer(categoryId, Number(answerValue), questionId, question, questionSign, lastUpdated));
+    dispatch(answerActions.setAnswer(categoryId, Number(answerValue), questionId, question, questionSign, lastUpdated, questionType));
   }
 }
 
-const validateAnswersDispatcher = (answers, questions, categoryId) => {
+const validateAnswersDispatcher = (answers, questions, categoryId, questionType) => {
   return dispatch => {
-    dispatch(answerActions.validateAnswers(answers, questions, categoryId))
+    dispatch(answerActions.validateAnswers(answers, questions, categoryId, questionType))
   }
 }
 
