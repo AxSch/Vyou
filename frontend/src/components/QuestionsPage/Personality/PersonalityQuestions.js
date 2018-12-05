@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import QuestionFactory from '../Question/QuestionFactory';
-// import ReactPaginate from 'react-paginate';
 
 
 class PersonalityQuestions extends Component {
