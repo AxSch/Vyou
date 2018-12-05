@@ -17,9 +17,12 @@ class QuestionsPage extends Component {
     }
 
     componentDidMount() {
-        const { fetchPSQuestions, fetchEFQuestions } = this.props;
+        const { fetchPSQuestions, fetchEFQuestions, fetchELQuestions, fetchEMQuestions } = this.props;
         fetchPSQuestions('PS');
         fetchEFQuestions('EF');
+        fetchELQuestions('EL');
+        fetchEMQuestions('EM');
+
     }
     
     handleOnChange(e) {
