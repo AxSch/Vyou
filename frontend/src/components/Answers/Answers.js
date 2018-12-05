@@ -10,12 +10,17 @@ class Answers extends Component {
     }
 
     handleOnChange(e) {
-        const { personalityQuestions, answers, categoryId, questionId, setAnswer, questionText, questionSign, validateAnswers, questionType } = this.props;
+        const { personalityQuestions, energyFlowQuestions, answers, categoryId, questionId, setAnswer, questionText, questionSign, validateAnswers, questionType } = this.props;
         switch(questionType) {
             case 'PS':
-                const questionCategory = personalityQuestions.filter((question) => question.fields.QuestionCategory.id === categoryId);
-                setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format());
-                validateAnswers(answers.answeredPersonality, questionCategory, categoryId);
+                const personalityQues = personalityQuestions.filter((question) => question.fields.id === categoryId);
+                setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format(), questionType);
+                validateAnswers(answers.answeredPersonality, personalityQues, categoryId, questionType);
+                break;
+            case 'EF':
+                const energyFlowQues =  energyFlowQuestions.filter((question) => question.fields.id === categoryId);
+                setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format(), questionType);
+                validateAnswers(answers.answeredPersonality, energyFlowQues, categoryId, questionType);
                 break;
             default:
                 return null;
