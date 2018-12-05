@@ -16,8 +16,9 @@ class QuestionsPage extends Component {
     }
 
     componentDidMount() {
-        const { fetchPersonalityQuestions } = this.props;
-        fetchPersonalityQuestions();
+        const { fetchPSQuestions, fetchELQuestions } = this.props;
+        fetchPSQuestions('PS');
+        fetchELQuestions('EL');
     }
     
     handleOnChange(e) {
@@ -31,7 +32,7 @@ class QuestionsPage extends Component {
         });
     }
 
-    renderCategoryQuestions (category) {
+    renderCategoryQuestions(category) {
         const { personalityQuestions, resetAllAnswers, answers } = this.props;
         switch(category) {
             case 'PERSONALITY':
@@ -67,7 +68,8 @@ class QuestionsPage extends Component {
 }
 
 QuestionsPage.propTypes = {
-    fetchPersonalityQuestions: PropTypes.func,
+    fetchPSQuestions: PropTypes.func,
+    fetchELQuestions: PropTypes.func,
     personalityQuestions: PropTypes.array,
     answers: PropTypes.object
 }
