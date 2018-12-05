@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import PersonalityQuestions from './Personality/PersonalityQuestions';
+import EnergyFlowQuestions from './EnergyFlow/EnergyFlowQuestions';
 
 
 class QuestionsPage extends Component {
@@ -16,9 +17,9 @@ class QuestionsPage extends Component {
     }
 
     componentDidMount() {
-        const { fetchPSQuestions, fetchELQuestions } = this.props;
+        const { fetchPSQuestions, fetchEFQuestions } = this.props;
         fetchPSQuestions('PS');
-        fetchELQuestions('EL');
+        fetchEFQuestions('EF');
     }
     
     handleOnChange(e) {
@@ -33,10 +34,12 @@ class QuestionsPage extends Component {
     }
 
     renderCategoryQuestions(category) {
-        const { personalityQuestions, resetAllAnswers, answers } = this.props;
+        const { personalityQuestions, energyFlowQuestions, resetAllAnswers, answers } = this.props;
         switch(category) {
             case 'PERSONALITY':
-                return <PersonalityQuestions questions={personalityQuestions} answers={answers} resetAllAnswers={resetAllAnswers} subCategory={false}/>;
+                return <PersonalityQuestions questions={personalityQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>;
+            case 'ENERGYFLOW':
+                return <EnergyFlowQuestions questions={energyFlowQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>;
             default:
                 return null;
         }
@@ -59,7 +62,7 @@ class QuestionsPage extends Component {
                     <label htmlFor={"energyFlow"}>Energy Flow</label>
                     <input type="radio" name={"questions"} value={"ENERGYFLOW"} id={"energyFlow"} onChange={(e) => this.handleOnChange(e)}/>
                     <label htmlFor={"energyMapping"}>Energy Mapping</label>
-                    <input type="radio" name={"questions"} value={"ENERGYMAPPER"} id={"energyMapping"} onChange={(e) => this.handleOnChange(e)}/>
+                    <input type="radio" name={"questions"} value={"ENERGYMAPPING"} id={"energyMapping"} onChange={(e) => this.handleOnChange(e)}/>
                 </div>
                 {this.renderCategoryQuestions(category)}
             </div>
@@ -69,7 +72,7 @@ class QuestionsPage extends Component {
 
 QuestionsPage.propTypes = {
     fetchPSQuestions: PropTypes.func,
-    fetchELQuestions: PropTypes.func,
+    fetchEFQuestions: PropTypes.func,
     personalityQuestions: PropTypes.array,
     answers: PropTypes.object
 }
