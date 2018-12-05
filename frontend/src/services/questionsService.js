@@ -15,10 +15,15 @@ const energyLevelQuestions = () => {
   .get("/api/v1/questions/energy_level/")
 }
 
+const energyMappingQuestions = () => {
+  return request
+  .get("/api/v1/questions/energy_mapping/")
+}
 
 const questionsService = {
   personalityQuestions,
   energyFlowQuestions,
-  energyLevelQuestions
+  energyLevelQuestions,
+  energyMappingQuestions
 }
 export default questionsService;
