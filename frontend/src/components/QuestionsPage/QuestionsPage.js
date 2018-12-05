@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import PersonalityQuestions from './Personality/PersonalityQuestions';
 import EnergyFlowQuestions from './EnergyFlow/EnergyFlowQuestions';
 import EnergyLevelQuestions from './EnergyLevel/EnergyLevelQuestions';
+import EnergyMappingQuestions from './EnergyMapping/EnergyMappingQuestions';
 
 
 class QuestionsPage extends Component {
@@ -46,6 +47,8 @@ class QuestionsPage extends Component {
                 return <EnergyFlowQuestions questions={energyFlowQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>;
             case 'ENERGYLEVEL':
                 return <EnergyLevelQuestions questions={energyLevelQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>;
+            case 'ENERGYMAPPING':
+                return <EnergyMappingQuestions questions={energyMappingQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>;
             default:
                 return null;
         }
