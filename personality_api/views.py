@@ -7,7 +7,7 @@ import json
 # Create your views here.
 class PersonalityApi(APIView):
   def get(self, request, format=None):
-    with open('api_data/Questions.json', 'r') as file:
+    with open('api_data/PersonalityQuestions.json', 'r') as file:
       questions_data = json.load(file)
       return Response(questions_data)
 
