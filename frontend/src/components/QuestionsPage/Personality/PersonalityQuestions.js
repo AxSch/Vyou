@@ -36,7 +36,7 @@ class PersonalityQuestions extends Component {
         }
     }
 
-    handlePageClick(callback) {
+    handlePageClick() {
         const { answers } = this.props;
         const { categoryId } = this.state;
         
@@ -49,7 +49,7 @@ class PersonalityQuestions extends Component {
         }
     }
 
-    handleBackPageClick(callback) {
+    handleBackPageClick() {
         this.setState (prevState => {
             return {
                 categoryId: prevState.categoryId - 1
