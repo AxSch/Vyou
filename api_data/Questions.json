@@ -3,12 +3,10 @@
         "fields": {
             "question": "Know how to comfort others.",
             "sign": "postive",
-            "QuestionCategory": {
-                "category_name": "warmth",
-                "id": 1,
-                "scale_alpha": 0.08,
-                "factor": "A: Warmth"
-            }
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
         }
     },
     {
@@ -16,12 +14,10 @@
         "fields": {
             "question": "Enjoy bringing people together.",
             "sign": "postive",
-            "QuestionCategory": {
-                "category_name": "warmth",
-                "id": 1,
-                "scale_alpha": 0.08,
-                "factor": "A: Warmth"
-            }
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
         }
     },
     {
@@ -29,12 +25,10 @@
         "fields": {
             "question": "Feel others' emotions.",
             "sign": "postive",
-            "QuestionCategory": {
-                "category_name": "warmth",
-                "id": 1,
-                "scale_alpha": 0.08,
-                "factor": "A: Warmth"
-            }
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
         }
     },
     {
@@ -42,12 +36,10 @@
         "fields": {
             "question": "Take an interest in other people's lives",
             "sign": "postive",
-            "QuestionCategory": {
-                "category_name": "warmth",
-                "id": 1,
-                "scale_alpha": 0.08,
-                "factor": "A: Warmth"
-            }
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
         }
     },
     {
@@ -55,12 +47,10 @@
         "fields": {
             "question": "Cheer people up.",
             "sign": "postive",
-            "QuestionCategory": {
-                "category_name": "warmth",
-                "id": 1,
-                "scale_alpha": 0.08,
-                "factor": "A: Warmth"
-            }
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
         }
     },
     {
@@ -68,12 +58,10 @@
         "fields": {
             "question": "Make people feel at ease.",
             "sign": "postive",
-            "QuestionCategory": {
-                "category_name": "warmth",
-                "id": 1,
-                "scale_alpha": 0.08,
-                "factor": "A: Warmth"
-            }
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
         }
     },
     {
@@ -81,12 +69,10 @@
         "fields": {
             "question": "Take time out for others.",
             "sign": "postive",
-            "QuestionCategory": {
-                "category_name": "warmth",
-                "id": 1,
-                "scale_alpha": 0.08,
-                "factor": "A: Warmth"
-            }
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
         }
     },
     {
@@ -94,12 +80,10 @@
         "fields": {
             "question": "Don't like to get involved in other people's problems.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "warmth",
-                "id": 1,
-                "scale_alpha": 0.08,
-                "factor": "A: Warmth"
-            }
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
         }
     },
     {
@@ -107,12 +91,10 @@
         "fields": {
             "question": "Am not really interested in others.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "warmth",
-                "id": 1,
-                "scale_alpha": 0.08,
-                "factor": "A: Warmth"
-            }
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
         }
     },
     {
@@ -120,12 +102,10 @@
         "fields": {
             "question": "Try not to think about the needy.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "warmth",
-                "id": 1,
-                "scale_alpha": 0.08,
-                "factor": "A: Warmth"
-            }
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
         }
     },
     {
@@ -133,12 +113,10 @@
         "fields": {
             "question": "Make insightful remarks.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -146,12 +124,10 @@
         "fields": {
             "question": "Know the answers to many questions.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -159,12 +135,10 @@
         "fields": {
             "question": "Tend to analyze things.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -172,12 +146,10 @@
         "fields": {
             "question": "Use my brain.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -185,12 +157,10 @@
         "fields": {
             "question": "Learn quickly.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -198,12 +168,10 @@
         "fields": {
             "question": "Counter others' arguments.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -211,12 +179,10 @@
         "fields": {
             "question": "Reflect on things before acting.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -224,12 +190,10 @@
         "fields": {
             "question": "Weigh the pros against the cons.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -237,12 +201,10 @@
         "fields": {
             "question": "Consider myself an average person.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -250,12 +212,10 @@
         "fields": {
             "question": "Get confused easily.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -263,12 +223,10 @@
         "fields": {
             "question": "Know that I am not a special person.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -276,12 +234,10 @@
         "fields": {
             "question": "Have a poor vocabulary.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -289,12 +245,10 @@
         "fields": {
             "question": "Skip difficult words while reading.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "intellect",
-                "id": 2,
-                "scale_alpha": 0.76,
-                "factor": "B: Reasoning"
-            }
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
         }
     },
     {
@@ -302,12 +256,10 @@
         "fields": {
             "question": "Seldom feel blue.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "emotional stability",
-                "id": 3,
-                "scale_alpha": 0.85,
-                "factor": "C: Emotional Stability"
-            }
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
         }
     },
     {
@@ -315,12 +267,10 @@
         "fields": {
             "question": "Feel comfortable with myself.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "emotional stability",
-                "id": 3,
-                "scale_alpha": 0.85,
-                "factor": "C: Emotional Stability"
-            }
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
         }
     },
     {
@@ -328,12 +278,10 @@
         "fields": {
             "question": "Readily overcome setbacks.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "emotional stability",
-                "id": 3,
-                "scale_alpha": 0.85,
-                "factor": "C: Emotional Stability"
-            }
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
         }
     },
     {
@@ -341,12 +289,10 @@
         "fields": {
             "question": "Am relaxed most of the time.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "emotional stability",
-                "id": 3,
-                "scale_alpha": 0.85,
-                "factor": "C: Emotional Stability"
-            }
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
         }
     },
     {
@@ -354,12 +300,10 @@
         "fields": {
             "question": "Am not easily frustrated.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "emotional stability",
-                "id": 3,
-                "scale_alpha": 0.85,
-                "factor": "C: Emotional Stability"
-            }
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
         }
     },
     {
@@ -367,12 +311,10 @@
         "fields": {
             "question": "Have frequent mood swings.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "emotional stability",
-                "id": 3,
-                "scale_alpha": 0.85,
-                "factor": "C: Emotional Stability"
-            }
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
         }
     },
     {
@@ -380,12 +322,10 @@
         "fields": {
             "question": "Often feel blue.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "emotional stability",
-                "id": 3,
-                "scale_alpha": 0.85,
-                "factor": "C: Emotional Stability"
-            }
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
         }
     },
     {
@@ -393,12 +333,10 @@
         "fields": {
             "question": "Dislike myself.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "emotional stability",
-                "id": 3,
-                "scale_alpha": 0.85,
-                "factor": "C: Emotional Stability"
-            }
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
         }
     },
     {
@@ -406,12 +344,10 @@
         "fields": {
             "question": "Feel desperate.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "emotional stability",
-                "id": 3,
-                "scale_alpha": 0.85,
-                "factor": "C: Emotional Stability"
-            }
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
         }
     },
     {
@@ -419,12 +355,10 @@
         "fields": {
             "question": "Am easily discouraged.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "emotional stability",
-                "id": 3,
-                "scale_alpha": 0.85,
-                "factor": "C: Emotional Stability"
-            }
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
         }
     },
     {
@@ -432,12 +366,10 @@
         "fields": {
             "question": "Take charge.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "assertiveness",
-                "id": 4,
-                "scale_alpha": 0.81,
-                "factor": "E: Dominance"
-            }
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
         }
     },
     {
@@ -445,12 +377,10 @@
         "fields": {
             "question": "Want to be in charge.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "assertiveness",
-                "id": 4,
-                "scale_alpha": 0.81,
-                "factor": "E: Dominance"
-            }
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
         }
     },
     {
@@ -458,12 +388,10 @@
         "fields": {
             "question": "Say what I think.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "assertiveness",
-                "id": 4,
-                "scale_alpha": 0.81,
-                "factor": "E: Dominance"
-            }
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
         }
     },
     {
@@ -471,12 +399,10 @@
         "fields": {
             "question": "Am not afraid of providing criticism.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "assertiveness",
-                "id": 4,
-                "scale_alpha": 0.81,
-                "factor": "E: Dominance"
-            }
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
         }
     },
     {
@@ -484,12 +410,10 @@
         "fields": {
             "question": "Take control of things.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "assertiveness",
-                "id": 4,
-                "scale_alpha": 0.81,
-                "factor": "E: Dominance"
-            }
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
         }
     },
     {
@@ -497,12 +421,10 @@
         "fields": {
             "question": "Can take strong measures.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "assertiveness",
-                "id": 4,
-                "scale_alpha": 0.81,
-                "factor": "E: Dominance"
-            }
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
         }
     },
     {
@@ -510,12 +432,10 @@
         "fields": {
             "question": "Wait for others to lead the way.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "assertiveness",
-                "id": 4,
-                "scale_alpha": 0.81,
-                "factor": "E: Dominance"
-            }
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
         }
     },
     {
@@ -523,12 +443,10 @@
         "fields": {
             "question": "Never challenge things.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "assertiveness",
-                "id": 4,
-                "scale_alpha": 0.81,
-                "factor": "E: Dominance"
-            }
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
         }
     },
     {
@@ -536,12 +454,10 @@
         "fields": {
             "question": "Let others make the decisions.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "assertiveness",
-                "id": 4,
-                "scale_alpha": 0.81,
-                "factor": "E: Dominance"
-            }
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
         }
     },
     {
@@ -549,12 +465,10 @@
         "fields": {
             "question": "Let myself be pushed around.",
             "sign": "negative",
-            "QuestionCategory": {
-                "category_name": "assertiveness",
-                "id": 4,
-                "scale_alpha": 0.81,
-                "factor": "E: Dominance"
-            }
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
         }
     },
     {
@@ -562,12 +476,10 @@
         "fields": {
             "question": "Am the life of the party.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "gregariousness",
-                "id": 5,
-                "scale_alpha": 0.78,
-                "factor": "F Liveliness"
-            }
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
         }
     },
     {
@@ -575,12 +487,10 @@
         "fields": {
             "question": "Love large parties.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "gregariousness",
-                "id": 5,
-                "scale_alpha": 0.78,
-                "factor": "F Liveliness"
-            }
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
         }
     },
     {
@@ -588,12 +498,10 @@
         "fields": {
             "question": "Joke around a lot.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "gregariousness",
-                "id": 5,
-                "scale_alpha": 0.78,
-                "factor": "F Liveliness"
-            }
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
         }
     },
     {
@@ -601,12 +509,10 @@
         "fields": {
             "question": "Enjoy being part of a loud crowd.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "gregariousness",
-                "id": 5,
-                "scale_alpha": 0.78,
-                "factor": "F Liveliness"
-            }
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
         }
     },
     {
@@ -614,12 +520,10 @@
         "fields": {
             "question": "Amuse my friends.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "gregariousness",
-                "id": 5,
-                "scale_alpha": 0.78,
-                "factor": "F Liveliness"
-            }
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
         }
     },
     {
@@ -627,12 +531,10 @@
         "fields": {
             "question": "Act wild and crazy.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "gregariousness",
-                "id": 5,
-                "scale_alpha": 0.78,
-                "factor": "F Liveliness"
-            }
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
         }
     },
     {
@@ -640,12 +542,10 @@
         "fields": {
             "question": "Seldom joke around.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "gregariousness",
-                "id": 5,
-                "scale_alpha": 0.78,
-                "factor": "F Liveliness"
-            }
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
         }
     },
     {
@@ -653,12 +553,10 @@
         "fields": {
             "question": "Don't like crowded events.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "gregariousness",
-                "id": 5,
-                "scale_alpha": 0.78,
-                "factor": "F Liveliness"
-            }
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
         }
     },
     {
@@ -666,12 +564,10 @@
         "fields": {
             "question": "Am the last to laugh at a joke.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "gregariousness",
-                "id": 5,
-                "scale_alpha": 0.78,
-                "factor": "F Liveliness"
-            }
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
         }
     },
     {
@@ -679,12 +575,10 @@
         "fields": {
             "question": "Dislike loud music.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "gregariousness",
-                "id": 5,
-                "scale_alpha": 0.78,
-                "factor": "F Liveliness"
-            }
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
         }
     },
     {
@@ -692,12 +586,10 @@
         "fields": {
             "question": "Believe laws should be strictly enforced.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "dutifulness",
-                "id": 6,
-                "scale_alpha": 0.84,
-                "factor": "G: Rule Consciousness"
-            }
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
         }
     },
     {
@@ -705,12 +597,10 @@
         "fields": {
             "question": "Try to follow the rules.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "dutifulness",
-                "id": 6,
-                "scale_alpha": 0.84,
-                "factor": "G: Rule Consciousness"
-            }
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
         }
     },
     {
@@ -718,12 +608,10 @@
         "fields": {
             "question": "Believe in one true religion.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "dutifulness",
-                "id": 6,
-                "scale_alpha": 0.84,
-                "factor": "G: Rule Consciousness"
-            }
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
         }
     },
     {
@@ -731,12 +619,10 @@
         "fields": {
             "question": "Respect authority.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "dutifulness",
-                "id": 6,
-                "scale_alpha": 0.84,
-                "factor": "G: Rule Consciousness"
-            }
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
         }
     },
     {
@@ -744,12 +630,10 @@
         "fields": {
             "question": "Like to stand during the national anthem.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "dutifulness",
-                "id": 6,
-                "scale_alpha": 0.84,
-                "factor": "G: Rule Consciousness"
-            }
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
         }
     },
     {
@@ -757,12 +641,10 @@
         "fields": {
             "question": "Resist authority.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "dutifulness",
-                "id": 6,
-                "scale_alpha": 0.84,
-                "factor": "G: Rule Consciousness"
-            }
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
         }
     },
     {
@@ -770,12 +652,10 @@
         "fields": {
             "question": "Break rules.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "dutifulness",
-                "id": 6,
-                "scale_alpha": 0.84,
-                "factor": "G: Rule Consciousness"
-            }
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
         }
     },
     {
@@ -783,12 +663,10 @@
         "fields": {
             "question": "Use swear words.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "dutifulness",
-                "id": 6,
-                "scale_alpha": 0.84,
-                "factor": "G: Rule Consciousness"
-            }
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
         }
     },
     {
@@ -796,12 +674,10 @@
         "fields": {
             "question": "Oppose authority.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "dutifulness",
-                "id": 6,
-                "scale_alpha": 0.84,
-                "factor": "G: Rule Consciousness"
-            }
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
         }
     },
     {
@@ -809,12 +685,10 @@
         "fields": {
             "question": "Know how to get around the rules.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "dutifulness",
-                "id": 6,
-                "scale_alpha": 0.84,
-                "factor": "G: Rule Consciousness"
-            }
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
         }
     },
     {
@@ -822,12 +696,10 @@
         "fields": {
             "question": "Feel comfortable around people.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "friendliness",
-                "id": 7,
-                "scale_alpha": 0.80,
-                "factor": "H: Social Boldness"
-            }
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
         }
     },
     {
@@ -835,12 +707,10 @@
         "fields": {
             "question": "Talk to a lot of different people at parties.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "friendliness",
-                "id": 7,
-                "scale_alpha": 0.80,
-                "factor": "H: Social Boldness"
-            }
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
         }
     },
     {
@@ -848,12 +718,10 @@
         "fields": {
             "question": "Don't mind being the center of attention.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "friendliness",
-                "id": 7,
-                "scale_alpha": 0.80,
-                "factor": "H: Social Boldness"
-            }
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
         }
     },
     {
@@ -861,12 +729,10 @@
         "fields": {
             "question": "Make friends easily.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "friendliness",
-                "id": 7,
-                "scale_alpha": 0.80,
-                "factor": "H: Social Boldness"
-            }
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
         }
     },
     {
@@ -874,12 +740,10 @@
         "fields": {
             "question": "Start conversations.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "friendliness",
-                "id": 7,
-                "scale_alpha": 0.80,
-                "factor": "H: Social Boldness"
-            }
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
         }
     },
     {
@@ -887,12 +751,10 @@
         "fields": {
             "question": "Find it difficult to approach others.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "friendliness",
-                "id": 7,
-                "scale_alpha": 0.80,
-                "factor": "H: Social Boldness"
-            }
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
         }
     },
     {
@@ -900,12 +762,10 @@
         "fields": {
             "question": "Often feel uncomfortable around others.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "friendliness",
-                "id": 7,
-                "scale_alpha": 0.80,
-                "factor": "H: Social Boldness"
-            }
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
         }
     },
     {
@@ -913,12 +773,10 @@
         "fields": {
             "question": "Have little to say.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "friendliness",
-                "id": 7,
-                "scale_alpha": 0.80,
-                "factor": "H: Social Boldness"
-            }
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
         }
     },
     {
@@ -926,12 +784,10 @@
         "fields": {
             "question": "Am quiet around strangers.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "friendliness",
-                "id": 7,
-                "scale_alpha": 0.80,
-                "factor": "H: Social Boldness"
-            }
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
         }
     },
     {
@@ -939,12 +795,10 @@
         "fields": {
             "question": "Keep in the background.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "friendliness",
-                "id": 7,
-                "scale_alpha": 0.80,
-                "factor": "H: Social Boldness"
-            }
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
         }
     },
     {
@@ -952,12 +806,10 @@
         "fields": {
             "question": "Like to read.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "sensitivity",
-                "id": 8,
-                "scale_alpha": 0.73,
-                "factor": "I: Sensitivity"
-            }
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
         }
     },
     {
@@ -965,12 +817,10 @@
         "fields": {
             "question": "Enjoy discussing movies and books with others.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "sensitivity",
-                "id": 8,
-                "scale_alpha": 0.73,
-                "factor": "I: Sensitivity"
-            }
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
         }
     },
     {
@@ -978,12 +828,10 @@
         "fields": {
             "question": "Read a lot.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "sensitivity",
-                "id": 8,
-                "scale_alpha": 0.73,
-                "factor": "I: Sensitivity"
-            }
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
         }
     },
     {
@@ -991,12 +839,10 @@
         "fields": {
             "question": "Don't like action movies.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "sensitivity",
-                "id": 8,
-                "scale_alpha": 0.73,
-                "factor": "I: Sensitivity"
-            }
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
         }
     },
     {
@@ -1004,12 +850,10 @@
         "fields": {
             "question": "Cry during movies.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "sensitivity",
-                "id": 8,
-                "scale_alpha": 0.73,
-                "factor": "I: Sensitivity"
-            }
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
         }
     },
     {
@@ -1017,12 +861,10 @@
         "fields": {
             "question": "Love flowers.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "sensitivity",
-                "id": 8,
-                "scale_alpha": 0.73,
-                "factor": "I: Sensitivity"
-            }
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
         }
     },
     {
@@ -1030,12 +872,10 @@
         "fields": {
             "question": "Do not enjoy watching dance performances.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "sensitivity",
-                "id": 8,
-                "scale_alpha": 0.73,
-                "factor": "I: Sensitivity"
-            }
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
         }
     },
     {
@@ -1043,12 +883,10 @@
         "fields": {
             "question": "Do not like poetry.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "sensitivity",
-                "id": 8,
-                "scale_alpha": 0.73,
-                "factor": "I: Sensitivity"
-            }
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
         }
     },
     {
@@ -1056,12 +894,10 @@
         "fields": {
             "question": "Dislike works of fiction.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "sensitivity",
-                "id": 8,
-                "scale_alpha": 0.73,
-                "factor": "I: Sensitivity"
-            }
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
         }
     },
     {
@@ -1069,12 +905,10 @@
         "fields": {
             "question": "Rarely notice my emotional reactions.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "sensitivity",
-                "id": 8,
-                "scale_alpha": 0.73,
-                "factor": "I: Sensitivity"
-            }
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
         }
     },
     {
@@ -1082,12 +916,10 @@
         "fields": {
             "question": "Find it hard to forgive others.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "distrust",
-                "id": 9,
-                "scale_alpha": 0.80,
-                "factor": "L: Vigilance"
-            }
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
         }
     },
     {
@@ -1095,12 +927,10 @@
         "fields": {
             "question": "Suspect hidden motives in others.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "distrust",
-                "id": 9,
-                "scale_alpha": 0.80,
-                "factor": "L: Vigilance"
-            }
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
         }
     },
     {
@@ -1108,12 +938,10 @@
         "fields": {
             "question": "Am wary of others.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "distrust",
-                "id": 9,
-                "scale_alpha": 0.80,
-                "factor": "L: Vigilance"
-            }
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
         }
     },
     {
@@ -1121,12 +949,10 @@
         "fields": {
             "question": "Distrust people.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "distrust",
-                "id": 9,
-                "scale_alpha": 0.80,
-                "factor": "L: Vigilance"
-            }
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
         }
     },
     {
@@ -1134,12 +960,10 @@
         "fields": {
             "question": "Believe that people seldom tell you the whole truth.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "distrust",
-                "id": 9,
-                "scale_alpha": 0.80,
-                "factor": "L: Vigilance"
-            }
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
         }
     },
     {
@@ -1147,12 +971,10 @@
         "fields": {
             "question": "Believe that people are essentially evil.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "distrust",
-                "id": 9,
-                "scale_alpha": 0.80,
-                "factor": "L: Vigilance"
-            }
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
         }
     },
     {
@@ -1160,12 +982,10 @@
         "fields": {
             "question": "Trust what people say.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "distrust",
-                "id": 9,
-                "scale_alpha": 0.80,
-                "factor": "L: Vigilance"
-            }
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
         }
     },
     {
@@ -1173,12 +993,10 @@
         "fields": {
             "question": "Trust others.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "distrust",
-                "id": 9,
-                "scale_alpha": 0.80,
-                "factor": "L: Vigilance"
-            }
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
         }
     },
     {
@@ -1186,12 +1004,10 @@
         "fields": {
             "question": "Believe that others have good intentions.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "distrust",
-                "id": 9,
-                "scale_alpha": 0.80,
-                "factor": "L: Vigilance"
-            }
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
         }
     },
     {
@@ -1199,12 +1015,10 @@
         "fields": {
             "question": "Believe that people are basically moral.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "distrust",
-                "id": 9,
-                "scale_alpha": 0.80,
-                "factor": "L: Vigilance"
-            }
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
         }
     },
     {
@@ -1212,12 +1026,10 @@
         "fields": {
             "question": "Do things that others find strange.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "imagination",
-                "id": 10,
-                "scale_alpha": 0.80,
-                "factor": "M: Abstractedness"
-            }
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
         }
     },
     {
@@ -1225,12 +1037,10 @@
         "fields": {
             "question": "Like to get lost in thought.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "imagination",
-                "id": 10,
-                "scale_alpha": 0.80,
-                "factor": "M: Abstractedness"
-            }
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
         }
     },
     {
@@ -1238,12 +1048,10 @@
         "fields": {
             "question": "Enjoy wild flights of fantasy.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "imagination",
-                "id": 10,
-                "scale_alpha": 0.80,
-                "factor": "M: Abstractedness"
-            }
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
         }
     },
     {
@@ -1251,12 +1059,10 @@
         "fields": {
             "question": "Love to daydream.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "imagination",
-                "id": 10,
-                "scale_alpha": 0.80,
-                "factor": "M: Abstractedness"
-            }
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
         }
     },
     {
@@ -1264,12 +1070,10 @@
         "fields": {
             "question": "Swim against the current.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "imagination",
-                "id": 10,
-                "scale_alpha": 0.80,
-                "factor": "M: Abstractedness"
-            }
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
         }
     },
     {
@@ -1277,12 +1081,10 @@
         "fields": {
             "question": "Take deviant positions.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "imagination",
-                "id": 10,
-                "scale_alpha": 0.80,
-                "factor": "M: Abstractedness"
-            }
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
         }
     },
     {
@@ -1290,12 +1092,10 @@
         "fields": {
             "question": "Do unexpected things.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "imagination",
-                "id": 10,
-                "scale_alpha": 0.80,
-                "factor": "M: Abstractedness"
-            }
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
         }
     },
     {
@@ -1303,12 +1103,10 @@
         "fields": {
             "question": "Do things by the book.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "imagination",
-                "id": 10,
-                "scale_alpha": 0.80,
-                "factor": "M: Abstractedness"
-            }
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
         }
     },
     {
@@ -1316,12 +1114,10 @@
         "fields": {
             "question": "Seldom daydream.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "imagination",
-                "id": 10,
-                "scale_alpha": 0.80,
-                "factor": "M: Abstractedness"
-            }
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
         }
     },
     {
@@ -1329,12 +1125,10 @@
         "fields": {
             "question": "Seldom get lost in thought.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "imagination",
-                "id": 10,
-                "scale_alpha": 0.80,
-                "factor": "M: Abstractedness"
-            }
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
         }
     },
     {
@@ -1342,12 +1136,10 @@
         "fields": {
             "question": "Reveal little about myself.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "reserve",
-                "id": 11,
-                "scale_alpha": 0.86,
-                "factor": "N: Privateness"
-            }
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
         }
     },
     {
@@ -1355,12 +1147,10 @@
         "fields": {
             "question": "Am hard to get to know.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "reserve",
-                "id": 11,
-                "scale_alpha": 0.86,
-                "factor": "N: Privateness"
-            }
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
         }
     },
     {
@@ -1368,12 +1158,10 @@
         "fields": {
             "question": "Don't talk a lot.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "reserve",
-                "id": 11,
-                "scale_alpha": 0.86,
-                "factor": "N: Privateness"
-            }
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
         }
     },
     {
@@ -1381,12 +1169,10 @@
         "fields": {
             "question": "Bottle up my feelings.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "reserve",
-                "id": 11,
-                "scale_alpha": 0.86,
-                "factor": "N: Privateness"
-            }
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
         }
     },
     {
@@ -1394,12 +1180,10 @@
         "fields": {
             "question": "Keep my thoughts to myself.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "reserve",
-                "id": 11,
-                "scale_alpha": 0.86,
-                "factor": "N: Privateness"
-            }
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
         }
     },
     {
@@ -1407,12 +1191,10 @@
         "fields": {
             "question": "Am open about myself to others.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "reserve",
-                "id": 11,
-                "scale_alpha": 0.86,
-                "factor": "N: Privateness"
-            }
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
         }
     },
     {
@@ -1420,12 +1202,10 @@
         "fields": {
             "question": "Am open about my feelings.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "reserve",
-                "id": 11,
-                "scale_alpha": 0.86,
-                "factor": "N: Privateness"
-            }
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
         }
     },
     {
@@ -1433,12 +1213,10 @@
         "fields": {
             "question": "Disclose my intimate thoughts.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "reserve",
-                "id": 11,
-                "scale_alpha": 0.86,
-                "factor": "N: Privateness"
-            }
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
         }
     },
     {
@@ -1446,12 +1224,10 @@
         "fields": {
             "question": "Show my feelings.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "reserve",
-                "id": 11,
-                "scale_alpha": 0.86,
-                "factor": "N: Privateness"
-            }
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
         }
     },
     {
@@ -1459,12 +1235,10 @@
         "fields": {
             "question": "Am willing to talk about myself.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "reserve",
-                "id": 11,
-                "scale_alpha": 0.86,
-                "factor": "N: Privateness"
-            }
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
         }
     },
     {
@@ -1472,12 +1246,10 @@
         "fields": {
             "question": "Am afraid that I will do the wrong thing.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "anxiety",
-                "id": 12,
-                "scale_alpha": 0.80,
-                "factor": "O: Apprehension"
-            }
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
         }
     },
     {
@@ -1485,12 +1257,10 @@
         "fields": {
             "question": "Feel threatened easily.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "anxiety",
-                "id": 12,
-                "scale_alpha": 0.80,
-                "factor": "O: Apprehension"
-            }
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
         }
     },
     {
@@ -1498,12 +1268,10 @@
         "fields": {
             "question": "Am easily hurt.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "anxiety",
-                "id": 12,
-                "scale_alpha": 0.80,
-                "factor": "O: Apprehension"
-            }
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
         }
     },
     {
@@ -1511,12 +1279,10 @@
         "fields": {
             "question": "Worry about things.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "anxiety",
-                "id": 12,
-                "scale_alpha": 0.80,
-                "factor": "O: Apprehension"
-            }
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
         }
     },
     {
@@ -1524,12 +1290,10 @@
         "fields": {
             "question": "Spend time thinking about past mistakes",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "anxiety",
-                "id": 12,
-                "scale_alpha": 0.80,
-                "factor": "O: Apprehension"
-            }
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
         }
     },
     {
@@ -1537,12 +1301,10 @@
         "fields": {
             "question": "Feel guilty when I say 'no.'",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "anxiety",
-                "id": 12,
-                "scale_alpha": 0.80,
-                "factor": "O: Apprehension"
-            }
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
         }
     },
     {
@@ -1550,12 +1312,10 @@
         "fields": {
             "question": "Feel crushed by setbacks.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "anxiety",
-                "id": 12,
-                "scale_alpha": 0.80,
-                "factor": "O: Apprehension"
-            }
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
         }
     },
     {
@@ -1563,12 +1323,10 @@
         "fields": {
             "question": "Don't worry about things that have already happened.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "anxiety",
-                "id": 12,
-                "scale_alpha": 0.80,
-                "factor": "O: Apprehension"
-            }
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
         }
     },
     {
@@ -1576,12 +1334,10 @@
         "fields": {
             "question": "Am not easily bothered by things.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "anxiety",
-                "id": 12,
-                "scale_alpha": 0.80,
-                "factor": "O: Apprehension"
-            }
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
         }
     },
     {
@@ -1589,12 +1345,10 @@
         "fields": {
             "question": "Don't let others discourage me.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "anxiety",
-                "id": 12,
-                "scale_alpha": 0.80,
-                "factor": "O: Apprehension"
-            }
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
         }
     },
     {
@@ -1602,12 +1356,10 @@
         "fields": {
             "question": "Believe in the importance of art.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "complexity",
-                "id": 13,
-                "scale_alpha": 0.82,
-                "factor": "Q1: Openness to Change"
-            }
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
         }
     },
     {
@@ -1615,12 +1367,10 @@
         "fields": {
             "question": "Love to think up new ways of doing things.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "complexity",
-                "id": 13,
-                "scale_alpha": 0.82,
-                "factor": "Q1: Openness to Change"
-            }
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
         }
     },
     {
@@ -1628,12 +1378,10 @@
         "fields": {
             "question": "Enjoy hearing new ideas.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "complexity",
-                "id": 13,
-                "scale_alpha": 0.82,
-                "factor": "Q1: Openness to Change"
-            }
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
         }
     },
     {
@@ -1641,12 +1389,10 @@
         "fields": {
             "question": "Carry the conversation to a higher level.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "complexity",
-                "id": 13,
-                "scale_alpha": 0.82,
-                "factor": "Q1: Openness to Change"
-            }
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
         }
     },
     {
@@ -1654,12 +1400,10 @@
         "fields": {
             "question": "Prefer variety to routine.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "complexity",
-                "id": 13,
-                "scale_alpha": 0.82,
-                "factor": "Q1: Openness to Change"
-            }
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
         }
     },
     {
@@ -1667,12 +1411,10 @@
         "fields": {
             "question": "Avoid philosophical discussions.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "complexity",
-                "id": 13,
-                "scale_alpha": 0.82,
-                "factor": "Q1: Openness to Change"
-            }
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
         }
     },
     {
@@ -1680,12 +1422,10 @@
         "fields": {
             "question": "Rarely look for a deeper meaning in things.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "complexity",
-                "id": 13,
-                "scale_alpha": 0.82,
-                "factor": "Q1: Openness to Change"
-            }
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
         }
     },
     {
@@ -1693,12 +1433,10 @@
         "fields": {
             "question": "Am not interested in theoretical discussions.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "complexity",
-                "id": 13,
-                "scale_alpha": 0.82,
-                "factor": "Q1: Openness to Change"
-            }
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
         }
     },
     {
@@ -1706,12 +1444,10 @@
         "fields": {
             "question": "Am not interested in abstract ideas.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "complexity",
-                "id": 13,
-                "scale_alpha": 0.82,
-                "factor": "Q1: Openness to Change"
-            }
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
         }
     },
     {
@@ -1719,12 +1455,10 @@
         "fields": {
             "question": "Try to avoid complex people.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "complexity",
-                "id": 13,
-                "scale_alpha": 0.82,
-                "factor": "Q1: Openness to Change"
-            }
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
         }
     },
     {
@@ -1732,12 +1466,10 @@
         "fields": {
             "question": "Want to be left alone.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "introversion",
-                "id": 14,
-                "scale_alpha": 0.73,
-                "factor": "Q2: Self-Reliance"
-            }
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
         }
     },
     {
@@ -1745,12 +1477,10 @@
         "fields": {
             "question": "Prefer to do things by myself.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "introversion",
-                "id": 14,
-                "scale_alpha": 0.73,
-                "factor": "Q2: Self-Reliance"
-            }
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
         }
     },
     {
@@ -1758,12 +1488,10 @@
         "fields": {
             "question": "Enjoy spending time by myself.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "introversion",
-                "id": 14,
-                "scale_alpha": 0.73,
-                "factor": "Q2: Self-Reliance"
-            }
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
         }
     },
     {
@@ -1771,12 +1499,10 @@
         "fields": {
             "question": "Seek quiet.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "introversion",
-                "id": 14,
-                "scale_alpha": 0.73,
-                "factor": "Q2: Self-Reliance"
-            }
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
         }
     },
     {
@@ -1784,12 +1510,10 @@
         "fields": {
             "question": "Don't mind eating alone.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "introversion",
-                "id": 14,
-                "scale_alpha": 0.73,
-                "factor": "Q2: Self-Reliance"
-            }
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
         }
     },
     {
@@ -1797,12 +1521,10 @@
         "fields": {
             "question": "Enjoy silence.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "introversion",
-                "id": 14,
-                "scale_alpha": 0.73,
-                "factor": "Q2: Self-Reliance"
-            }
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
         }
     },
     {
@@ -1810,12 +1532,10 @@
         "fields": {
             "question": "Enjoy my privacy.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "introversion",
-                "id": 14,
-                "scale_alpha": 0.73,
-                "factor": "Q2: Self-Reliance"
-            }
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
         }
     },
     {
@@ -1823,12 +1543,10 @@
         "fields": {
             "question": "Enjoy being part of a group.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "introversion",
-                "id": 14,
-                "scale_alpha": 0.73,
-                "factor": "Q2: Self-Reliance"
-            }
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
         }
     },
     {
@@ -1836,12 +1554,10 @@
         "fields": {
             "question": "Enjoy teamwork.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "introversion",
-                "id": 14,
-                "scale_alpha": 0.73,
-                "factor": "Q2: Self-Reliance"
-            }
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
         }
     },
     {
@@ -1849,12 +1565,10 @@
         "fields": {
             "question": "Can't do without the company of others.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "introversion",
-                "id": 14,
-                "scale_alpha": 0.73,
-                "factor": "Q2: Self-Reliance"
-            }
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
         }
     },
     {
@@ -1862,12 +1576,10 @@
         "fields": {
             "question": "Want everything to be 'just right.'",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "orderliness",
-                "id": 15,
-                "scale_alpha": 0.81,
-                "factor": "Q3: Perfectionism"
-            }
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
         }
     },
     {
@@ -1875,12 +1587,10 @@
         "fields": {
             "question": "Get chores done right away.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "orderliness",
-                "id": 15,
-                "scale_alpha": 0.81,
-                "factor": "Q3: Perfectionism"
-            }
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
         }
     },
     {
@@ -1888,12 +1598,10 @@
         "fields": {
             "question": "Like order.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "orderliness",
-                "id": 15,
-                "scale_alpha": 0.81,
-                "factor": "Q3: Perfectionism"
-            }
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
         }
     },
     {
@@ -1901,12 +1609,10 @@
         "fields": {
             "question": "Continue until everything is perfect.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "orderliness",
-                "id": 15,
-                "scale_alpha": 0.81,
-                "factor": "Q3: Perfectionism"
-            }
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
         }
     },
     {
@@ -1914,12 +1620,10 @@
         "fields": {
             "question": "Am exacting in my work.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "orderliness",
-                "id": 15,
-                "scale_alpha": 0.81,
-                "factor": "Q3: Perfectionism"
-            }
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
         }
     },
     {
@@ -1927,12 +1631,10 @@
         "fields": {
             "question": "Am not bothered by messy people.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "orderliness",
-                "id": 15,
-                "scale_alpha": 0.81,
-                "factor": "Q3: Perfectionism"
-            }
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
         }
     },
     {
@@ -1940,12 +1642,10 @@
         "fields": {
             "question": "Am not bothered by disorder.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "orderliness",
-                "id": 15,
-                "scale_alpha": 0.81,
-                "factor": "Q3: Perfectionism"
-            }
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
         }
     },
     {
@@ -1953,12 +1653,10 @@
         "fields": {
             "question": "Leave a mess in my room.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "orderliness",
-                "id": 15,
-                "scale_alpha": 0.81,
-                "factor": "Q3: Perfectionism"
-            }
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
         }
     },
     {
@@ -1966,12 +1664,10 @@
         "fields": {
             "question": "Leave my belongings around.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "orderliness",
-                "id": 15,
-                "scale_alpha": 0.81,
-                "factor": "Q3: Perfectionism"
-            }
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
         }
     },
     {
@@ -1979,24 +1675,20 @@
         "fields": {
             "question": "Put off unpleasant tasks.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "orderliness",
-                "id": 15,
-                "scale_alpha": 0.81,
-                "factor": "Q3: Perfectionism"
-            }
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
         }
     }, {
         "id": 154,
         "fields": {
             "question": "Get irritated easily.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "emotionality",
-                "id": 16,
-                "scale_alpha": 0.76,
-                "factor": "Q4: Tension"
-            }
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
         }
     },
     {
@@ -2004,12 +1696,10 @@
         "fields": {
             "question": "Get angry easily.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "emotionality",
-                "id": 16,
-                "scale_alpha": 0.76,
-                "factor": "Q4: Tension"
-            }
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
         }
     },
     {
@@ -2017,12 +1707,10 @@
         "fields": {
             "question": "Am quick to judge others.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "emotionality",
-                "id": 16,
-                "scale_alpha": 0.76,
-                "factor": "Q4: Tension"
-            }
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
         }
     },
     {
@@ -2030,12 +1718,10 @@
         "fields": {
             "question": "Am annoyed by others' mistakes.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "emotionality",
-                "id": 16,
-                "scale_alpha": 0.76,
-                "factor": "Q4: Tension"
-            }
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
         }
     },
     {
@@ -2043,12 +1729,10 @@
         "fields": {
             "question": "Am easily put out.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "emotionality",
-                "id": 16,
-                "scale_alpha": 0.76,
-                "factor": "Q4: Tension"
-            }
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
         }
     },
     {
@@ -2056,12 +1740,10 @@
         "fields": {
             "question": "Can't stand being contradicted.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "emotionality",
-                "id": 16,
-                "scale_alpha": 0.76,
-                "factor": "Q4: Tension"
-            }
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
         }
     },
     {
@@ -2069,12 +1751,10 @@
         "fields": {
             "question": "Judge people by their appearance.",
             "sign": "positive",
-            "QuestionCategory": {
-                "category_name": "emotionality",
-                "id": 16,
-                "scale_alpha": 0.76,
-                "factor": "Q4: Tension"
-            }
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
         }
     },
     {
@@ -2082,12 +1762,10 @@
         "fields": {
             "question": "Am not easily annoyed.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "emotionality",
-                "id": 16,
-                "scale_alpha": 0.76,
-                "factor": "Q4: Tension"
-            }
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
         }
     },
     {
@@ -2095,12 +1773,10 @@
         "fields": {
             "question": "Try to forgive and forget.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "emotionality",
-                "id": 16,
-                "scale_alpha": 0.76,
-                "factor": "Q4: Tension"
-            }
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
         }
     },
     {
@@ -2108,12 +1784,10 @@
         "fields": {
             "question": "Have a good word for everyone.",
             "sign": "negitive",
-            "QuestionCategory": {
-                "category_name": "emotionality",
-                "id": 16,
-                "scale_alpha": 0.76,
-                "factor": "Q4: Tension"
-            }
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
         }
     }
 ]
