@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import QuestionFactory from '../Question/QuestionFactory';
-// import ReactPaginate from 'react-paginate';
 
 
 class EnergyLevelsQuestions extends Component {
@@ -47,26 +46,16 @@ class EnergyLevelsQuestions extends Component {
                 return {
                     categoryCount: prevState.categoryCount + 1
                 }
-            }, () => {
-                console.log('fired', this.state.categoryCount);
-            });
+            }, () => {});
         }
     }
 
     handleBackPageClick(callback) {
-        // const { validateAnswers, answers, questions, categoryCount } = this.props;
-        // const questionCategory = questions.filter((question) => question.fields.QuestionCategory.id === categoryCount);
-        // validateAnswers(answers.answered, questionCategory);
-        
-        // console.log('fire', this.state.categoryCount);
         this.setState (prevState => {
-            // console.log(prevState.categoryCount);
             return {
                 categoryCount: prevState.categoryCount - 1
             }
-        }, () => {
-            console.log('fired', this.state.categoryCount);
-        });
+        }, () => {});
     }
 
     render() {
