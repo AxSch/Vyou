@@ -50,8 +50,7 @@ const initialState = {
     },
     16: {
       isValid: null
-    },
-    isValid: null
+    }
   },
   answeredEnergyFlow: {
     1 : {
@@ -62,12 +61,79 @@ const initialState = {
     },
     3 : {
       isValid: null
-    },
-    isValid: null
+    }
   },
   answeredEnergyLevel: {
     1 : {
       isValid: null
+    },
+  },
+  answeredEnergyMappings: {
+    1 : {
+      1 : {
+        isValid: null
+      },
+      2 : {
+        isValid: null
+      },
+      3 : {
+        isValid: null
+      }
+    },
+    2 : {
+      1 : {
+        isValid: null
+      },
+      2 : {
+        isValid: null
+      },
+      3 : {
+        isValid: null
+      }
+    },
+    3 : {
+      1 : {
+        isValid: null
+      },
+      2 : {
+        isValid: null
+      },
+      3 : {
+        isValid: null
+      }
+    },
+    4 : {
+      1 : {
+        isValid: null
+      },
+      2 : {
+        isValid: null
+      },
+      3 : {
+        isValid: null
+      }
+    },
+    5 : {
+      1 : {
+        isValid: null
+      },
+      2 : {
+        isValid: null
+      },
+      3 : {
+        isValid: null
+      }
+    },
+    6 : {
+      1 : {
+        isValid: null
+      },
+      2 : {
+        isValid: null
+      },
+      3 : {
+        isValid: null
+      }
     },
   },
 }
