@@ -31,9 +31,25 @@ const requestEFQuestionsDispatcher = (category) => {
   }
 }
 
+const requestELQuestionsDispatcher = (category) => {
+  return dispatch => {
+    dispatch(questionRequestActions.questionRequest);
+    questionsService.energyLevelQuestions()
+      .then(
+        response => {
+          dispatch(questionRequestActions.questionRequestSuccess(response.data, category));
+        },
+        error => {
+          dispatch(questionRequestActions.questionRequestFailure(error.data));
+        }
+      );
+  }
+}
+
 const questionsDispatchers = {
   requestPSQuestionsDispatcher,
-  requestEFQuestionsDispatcher
+  requestEFQuestionsDispatcher,
+  requestELQuestionsDispatcher
 }
 
 export default questionsDispatchers;
