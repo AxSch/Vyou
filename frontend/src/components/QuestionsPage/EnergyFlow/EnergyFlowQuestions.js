@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import QuestionFactory from '../Question/QuestionFactory';
 
 
-class EnergyLevelsQuestions extends Component {
+class EnergyFlowQuestions extends Component {
     constructor(props) {
         super(props);
 
@@ -73,10 +73,10 @@ class EnergyLevelsQuestions extends Component {
     }
 }
 
-EnergyLevelsQuestions.propTypes = {
+EnergyFlowQuestions.propTypes = {
     questions: PropTypes.array,
     answers: PropTypes.object,
     resetAllAnswers: PropTypes.func
 }
 
-export default EnergyLevelsQuestions;
+export default EnergyFlowQuestions;
