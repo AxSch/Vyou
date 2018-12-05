@@ -42,14 +42,11 @@ class PersonalityQuestions extends Component {
         const { categoryId } = this.state;
         
         if (answers.answeredPersonality[categoryId].isValid === true) {
-            console.log('fire', this.state.categoryId);
             this.setState (prevState => {
                 return {
                     categoryId: prevState.categoryId + 1
                 }
-            }, () => {
-                console.log('fired', this.state.categoryId);
-            });
+            }, () => {});
         }
     }
 
