@@ -2,19 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Question from './Question';
 
-const renderQuestion = (questions, categoryId, questionType, subCategory) => {
-  if(subCategory) {
+const renderQuestion = (questions, categoryId, questionType) => {
     return questions.filter((question) => question.fields.id === categoryId).map((question) => {
-      return (
-          <Question question={question} questionType={questionType}/>
-      );
-  })
-  }
-  return questions.filter((question) => question.fields.QuestionCategory.id === categoryId).map((question) => {
-      return (
-          <Question question={question} questionType={questionType}/>
-      );
-  })
+        return (
+            <Question question={question} questionType={questionType}/>
+        );
+    })
 }
 
 const renderQuestionCategory = (questions, categoryId) => {
@@ -30,12 +23,12 @@ const renderQuestionCategory = (questions, categoryId) => {
 
 class QuestionFactory extends Component {
   render() {
-    const { questionsArray, categoryId, questionType, subCategory } = this.props;
+    const { questionsArray, categoryId, questionType } = this.props;
     return (
       <div>
         {/* {renderQuestionCategory(questionsArray, index)} */}
       <ul>
-       {renderQuestion(questionsArray, categoryId, questionType, subCategory)}
+       {renderQuestion(questionsArray, categoryId, questionType)}
       </ul>
     </div>
     );
@@ -45,8 +38,7 @@ class QuestionFactory extends Component {
 QuestionFactory.propTypes = {
   questionsArray: PropTypes.array,
   categoryId: PropTypes.number,
-  questionType: PropTypes.string,
-  subCategory: PropTypes.bool
+  questionType: PropTypes.string
 }
 
 export default QuestionFactory;

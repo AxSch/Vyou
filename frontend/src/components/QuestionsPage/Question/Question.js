@@ -6,14 +6,13 @@ import AnswersContainer from '../../Answers/AnswersContainer';
 class Question extends Component {
     render() {
         const { question, questionType } = this.props;
-
         return (
           <Fragment>
               <li key={question.id}>
                 {question.fields.question}
                 <AnswersContainer 
                     questionId={question.id}
-                    categoryId={question.fields.QuestionCategory.id}
+                    categoryId={question.fields.id}
                     questionText={question.fields.question}
                     questionSign={question.fields.sign}
                     questionType={questionType}
