@@ -4,6 +4,8 @@ import _ from 'lodash';
 const intitialState = {
   personalityQuestions: [],
   energyFlowQuestions: [],
+  energyLevelQuestions: [],
+  energyMappingQuestions: [],
 }
 
 const receiveQuestions = (state, questions, category) => {
@@ -47,11 +49,6 @@ const questionsReducer = (state=intitialState, action) => {
     case actionTypes.FETCH_QUESTIONS_SUCCESS:
       const newState = receiveQuestions(state, action.payload.questions, action.payload.category);
       return newState;
-      // return {
-      //   ...state,
-      //   personalityQuestions: action.payload.questions,
-      //   error: null
-      // }
     case actionTypes.FETCH_QUESTIONS_FAILURE:
       return {
         ...state,
