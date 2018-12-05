@@ -54,10 +54,21 @@ const initialState = {
     isValid: null
   },
   answeredEnergyFlow: {
-    1 : {},
-    2 : {},
-    3 : {},
+    1 : {
+      isValid: null
+    },
+    2 : {
+      isValid: null
+    },
+    3 : {
+      isValid: null
+    },
     isValid: null
+  },
+  answeredEnergyLevel: {
+    1 : {
+      isValid: null
+    },
   },
 }
 
@@ -66,7 +77,6 @@ const updateAnswer = (state, userAnswer, categoryId, questionType) => {
   switch (questionType) {
     case 'PS':
       newState.answeredPersonality = {
-        ...newState,
         ...newState.answeredPersonality,
         [categoryId]: {
           ...newState.answeredPersonality[categoryId],
@@ -83,12 +93,27 @@ const updateAnswer = (state, userAnswer, categoryId, questionType) => {
       return newState;
     case 'EF':
       newState.answeredEnergyFlow = {
-        ...newState,
         ...newState.answeredEnergyFlow,
         [categoryId]: {
           ...newState.answeredEnergyFlow[categoryId],
           [userAnswer.questionId]: {
             ...newState.answeredEnergyFlow[categoryId][userAnswer.questionId],
+            question: userAnswer.question,
+            questionSign: userAnswer.questionSign,
+            value: userAnswer.answerValue,
+            lastUpdated: userAnswer.lastUpdated,
+    
+          }
+        }
+      }
+      return newState;
+    case 'EL':
+      newState.answeredEnergyLevel = {
+        ...newState.answeredEnergyLevel,
+        [categoryId]: {
+          ...newState.answeredEnergyLevel[categoryId],
+          [userAnswer.questionId]: {
+            ...newState.answeredEnergyLevel[categoryId][userAnswer.questionId],
             question: userAnswer.question,
             questionSign: userAnswer.questionSign,
             value: userAnswer.answerValue,
@@ -120,9 +145,19 @@ const validateAnswers = (state, answers, questions, categoryId, questionType) =>
       if (newState.answeredEnergyFlow[categoryId]) {
         const answersArr = Object.values(newState.answeredEnergyFlow[categoryId]);
         if (answersArr.length - 1 === questions.length) {
-          newState.answeredEnergyFlow.isValid = true;
+          newState.answeredEnergyFlow[categoryId].isValid = true;
         } else {
-          newState.answeredEnergyFlow.isValid = false;
+          newState.answeredEnergyFlow[categoryId].isValid = false;
+        }
+      }
+      return newState;
+    case 'EL':
+      if (newState.answeredEnergyLevel[categoryId]) {
+        const answersArr = Object.values(newState.answeredEnergyLevel[categoryId]);
+        if (answersArr.length - 1 === questions.length) {
+          newState.answeredEnergyLevel[categoryId].isValid = true;
+        } else {
+          newState.answeredEnergyLevel[categoryId].isValid = false;
         }
       }
       return newState;
