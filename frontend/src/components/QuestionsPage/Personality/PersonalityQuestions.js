@@ -10,7 +10,7 @@ class PersonalityQuestions extends Component {
 
         this.state = {
             categoryCount: 1,
-            questionType: 'PS'
+            questionType: 'PS',
         };
 
         this.handlePageClick = this.handlePageClick.bind(this);
@@ -39,8 +39,9 @@ class PersonalityQuestions extends Component {
 
     handlePageClick(callback) {
         const { answers } = this.props;
-
-        if (answers.isValid === true) {
+        const { categoryCount } = this.state;
+        
+        if (answers.answeredPersonality[categoryCount].isValid === true) {
             console.log('fire', this.state.categoryCount);
             this.setState (prevState => {
                 return {
@@ -75,7 +76,7 @@ class PersonalityQuestions extends Component {
         return (
             <div>
                 <h2>Personality Questions</h2>
-                <QuestionFactory questionsArray={questions} categoryId={categoryCount} questionType={questionType} />
+                <QuestionFactory questionsArray={questions} categoryId={categoryCount} questionType={questionType}/>
                 {this.handleBackButton(categoryCount)}
                 {this.handleNextButton(categoryCount)}
             </div>
