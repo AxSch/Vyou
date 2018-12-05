@@ -7,7 +7,8 @@ import answersDispatchers from './redux/dispatchers';
 const mapStateToProps = (state, ownProps) => {
     return {
       answers: state.answers,
-      personalityQuestions: state.questions.personalityQuestions
+      personalityQuestions: state.questions.personalityQuestions,
+      energyFlowQuestions: state.questions.energyFlowQuestions,
     }
 };
 
