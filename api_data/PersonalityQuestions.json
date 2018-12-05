@@ -2,7 +2,7 @@
         "id": 1,
         "fields": {
             "question": "Know how to comfort others.",
-            "sign": "postive",
+            "sign": "positive",
             "category_name": "warmth",
             "id": 1,
             "scale_alpha": 0.08,
@@ -13,7 +13,7 @@
         "id": 2,
         "fields": {
             "question": "Enjoy bringing people together.",
-            "sign": "postive",
+            "sign": "positive",
             "category_name": "warmth",
             "id": 1,
             "scale_alpha": 0.08,
@@ -24,7 +24,7 @@
         "id": 3,
         "fields": {
             "question": "Feel others' emotions.",
-            "sign": "postive",
+            "sign": "positive",
             "category_name": "warmth",
             "id": 1,
             "scale_alpha": 0.08,
@@ -35,7 +35,7 @@
         "id": 4,
         "fields": {
             "question": "Take an interest in other people's lives",
-            "sign": "postive",
+            "sign": "positive",
             "category_name": "warmth",
             "id": 1,
             "scale_alpha": 0.08,
@@ -46,7 +46,7 @@
         "id": 5,
         "fields": {
             "question": "Cheer people up.",
-            "sign": "postive",
+            "sign": "positive",
             "category_name": "warmth",
             "id": 1,
             "scale_alpha": 0.08,
@@ -57,7 +57,7 @@
         "id": 6,
         "fields": {
             "question": "Make people feel at ease.",
-            "sign": "postive",
+            "sign": "positive",
             "category_name": "warmth",
             "id": 1,
             "scale_alpha": 0.08,
@@ -68,7 +68,7 @@
         "id": 7,
         "fields": {
             "question": "Take time out for others.",
-            "sign": "postive",
+            "sign": "positive",
             "category_name": "warmth",
             "id": 1,
             "scale_alpha": 0.08,
@@ -541,7 +541,7 @@
         "id": 50,
         "fields": {
             "question": "Seldom joke around.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "gregariousness",
             "id": 5,
             "scale_alpha": 0.78,
@@ -552,7 +552,7 @@
         "id": 51,
         "fields": {
             "question": "Don't like crowded events.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "gregariousness",
             "id": 5,
             "scale_alpha": 0.78,
@@ -563,7 +563,7 @@
         "id": 52,
         "fields": {
             "question": "Am the last to laugh at a joke.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "gregariousness",
             "id": 5,
             "scale_alpha": 0.78,
@@ -574,7 +574,7 @@
         "id": 53,
         "fields": {
             "question": "Dislike loud music.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "gregariousness",
             "id": 5,
             "scale_alpha": 0.78,
@@ -640,7 +640,7 @@
         "id": 59,
         "fields": {
             "question": "Resist authority.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "dutifulness",
             "id": 6,
             "scale_alpha": 0.84,
@@ -651,7 +651,7 @@
         "id": 60,
         "fields": {
             "question": "Break rules.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "dutifulness",
             "id": 6,
             "scale_alpha": 0.84,
@@ -662,7 +662,7 @@
         "id": 61,
         "fields": {
             "question": "Use swear words.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "dutifulness",
             "id": 6,
             "scale_alpha": 0.84,
@@ -673,7 +673,7 @@
         "id": 62,
         "fields": {
             "question": "Oppose authority.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "dutifulness",
             "id": 6,
             "scale_alpha": 0.84,
@@ -684,7 +684,7 @@
         "id": 63,
         "fields": {
             "question": "Know how to get around the rules.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "dutifulness",
             "id": 6,
             "scale_alpha": 0.84,
@@ -750,7 +750,7 @@
         "id": 69,
         "fields": {
             "question": "Find it difficult to approach others.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "friendliness",
             "id": 7,
             "scale_alpha": 0.80,
@@ -761,7 +761,7 @@
         "id": 70,
         "fields": {
             "question": "Often feel uncomfortable around others.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "friendliness",
             "id": 7,
             "scale_alpha": 0.80,
@@ -772,7 +772,7 @@
         "id": 71,
         "fields": {
             "question": "Have little to say.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "friendliness",
             "id": 7,
             "scale_alpha": 0.80,
@@ -783,7 +783,7 @@
         "id": 72,
         "fields": {
             "question": "Am quiet around strangers.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "friendliness",
             "id": 7,
             "scale_alpha": 0.80,
@@ -794,7 +794,7 @@
         "id": 73,
         "fields": {
             "question": "Keep in the background.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "friendliness",
             "id": 7,
             "scale_alpha": 0.80,
@@ -871,7 +871,7 @@
         "id": 80,
         "fields": {
             "question": "Do not enjoy watching dance performances.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "sensitivity",
             "id": 8,
             "scale_alpha": 0.73,
@@ -882,7 +882,7 @@
         "id": 81,
         "fields": {
             "question": "Do not like poetry.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "sensitivity",
             "id": 8,
             "scale_alpha": 0.73,
@@ -893,7 +893,7 @@
         "id": 82,
         "fields": {
             "question": "Dislike works of fiction.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "sensitivity",
             "id": 8,
             "scale_alpha": 0.73,
@@ -904,7 +904,7 @@
         "id": 83,
         "fields": {
             "question": "Rarely notice my emotional reactions.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "sensitivity",
             "id": 8,
             "scale_alpha": 0.73,
@@ -981,7 +981,7 @@
         "id": 90,
         "fields": {
             "question": "Trust what people say.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "distrust",
             "id": 9,
             "scale_alpha": 0.80,
@@ -992,7 +992,7 @@
         "id": 91,
         "fields": {
             "question": "Trust others.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "distrust",
             "id": 9,
             "scale_alpha": 0.80,
@@ -1003,7 +1003,7 @@
         "id": 92,
         "fields": {
             "question": "Believe that others have good intentions.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "distrust",
             "id": 9,
             "scale_alpha": 0.80,
@@ -1014,7 +1014,7 @@
         "id": 93,
         "fields": {
             "question": "Believe that people are basically moral.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "distrust",
             "id": 9,
             "scale_alpha": 0.80,
@@ -1102,7 +1102,7 @@
         "id": 101,
         "fields": {
             "question": "Do things by the book.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "imagination",
             "id": 10,
             "scale_alpha": 0.80,
@@ -1113,7 +1113,7 @@
         "id": 102,
         "fields": {
             "question": "Seldom daydream.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "imagination",
             "id": 10,
             "scale_alpha": 0.80,
@@ -1124,7 +1124,7 @@
         "id": 103,
         "fields": {
             "question": "Seldom get lost in thought.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "imagination",
             "id": 10,
             "scale_alpha": 0.80,
@@ -1190,7 +1190,7 @@
         "id": 109,
         "fields": {
             "question": "Am open about myself to others.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "reserve",
             "id": 11,
             "scale_alpha": 0.86,
@@ -1201,7 +1201,7 @@
         "id": 110,
         "fields": {
             "question": "Am open about my feelings.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "reserve",
             "id": 11,
             "scale_alpha": 0.86,
@@ -1212,7 +1212,7 @@
         "id": 111,
         "fields": {
             "question": "Disclose my intimate thoughts.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "reserve",
             "id": 11,
             "scale_alpha": 0.86,
@@ -1223,7 +1223,7 @@
         "id": 112,
         "fields": {
             "question": "Show my feelings.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "reserve",
             "id": 11,
             "scale_alpha": 0.86,
@@ -1234,7 +1234,7 @@
         "id": 113,
         "fields": {
             "question": "Am willing to talk about myself.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "reserve",
             "id": 11,
             "scale_alpha": 0.86,
@@ -1322,7 +1322,7 @@
         "id": 121,
         "fields": {
             "question": "Don't worry about things that have already happened.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "anxiety",
             "id": 12,
             "scale_alpha": 0.80,
@@ -1333,7 +1333,7 @@
         "id": 122,
         "fields": {
             "question": "Am not easily bothered by things.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "anxiety",
             "id": 12,
             "scale_alpha": 0.80,
@@ -1344,7 +1344,7 @@
         "id": 123,
         "fields": {
             "question": "Don't let others discourage me.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "anxiety",
             "id": 12,
             "scale_alpha": 0.80,
@@ -1410,7 +1410,7 @@
         "id": 129,
         "fields": {
             "question": "Avoid philosophical discussions.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "complexity",
             "id": 13,
             "scale_alpha": 0.82,
@@ -1421,7 +1421,7 @@
         "id": 130,
         "fields": {
             "question": "Rarely look for a deeper meaning in things.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "complexity",
             "id": 13,
             "scale_alpha": 0.82,
@@ -1432,7 +1432,7 @@
         "id": 131,
         "fields": {
             "question": "Am not interested in theoretical discussions.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "complexity",
             "id": 13,
             "scale_alpha": 0.82,
@@ -1443,7 +1443,7 @@
         "id": 132,
         "fields": {
             "question": "Am not interested in abstract ideas.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "complexity",
             "id": 13,
             "scale_alpha": 0.82,
@@ -1454,7 +1454,7 @@
         "id": 133,
         "fields": {
             "question": "Try to avoid complex people.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "complexity",
             "id": 13,
             "scale_alpha": 0.82,
@@ -1542,7 +1542,7 @@
         "id": 141,
         "fields": {
             "question": "Enjoy being part of a group.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "introversion",
             "id": 14,
             "scale_alpha": 0.73,
@@ -1553,7 +1553,7 @@
         "id": 142,
         "fields": {
             "question": "Enjoy teamwork.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "introversion",
             "id": 14,
             "scale_alpha": 0.73,
@@ -1564,7 +1564,7 @@
         "id": 143,
         "fields": {
             "question": "Can't do without the company of others.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "introversion",
             "id": 14,
             "scale_alpha": 0.73,
@@ -1630,7 +1630,7 @@
         "id": 149,
         "fields": {
             "question": "Am not bothered by messy people.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "orderliness",
             "id": 15,
             "scale_alpha": 0.81,
@@ -1641,7 +1641,7 @@
         "id": 150,
         "fields": {
             "question": "Am not bothered by disorder.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "orderliness",
             "id": 15,
             "scale_alpha": 0.81,
@@ -1652,7 +1652,7 @@
         "id": 151,
         "fields": {
             "question": "Leave a mess in my room.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "orderliness",
             "id": 15,
             "scale_alpha": 0.81,
@@ -1663,7 +1663,7 @@
         "id": 152,
         "fields": {
             "question": "Leave my belongings around.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "orderliness",
             "id": 15,
             "scale_alpha": 0.81,
@@ -1674,7 +1674,7 @@
         "id": 153,
         "fields": {
             "question": "Put off unpleasant tasks.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "orderliness",
             "id": 15,
             "scale_alpha": 0.81,
@@ -1761,7 +1761,7 @@
         "id": 161,
         "fields": {
             "question": "Am not easily annoyed.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "emotionality",
             "id": 16,
             "scale_alpha": 0.76,
@@ -1772,7 +1772,7 @@
         "id": 162,
         "fields": {
             "question": "Try to forgive and forget.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "emotionality",
             "id": 16,
             "scale_alpha": 0.76,
@@ -1783,7 +1783,7 @@
         "id": 163,
         "fields": {
             "question": "Have a good word for everyone.",
-            "sign": "negitive",
+            "sign": "negative",
             "category_name": "emotionality",
             "id": 16,
             "scale_alpha": 0.76,
