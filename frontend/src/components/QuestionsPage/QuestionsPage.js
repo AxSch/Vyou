@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import PersonalityQuestions from './Personality/PersonalityQuestions';
 import EnergyFlowQuestions from './EnergyFlow/EnergyFlowQuestions';
+import EnergyLevelQuestions from './EnergyLevel/EnergyLevelQuestions';
 
 
 class QuestionsPage extends Component {
@@ -37,12 +38,14 @@ class QuestionsPage extends Component {
     }
 
     renderCategoryQuestions(category) {
-        const { personalityQuestions, energyFlowQuestions, resetAllAnswers, answers } = this.props;
+        const { personalityQuestions, energyFlowQuestions, energyLevelQuestions, energyMappingQuestions, resetAllAnswers, answers } = this.props;
         switch(category) {
             case 'PERSONALITY':
                 return <PersonalityQuestions questions={personalityQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>;
             case 'ENERGYFLOW':
                 return <EnergyFlowQuestions questions={energyFlowQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>;
+            case 'ENERGYLEVEL':
+                return <EnergyLevelQuestions questions={energyLevelQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>;
             default:
                 return null;
         }
@@ -60,8 +63,8 @@ class QuestionsPage extends Component {
                     <h4>Topics</h4>
                     <label htmlFor={"personality"}>Personality</label>
                     <input type="radio" name={"questions"} value={"PERSONALITY"} id={"personality"} onChange={(e) => this.handleOnChange(e)}/>
-                    <label htmlFor={"energyLevels"}>Energy Levels</label>
-                    <input type="radio" name={"questions"} value={"ENERGYLEVELS"} id={"energyLevels"} onChange={(e) => this.handleOnChange(e)}/>
+                    <label htmlFor={"energyLevel"}>Energy Levels</label>
+                    <input type="radio" name={"questions"} value={"ENERGYLEVEL"} id={"energyLevel"} onChange={(e) => this.handleOnChange(e)}/>
                     <label htmlFor={"energyFlow"}>Energy Flow</label>
                     <input type="radio" name={"questions"} value={"ENERGYFLOW"} id={"energyFlow"} onChange={(e) => this.handleOnChange(e)}/>
                     <label htmlFor={"energyMapping"}>Energy Mapping</label>
