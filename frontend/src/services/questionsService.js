@@ -5,14 +5,14 @@ const personalityQuestions = () => {
   .get("/api/v1/questions/personality/")
 }
 
-const energyLevelQuestions = () => {
+const energyFlowQuestions = () => {
   return request
-  .get("/api/v1/questions/energy_level/")
+  .get("/api/v1/questions/energy_flow/")
 }
 
 
 const questionsService = {
   personalityQuestions,
-  energyLevelQuestions
+  energyFlowQuestions
 }
 export default questionsService;

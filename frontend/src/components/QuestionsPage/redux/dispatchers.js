@@ -16,10 +16,10 @@ const requestPSQuestionsDispatcher = (category) => {
   }
 }
 
-const requestELQuestionsDispatcher = (category) => {
+const requestEFQuestionsDispatcher = (category) => {
   return dispatch => {
     dispatch(questionRequestActions.questionRequest);
-    questionsService.energyLevelQuestions()
+    questionsService.energyFlowQuestions()
       .then(
         response => {
           dispatch(questionRequestActions.questionRequestSuccess(response.data, category));
@@ -33,7 +33,7 @@ const requestELQuestionsDispatcher = (category) => {
 
 const questionsDispatchers = {
   requestPSQuestionsDispatcher,
-  requestELQuestionsDispatcher
+  requestEFQuestionsDispatcher
 }
 
 export default questionsDispatchers;

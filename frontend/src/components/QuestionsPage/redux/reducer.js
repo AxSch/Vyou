@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 const intitialState = {
   personalityQuestions: [],
-  energyLevelQuestions: [],
+  energyFlowQuestions: [],
 }
 
 const receiveQuestions = (state, questions, category) => {
