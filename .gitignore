@@ -20,3 +20,4 @@ user_profile/__pycache__/
 user_profile/migrations/__pycache__/
 question_ans/__pycache__/
 question_ans/migrations/__pycache__/
+webpack-stats.dev.json
