@@ -43,10 +43,10 @@ const getProfileDispatcher = (userId) => {
   };
 }
 
-const createUserProfileDispatcher = (userId, userProfileInformation) => {
+const createUserProfileDispatcher = (userProfileInformation) => {
   return dispatch => {
     dispatch(profileActions.createUserProfile());
-    profileService.createUserProfile(userId, userProfileInformation)
+    profileService.createUserProfile(userProfileInformation)
       .then(
         res => {
           dispatch(profileActions.createUserProfileSuccess(res.data));
