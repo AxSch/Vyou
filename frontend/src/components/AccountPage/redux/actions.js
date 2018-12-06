@@ -90,6 +90,24 @@ const deleteUserProfileFailure = (error) => ({
   }
 });
 
+const setUserId = () => ({
+  type: actionTypes.SET_USER_ID,
+});
+
+const setUserIdSuccess = (userId) => ({
+  type: actionTypes.SET_USER_ID_SUCCESS,
+  payload: {
+    userId
+  }
+});
+
+const setUserIdFailure = (error) => ({
+  type: actionTypes.SET_USER_ID_FAILURE,
+  payload: {
+    error
+  }
+});
+
 const profileActions = {
   getAllUsers,
   getAllUsersSuccess,
@@ -105,7 +123,10 @@ const profileActions = {
   updateUserProfileFailure,
   deleteUserProfile,
   deleteUserProfileSuccess,
-  deleteUserProfileFailure
+  deleteUserProfileFailure,
+  setUserId,
+  setUserIdSuccess,
+  setUserIdFailure
 };
 
 export default profileActions;
