@@ -17,6 +17,17 @@ const getAllUsersDispatcher = () => {
   };
 }
 
+const setUserIdDispatcher = (userId) => {
+  return dispatch => {
+    try {
+      dispatch(profileActions.setUserId())
+      dispatch(profileActions.setUserIdSuccess(userId));
+    } catch(error) {
+      dispatch(profileActions.setUserIdFailure(error.toString()));
+    }
+  };
+}
+
 const getProfileDispatcher = () => {
   return dispatch => {
     dispatch(profileActions.getUserProfile());
@@ -34,7 +45,8 @@ const getProfileDispatcher = () => {
 
 const profileDispatchers = {
   getAllUsersDispatcher,
-  getProfileDispatcher
+  getProfileDispatcher,
+  setUserIdDispatcher
 }
 
 export default profileDispatchers;
