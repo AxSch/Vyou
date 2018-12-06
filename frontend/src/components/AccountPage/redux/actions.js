@@ -30,7 +30,7 @@ const getUserProfileSuccess = (profile) => ({
 });
 
 const getUserProfileFailure = (error) => ({
-  type: actionTypes.GET_PROFILE_SUCCESS,
+  type: actionTypes.GET_PROFILE_FAILURE,
   payload: {
     error
   }
