@@ -28,13 +28,13 @@ const setUserIdDispatcher = (userId) => {
   };
 }
 
-const getProfileDispatcher = () => {
+const getProfileDispatcher = (userId) => {
   return dispatch => {
     dispatch(profileActions.getUserProfile());
     profileService.getUserProfile()
       .then(
-        profile => {
-          dispatch(profileActions.getUserProfileSuccess(profile));
+        res => {
+          dispatch(profileActions.getUserProfileSuccess(res.data));
         },
         error => {
           dispatch(profileActions.getUserProfileFailure(error.toString()));
