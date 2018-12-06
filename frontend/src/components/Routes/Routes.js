@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import LoginContainer from '../Login/LoginContainer';
-import ProfileContainer from '../AccountPage/Profile/ProfileContainer';
+import ProfilePageContainer from '../AccountPage/ProfilePageContainer';
 import AccountSettingsContainer from '../AccountPage/AccountSettings/AccountSettingsContainer';
 import QuestionsPageContainer from '../QuestionsPage/QuestionsPageContainer';
 import HomePage from '../HomePage/HomePage';
@@ -13,7 +13,7 @@ const routes = () => {
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route path="/accounts/login" component={LoginContainer}/>
-      <Route path="/accounts/profile" component={ProfileContainer}/>
+      <Route path="/accounts/profile" component={ProfilePageContainer}/>
       <Route path="/accounts/settings" component={AccountSettingsContainer}/>
       <Route path="/questions" component={QuestionsPageContainer}/>
       <Route component={NotFound} />
