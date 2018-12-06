@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Profile(models.Model):
   name = models.CharField(max_length=100)
-  gender = models.CharField(max_length=32)
+  sex = models.CharField(max_length=32)
   dob = models.CharField(max_length=16)
   address = models.TextField()
   job_title = models.CharField(max_length=64)
