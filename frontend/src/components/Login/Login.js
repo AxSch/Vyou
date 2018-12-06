@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { Link, Redirect } from 'react-router-dom';
-// import { Redirect } from 'react-router';
-// import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 class LoginPage extends Component {
     constructor(props) {
         super(props);
-        // this.props.logoutDispatcher();
+
         this.state = {
             email: '',
             password: '',
