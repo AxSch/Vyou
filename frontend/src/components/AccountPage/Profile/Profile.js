@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
-// import { connect } from 'react-redux';
-
+import { Link } from 'react-router-dom';
 class Profile extends PureComponent {
     checkUserLogged = (email) => {
         if (email !== null) {
@@ -17,10 +16,18 @@ class Profile extends PureComponent {
             </div>
         )
     }
+    renderAccountSettings() {
+        return (
+            <ul>
+                <li><Link to="/accounts/settings">account settings</Link></li>
+            </ul>
+        )
+    }
     render() {
-        const { userEmail } = this.props;
+        const { userEmail, userLoggedIn } = this.props;
         return (
             <div className="col-md-6 col-md-offset-3">
+                {userLoggedIn ? this.renderAccountSettings() : null}
                 {this.checkUserLogged(userEmail)}
             </div>
         );
