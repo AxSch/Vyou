@@ -5,12 +5,13 @@ import AccountSettings from './AccountSettings';
 import profileDispatchers from '../redux/dispatchers';
 
 const mapStateToProps = (state, ownProps) => ({
-    userEmail: state.login.userEmail
+    userEmail: state.login.userEmail,
+    profile: state.profile
 });
 
 const mapDispatchToProps = dispatch => (
     bindActionCreators({
-        createProfile: profileDispatchers.getProfileDispatcher
+        createProfile: profileDispatchers.createUserProfileDispatcher
     }, dispatch)
 );
 
