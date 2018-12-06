@@ -7,7 +7,8 @@ import profileDispatchers from '../redux/dispatchers';
 const mapStateToProps = (state, ownProps) => ({
     userEmail: state.login.userEmail,
     userLoggedIn: state.login.loggedIn,
-    users: state.users.allUsers
+    users: state.users.allUsers,
+    profile: state.profile
 });
 
 const mapDispatchToProps = dispatch => (
