@@ -2,8 +2,19 @@ import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 class Profile extends PureComponent {
     componentDidMount() {
-        const { fetchAllUsers } = this.props;
+        const { fetchAllUsers, userEmail, setUserId } = this.props;
         fetchAllUsers();
+        const userId = this.getUserId(userEmail);
+        setUserId(userId);
+
+    }
+    getUserId(email) {
+        const { users, userLoggedIn } = this.props;
+        if (userLoggedIn) {
+            const userObj = users.filter((user) => user.email === email);
+            return userObj[0].id;
+        }
+        return null;
     }
     checkUserLogged = (email) => {
         if (email !== null) {
