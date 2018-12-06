@@ -68,77 +68,41 @@ const initialState = {
       isValid: null
     },
   },
-  answeredEnergyMappings: {
+  answeredEnergyMapping: {
     1 : {
-      1 : {
-        isValid: null
-      },
-      2 : {
-        isValid: null
-      },
-      3 : {
-        isValid: null
-      }
+      1 : {},
+      2 : {},
+      3 : {}
     },
     2 : {
-      1 : {
-        isValid: null
-      },
-      2 : {
-        isValid: null
-      },
-      3 : {
-        isValid: null
-      }
+      1 : {},
+      2 : {},
+      3 : {}
     },
     3 : {
-      1 : {
-        isValid: null
-      },
-      2 : {
-        isValid: null
-      },
-      3 : {
-        isValid: null
-      }
+      1 : {},
+      2 : {},
+      3 : {}
     },
     4 : {
-      1 : {
-        isValid: null
-      },
-      2 : {
-        isValid: null
-      },
-      3 : {
-        isValid: null
-      }
+      1 : {},
+      2 : {},
+      3 : {}
     },
     5 : {
-      1 : {
-        isValid: null
-      },
-      2 : {
-        isValid: null
-      },
-      3 : {
-        isValid: null
-      }
+      1 : {},
+      2 : {},
+      3 : {}
     },
     6 : {
-      1 : {
-        isValid: null
-      },
-      2 : {
-        isValid: null
-      },
-      3 : {
-        isValid: null
-      }
+      1 : {},
+      2 : {},
+      3 : {}
     },
   },
 }
 
-const updateAnswer = (state, userAnswer, categoryId, questionType) => {
+const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId) => {
   let newState = _.clone(state);
   switch (questionType) {
     case 'PS':
@@ -189,12 +153,30 @@ const updateAnswer = (state, userAnswer, categoryId, questionType) => {
         }
       }
       return newState;
+    case 'EM':
+      newState.answeredEnergyMapping = {
+        ...newState.answeredEnergyMapping,
+        [categoryId]: {
+          ...newState.answeredEnergyMapping[categoryId],
+          [subCategoryId]: {
+            ...newState.answeredEnergyMapping[categoryId][subCategoryId],
+            [userAnswer.questionId]: {
+              ...newState.answeredEnergyMapping[categoryId][subCategoryId][userAnswer.questionId],
+              question: userAnswer.question,
+              questionSign: userAnswer.questionSign,
+              value: userAnswer.answerValue,
+              lastUpdated: userAnswer.lastUpdated
+            }
+          }
+        }
+      }
+      return newState;
     default:
       return state
   }
 }
 
-const validateAnswers = (state, answers, questions, categoryId, questionType) => {
+const validateAnswers = (state, answers, questions, categoryId, questionType, subCategoryId) => {
   let newState = _.clone(state);
   switch(questionType) {
     case 'PS':
@@ -210,6 +192,7 @@ const validateAnswers = (state, answers, questions, categoryId, questionType) =>
     case 'EF':
       if (newState.answeredEnergyFlow[categoryId]) {
         const answersArr = Object.values(newState.answeredEnergyFlow[categoryId]);
+
         if (answersArr.length - 1 === questions.length) {
           newState.answeredEnergyFlow[categoryId].isValid = true;
         } else {
@@ -227,6 +210,19 @@ const validateAnswers = (state, answers, questions, categoryId, questionType) =>
         }
       }
       return newState;
+    case 'EM':
+      if (newState.answeredEnergyMapping[categoryId]) {
+        const answersArr = Object.values(newState.answeredEnergyMapping[categoryId][subCategoryId]);
+        const questionCategory = questions.filter((question) => question.fields.id === categoryId);
+        const questionSubCategory = questionCategory.filter((question) => question.fields.subCategory_id === subCategoryId);
+
+        if (answersArr.length - 1 === questionSubCategory.length) {
+          newState.answeredEnergyMapping[categoryId][subCategoryId].isValid = true;
+        } else {
+          newState.answeredEnergyMapping[categoryId][subCategoryId].isValid = false;
+        }
+      }
+      return newState;
     default:
       return state;
   }
@@ -236,14 +232,14 @@ const validateAnswers = (state, answers, questions, categoryId, questionType) =>
 const answersReducer = (state=initialState, action) => {
   switch(action.type){
     case actionTypes.SET_ANSWER:
-      const setAnswerState = updateAnswer(state, action.payload.userAnswer, action.payload.categoryId, action.payload.questionType);
+      const setAnswerState = updateAnswer(state, action.payload.userAnswer, action.payload.categoryId, action.payload.questionType, action.payload.subCategoryId);
       return setAnswerState;
     case actionTypes.SAVE_ANSWERS:
       return {
         ...state
       }
     case actionTypes.VALIDATE_ANSWERS:
-      const validAnswerState = validateAnswers(state, action.payload.answers, action.payload.questions, action.payload.categoryId, action.payload.questionType);
+      const validAnswerState = validateAnswers(state, action.payload.answers, action.payload.questions, action.payload.categoryId, action.payload.questionType, action.payload.subCategoryId);
       return validAnswerState;
     case actionTypes.RESET_ANSWERS:
       return initialState;
