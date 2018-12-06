@@ -4,6 +4,7 @@ class AccountSettings extends PureComponent {
     constructor(props) {
       super(props);
       const { userEmail } = this.props;
+      
       this.state = {
         name: null,
         email: userEmail,
@@ -25,6 +26,7 @@ class AccountSettings extends PureComponent {
         gitHubProfile: null,
         instagramProfile: null,
       };
+      
       this.handleStateUpdate = this.handleStateUpdate.bind(this);
       this.onInputChange = this.onInputChange.bind(this);
     }
@@ -34,9 +36,7 @@ class AccountSettings extends PureComponent {
         return {
             [name]: value
         }
-      }, () => {
-        // console.log(value)
-      });
+      }, () => {});
     }
     
     onInputChange(value, name) {
