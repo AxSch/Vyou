@@ -1,14 +1,24 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
+import AccountSettingsContainer from '../AccountSettings/AccountSettingsContainer';
 class Profile extends PureComponent {
+    constructor(props) {
+        super(props);
+
+        this.getUserId = this.getUserId.bind(this);
+        this.checkProfileExists = this.checkProfileExists.bind(this);
+        this.checkUserLogged = this.checkUserLogged.bind(this);
+        this.renderAccountSettings = this.renderAccountSettings.bind(this);
+    }
+
     componentDidMount() {
-        const { fetchAllUsers, userEmail, setUserId, fetchProfile } = this.props;
+        const { fetchAllUsers, userEmail, setUserId, fetchProfile, profile } = this.props;
         fetchAllUsers();
         const userId = this.getUserId(userEmail);
         setUserId(userId);
         fetchProfile(userId);
-
     }
+    
     getUserId(email) {
         const { users, userLoggedIn } = this.props;
         if (userLoggedIn) {
@@ -17,6 +27,23 @@ class Profile extends PureComponent {
         }
         return null;
     }
+    
+    checkProfileExists(profile) {
+        if (profile.hasProfile) {
+            return "Profile Page";
+        } else {
+            return (
+                <div>
+                    <h3>Profile has been completed...</h3>
+                    <div>
+                        <p>Please fill out the information below:</p>
+                        <AccountSettingsContainer />
+                    </div>
+                </div>
+            );
+        }
+    }
+    
     checkUserLogged = (email) => {
         if (email !== null) {
             return (
@@ -32,6 +59,7 @@ class Profile extends PureComponent {
             </div>
         )
     }
+
     renderAccountSettings() {
         return (
             <ul>
@@ -39,12 +67,14 @@ class Profile extends PureComponent {
             </ul>
         )
     }
+
     render() {
-        const { userEmail, userLoggedIn } = this.props;
+        const { userEmail, userLoggedIn, profile} = this.props;
         return (
             <div className="col-md-6 col-md-offset-3">
                 {userLoggedIn ? this.renderAccountSettings() : null}
                 {this.checkUserLogged(userEmail)}
+                {this.checkProfileExists(profile)}
             </div>
         );
     }
