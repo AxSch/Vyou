@@ -31,7 +31,7 @@ const setUserIdDispatcher = (userId) => {
 const getProfileDispatcher = (userId) => {
   return dispatch => {
     dispatch(profileActions.getUserProfile());
-    profileService.getUserProfile()
+    profileService.getUserProfile(userId)
       .then(
         res => {
           dispatch(profileActions.getUserProfileSuccess(res.data));
