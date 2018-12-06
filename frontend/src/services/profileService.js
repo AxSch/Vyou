@@ -10,9 +10,9 @@ const getUserProfile = (userId) => {
   .get(`/api/v1/profiles/${userId}`)
 }
 
-const createUserProfile = (userId, userProfileData) => {
+const createUserProfile = (userProfileData) => {
   return request
-  .post(`/api/v1/profiles/${userId}`, {
+  .post(`/api/v1/profiles/`, {
     user: userProfileData.id,
     name: userProfileData.name,
     sex: userProfileData.sex,
