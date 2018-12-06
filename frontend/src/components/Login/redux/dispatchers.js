@@ -1,15 +1,12 @@
 import loginActions from '../redux/actions';
-import userService from '../../../services/userService';
+import authService from '../../../services/authService';
 // import history from '../../../helpers/history';
 // import
-
-
-
 
 const loginDispatcher = (email, password) => {
   return dispatch => {
     dispatch(loginActions.loginRequest(email, password));
-    userService.login(email, password)
+    authService.login(email, password)
       .then(
         user => {
           dispatch(loginActions.loginSuccess(user));
@@ -22,7 +19,7 @@ const loginDispatcher = (email, password) => {
 }
 
 const logoutDispatcher = () => {
-  userService.logout();
+  authService.logout();
   return {
     type: loginActions.LOGOUT,
   }

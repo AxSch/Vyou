@@ -43,7 +43,7 @@ const logout = () => {
   localStorage.removeItem('email');
 }
 
-const userService = {
+const authService = {
   login,
   logout,
   // signup,
@@ -53,4 +53,4 @@ const userService = {
   // delete: deleteUser
 };
 
-export default userService;
+export default authService;
