@@ -10,7 +10,7 @@ class Answers extends Component {
     }
 
     handleOnChange(e) {
-        const { personalityQuestions, energyFlowQuestions, energyLevelQuestions, answers, categoryId, questionId, setAnswer, questionText, questionSign, validateAnswers, questionType } = this.props;
+        const { personalityQuestions, energyFlowQuestions, energyLevelQuestions, energyMappingQuestions, answers, categoryId, questionId, setAnswer, questionText, questionSign, validateAnswers, questionType, subCategoryId } = this.props;
         switch(questionType) {
             case 'PS':
                 const personalityQues = personalityQuestions.filter((question) => question.fields.id === categoryId);
@@ -27,6 +27,11 @@ class Answers extends Component {
                 setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format(), questionType);
                 validateAnswers(answers.answeredPersonality, energyLevelQues, categoryId, questionType);
                 break;
+            case 'EM':
+                const energyMappingQues =  energyMappingQuestions.filter((question) => question.fields.id === categoryId);
+                setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format(), questionType, subCategoryId);
+                validateAnswers(answers.answeredPersonality, energyMappingQues, categoryId, questionType, subCategoryId);
+                break;
             default:
                 return null;
         }
@@ -35,6 +40,7 @@ class Answers extends Component {
 
     render() {
         const { questionId } = this.props;
+
         return (
             <div>
                 <label htmlFor={`stronglyAgree-${questionId}`}>Strongly Agree</label>
@@ -63,6 +69,7 @@ Answers.PropTypes = {
     setAnswer: PropTypes.func,
     questionId: PropTypes.number,
     categoryId: PropTypes.number,
+    subCategoryId: PropTypes.number,
     questionText: PropTypes.string,
     questionSign: PropTypes.string,
     questionType: PropTypes.string,
