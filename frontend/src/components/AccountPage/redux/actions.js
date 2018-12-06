@@ -1,5 +1,23 @@
 import actionTypes from './actionTypes';
 
+const getAllUsers = () => ({
+  type: actionTypes.GET_ALL_USERS
+});
+
+const getAllUsersSuccess = (users) => ({
+  type: actionTypes.GET_ALL_USERS_SUCCESS,
+  payload: {
+    users
+  }
+});
+
+const getAllUsersFailure = (error) => ({
+  type: actionTypes.GET_ALL_USERS_FAILURE,
+  payload: {
+    error
+  }
+});
+
 const getUserProfile = () => ({
   type: actionTypes.GET_PROFILE
 });
@@ -11,10 +29,9 @@ const getUserProfileSuccess = (profile) => ({
   }
 });
 
-const getUserProfileError = (profile, error) => ({
+const getUserProfileFailure = (error) => ({
   type: actionTypes.GET_PROFILE_SUCCESS,
   payload: {
-    profile,
     error
   }
 });
@@ -30,10 +47,9 @@ const createUserProfileSuccess = (profile) => ({
   }
 });
 
-const createUserProfileError = (profile, error) => ({
+const createUserProfileFailure = (error) => ({
   type: actionTypes.CREATE_PROFILE_ERROR,
   payload: {
-    profile,
     error
   }
 });
@@ -49,10 +65,9 @@ const updateUserProfileSuccess = (profile) => ({
   }
 });
 
-const updateUserProfileError = (profile, error) => ({
+const updateUserProfileFailure = (error) => ({
   type: actionTypes.UPDATE_PROFILE_ERROR,
   payload: {
-    profile,
     error
   }
 });
@@ -68,27 +83,29 @@ const deleteUserProfileSuccess = (profile) => ({
   }
 });
 
-const deleteUserProfileError = (profile, error) => ({
+const deleteUserProfileFailure = (error) => ({
   type: actionTypes.UPDATE_PROFILE_ERROR,
   payload: {
-    profile,
     error
   }
 });
 
 const profileActions = {
+  getAllUsers,
+  getAllUsersSuccess,
+  getAllUsersFailure,
   getUserProfile,
   getUserProfileSuccess,
-  getUserProfileError,
+  getUserProfileFailure,
   createUserProfile,
   createUserProfileSuccess,
-  createUserProfileError,
+  createUserProfileFailure,
   updateUserProfile,
   updateUserProfileSuccess,
-  updateUserProfileError,
+  updateUserProfileFailure,
   deleteUserProfile,
   deleteUserProfileSuccess,
-  deleteUserProfileError
+  deleteUserProfileFailure
 };
 
 export default profileActions;
