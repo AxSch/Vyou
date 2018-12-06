@@ -5,9 +5,9 @@ const getUsers = () => {
   .get("/api/v1/users/")
 }
 
-const getUserProfile = () => {
+const getUserProfile = (userId) => {
   return request
-  .get("/api/v1/profiles/")
+  .get(`/api/v1/profiles/${userId}`)
 }
 
 const profileService = {
