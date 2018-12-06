@@ -1,7 +1,13 @@
 from django.db import models
-
+from users_api.models import CustomUser
 # Create your models here.
 class Profile(models.Model):
+  user = models.OneToOneField(
+    CustomUser,
+    on_delete=models.CASCADE,
+    primary_key=True,
+    default=1
+  )
   name = models.CharField(max_length=100)
   sex = models.CharField(max_length=32)
   dob = models.CharField(max_length=16)
