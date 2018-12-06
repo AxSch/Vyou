@@ -1,6 +1,10 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 class Profile extends PureComponent {
+    componentDidMount() {
+        const { fetchAllUsers } = this.props;
+        fetchAllUsers();
+    }
     checkUserLogged = (email) => {
         if (email !== null) {
             return (
