@@ -22,6 +22,7 @@ const profileReducer = (state=initialStateProfile, action) => {
           ...newState
         };
         newState.profile = action.payload.profile;
+        newState.hasProfile = true
         newState.error = null;
         return newState;
       case actionTypes.GET_PROFILE_FAILURE:
@@ -29,6 +30,7 @@ const profileReducer = (state=initialStateProfile, action) => {
           ...newState
         };
         newState.error = action.payload.error;
+        newState.hasProfile = false
         return newState;
       case actionTypes.SET_USER_ID:
         return newState = {
