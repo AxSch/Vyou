@@ -2,10 +2,11 @@ import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 class Profile extends PureComponent {
     componentDidMount() {
-        const { fetchAllUsers, userEmail, setUserId } = this.props;
+        const { fetchAllUsers, userEmail, setUserId, fetchProfile } = this.props;
         fetchAllUsers();
         const userId = this.getUserId(userEmail);
         setUserId(userId);
+        fetchProfile(userId);
 
     }
     getUserId(email) {
