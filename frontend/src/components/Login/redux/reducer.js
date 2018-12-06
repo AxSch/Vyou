@@ -26,7 +26,7 @@ const loginReducer = (state=initialState, action) => {
         }
       case actionTypes.LOGIN_FAILURE:
         return {
-          error: action.error,
+          error: action.payload.error,
         }
       case actionTypes.LOGGED_OUT:
         return {
