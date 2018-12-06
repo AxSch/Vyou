@@ -31,10 +31,10 @@ class EnergyMappingQuestions extends Component {
         }
     }
 
-    handleBackButton(categoryId, subCategoryId) {
-        if (subCategoryId === 1) {
+    handleBackButton(subCategoryId, categoryId) {
+        if (subCategoryId === 1 && categoryId === 1) {
             return null;
-        } else if (subCategoryId > 1 || categoryId >= 1)  {
+        } else {
             return <button onClick={this.handleBackPageClick}>Back</button>
         }
     }
@@ -42,49 +42,63 @@ class EnergyMappingQuestions extends Component {
     handlePageClick() {
         const { answers } = this.props;
         const { categoryId, subCategoryId } = this.state;
-        
+
         if (categoryId === 1 || categoryId < 6) {
           if (subCategoryId < 3) {
-            this.setState (prevState => {
-                      return {
-                        subCategoryId: prevState.subCategoryId + 1
-                      }
-                  }, () => {});
-          } else if (subCategoryId === 3) {
-            this.setState (prevState => {
-              return {
-                categoryId: prevState.categoryId + 1,
-                subCategoryId: 1
+              if (answers.answeredEnergyMapping[categoryId][subCategoryId].isValid === true) {
+                  this.setState (prevState => {
+                            return {
+                              subCategoryId: prevState.subCategoryId + 1,
+                            }
+                        }, () => {});
               }
-          }, () => {});
+          } else if (subCategoryId === 3) {
+            if (answers.answeredEnergyMapping[categoryId][subCategoryId].isValid === true) {
+                this.setState (prevState => {
+                  return {
+                    categoryId: prevState.categoryId + 1,
+                    subCategoryId: 1,
+                  }
+              }, () => {});
+            }
           }
         }
-        // if (answers.answeredEnergyMapping[categoryId].isValid === true) {
-        //     this.setState (prevState => {
-        //         return {
-        //             categoryId: prevState.categoryId + 1
-        //         }
-        //     }, () => {});
-        // }
     }
 
     handleBackPageClick() {
-        this.setState (prevState => {
-            return {
-                categoryId: prevState.categoryId - 1
-            }
-        }, () => {});
+        const { categoryId, subCategoryId } = this.state;
+
+        if (categoryId === 1 && subCategoryId > 1) {
+            this.setState (prevState => {
+                return {
+                    subCategoryId: prevState.subCategoryId - 1,
+                }
+            }, () => {});
+        } else if (categoryId > 1 && subCategoryId === 1) {
+            this.setState (prevState => {
+                return {
+                    categoryId: prevState.categoryId - 1,
+                    subCategoryId: 3,
+                }
+            }, () => {});
+        } else if (categoryId > 1 && subCategoryId > 1) {
+            this.setState (prevState => {
+                return {
+                    subCategoryId: prevState.subCategoryId - 1,
+                }
+            }, () => {});
+        }
     }
 
     render() {
         const { questions } = this.props;
-        const { categoryId, questionType, subCategory, subCategoryId } = this.state;
+        const { categoryId, questionType, subCategory, subCategoryId, categoryComplete } = this.state;
  
         return (
             <div>
                 <h2>Energy Mapping Questions</h2>
                 <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType} subCategory={subCategory} subCategoryId={subCategoryId}/>
-                {this.handleBackButton(subCategoryId)}
+                {this.handleBackButton(subCategoryId, categoryId)}
                 {this.handleNextButton(categoryId)}
             </div>
         );
