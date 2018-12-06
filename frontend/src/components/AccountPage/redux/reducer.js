@@ -6,7 +6,6 @@ const initialStateProfile = {
   hasProfile: null,
   profileCreated: null,
   profile: {},
-  profileLastUpdated: null,
   error: null
 }
 
