@@ -6,7 +6,7 @@ class Profile(models.Model):
     CustomUser,
     on_delete=models.CASCADE,
     primary_key=True,
-    default=1
+    default=0
   )
   name = models.CharField(max_length=100)
   sex = models.CharField(max_length=32)
