@@ -16,6 +16,7 @@ class HomePage extends Component {
           <ul>
             <li><Link to="/accounts/login">Login</Link></li>
             <li><Link to="/accounts/profile">Profile</Link></li>
+            <li><Link to="/questions">Questions</Link></li>
             <li>Logout</li>
             <li>About Us</li>
           </ul>

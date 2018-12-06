@@ -1,0 +1,1793 @@
+[{
+        "id": 1,
+        "fields": {
+            "question": "Know how to comfort others.",
+            "sign": "positive",
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
+        }
+    },
+    {
+        "id": 2,
+        "fields": {
+            "question": "Enjoy bringing people together.",
+            "sign": "positive",
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
+        }
+    },
+    {
+        "id": 3,
+        "fields": {
+            "question": "Feel others' emotions.",
+            "sign": "positive",
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
+        }
+    },
+    {
+        "id": 4,
+        "fields": {
+            "question": "Take an interest in other people's lives",
+            "sign": "positive",
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
+        }
+    },
+    {
+        "id": 5,
+        "fields": {
+            "question": "Cheer people up.",
+            "sign": "positive",
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
+        }
+    },
+    {
+        "id": 6,
+        "fields": {
+            "question": "Make people feel at ease.",
+            "sign": "positive",
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
+        }
+    },
+    {
+        "id": 7,
+        "fields": {
+            "question": "Take time out for others.",
+            "sign": "positive",
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
+        }
+    },
+    {
+        "id": 8,
+        "fields": {
+            "question": "Don't like to get involved in other people's problems.",
+            "sign": "negative",
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
+        }
+    },
+    {
+        "id": 9,
+        "fields": {
+            "question": "Am not really interested in others.",
+            "sign": "negative",
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
+        }
+    },
+    {
+        "id": 10,
+        "fields": {
+            "question": "Try not to think about the needy.",
+            "sign": "negative",
+            "category_name": "warmth",
+            "id": 1,
+            "scale_alpha": 0.08,
+            "factor": "A: Warmth"
+        }
+    },
+    {
+        "id": 11,
+        "fields": {
+            "question": "Make insightful remarks.",
+            "sign": "positive",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 12,
+        "fields": {
+            "question": "Know the answers to many questions.",
+            "sign": "positive",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 13,
+        "fields": {
+            "question": "Tend to analyze things.",
+            "sign": "positive",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 14,
+        "fields": {
+            "question": "Use my brain.",
+            "sign": "positive",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 15,
+        "fields": {
+            "question": "Learn quickly.",
+            "sign": "positive",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 16,
+        "fields": {
+            "question": "Counter others' arguments.",
+            "sign": "positive",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 17,
+        "fields": {
+            "question": "Reflect on things before acting.",
+            "sign": "positive",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 18,
+        "fields": {
+            "question": "Weigh the pros against the cons.",
+            "sign": "positive",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 19,
+        "fields": {
+            "question": "Consider myself an average person.",
+            "sign": "negative",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 20,
+        "fields": {
+            "question": "Get confused easily.",
+            "sign": "negative",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 21,
+        "fields": {
+            "question": "Know that I am not a special person.",
+            "sign": "negative",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 22,
+        "fields": {
+            "question": "Have a poor vocabulary.",
+            "sign": "negative",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 23,
+        "fields": {
+            "question": "Skip difficult words while reading.",
+            "sign": "negative",
+            "category_name": "intellect",
+            "id": 2,
+            "scale_alpha": 0.76,
+            "factor": "B: Reasoning"
+        }
+    },
+    {
+        "id": 24,
+        "fields": {
+            "question": "Seldom feel blue.",
+            "sign": "positive",
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
+        }
+    },
+    {
+        "id": 25,
+        "fields": {
+            "question": "Feel comfortable with myself.",
+            "sign": "positive",
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
+        }
+    },
+    {
+        "id": 26,
+        "fields": {
+            "question": "Readily overcome setbacks.",
+            "sign": "positive",
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
+        }
+    },
+    {
+        "id": 27,
+        "fields": {
+            "question": "Am relaxed most of the time.",
+            "sign": "positive",
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
+        }
+    },
+    {
+        "id": 28,
+        "fields": {
+            "question": "Am not easily frustrated.",
+            "sign": "positive",
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
+        }
+    },
+    {
+        "id": 29,
+        "fields": {
+            "question": "Have frequent mood swings.",
+            "sign": "negative",
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
+        }
+    },
+    {
+        "id": 30,
+        "fields": {
+            "question": "Often feel blue.",
+            "sign": "negative",
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
+        }
+    },
+    {
+        "id": 31,
+        "fields": {
+            "question": "Dislike myself.",
+            "sign": "negative",
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
+        }
+    },
+    {
+        "id": 32,
+        "fields": {
+            "question": "Feel desperate.",
+            "sign": "negative",
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
+        }
+    },
+    {
+        "id": 33,
+        "fields": {
+            "question": "Am easily discouraged.",
+            "sign": "negative",
+            "category_name": "emotional stability",
+            "id": 3,
+            "scale_alpha": 0.85,
+            "factor": "C: Emotional Stability"
+        }
+    },
+    {
+        "id": 34,
+        "fields": {
+            "question": "Take charge.",
+            "sign": "positive",
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
+        }
+    },
+    {
+        "id": 35,
+        "fields": {
+            "question": "Want to be in charge.",
+            "sign": "positive",
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
+        }
+    },
+    {
+        "id": 36,
+        "fields": {
+            "question": "Say what I think.",
+            "sign": "positive",
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
+        }
+    },
+    {
+        "id": 37,
+        "fields": {
+            "question": "Am not afraid of providing criticism.",
+            "sign": "positive",
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
+        }
+    },
+    {
+        "id": 38,
+        "fields": {
+            "question": "Take control of things.",
+            "sign": "positive",
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
+        }
+    },
+    {
+        "id": 39,
+        "fields": {
+            "question": "Can take strong measures.",
+            "sign": "positive",
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
+        }
+    },
+    {
+        "id": 40,
+        "fields": {
+            "question": "Wait for others to lead the way.",
+            "sign": "negative",
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
+        }
+    },
+    {
+        "id": 41,
+        "fields": {
+            "question": "Never challenge things.",
+            "sign": "negative",
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
+        }
+    },
+    {
+        "id": 42,
+        "fields": {
+            "question": "Let others make the decisions.",
+            "sign": "negative",
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
+        }
+    },
+    {
+        "id": 43,
+        "fields": {
+            "question": "Let myself be pushed around.",
+            "sign": "negative",
+            "category_name": "assertiveness",
+            "id": 4,
+            "scale_alpha": 0.81,
+            "factor": "E: Dominance"
+        }
+    },
+    {
+        "id": 44,
+        "fields": {
+            "question": "Am the life of the party.",
+            "sign": "positive",
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
+        }
+    },
+    {
+        "id": 45,
+        "fields": {
+            "question": "Love large parties.",
+            "sign": "positive",
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
+        }
+    },
+    {
+        "id": 46,
+        "fields": {
+            "question": "Joke around a lot.",
+            "sign": "positive",
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
+        }
+    },
+    {
+        "id": 47,
+        "fields": {
+            "question": "Enjoy being part of a loud crowd.",
+            "sign": "positive",
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
+        }
+    },
+    {
+        "id": 48,
+        "fields": {
+            "question": "Amuse my friends.",
+            "sign": "positive",
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
+        }
+    },
+    {
+        "id": 49,
+        "fields": {
+            "question": "Act wild and crazy.",
+            "sign": "positive",
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
+        }
+    },
+    {
+        "id": 50,
+        "fields": {
+            "question": "Seldom joke around.",
+            "sign": "negative",
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
+        }
+    },
+    {
+        "id": 51,
+        "fields": {
+            "question": "Don't like crowded events.",
+            "sign": "negative",
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
+        }
+    },
+    {
+        "id": 52,
+        "fields": {
+            "question": "Am the last to laugh at a joke.",
+            "sign": "negative",
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
+        }
+    },
+    {
+        "id": 53,
+        "fields": {
+            "question": "Dislike loud music.",
+            "sign": "negative",
+            "category_name": "gregariousness",
+            "id": 5,
+            "scale_alpha": 0.78,
+            "factor": "F Liveliness"
+        }
+    },
+    {
+        "id": 54,
+        "fields": {
+            "question": "Believe laws should be strictly enforced.",
+            "sign": "positive",
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
+        }
+    },
+    {
+        "id": 55,
+        "fields": {
+            "question": "Try to follow the rules.",
+            "sign": "positive",
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
+        }
+    },
+    {
+        "id": 56,
+        "fields": {
+            "question": "Believe in one true religion.",
+            "sign": "positive",
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
+        }
+    },
+    {
+        "id": 57,
+        "fields": {
+            "question": "Respect authority.",
+            "sign": "positive",
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
+        }
+    },
+    {
+        "id": 58,
+        "fields": {
+            "question": "Like to stand during the national anthem.",
+            "sign": "positive",
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
+        }
+    },
+    {
+        "id": 59,
+        "fields": {
+            "question": "Resist authority.",
+            "sign": "negative",
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
+        }
+    },
+    {
+        "id": 60,
+        "fields": {
+            "question": "Break rules.",
+            "sign": "negative",
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
+        }
+    },
+    {
+        "id": 61,
+        "fields": {
+            "question": "Use swear words.",
+            "sign": "negative",
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
+        }
+    },
+    {
+        "id": 62,
+        "fields": {
+            "question": "Oppose authority.",
+            "sign": "negative",
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
+        }
+    },
+    {
+        "id": 63,
+        "fields": {
+            "question": "Know how to get around the rules.",
+            "sign": "negative",
+            "category_name": "dutifulness",
+            "id": 6,
+            "scale_alpha": 0.84,
+            "factor": "G: Rule Consciousness"
+        }
+    },
+    {
+        "id": 64,
+        "fields": {
+            "question": "Feel comfortable around people.",
+            "sign": "positive",
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
+        }
+    },
+    {
+        "id": 65,
+        "fields": {
+            "question": "Talk to a lot of different people at parties.",
+            "sign": "positive",
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
+        }
+    },
+    {
+        "id": 66,
+        "fields": {
+            "question": "Don't mind being the center of attention.",
+            "sign": "positive",
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
+        }
+    },
+    {
+        "id": 67,
+        "fields": {
+            "question": "Make friends easily.",
+            "sign": "positive",
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
+        }
+    },
+    {
+        "id": 68,
+        "fields": {
+            "question": "Start conversations.",
+            "sign": "positive",
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
+        }
+    },
+    {
+        "id": 69,
+        "fields": {
+            "question": "Find it difficult to approach others.",
+            "sign": "negative",
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
+        }
+    },
+    {
+        "id": 70,
+        "fields": {
+            "question": "Often feel uncomfortable around others.",
+            "sign": "negative",
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
+        }
+    },
+    {
+        "id": 71,
+        "fields": {
+            "question": "Have little to say.",
+            "sign": "negative",
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
+        }
+    },
+    {
+        "id": 72,
+        "fields": {
+            "question": "Am quiet around strangers.",
+            "sign": "negative",
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
+        }
+    },
+    {
+        "id": 73,
+        "fields": {
+            "question": "Keep in the background.",
+            "sign": "negative",
+            "category_name": "friendliness",
+            "id": 7,
+            "scale_alpha": 0.80,
+            "factor": "H: Social Boldness"
+        }
+    },
+    {
+        "id": 74,
+        "fields": {
+            "question": "Like to read.",
+            "sign": "positive",
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
+        }
+    },
+    {
+        "id": 75,
+        "fields": {
+            "question": "Enjoy discussing movies and books with others.",
+            "sign": "positive",
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
+        }
+    },
+    {
+        "id": 76,
+        "fields": {
+            "question": "Read a lot.",
+            "sign": "positive",
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
+        }
+    },
+    {
+        "id": 77,
+        "fields": {
+            "question": "Don't like action movies.",
+            "sign": "positive",
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
+        }
+    },
+    {
+        "id": 78,
+        "fields": {
+            "question": "Cry during movies.",
+            "sign": "positive",
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
+        }
+    },
+    {
+        "id": 79,
+        "fields": {
+            "question": "Love flowers.",
+            "sign": "positive",
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
+        }
+    },
+    {
+        "id": 80,
+        "fields": {
+            "question": "Do not enjoy watching dance performances.",
+            "sign": "negative",
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
+        }
+    },
+    {
+        "id": 81,
+        "fields": {
+            "question": "Do not like poetry.",
+            "sign": "negative",
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
+        }
+    },
+    {
+        "id": 82,
+        "fields": {
+            "question": "Dislike works of fiction.",
+            "sign": "negative",
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
+        }
+    },
+    {
+        "id": 83,
+        "fields": {
+            "question": "Rarely notice my emotional reactions.",
+            "sign": "negative",
+            "category_name": "sensitivity",
+            "id": 8,
+            "scale_alpha": 0.73,
+            "factor": "I: Sensitivity"
+        }
+    },
+    {
+        "id": 84,
+        "fields": {
+            "question": "Find it hard to forgive others.",
+            "sign": "positive",
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
+        }
+    },
+    {
+        "id": 85,
+        "fields": {
+            "question": "Suspect hidden motives in others.",
+            "sign": "positive",
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
+        }
+    },
+    {
+        "id": 86,
+        "fields": {
+            "question": "Am wary of others.",
+            "sign": "positive",
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
+        }
+    },
+    {
+        "id": 87,
+        "fields": {
+            "question": "Distrust people.",
+            "sign": "positive",
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
+        }
+    },
+    {
+        "id": 88,
+        "fields": {
+            "question": "Believe that people seldom tell you the whole truth.",
+            "sign": "positive",
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
+        }
+    },
+    {
+        "id": 89,
+        "fields": {
+            "question": "Believe that people are essentially evil.",
+            "sign": "positive",
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
+        }
+    },
+    {
+        "id": 90,
+        "fields": {
+            "question": "Trust what people say.",
+            "sign": "negative",
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
+        }
+    },
+    {
+        "id": 91,
+        "fields": {
+            "question": "Trust others.",
+            "sign": "negative",
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
+        }
+    },
+    {
+        "id": 92,
+        "fields": {
+            "question": "Believe that others have good intentions.",
+            "sign": "negative",
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
+        }
+    },
+    {
+        "id": 93,
+        "fields": {
+            "question": "Believe that people are basically moral.",
+            "sign": "negative",
+            "category_name": "distrust",
+            "id": 9,
+            "scale_alpha": 0.80,
+            "factor": "L: Vigilance"
+        }
+    },
+    {
+        "id": 94,
+        "fields": {
+            "question": "Do things that others find strange.",
+            "sign": "positive",
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
+        }
+    },
+    {
+        "id": 95,
+        "fields": {
+            "question": "Like to get lost in thought.",
+            "sign": "positive",
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
+        }
+    },
+    {
+        "id": 96,
+        "fields": {
+            "question": "Enjoy wild flights of fantasy.",
+            "sign": "positive",
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
+        }
+    },
+    {
+        "id": 97,
+        "fields": {
+            "question": "Love to daydream.",
+            "sign": "positive",
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
+        }
+    },
+    {
+        "id": 98,
+        "fields": {
+            "question": "Swim against the current.",
+            "sign": "positive",
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
+        }
+    },
+    {
+        "id": 99,
+        "fields": {
+            "question": "Take deviant positions.",
+            "sign": "positive",
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
+        }
+    },
+    {
+        "id": 100,
+        "fields": {
+            "question": "Do unexpected things.",
+            "sign": "positive",
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
+        }
+    },
+    {
+        "id": 101,
+        "fields": {
+            "question": "Do things by the book.",
+            "sign": "negative",
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
+        }
+    },
+    {
+        "id": 102,
+        "fields": {
+            "question": "Seldom daydream.",
+            "sign": "negative",
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
+        }
+    },
+    {
+        "id": 103,
+        "fields": {
+            "question": "Seldom get lost in thought.",
+            "sign": "negative",
+            "category_name": "imagination",
+            "id": 10,
+            "scale_alpha": 0.80,
+            "factor": "M: Abstractedness"
+        }
+    },
+    {
+        "id": 104,
+        "fields": {
+            "question": "Reveal little about myself.",
+            "sign": "positive",
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
+        }
+    },
+    {
+        "id": 105,
+        "fields": {
+            "question": "Am hard to get to know.",
+            "sign": "positive",
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
+        }
+    },
+    {
+        "id": 106,
+        "fields": {
+            "question": "Don't talk a lot.",
+            "sign": "positive",
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
+        }
+    },
+    {
+        "id": 107,
+        "fields": {
+            "question": "Bottle up my feelings.",
+            "sign": "positive",
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
+        }
+    },
+    {
+        "id": 108,
+        "fields": {
+            "question": "Keep my thoughts to myself.",
+            "sign": "positive",
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
+        }
+    },
+    {
+        "id": 109,
+        "fields": {
+            "question": "Am open about myself to others.",
+            "sign": "negative",
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
+        }
+    },
+    {
+        "id": 110,
+        "fields": {
+            "question": "Am open about my feelings.",
+            "sign": "negative",
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
+        }
+    },
+    {
+        "id": 111,
+        "fields": {
+            "question": "Disclose my intimate thoughts.",
+            "sign": "negative",
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
+        }
+    },
+    {
+        "id": 112,
+        "fields": {
+            "question": "Show my feelings.",
+            "sign": "negative",
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
+        }
+    },
+    {
+        "id": 113,
+        "fields": {
+            "question": "Am willing to talk about myself.",
+            "sign": "negative",
+            "category_name": "reserve",
+            "id": 11,
+            "scale_alpha": 0.86,
+            "factor": "N: Privateness"
+        }
+    },
+    {
+        "id": 114,
+        "fields": {
+            "question": "Am afraid that I will do the wrong thing.",
+            "sign": "positive",
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
+        }
+    },
+    {
+        "id": 115,
+        "fields": {
+            "question": "Feel threatened easily.",
+            "sign": "positive",
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
+        }
+    },
+    {
+        "id": 116,
+        "fields": {
+            "question": "Am easily hurt.",
+            "sign": "positive",
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
+        }
+    },
+    {
+        "id": 117,
+        "fields": {
+            "question": "Worry about things.",
+            "sign": "positive",
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
+        }
+    },
+    {
+        "id": 118,
+        "fields": {
+            "question": "Spend time thinking about past mistakes",
+            "sign": "positive",
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
+        }
+    },
+    {
+        "id": 119,
+        "fields": {
+            "question": "Feel guilty when I say 'no.'",
+            "sign": "positive",
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
+        }
+    },
+    {
+        "id": 120,
+        "fields": {
+            "question": "Feel crushed by setbacks.",
+            "sign": "positive",
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
+        }
+    },
+    {
+        "id": 121,
+        "fields": {
+            "question": "Don't worry about things that have already happened.",
+            "sign": "negative",
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
+        }
+    },
+    {
+        "id": 122,
+        "fields": {
+            "question": "Am not easily bothered by things.",
+            "sign": "negative",
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
+        }
+    },
+    {
+        "id": 123,
+        "fields": {
+            "question": "Don't let others discourage me.",
+            "sign": "negative",
+            "category_name": "anxiety",
+            "id": 12,
+            "scale_alpha": 0.80,
+            "factor": "O: Apprehension"
+        }
+    },
+    {
+        "id": 124,
+        "fields": {
+            "question": "Believe in the importance of art.",
+            "sign": "positive",
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
+        }
+    },
+    {
+        "id": 125,
+        "fields": {
+            "question": "Love to think up new ways of doing things.",
+            "sign": "positive",
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
+        }
+    },
+    {
+        "id": 126,
+        "fields": {
+            "question": "Enjoy hearing new ideas.",
+            "sign": "positive",
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
+        }
+    },
+    {
+        "id": 127,
+        "fields": {
+            "question": "Carry the conversation to a higher level.",
+            "sign": "positive",
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
+        }
+    },
+    {
+        "id": 128,
+        "fields": {
+            "question": "Prefer variety to routine.",
+            "sign": "positive",
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
+        }
+    },
+    {
+        "id": 129,
+        "fields": {
+            "question": "Avoid philosophical discussions.",
+            "sign": "negative",
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
+        }
+    },
+    {
+        "id": 130,
+        "fields": {
+            "question": "Rarely look for a deeper meaning in things.",
+            "sign": "negative",
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
+        }
+    },
+    {
+        "id": 131,
+        "fields": {
+            "question": "Am not interested in theoretical discussions.",
+            "sign": "negative",
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
+        }
+    },
+    {
+        "id": 132,
+        "fields": {
+            "question": "Am not interested in abstract ideas.",
+            "sign": "negative",
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
+        }
+    },
+    {
+        "id": 133,
+        "fields": {
+            "question": "Try to avoid complex people.",
+            "sign": "negative",
+            "category_name": "complexity",
+            "id": 13,
+            "scale_alpha": 0.82,
+            "factor": "Q1: Openness to Change"
+        }
+    },
+    {
+        "id": 134,
+        "fields": {
+            "question": "Want to be left alone.",
+            "sign": "positive",
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
+        }
+    },
+    {
+        "id": 135,
+        "fields": {
+            "question": "Prefer to do things by myself.",
+            "sign": "positive",
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
+        }
+    },
+    {
+        "id": 136,
+        "fields": {
+            "question": "Enjoy spending time by myself.",
+            "sign": "positive",
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
+        }
+    },
+    {
+        "id": 137,
+        "fields": {
+            "question": "Seek quiet.",
+            "sign": "positive",
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
+        }
+    },
+    {
+        "id": 138,
+        "fields": {
+            "question": "Don't mind eating alone.",
+            "sign": "positive",
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
+        }
+    },
+    {
+        "id": 139,
+        "fields": {
+            "question": "Enjoy silence.",
+            "sign": "positive",
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
+        }
+    },
+    {
+        "id": 140,
+        "fields": {
+            "question": "Enjoy my privacy.",
+            "sign": "positive",
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
+        }
+    },
+    {
+        "id": 141,
+        "fields": {
+            "question": "Enjoy being part of a group.",
+            "sign": "negative",
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
+        }
+    },
+    {
+        "id": 142,
+        "fields": {
+            "question": "Enjoy teamwork.",
+            "sign": "negative",
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
+        }
+    },
+    {
+        "id": 143,
+        "fields": {
+            "question": "Can't do without the company of others.",
+            "sign": "negative",
+            "category_name": "introversion",
+            "id": 14,
+            "scale_alpha": 0.73,
+            "factor": "Q2: Self-Reliance"
+        }
+    },
+    {
+        "id": 144,
+        "fields": {
+            "question": "Want everything to be 'just right.'",
+            "sign": "positive",
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
+        }
+    },
+    {
+        "id": 145,
+        "fields": {
+            "question": "Get chores done right away.",
+            "sign": "positive",
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
+        }
+    },
+    {
+        "id": 146,
+        "fields": {
+            "question": "Like order.",
+            "sign": "positive",
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
+        }
+    },
+    {
+        "id": 147,
+        "fields": {
+            "question": "Continue until everything is perfect.",
+            "sign": "positive",
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
+        }
+    },
+    {
+        "id": 148,
+        "fields": {
+            "question": "Am exacting in my work.",
+            "sign": "positive",
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
+        }
+    },
+    {
+        "id": 149,
+        "fields": {
+            "question": "Am not bothered by messy people.",
+            "sign": "negative",
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
+        }
+    },
+    {
+        "id": 150,
+        "fields": {
+            "question": "Am not bothered by disorder.",
+            "sign": "negative",
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
+        }
+    },
+    {
+        "id": 151,
+        "fields": {
+            "question": "Leave a mess in my room.",
+            "sign": "negative",
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
+        }
+    },
+    {
+        "id": 152,
+        "fields": {
+            "question": "Leave my belongings around.",
+            "sign": "negative",
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
+        }
+    },
+    {
+        "id": 153,
+        "fields": {
+            "question": "Put off unpleasant tasks.",
+            "sign": "negative",
+            "category_name": "orderliness",
+            "id": 15,
+            "scale_alpha": 0.81,
+            "factor": "Q3: Perfectionism"
+        }
+    }, {
+        "id": 154,
+        "fields": {
+            "question": "Get irritated easily.",
+            "sign": "positive",
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
+        }
+    },
+    {
+        "id": 155,
+        "fields": {
+            "question": "Get angry easily.",
+            "sign": "positive",
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
+        }
+    },
+    {
+        "id": 156,
+        "fields": {
+            "question": "Am quick to judge others.",
+            "sign": "positive",
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
+        }
+    },
+    {
+        "id": 157,
+        "fields": {
+            "question": "Am annoyed by others' mistakes.",
+            "sign": "positive",
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
+        }
+    },
+    {
+        "id": 158,
+        "fields": {
+            "question": "Am easily put out.",
+            "sign": "positive",
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
+        }
+    },
+    {
+        "id": 159,
+        "fields": {
+            "question": "Can't stand being contradicted.",
+            "sign": "positive",
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
+        }
+    },
+    {
+        "id": 160,
+        "fields": {
+            "question": "Judge people by their appearance.",
+            "sign": "positive",
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
+        }
+    },
+    {
+        "id": 161,
+        "fields": {
+            "question": "Am not easily annoyed.",
+            "sign": "negative",
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
+        }
+    },
+    {
+        "id": 162,
+        "fields": {
+            "question": "Try to forgive and forget.",
+            "sign": "negative",
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
+        }
+    },
+    {
+        "id": 163,
+        "fields": {
+            "question": "Have a good word for everyone.",
+            "sign": "negative",
+            "category_name": "emotionality",
+            "id": 16,
+            "scale_alpha": 0.76,
+            "factor": "Q4: Tension"
+        }
+    }
+]
