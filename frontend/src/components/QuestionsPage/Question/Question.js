@@ -5,7 +5,7 @@ import AnswersContainer from '../../Answers/AnswersContainer';
 
 class Question extends Component {
     render() {
-        const { question, questionType } = this.props;
+        const { question, questionType, subCategoryId } = this.props;
         return (
           <Fragment>
               <li key={question.id}>
@@ -16,6 +16,7 @@ class Question extends Component {
                     questionText={question.fields.question}
                     questionSign={question.fields.sign}
                     questionType={questionType}
+                    subCategoryId={subCategoryId}
                 />
             </li>
           </Fragment>
@@ -26,6 +27,7 @@ class Question extends Component {
 Question.propTypes = {
     question: PropTypes.object,
     questionType: PropTypes.string,
+    subCategoryId: PropTypes.number
 }
 
 export default Question;

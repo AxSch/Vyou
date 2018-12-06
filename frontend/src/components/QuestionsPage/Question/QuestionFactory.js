@@ -18,7 +18,7 @@ class QuestionFactory extends Component {
 
       return questionSubCategory.map((question) => {
         return (
-          <Question question={question} questionType={questionType}/>
+          <Question question={question} questionType={questionType} subCategoryId={subCategoryId}/>
         );
       });
     } else {
