@@ -48,7 +48,7 @@ const createUserProfileSuccess = (profile) => ({
 });
 
 const createUserProfileFailure = (error) => ({
-  type: actionTypes.CREATE_PROFILE_ERROR,
+  type: actionTypes.CREATE_PROFILE_FAILURE,
   payload: {
     error
   }
