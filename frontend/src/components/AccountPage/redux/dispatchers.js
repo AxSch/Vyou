@@ -1,6 +1,22 @@
 import profileActions from './actions';
 import profileService from '../../../services/profileService';
 
+
+const getAllUsersDispatcher = () => {
+  return dispatch => {
+    dispatch(profileActions.getAllUsers());
+    profileService.getUsers()
+      .then(
+        res => {
+          dispatch(profileActions.getAllUsersSuccess(res.data));
+        },
+        error => {
+          dispatch(profileActions.getAllUsersFailure(error.toString()));
+        }
+      );
+  };
+}
+
 const getProfileDispatcher = () => {
   return dispatch => {
     dispatch(profileActions.getUserProfile());
@@ -17,6 +33,7 @@ const getProfileDispatcher = () => {
 }
 
 const profileDispatchers = {
+  getAllUsersDispatcher,
   getProfileDispatcher
 }
 
