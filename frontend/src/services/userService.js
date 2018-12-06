@@ -29,7 +29,7 @@ const login = (email, password) => {
       password
     })
   };
-  return fetch(`/api/auth/login/`, requestOptions)
+  return fetch(`/api/v1/auth/login/`, requestOptions)
     .then(handleResponse)
     .then((email, key) => {
       if (key) {
