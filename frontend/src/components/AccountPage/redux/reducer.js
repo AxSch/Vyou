@@ -49,6 +49,23 @@ const profileReducer = (state=initialStateProfile, action) => {
         };
         newState.error = action.payload.error;
         return newState;
+      case actionTypes.CREATE_PROFILE:
+        return newState = {
+          ...newState
+        }
+      case actionTypes.CREATE_PROFILE_SUCCESS:
+        newState = {
+          ...newState
+        };
+        newState.profile = action.payload.profile;
+        newState.error = null;
+        return newState;
+      case actionTypes.CREATE_PROFILE_FAILURE:
+        newState = {
+          ...newState
+        };
+        newState.error = action.payload.error;
+        return newState;
     default:
       return state;
   }
