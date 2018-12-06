@@ -12,7 +12,7 @@ class Profile extends PureComponent {
     }
 
     componentDidMount() {
-        const { fetchAllUsers, userEmail, setUserId, fetchProfile, profile } = this.props;
+        const { fetchAllUsers, userEmail, setUserId, fetchProfile } = this.props;
         fetchAllUsers();
         const userId = this.getUserId(userEmail);
         setUserId(userId);
