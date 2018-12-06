@@ -1,7 +1,7 @@
 import actionTypes from "./actionTypes";
 import _ from 'lodash';
 
-const initialState = {
+const initialStateProfile = {
   hasProfile: null,
   profileCreated: null,
   profile: {},
@@ -9,7 +9,7 @@ const initialState = {
   error: null
 }
 
-const profileReducer = (state=initialState, action) => {
+const profileReducer = (state=initialStateProfile, action) => {
   let newState = _.clone(state);
   switch(action.type){
       case actionTypes.GET_PROFILE:
@@ -34,7 +34,37 @@ const profileReducer = (state=initialState, action) => {
   }
 }
 
+const initialStateUsers = {
+  users: {},
+  error: null,
+}
+
+const usersReducer = (state=initialStateUsers, action) => {
+  let newState = _.clone(state);
+  switch(action.type){
+      case actionTypes.GET_ALL_USERS:
+        return {
+          ...newState
+        }
+      case actionTypes.GET_ALL_USERS_SUCCESS:
+        newState = {
+          ...newState
+        };
+        newState.users = action.payload.users;
+        newState.error = null;
+        return newState;
+      case actionTypes.GET_ALL_USERS_FAILURE:
+        newState = {
+          ...newState
+        }
+        newState.error = action.payload.error;
+        return newState;
+    default:
+      return state;
+  }
+}
+
 export {
-  initialState,
-  profileReducer
+  profileReducer,
+  usersReducer
 }
