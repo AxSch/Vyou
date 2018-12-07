@@ -1,80 +1,72 @@
-import React, { PureComponent } from 'react';
-import { Link } from 'react-router-dom';
-import AccountSettingsContainer from '../AccountSettings/AccountSettingsContainer';
-class Profile extends PureComponent {
-    constructor(props) {
-        super(props);
+import React, { Component } from 'react';
+class Profile extends Component {
 
-        this.getUserId = this.getUserId.bind(this);
-        this.checkProfileExists = this.checkProfileExists.bind(this);
-        this.checkUserLogged = this.checkUserLogged.bind(this);
-        this.renderAccountSettings = this.renderAccountSettings.bind(this);
+    renderProfileHeaderSection (name, address, dateJoined) {
+      return (
+        <div>
+          <h3>Welcome back, {name} </h3>
+          <p>{address}</p>
+          <p>{dateJoined}</p>
+        </div>
+      );
     }
-
-    componentDidMount() {
-        const { fetchAllUsers, userEmail, setUserId, fetchProfile } = this.props;
-        fetchAllUsers();
-        const userId = this.getUserId(userEmail);
-        setUserId(userId);
-        fetchProfile(userId);
-    }
-    
-    getUserId(email) {
-        const { users, userLoggedIn } = this.props;
-        if (userLoggedIn) {
-            const userObj = users.filter((user) => user.email === email);
-            return userObj[0].id;
-        }
-        return null;
-    }
-    
-    checkProfileExists(profile) {
-        if (profile.hasProfile) {
-            return "Profile Page";
-        } else {
-            return (
-                <div>
-                    <h3>Profile has been completed...</h3>
-                    <div>
-                        <p>Please fill out the information below:</p>
-                        <AccountSettingsContainer />
-                    </div>
-                </div>
-            );
-        }
-    }
-    
-    checkUserLogged = (email) => {
-        if (email !== null) {
-            return (
-                <div>
-                    <h1>Welcome</h1>
-                    <p>{email}</p>
-                </div>
-            );
-        } return (
-            <div>
-                <h1>Unauthorized</h1>
-                <p>Please enter the correct login details</p>
-            </div>
-        )
+    renderImageSection(url, name) {
+      return(
+        <div>
+          <img className=""
+              src={url}
+              alt={`userImg-for-${name}`} 
+          />
+        </div>
+      );
     }
 
-    renderAccountSettings() {
-        return (
-            <ul>
-                <li><Link to="/accounts/settings">account settings</Link></li>
-            </ul>
-        )
+    renderBioSection(bio) {
+      return (
+        <div>
+          <p>{bio !== "n/a" ? bio: null}</p>
+        </div>
+      );
+    }
+
+    renderQuestionsSection(answers, questions) {
+      return (
+        <div>
+          <h4>Questions</h4>
+          <p></p>
+        </div>
+      );
+    }
+    
+    renderConnectedAccountsSection(fbProfile, lINProfile, twitProfile, instaProfile) {
+      return (
+        <div>
+          <h4>Connected accounts</h4>
+          <p></p>
+        </div>
+      );
+    }
+
+    renderPersonalInfoSection() {
+      return (
+        <div>
+          <h4>Personal info</h4>
+          <p></p>
+        </div>
+      );
     }
 
     render() {
-        const { userEmail, userLoggedIn, profile} = this.props;
+        const { userProfile } = this.props;
+
         return (
-            <div className="col-md-6 col-md-offset-3">
-                {userLoggedIn ? this.renderAccountSettings() : null}
-                {this.checkUserLogged(userEmail)}
-                {this.checkProfileExists(profile)}
+            <div>
+              {this.renderProfileHeaderSection(userProfile.name, userProfile.address, userProfile.creation_date)}
+              {this.renderImageSection(userProfile.user_img, userProfile.name)}
+              {this.renderBioSection(userProfile.bio)}
+              {this.renderPersonalInfoSection(userProfile.job_title, userProfile.job_industry, userProfile.education)}
+              {this.renderQuestionsSection()}
+              {this.renderConnectedAccountsSection(userProfile.facebook_profile, userProfile.linkedIn_profile, userProfile.twitter_profile, userProfile.gitHub_profile, userProfile.instagram_profile)}
             </div>
         );
     }
