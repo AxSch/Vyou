@@ -403,14 +403,14 @@ class AccountSettings extends PureComponent {
     }
 
     renderForm(profile) {
-      const { userEmail } = this.props;
+      const { email } = this.state;
       return (
         <Fragment>
             <form>
               <fieldset>
                 <legend>Basic info</legend>
                   {this.renderUserName(profile.userProfile.name)}
-                  {this.renderUserEmail(userEmail)}
+                  {this.renderUserEmail(email)}
                   {this.renderUserSex(profile.userProfile.sex)}
                   {this.renderDateEmail(profile.userProfile.dob)}
                   {this.renderUserImg(profile.userProfile.user_img)}
@@ -516,6 +516,13 @@ class AccountSettings extends PureComponent {
       }
     }
 
+    checkEmailChange(email, defaultEmail) {
+      if (email !== defaultEmail) {
+        // do put dispatch to user endpoint
+      }
+      return null;
+    }
+    
     onSubmitChange(e) {
       e.preventDefault();
       const { userEmail, createProfile, profile } = this.props;
@@ -543,7 +550,6 @@ class AccountSettings extends PureComponent {
       const userProfileData = {
         user: profile.userId,
         name: name,
-        email: userEmail,
         sex: sex,
         dob: dob,
         addressNo: addressNo,
@@ -563,11 +569,12 @@ class AccountSettings extends PureComponent {
         instagramProfile: instagramProfile,
       };
 
-      if (email !== userEmail) {
-        userProfileData.email = email;
-        createProfile(userProfileData);
+      if (profile.hasProfile) {
+        this.checkEmailChange(email, userEmail);
+        // updateProfile(userProfileData);
       } else {
-        createProfile(userProfileData);
+          this.checkEmailChange(email, userEmail);
+          createProfile(userProfileData);
       }
     }
 
