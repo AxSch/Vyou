@@ -11,7 +11,8 @@ const mapStateToProps = (state, ownProps) => ({
 
 const mapDispatchToProps = dispatch => (
     bindActionCreators({
-        createProfile: profileDispatchers.createUserProfileDispatcher
+        createProfile: profileDispatchers.createUserProfileDispatcher,
+        updateProfile: profileDispatchers.updateUserProfileDispatcher
     }, dispatch)
 );
 
