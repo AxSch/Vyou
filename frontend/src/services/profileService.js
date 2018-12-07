@@ -36,7 +36,6 @@ const createUserProfile = (userProfileData) => {
 }
 
 const updateUserProfile = (userId, userProfileData) => {
-  console.log(userProfileData.addressNo);
   return request
   .put(`/api/v1/profiles/${userId}/`, {
     user: userProfileData.id,
