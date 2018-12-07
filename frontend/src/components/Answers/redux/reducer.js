@@ -100,6 +100,56 @@ const initialState = {
       3 : {}
     },
   },
+  completedPersonality: {
+    1: {
+      isValid: null
+    },
+    2: {
+      isValid: null
+    },
+    3: {
+      isValid: null
+    },
+    4: {
+      isValid: null
+    },
+    5: {
+      isValid: null
+    },
+    6: {
+      isValid: null
+    },
+    7: {
+      isValid: null
+    },
+    8: {
+      isValid: null
+    },
+    9: {
+      isValid: null
+    },
+    10: {
+      isValid: null
+    },
+    11: {
+      isValid: null
+    },
+    12: {
+      isValid: null
+    },
+    13: {
+      isValid: null
+    },
+    14: {
+      isValid: null
+    },
+    15: {
+      isValid: null
+    },
+    16: {
+      isValid: null
+    }
+  },
 }
 
 const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId) => {
@@ -176,6 +226,8 @@ const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId
   }
 }
 
+
+
 const validateAnswers = (state, answers, questions, categoryId, questionType, subCategoryId) => {
   let newState = _.clone(state);
   switch(questionType) {
@@ -229,6 +281,71 @@ const validateAnswers = (state, answers, questions, categoryId, questionType, su
 }
 
 
+const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, subCategoryId) => {
+  let newState = _.clone(state);
+  switch (questionType) {
+    case 'PS':
+      newState.completedPersonality = {
+        ...newState.completedPersonality,
+        ...newState.completedPersonality[categoryId],
+        [categoryId]: [...userAnswers]
+      }
+      return newState;
+    case 'EF':
+      newState.answeredEnergyFlow = {
+        ...newState.answeredEnergyFlow,
+        [categoryId]: {
+          ...newState.answeredEnergyFlow[categoryId],
+          [userAnswers.questionId]: {
+            ...newState.answeredEnergyFlow[categoryId][userAnswers.questionId],
+            question: userAnswers.question,
+            questionSign: userAnswers.questionSign,
+            value: userAnswers.answerValue,
+            lastUpdated: userAnswers.lastUpdated,
+    
+          }
+        }
+      }
+      return newState;
+    case 'EL':
+      newState.answeredEnergyLevel = {
+        ...newState.answeredEnergyLevel,
+        [categoryId]: {
+          ...newState.answeredEnergyLevel[categoryId],
+          [userAnswers.questionId]: {
+            ...newState.answeredEnergyLevel[categoryId][userAnswers.questionId],
+            question: userAnswers.question,
+            questionSign: userAnswers.questionSign,
+            value: userAnswers.answerValue,
+            lastUpdated: userAnswers.lastUpdated,
+    
+          }
+        }
+      }
+      return newState;
+    case 'EM':
+      newState.answeredEnergyMapping = {
+        ...newState.answeredEnergyMapping,
+        [categoryId]: {
+          ...newState.answeredEnergyMapping[categoryId],
+          [subCategoryId]: {
+            ...newState.answeredEnergyMapping[categoryId][subCategoryId],
+            [userAnswers.questionId]: {
+              ...newState.answeredEnergyMapping[categoryId][subCategoryId][userAnswers.questionId],
+              question: userAnswers.question,
+              questionSign: userAnswers.questionSign,
+              value: userAnswers.answerValue,
+              lastUpdated: userAnswers.lastUpdated
+            }
+          }
+        }
+      }
+      return newState;
+    default:
+      return state
+  }
+}
+
 const answersReducer = (state=initialState, action) => {
   switch(action.type){
     case actionTypes.SET_ANSWER:
@@ -243,6 +360,13 @@ const answersReducer = (state=initialState, action) => {
       return validAnswerState;
     case actionTypes.RESET_ANSWERS:
       return initialState;
+    case actionTypes.FETCH_COMPLETED_ANSWERS:
+      return state
+    case actionTypes.FETCH_COMPLETED_ANSWERS_SUCCESS:
+      const setCompletedAnsState = updateCompletedAnswer(state, action.payload.completedAnswers, action.payload.categoryId, action.payload.questionType)
+      return setCompletedAnsState;
+    case actionTypes.FETCH_COMPLETED_ANSWERS_FAILURE:
+      return state
     default:
       return state;
   }
