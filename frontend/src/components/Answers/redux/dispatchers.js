@@ -1,5 +1,5 @@
 import answerActions from './actions';
-
+import answersService from '../../../services/answersService';
 
 const setAnswerDispatcher = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId) => {
   return dispatch => {
@@ -19,10 +19,27 @@ const resetAllAnswersDispatcher = () => {
   }
 }
 
+const fetchCompletedPersonalityAnswersDispatcher = (userId) => {
+  return dispatch => {
+    dispatch(answerActions.fetchCompletedAnswers);
+    answersService.fetchPersonalityAnswers(userId)
+    .then(
+      response => {
+        dispatch(answerActions.fetchCompletedAnswersSuccess(response.data));
+      },
+      error => {
+        dispatch(answerActions.fetchCompletedAnswersFailure(error.data));
+      }
+    );
+  }
+}
+
+
 const answersDispatchers = {
   setAnswerDispatcher,
   resetAllAnswersDispatcher,
-  validateAnswersDispatcher
+  validateAnswersDispatcher,
+  fetchCompletedPersonalityAnswersDispatcher
 };
 
 export default answersDispatchers;
