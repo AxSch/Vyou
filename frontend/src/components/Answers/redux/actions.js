@@ -51,13 +51,36 @@ const fetchCompletedAnswersFailure = (error) => ({
   }
 });
 
+const sendAnswers = () => ({
+  type: actionTypes.SEND_ANSWERS
+});
+
+const sendAnswersSuccess = (completedAnswers, categoryId, questionType) => ({
+  type: actionTypes.SEND_ANSWERS_SUCCESS,
+  payload: {
+    completedAnswers,
+    categoryId,
+    questionType
+  }
+});
+
+const sendAnswersFailure = (error) => ({
+  type: actionTypes.SEND_ANSWERS_FAILURE,
+  payload: {
+    error
+  }
+});
+
 const answerActions = {
   setAnswer,
   resetAllAnswers,
   validateAnswers,
   fetchCompletedAnswers,
   fetchCompletedAnswersSuccess,
-  fetchCompletedAnswersFailure
+  fetchCompletedAnswersFailure,
+  sendAnswers,
+  sendAnswersSuccess,
+  sendAnswersFailure
 };
 
 export default answerActions;
