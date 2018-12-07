@@ -8,7 +8,6 @@ class Profile extends PureComponent {
 
         this.getUserId = this.getUserId.bind(this);
         this.checkProfileExists = this.checkProfileExists.bind(this);
-        this.checkUserLogged = this.checkUserLogged.bind(this);
         this.renderAccountSettings = this.renderAccountSettings.bind(this);
     }
 
@@ -45,21 +44,6 @@ class Profile extends PureComponent {
         }
     }
     
-    checkUserLogged = (email) => {
-        if (email !== null) {
-            return (
-                <div>
-                    <h1>Welcome</h1>
-                    <p>{email}</p>
-                </div>
-            );
-        } return (
-            <div>
-                <h1>Unauthorized</h1>
-                <p>Please enter the correct login details</p>
-            </div>
-        )
-    }
 
     renderAccountSettings() {
         return (
@@ -70,11 +54,10 @@ class Profile extends PureComponent {
     }
 
     render() {
-        const { userEmail, userLoggedIn, profile} = this.props;
+        const { userLoggedIn, profile} = this.props;
         return (
             <div className="col-md-6 col-md-offset-3">
                 {userLoggedIn ? this.renderAccountSettings() : null}
-                {this.checkUserLogged(userEmail)}
                 {this.checkProfileExists(profile)}
             </div>
         );
