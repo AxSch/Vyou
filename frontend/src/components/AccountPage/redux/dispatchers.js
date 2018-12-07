@@ -58,11 +58,27 @@ const createUserProfileDispatcher = (userProfileInformation) => {
   };
 }
 
+const updateUserProfileDispatcher = (userId, userProfileInformation) => {
+  return dispatch => {
+    dispatch(profileActions.updateUserProfile());
+    profileService.updateUserProfile(userId, userProfileInformation)
+      .then(
+        res => {
+          dispatch(profileActions.updateUserProfileSuccess(res.data));
+        },
+        error => {
+          dispatch(profileActions.updateUserProfileFailure(error.toString()));
+        }
+      );
+  };
+}
+
 const profileDispatchers = {
   getAllUsersDispatcher,
   getProfileDispatcher,
   setUserIdDispatcher,
-  createUserProfileDispatcher
+  createUserProfileDispatcher,
+  updateUserProfileDispatcher
 }
 
 export default profileDispatchers;
