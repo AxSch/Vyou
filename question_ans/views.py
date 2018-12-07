@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
 from rest_framework import viewsets
-
+from django_filters.rest_framework import DjangoFilterBackend
 from .models import PersonalityAnswers, EnergyLevelAnswers, EnergyFlowAnswers, EnergyMappingAnswers
 from .serializers import PersonalityAnswersSerializer, EnergyLevelAnswersSerializer, EnergyFlowAnswersSerializer, EnergyMappingAnswersSerializer
 
@@ -9,6 +9,8 @@ from .serializers import PersonalityAnswersSerializer, EnergyLevelAnswersSeriali
 class PersonalityAnswersView(viewsets.ModelViewSet):
   queryset = PersonalityAnswers.objects.all()
   serializer_class = PersonalityAnswersSerializer
+  filter_backends = (DjangoFilterBackend,)
+  filter_fields = ('profile')
 
 
 class EnergyLevelAnswersView(viewsets.ModelViewSet):
