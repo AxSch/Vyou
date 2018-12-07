@@ -138,7 +138,11 @@ class AccountSettings extends PureComponent {
         email: userEmail,
         sex: sex,
         dob: dob,
-        address: addressNo + ' ' + addressStreet + ', ' + addressCity + ', ' + addressPostCode + ', ' + addressCountry,
+        addressNo: addressNo,
+        addressStreet: addressStreet,
+        addressCity: addressCity,
+        addressPostCode: addressPostCode,
+        addressCountry: addressCountry,
         jobTitle: jobTitle,
         jobIndustry: jobIndustry,
         bio: bio,
@@ -152,7 +156,6 @@ class AccountSettings extends PureComponent {
       };
 
       if (email !== userEmail) {
-        console.log("dispatch UserPut endpoint");
         userProfileData.email = email;
         createProfile(userProfileData);
       } else {
