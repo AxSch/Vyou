@@ -35,12 +35,18 @@ const fetchCompletedAnswers = () => ({
   type: actionTypes.FETCH_COMPLETED_ANSWERS
 });
 
-const fetchCompletedAnswersSuccess = () => ({
-  type: actionTypes.FETCH_COMPLETED_ANSWERS_SUCCESS
+const fetchCompletedAnswersSuccess = (completedAnswers) => ({
+  type: actionTypes.FETCH_COMPLETED_ANSWERS_SUCCESS,
+  payload: {
+    completedAnswers
+  }
 });
 
-const fetchCompletedAnswersFailure = () => ({
-  type: actionTypes.FETCH_COMPLETED_ANSWERS_FAILURE
+const fetchCompletedAnswersFailure = (error) => ({
+  type: actionTypes.FETCH_COMPLETED_ANSWERS_FAILURE,
+  payload: {
+    error
+  }
 });
 
 const answerActions = {
