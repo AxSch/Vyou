@@ -66,7 +66,7 @@ const updateUserProfileSuccess = (profile) => ({
 });
 
 const updateUserProfileFailure = (error) => ({
-  type: actionTypes.UPDATE_PROFILE_ERROR,
+  type: actionTypes.UPDATE_PROFILE_FAILURE,
   payload: {
     error
   }
