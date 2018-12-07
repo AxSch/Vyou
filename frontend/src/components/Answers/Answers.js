@@ -65,7 +65,7 @@ class Answers extends Component {
     }
 }
 
-Answers.PropTypes = {
+Answers.propTypes = {
     setAnswer: PropTypes.func,
     questionId: PropTypes.number,
     categoryId: PropTypes.number,
