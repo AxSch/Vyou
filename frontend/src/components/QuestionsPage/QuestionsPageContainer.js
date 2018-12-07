@@ -11,7 +11,8 @@ const mapStateToProps = (state, ownProps) => {
       energyFlowQuestions: state.questions.energyFlowQuestions,
       energyLevelQuestions: state.questions.energyLevelQuestions,
       energyMappingQuestions: state.questions.energyMappingQuestions,
-      answers: state.answers
+      answers: state.answers,
+      profile: state.profile
     }
 };
 
@@ -21,7 +22,8 @@ const mapDispatchToProps = dispatch => (
         fetchEFQuestions: questionsDispatchers.requestEFQuestionsDispatcher,
         fetchELQuestions: questionsDispatchers.requestELQuestionsDispatcher,
         fetchEMQuestions: questionsDispatchers.requestEMQuestionsDispatcher,
-        resetAllAnswers: answersDispatchers.resetAllAnswersDispatcher
+        resetAllAnswers: answersDispatchers.resetAllAnswersDispatcher,
+        fetchCompPSQuestions: answersDispatchers.fetchCompPersonalityDispatcher,
     }, dispatch)
 );
 

@@ -16,8 +16,10 @@ class PersonalityQuestions extends Component {
         this.handleBackPageClick = this.handleBackPageClick.bind(this);
     }
     componentDidMount() {
-        const { resetAllAnswers } = this.props;
+        const { resetAllAnswers, profile, fetchCompPSQuestions } = this.props;
+        const { categoryId, questionType } = this.state;
         resetAllAnswers();
+        fetchCompPSQuestions(profile.userId, categoryId, questionType)
     }
 
     handleNextButton(count) {
@@ -75,7 +77,9 @@ class PersonalityQuestions extends Component {
 PersonalityQuestions.propTypes = {
     questions: PropTypes.array,
     answers: PropTypes.object,
-    resetAllAnswers: PropTypes.func
+    resetAllAnswers: PropTypes.func,
+    fetchCompPSQuestions: PropTypes.func,
+    profile: PropTypes.object
 }
 
 export default PersonalityQuestions;
