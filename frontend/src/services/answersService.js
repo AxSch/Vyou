@@ -15,11 +15,12 @@ const sendPersonalityAnswers = (userId, question) => {
 )
 }
 
-const fetchPersonalityAnswers = userId => {
+const fetchCompPersonalityAnswers = (userId, categoryId) => {
   return request
   .get("/api/v1/answers/personality_answers/", {
     params: {
-      profile: userId
+      profile: userId,
+      category_id: categoryId
     }
   }
 )
@@ -29,7 +30,7 @@ const fetchPersonalityAnswers = userId => {
 
 const answersService = {
   sendPersonalityAnswers,
-  fetchPersonalityAnswers
+  fetchCompPersonalityAnswers
 };
 
 export default answersService;
