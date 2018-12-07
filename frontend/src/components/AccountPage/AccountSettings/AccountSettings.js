@@ -34,6 +34,34 @@ class AccountSettings extends PureComponent {
       this.onSubmitChange = this.onSubmitChange.bind(this);
     }
 
+    componentDidMount() {
+      const { profile } = this.props;
+      if (profile.hasProfile) {
+        this.setState(() => {
+          return {
+            name: profile.userProfile.name,
+            sex: profile.userProfile.sex,
+            dob: profile.userProfile.dob,
+            addressNo: profile.userProfile.address_no,
+            addressStreet: profile.userProfile.addressStreet,
+            addressPostCode: profile.userProfile.address_postcode,
+            addressCity: profile.userProfile.address_city,
+            addressCountry: profile.userProfile.address_country,
+            jobTitle: profile.userProfile.job_title,
+            jobIndustry: profile.userProfile.job_industry,
+            bio: profile.userProfile.bio,
+            education: profile.userProfile.education,
+            userImg: profile.userProfile.user_img,
+            facebookProfile: profile.userProfile.facebook_profile,
+            linkedInProfile: profile.userProfile.linkedIn_profile,
+            twitterProfile: profile.userProfile.twitter_profile,
+            gitHubProfile: profile.userProfile.gitHub_profile,
+            instagramProfile: profile.userProfile.instagram_profile,
+          }
+        }, () => {});
+      }
+    }
+
     renderUserSex(userSex) {
       if (userSex === "Female"){
         return (
@@ -525,7 +553,7 @@ class AccountSettings extends PureComponent {
     
     onSubmitChange(e) {
       e.preventDefault();
-      const { userEmail, createProfile, profile } = this.props;
+      const { userEmail, createProfile, profile, updateProfile } = this.props;
       const { 
         name,
         email, 
@@ -571,7 +599,7 @@ class AccountSettings extends PureComponent {
 
       if (profile.hasProfile) {
         this.checkEmailChange(email, userEmail);
-        // updateProfile(userProfileData);
+        updateProfile(profile.userId, userProfileData);
       } else {
           this.checkEmailChange(email, userEmail);
           createProfile(userProfileData);
@@ -580,6 +608,7 @@ class AccountSettings extends PureComponent {
 
     render() {
         const { profile } = this.props;
+        // console.log(this.state);
         return(
           <div>
             <h3>Account Settings</h3>
