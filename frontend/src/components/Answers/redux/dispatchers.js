@@ -22,7 +22,7 @@ const resetAllAnswersDispatcher = () => {
 const fetchCompletedPersonalityAnswersDispatcher = (userId) => {
   return dispatch => {
     dispatch(answerActions.fetchCompletedAnswers);
-    answersService.fetchPersonalityAnswers(userId)
+    answersService.fetchCompPersonalityAnswers(userId)
     .then(
       response => {
         dispatch(answerActions.fetchCompletedAnswersSuccess(response.data));
