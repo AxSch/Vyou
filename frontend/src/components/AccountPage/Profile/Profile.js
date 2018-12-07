@@ -82,7 +82,6 @@ class Profile extends Component {
       }
     }
     
-
     renderConnectedAccountsSection(account) {
       return (
         <div>
@@ -95,7 +94,6 @@ class Profile extends Component {
         </div>
       );
     }
-
 
     renderProfessionSection(jobTitle, jobIndustry, education) {
       return (
