@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 import AccountSettingsContainer from './AccountSettings/AccountSettingsContainer';
+import ProfileContainer from './Profile/ProfileContainer';
 class Profile extends PureComponent {
     constructor(props) {
         super(props);
@@ -30,7 +31,7 @@ class Profile extends PureComponent {
     
     checkProfileExists(profile) {
         if (profile.hasProfile) {
-            return "Profile Page";
+            return <ProfileContainer />
         } else {
             return (
                 <div>
