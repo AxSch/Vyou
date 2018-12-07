@@ -17,11 +17,37 @@ const createUserProfile = (userProfileData) => {
     name: userProfileData.name,
     sex: userProfileData.sex,
     dob: userProfileData.dob,
-    addressNo: userProfileData.addressNo,
-    addressStreet: userProfileData.addressStreet,
-    addressCity: userProfileData.addressCity,
-    addressPostCode: userProfileData.addressPostCode,
-    addressCountry: userProfileData.addressCountry,
+    address_no: userProfileData.addressNo,
+    address_street: userProfileData.addressStreet,
+    address_city: userProfileData.addressCity,
+    address_postcode: userProfileData.addressPostCode,
+    address_country: userProfileData.addressCountry,
+    job_title: userProfileData.jobTitle,
+    job_industry: userProfileData.jobIndustry,
+    bio: userProfileData.bio,
+    education: userProfileData.education,
+    user_img: userProfileData.userImg,
+    facebook_profile: userProfileData.facebookProfile,
+    linkedIn_profile: userProfileData.linkedInProfile,
+    twitter_profile: userProfileData.twitterProfile,
+    gitHub_profile: userProfileData.gitHubProfile,
+    instagram_profile: userProfileData.instagramProfile,
+  })
+}
+
+const updateUserProfile = (userId, userProfileData) => {
+  console.log(userProfileData.addressNo);
+  return request
+  .put(`/api/v1/profiles/${userId}/`, {
+    user: userProfileData.id,
+    name: userProfileData.name,
+    sex: userProfileData.sex,
+    dob: userProfileData.dob,
+    address_no: userProfileData.addressNo,
+    address_street: userProfileData.addressStreet,
+    address_city: userProfileData.addressCity,
+    address_postcode: userProfileData.addressPostCode,
+    address_country: userProfileData.addressCountry,
     job_title: userProfileData.jobTitle,
     job_industry: userProfileData.jobIndustry,
     bio: userProfileData.bio,
@@ -38,6 +64,7 @@ const createUserProfile = (userProfileData) => {
 const profileService = {
   getUsers,
   getUserProfile,
-  createUserProfile
+  createUserProfile,
+  updateUserProfile
 }
 export default profileService;
