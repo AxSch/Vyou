@@ -56,10 +56,22 @@ const profileReducer = (state=initialStateProfile, action) => {
         newState = {
           ...newState
         };
-        newState.profile = action.payload.profile;
+        newState.userProfile = action.payload.profile;
         newState.error = null;
         return newState;
       case actionTypes.CREATE_PROFILE_FAILURE:
+      case actionTypes.UPDATE_PROFILE:
+        return newState = {
+          ...newState
+        }
+      case actionTypes.UPDATE_PROFILE_SUCCESS:
+        newState = {
+          ...newState
+        };
+        newState.userProfile = action.payload.profile;
+        newState.error = null;
+        return newState;
+      case actionTypes.UPDATE_PROFILE_FAILURE:
         newState = {
           ...newState
         };
