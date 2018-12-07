@@ -5,17 +5,12 @@ import { withRouter } from 'react-router-dom';
 import profileDispatchers from '../redux/dispatchers';
 
 const mapStateToProps = (state, ownProps) => ({
-    userEmail: state.login.userEmail,
-    userLoggedIn: state.login.loggedIn,
-    users: state.users.allUsers,
-    profile: state.profile
+    userProfile: state.profile.userProfile
 });
 
 const mapDispatchToProps = dispatch => (
     bindActionCreators({
-        fetchAllUsers: profileDispatchers.getAllUsersDispatcher,
-        setUserId: profileDispatchers.setUserIdDispatcher,
-        fetchProfile: profileDispatchers.getProfileDispatcher
+        fetchAllUsers: profileDispatchers.getAllUsersDispatcher
     }, dispatch)
 );
 
