@@ -19,13 +19,13 @@ const resetAllAnswersDispatcher = () => {
   }
 }
 
-const fetchCompletedPersonalityAnswersDispatcher = (userId) => {
+const fetchCompPersonalityDispatcher = (userId, categoryId, questionType) => {
   return dispatch => {
     dispatch(answerActions.fetchCompletedAnswers);
-    answersService.fetchCompPersonalityAnswers(userId)
+    answersService.fetchCompPersonalityAnswers(userId, categoryId)
     .then(
       response => {
-        dispatch(answerActions.fetchCompletedAnswersSuccess(response.data));
+        dispatch(answerActions.fetchCompletedAnswersSuccess(response.data, categoryId, questionType));
       },
       error => {
         dispatch(answerActions.fetchCompletedAnswersFailure(error.data));
@@ -39,7 +39,7 @@ const answersDispatchers = {
   setAnswerDispatcher,
   resetAllAnswersDispatcher,
   validateAnswersDispatcher,
-  fetchCompletedPersonalityAnswersDispatcher
+  fetchCompPersonalityDispatcher
 };
 
 export default answersDispatchers;
