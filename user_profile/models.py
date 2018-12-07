@@ -8,9 +8,9 @@ class Profile(models.Model):
     primary_key=True,
     default=1
   )
-  name = models.CharField(max_length=100)
-  sex = models.CharField(max_length=32)
-  dob = models.CharField(max_length=16)
+  name = models.CharField(max_length=100, default="n/a")
+  sex = models.CharField(max_length=32, default="n/a")
+  dob = models.CharField(max_length=16, default="n/a")
   address_no = models.IntegerField(default=1)
   address_street = models.CharField(max_length=128, default="n/a")
   address_city = models.CharField(max_length=128, default="n/a")
