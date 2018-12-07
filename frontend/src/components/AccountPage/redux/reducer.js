@@ -5,7 +5,7 @@ const initialStateProfile = {
   userId: null,
   hasProfile: null,
   profileCreated: null,
-  profile: {},
+  userProfile: {},
   error: null
 }
 
@@ -20,7 +20,7 @@ const profileReducer = (state=initialStateProfile, action) => {
         newState = {
           ...newState
         };
-        newState.profile = action.payload.profile;
+        newState.userProfile = action.payload.profile;
         newState.hasProfile = true
         newState.error = null;
         return newState;
