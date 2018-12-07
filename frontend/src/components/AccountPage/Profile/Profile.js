@@ -4,9 +4,7 @@ class Profile extends Component {
       return (
         <div>
           <h3>Welcome back, {name} </h3>
-          <p>{addressCity}</p>
-          <p>{addressCountry}</p>
-          <p>{dateJoined}</p>
+          <p>{addressCity}, {addressCountry} - Joined {dateJoined}</p>
         </div>
       );
     }
@@ -111,7 +109,7 @@ class Profile extends Component {
 
         return (
             <div>
-              {this.renderProfileHeaderSection(userProfile.name, userProfile.address, userProfile.creation_date)}
+              {this.renderProfileHeaderSection(userProfile.name, userProfile.address_city, userProfile.address_country, userProfile.creation_date)}
               {this.renderImageSection(userProfile.user_img, userProfile.name)}
               {this.renderBioSection(userProfile.bio)}
               {this.renderProfessionSection(userProfile.job_title, userProfile.job_industry, userProfile.education)}
