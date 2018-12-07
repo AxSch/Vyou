@@ -10,7 +10,7 @@ class PersonalityAnswersView(viewsets.ModelViewSet):
   queryset = PersonalityAnswers.objects.all()
   serializer_class = PersonalityAnswersSerializer
   filter_backends = (DjangoFilterBackend,)
-  filter_fields = ('profile')
+  filter_fields = ('profile',)
 
 
 class EnergyLevelAnswersView(viewsets.ModelViewSet):
