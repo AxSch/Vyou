@@ -13,9 +13,11 @@ class Question extends Component {
                 <AnswersContainer 
                     questionId={question.id}
                     categoryId={question.fields.id}
+                    categoryName={question.fields.category_name}
                     questionText={question.fields.question}
-                    questionSign={question.fields.sign}
                     questionType={questionType}
+                    questionSign={question.fields.sign}
+                    scaleFactor={question.fields.scale_alpha}
                     subCategoryId={subCategoryId}
                 />
             </li>
