@@ -14,6 +14,7 @@ class PersonalityQuestions extends Component {
 
         this.handlePageClick = this.handlePageClick.bind(this);
         this.handleBackPageClick = this.handleBackPageClick.bind(this);
+        this.handleNextButton = this.handleNextButton.bind(this);
     }
     componentDidMount() {
         const { resetAllAnswers, profile, fetchCompPSQuestions } = this.props;
@@ -22,11 +23,16 @@ class PersonalityQuestions extends Component {
         fetchCompPSQuestions(profile.userId, categoryId, questionType)
     }
 
+    handleSubmit(e) {
+        e.preventDefault();
+        // sendAnswers();
+    }
+
     handleNextButton(count) {
         if (count === 1 || count < 16) {
             return <button onClick={this.handlePageClick}>Next</button>
         } else {
-            return <button onClick={this.handleSubmit}>Submit</button>
+            return <button onClick={(e) => this.handleSubmit(e)}>Submit</button>
         }
     }
 
@@ -39,10 +45,15 @@ class PersonalityQuestions extends Component {
     }
 
     handlePageClick() {
-        const { answers } = this.props;
-        const { categoryId } = this.state;
+        const { answers, profile, sendAnswers, questions } = this.props;
+        const { categoryId, questionType } = this.state;
         
+        const questionCategory = questions.filter((question) => question.fields.id === categoryId);
+        console.log(questionCategory);
         if (answers.answeredPersonality[categoryId].isValid === true) {
+            Object.values(answers.answeredPersonality[categoryId]).forEach((answer) => {
+                sendAnswers(profile.userId, answer);
+            })
             this.setState (prevState => {
                 return {
                     categoryId: prevState.categoryId + 1
@@ -79,7 +90,7 @@ PersonalityQuestions.propTypes = {
     answers: PropTypes.object,
     resetAllAnswers: PropTypes.func,
     fetchCompPSQuestions: PropTypes.func,
-    profile: PropTypes.object
+    profile: PropTypes.any
 }
 
 export default PersonalityQuestions;
