@@ -173,8 +173,7 @@ const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId
             questionSign: userAnswer.questionSign,
             scaleFactor: userAnswer.scaleFactor,
             value: userAnswer.answerValue,
-            lastUpdated: userAnswer.lastUpdated,
-
+            lastUpdated: userAnswer.lastUpdated
           }
         }
       }
