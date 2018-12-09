@@ -4,22 +4,22 @@ from .models import PersonalityAnswers, EnergyLevelAnswers, EnergyFlowAnswers, E
 class PersonalityAnswersSerializer(serializers.ModelSerializer):
   class Meta:
    model = PersonalityAnswers
-   fields = ('id','question_id', 'question', 'question_sign','category_name', 'category_id', 'scale_alpha', 'answer_text', 'answer_score', 'profile', 'answer_last_updated', 'answer_created')
+   fields = ('question_id', 'question', 'question_sign','category_name', 'category_id', 'scale_alpha', 'answer_score', 'profile', 'answer_last_updated', 'answer_created')
 
 
 class EnergyLevelAnswersSerializer(serializers.ModelSerializer):
   class Meta:
    model = EnergyLevelAnswers
-   fields = ('question_id', 'question', 'category_name', 'answer_text', 'answer_score', 'profile')
+   fields = ('question_id', 'question', 'category_name', 'answer_score', 'profile')
 
 class EnergyFlowAnswersSerializer(serializers.ModelSerializer):
   class Meta:
    model = EnergyFlowAnswers
-   fields = ('question_id', 'question', 'category_name', 'subcategory_name','answer_text', 'answer_score', 'profile')
+   fields = ('question_id', 'question', 'category_name', 'subcategory_name', 'answer_score', 'profile')
 
 
 class EnergyMappingAnswersSerializer(serializers.ModelSerializer):
   class Meta:
    model = EnergyMappingAnswers
-   fields = ('question_id', 'question', 'category_name', 'subcategory_name','answer_text', 'answer_score', 'profile')
+   fields = ('question_id', 'question', 'category_name', 'subcategory_name', 'answer_score', 'profile')
 
