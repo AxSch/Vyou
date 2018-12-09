@@ -8,9 +8,9 @@ from user_profile.models import Profile
 class PersonalityAnswers(models.Model):
   category_id = models.IntegerField()
   category_name = models.CharField(max_length=32)
-  questionId = models.IntegerField()
+  question_id = models.IntegerField()
   question = models.CharField(max_length=64)
-  questionSign = models.CharField(max_length=16)
+  question_sign = models.CharField(max_length=16)
   scale_alpha = models.IntegerField()
   answer_text = models.CharField(max_length=16)
   answer_score = models.IntegerField()
@@ -22,9 +22,10 @@ class PersonalityAnswers(models.Model):
     return self.answer_score
 
 class EnergyLevelAnswers(models.Model):
-  questionId = models.IntegerField()
+  question_id = models.IntegerField()
   question = models.CharField(max_length=64)
   category_name = models.CharField(max_length=32)
+  category_id = models.IntegerField()
   answer_text = models.CharField(max_length=16)
   answer_score = models.IntegerField()
   profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
@@ -34,9 +35,10 @@ class EnergyLevelAnswers(models.Model):
     return self.answer_score
 
 class EnergyFlowAnswers(models.Model):
-  questionId = models.IntegerField()
+  question_id = models.IntegerField()
   question = models.CharField(max_length=64)
   category_name = models.CharField(max_length=32)
+  category_id = models.IntegerField()
   subcategory_name = models.CharField(max_length=32)
   answer_text = models.CharField(max_length=16)
   answer_score = models.IntegerField()
@@ -47,10 +49,12 @@ class EnergyFlowAnswers(models.Model):
     return self.answer_score
 
 class EnergyMappingAnswers(models.Model):
-  questionId = models.IntegerField()
+  question_id = models.IntegerField()
   question = models.CharField(max_length=64)
   category_name = models.CharField(max_length=32)
+  category_id = models.IntegerField()
   subcategory_name = models.CharField(max_length=32)
+  subcategory_id = models.IntegerField()
   answer_text = models.CharField(max_length=16)
   answer_score = models.IntegerField()
   profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
