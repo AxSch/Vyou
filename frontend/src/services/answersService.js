@@ -6,11 +6,11 @@ const sendPersonalityAnswers = (userId, question) => {
   question_id: question.questionId,
   question: question.question,
   question_sign: question.questionSign,
-  category_name: question.category_name,
-  scale_alpha: question.scale_alpha,
+  category_name: question.categoryName,
+  scale_alpha: question.scaleAlpha,
   answer_text: question.answer_text,
-  answer_score: question.answer_score,
-  category_id: question.category_id,
+  answer_score: question.value,
+  category_id: question.categoryId,
   profile: userId
   }
 )
