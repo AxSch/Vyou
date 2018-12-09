@@ -150,6 +150,11 @@ const initialState = {
       isValid: null
     }
   },
+  error: null,
+  answersSent: {
+    status: null,
+    sent: false
+  }
 }
 
 const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId) => {
@@ -163,10 +168,13 @@ const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId
           [userAnswer.questionId]: {
             ...newState.answeredPersonality[categoryId][userAnswer.questionId],
             question: userAnswer.question,
+            categoryId: categoryId,
+            categoryName: userAnswer.categoryName,
             questionSign: userAnswer.questionSign,
+            scaleFactor: userAnswer.scaleFactor,
             value: userAnswer.answerValue,
             lastUpdated: userAnswer.lastUpdated,
-    
+
           }
         }
       }
@@ -180,6 +188,8 @@ const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId
             ...newState.answeredEnergyFlow[categoryId][userAnswer.questionId],
             question: userAnswer.question,
             questionSign: userAnswer.questionSign,
+            categoryId: categoryId,
+            categoryName: userAnswer.categoryName,
             value: userAnswer.answerValue,
             lastUpdated: userAnswer.lastUpdated,
     
@@ -196,6 +206,8 @@ const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId
             ...newState.answeredEnergyLevel[categoryId][userAnswer.questionId],
             question: userAnswer.question,
             questionSign: userAnswer.questionSign,
+            categoryId: categoryId,
+            categoryName: userAnswer.categoryName,
             value: userAnswer.answerValue,
             lastUpdated: userAnswer.lastUpdated,
     
@@ -214,6 +226,9 @@ const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId
               ...newState.answeredEnergyMapping[categoryId][subCategoryId][userAnswer.questionId],
               question: userAnswer.question,
               questionSign: userAnswer.questionSign,
+              categoryId: categoryId,
+              categoryName: userAnswer.categoryName,
+              subCategoryId: subCategoryId,
               value: userAnswer.answerValue,
               lastUpdated: userAnswer.lastUpdated
             }
@@ -346,6 +361,24 @@ const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, sub
   }
 }
 
+const checkAnswerSent = (state, statusCode, answer) => {
+  let newState = _.clone(state);
+  if (statusCode === 201) {
+    newState.answersSent = {
+      sent: true,
+      status: statusCode,
+      answer: answer
+    }
+  } else {
+    newState.answersSent = {
+      sent: false,
+      status: statusCode,
+      answer: answer
+    }
+  }
+  return newState;
+}
+
 const answersReducer = (state=initialState, action) => {
   switch(action.type){
     case actionTypes.SET_ANSWER:
@@ -366,7 +399,22 @@ const answersReducer = (state=initialState, action) => {
       const setCompletedAnsState = updateCompletedAnswer(state, action.payload.completedAnswers, action.payload.categoryId, action.payload.questionType)
       return setCompletedAnsState;
     case actionTypes.FETCH_COMPLETED_ANSWERS_FAILURE:
+      return {
+        ...state,
+        error: action.payload.error
+      }
+    case actionTypes.SEND_ANSWERS:
       return state
+    case actionTypes.SEND_ANSWERS_SUCCESS:
+      // const sentState = checkAnswerSent(state, action.payload.statusCode, action.payload.answer);
+      // return sentState;
+      console.log(actionTypes.SEND_ANSWERS_SUCCESS);
+      break;
+    case actionTypes.SEND_ANSWERS_FAILURE:
+    return {
+      ...state,
+      error: action.payload.error
+    }
     default:
       return state;
   }

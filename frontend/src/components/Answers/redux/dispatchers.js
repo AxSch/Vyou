@@ -1,9 +1,9 @@
 import answerActions from './actions';
 import answersService from '../../../services/answersService';
 
-const setAnswerDispatcher = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId) => {
+const setAnswerDispatcher = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleFactor, categoryName) => {
   return dispatch => {
-    dispatch(answerActions.setAnswer(categoryId, Number(answerValue), questionId, question, questionSign, lastUpdated, questionType, subCategoryId));
+    dispatch(answerActions.setAnswer(categoryId, Number(answerValue), questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleFactor, categoryName));
   }
 }
 
@@ -34,12 +34,28 @@ const fetchCompPersonalityDispatcher = (userId, categoryId, questionType) => {
   }
 }
 
+const sendPSAnswersDispatcher = (userId, answer) => {
+  return dispatch => {
+    dispatch(answerActions.sendAnswers);
+    answersService.sendPersonalityAnswers(userId, answer)
+    .then(
+      response => {
+        dispatch(answerActions.sendAnswersSuccess(response.data));
+      },
+      error => {
+        dispatch(answerActions.sendAnswersFailure(error.data));
+      }
+    );
+  }
+}
+
 
 const answersDispatchers = {
   setAnswerDispatcher,
   resetAllAnswersDispatcher,
   validateAnswersDispatcher,
-  fetchCompPersonalityDispatcher
+  fetchCompPersonalityDispatcher,
+  sendPSAnswersDispatcher
 };
 
 export default answersDispatchers;

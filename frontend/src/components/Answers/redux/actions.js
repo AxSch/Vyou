@@ -1,6 +1,6 @@
 import actionTypes from './actionTypes';
 
-const setAnswer = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId) => ({
+const setAnswer = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleFactor, categoryName) => ({
   type: actionTypes.SET_ANSWER,
   payload: {
     categoryId: categoryId,
@@ -8,9 +8,12 @@ const setAnswer = (categoryId, answerValue, questionId, question, questionSign, 
     subCategoryId: subCategoryId,
     userAnswer: {
       question: question,
+      categoryId: categoryId,
+      categoryName: categoryName,
       questionId: questionId,
       answerValue: answerValue,
       questionSign: questionSign,
+      scaleFactor: scaleFactor,
       lastUpdated: lastUpdated
     },
   }
@@ -55,12 +58,11 @@ const sendAnswers = () => ({
   type: actionTypes.SEND_ANSWERS
 });
 
-const sendAnswersSuccess = (completedAnswers, categoryId, questionType) => ({
+const sendAnswersSuccess = (answer, statusCode) => ({
   type: actionTypes.SEND_ANSWERS_SUCCESS,
   payload: {
-    completedAnswers,
-    categoryId,
-    questionType
+    answer,
+    statusCode
   }
 });
 
