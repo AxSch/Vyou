@@ -352,18 +352,9 @@ const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, sub
       return newState;
     case 'EF':
       newState.answeredEnergyFlow = {
-        ...newState.answeredEnergyFlow,
-        [categoryId]: {
-          ...newState.answeredEnergyFlow[categoryId],
-          [userAnswers.questionId]: {
-            ...newState.answeredEnergyFlow[categoryId][userAnswers.questionId],
-            question: userAnswers.question,
-            questionSign: userAnswers.questionSign,
-            value: userAnswers.answerValue,
-            lastUpdated: userAnswers.lastUpdated,
-    
-          }
-        }
+        ...newState.completedEnergyFlow,
+        ...newState.completedEnergyFlow,
+        [categoryId]: [...userAnswers]
       }
       return newState;
     case 'EL':
