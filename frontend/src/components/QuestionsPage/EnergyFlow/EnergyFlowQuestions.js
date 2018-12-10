@@ -16,8 +16,10 @@ class EnergyFlowQuestions extends Component {
         this.handleBackPageClick = this.handleBackPageClick.bind(this);
     }
     componentDidMount() {
-        const { resetAllAnswers } = this.props;
+        const { resetAllAnswers, profile, fetchCompEFQuestions } = this.props;
+        const { categoryId, questionType } = this.state;
         resetAllAnswers();
+        fetchCompEFQuestions(profile.userId, categoryId, questionType)
     }
 
     handleNextButton(categoryId) {
