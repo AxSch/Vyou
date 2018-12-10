@@ -9,8 +9,7 @@ class EnergyFlowQuestions extends Component {
 
         this.state = {
             categoryId: 1,
-            questionType: 'EF',
-            subCategory: true
+            questionType: 'EF'
         };
 
         this.handlePageClick = this.handlePageClick.bind(this);
@@ -65,7 +64,7 @@ class EnergyFlowQuestions extends Component {
         return (
             <div>
                 <h2>Energy Flow Questions</h2>
-                <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType} subCategory={subCategory}/>
+                <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType}/>
                 {this.handleBackButton(categoryId)}
                 {this.handleNextButton(categoryId)}
             </div>
