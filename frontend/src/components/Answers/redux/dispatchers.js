@@ -1,9 +1,9 @@
 import answerActions from './actions';
 import answersService from '../../../services/answersService';
 
-const setAnswerDispatcher = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleAlpha, categoryName) => {
+const setAnswerDispatcher = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleAlpha, categoryName, subCategoryName) => {
   return dispatch => {
-    dispatch(answerActions.setAnswer(categoryId, Number(answerValue), questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleAlpha, categoryName));
+    dispatch(answerActions.setAnswer(categoryId, Number(answerValue), questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleAlpha, categoryName, subCategoryName));
   }
 }
 

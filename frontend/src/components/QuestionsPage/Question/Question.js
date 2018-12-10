@@ -19,6 +19,7 @@ class Question extends Component {
                     questionSign={question.fields.sign}
                     scaleAlpha={question.fields.scale_alpha}
                     subCategoryId={subCategoryId}
+                    subCategoryName={question.fields.subCategory}
                 />
             </li>
           </Fragment>

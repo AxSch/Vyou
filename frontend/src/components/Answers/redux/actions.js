@@ -1,6 +1,6 @@
 import actionTypes from './actionTypes';
 
-const setAnswer = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleAlpha, categoryName) => ({
+const setAnswer = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleAlpha, categoryName, subCategoryName) => ({
   type: actionTypes.SET_ANSWER,
   payload: {
     categoryId: categoryId,
@@ -10,6 +10,8 @@ const setAnswer = (categoryId, answerValue, questionId, question, questionSign, 
       question: question,
       categoryId: categoryId,
       categoryName: categoryName,
+      subCategoryId: subCategoryId,
+      subCategoryName: subCategoryName,
       questionId: questionId,
       answerValue: answerValue,
       questionSign: questionSign,

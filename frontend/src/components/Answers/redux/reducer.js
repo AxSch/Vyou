@@ -234,9 +234,9 @@ const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId
           [userAnswer.questionId]: {
             ...newState.answeredEnergyFlow[categoryId][userAnswer.questionId],
             question: userAnswer.question,
-            questionSign: userAnswer.questionSign,
             categoryId: categoryId,
             categoryName: userAnswer.categoryName,
+            subCategoryName: userAnswer.subCategoryName,
             value: userAnswer.answerValue,
             lastUpdated: userAnswer.lastUpdated,
     
@@ -450,14 +450,14 @@ const checkIfCompleted = (state, categoryId, questionType, subCategoryId) => {
       default:
         return newState;
   }
-  if (newState.completedPersonality[categoryId].length > 0) {
-    // console.log(newState);
-    newState.completedPersonality[categoryId] = {
-      ...newState.completedPersonality[categoryId],
-      completed: true
-    }
-    // console.log(newState);
-  }
+  // if (newState.completedPersonality[categoryId].length > 0) {
+  //   // console.log(newState);
+  //   newState.completedPersonality[categoryId] = {
+  //     ...newState.completedPersonality[categoryId],
+  //     completed: true
+  //   }
+  //   // console.log(newState);
+  // }
   return newState;
 }
 
