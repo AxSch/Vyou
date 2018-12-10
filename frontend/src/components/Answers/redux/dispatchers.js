@@ -34,6 +34,21 @@ const fetchCompPersonalityDispatcher = (userId, categoryId, questionType) => {
   }
 }
 
+const fetchCompEFDispatcher = (userId, categoryId, questionType) => {
+  return dispatch => {
+    dispatch(answerActions.fetchCompletedAnswers);
+    answersService.fetchCompEFAnswers(userId, categoryId)
+    .then(
+      response => {
+        dispatch(answerActions.fetchCompletedAnswersSuccess(response.data, categoryId, questionType));
+      },
+      error => {
+        dispatch(answerActions.fetchCompletedAnswersFailure(error.data));
+      }
+    );
+  }
+}
+
 const sendPSAnswersDispatcher = (userId, answer, index) => {
   return dispatch => {
     dispatch(answerActions.sendAnswers);
@@ -74,6 +89,7 @@ const answersDispatchers = {
   resetAllAnswersDispatcher,
   validateAnswersDispatcher,
   fetchCompPersonalityDispatcher,
+  fetchCompEFDispatcher,
   sendPSAnswersDispatcher,
   updatePSAnswersDispatcher
 };
