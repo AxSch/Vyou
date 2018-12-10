@@ -171,7 +171,7 @@ const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId
             categoryId: categoryId,
             categoryName: userAnswer.categoryName,
             questionSign: userAnswer.questionSign,
-            scaleFactor: userAnswer.scaleFactor,
+            scaleAlpha: userAnswer.scaleAlpha,
             value: userAnswer.answerValue,
             lastUpdated: userAnswer.lastUpdated
           }
@@ -360,12 +360,12 @@ const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, sub
 const checkIfCompleted = (state, categoryId) => {
   let newState = _.clone(state)
   if (newState.completedPersonality[categoryId].length > 0) {
-    console.log(newState);
+    // console.log(newState);
     newState.completedPersonality[categoryId] = {
       ...newState.completedPersonality[categoryId],
       completed: true
     }
-    console.log(newState);
+    // console.log(newState);
   }
   return newState;
 }
@@ -422,10 +422,19 @@ const answersReducer = (state=initialState, action) => {
       // console.log(actionTypes.SEND_ANSWERS_SUCCESS);
       // break;
     case actionTypes.SEND_ANSWERS_FAILURE:
-    return {
-      ...state,
-      error: action.payload.error
-    }
+      return {
+        ...state,
+        error: action.payload.error
+      }
+  
+    case actionTypes.UPDATE_ANSWERS:
+      return state
+    case actionTypes.UPDATE_ANSWERS_SUCCESS:
+      const updateState = checkAnswerSent(state, action.payload.statusCode, action.payload.answer);
+      return updateState;
+      // console.log(actionTypes.SEND_ANSWERS_SUCCESS);
+      // break;
+    case actionTypes.UPDATE_ANSWERS_FAILURE:
     default:
       return state;
   }
