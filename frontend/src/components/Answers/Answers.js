@@ -10,27 +10,27 @@ class Answers extends Component {
     }
 
     handleOnChange(e) {
-        const { personalityQuestions, energyFlowQuestions, energyLevelQuestions, energyMappingQuestions, answers, categoryId, questionId, setAnswer, questionText, questionSign, validateAnswers, questionType, subCategoryId, categoryName, scaleFactor } = this.props;
+        const { personalityQuestions, energyFlowQuestions, energyLevelQuestions, energyMappingQuestions, answers, categoryId, questionId, setAnswer, questionText, questionSign, validateAnswers, questionType, subCategoryId, categoryName, scaleAlpha } = this.props;
 
         switch(questionType) {
             case 'PS':
                 const personalityQues = personalityQuestions.filter((question) => question.fields.id === categoryId);
-                setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format(), questionType, null, scaleFactor, categoryName);
+                setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format(), questionType, null, scaleAlpha, categoryName);
                 validateAnswers(answers.answeredPersonality, personalityQues, categoryId, questionType);
                 break;
             case 'EF':
                 const energyFlowQues =  energyFlowQuestions.filter((question) => question.fields.id === categoryId);
-                setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format(), questionType, null, scaleFactor, categoryName);
+                setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format(), questionType, null, scaleAlpha, categoryName);
                 validateAnswers(answers.answeredPersonality, energyFlowQues, categoryId, questionType);
                 break;
             case 'EL':
                 const energyLevelQues =  energyLevelQuestions.filter((question) => question.fields.id === categoryId);
-                setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format(), questionType, null, scaleFactor, categoryName);
+                setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format(), questionType, null, scaleAlpha, categoryName);
                 validateAnswers(answers.answeredPersonality, energyLevelQues, categoryId, questionType);
                 break;
             case 'EM':
                 const energyMappingQues =  energyMappingQuestions.filter((question) => question.fields.id === categoryId);
-                setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format(), questionType, subCategoryId, scaleFactor, categoryName);
+                setAnswer(categoryId, e.target.value, questionId, questionText, questionSign, moment().format(), questionType, subCategoryId, scaleAlpha, categoryName);
                 validateAnswers(answers.answeredPersonality, energyMappingQues, categoryId, questionType, subCategoryId);
                 break;
             default:

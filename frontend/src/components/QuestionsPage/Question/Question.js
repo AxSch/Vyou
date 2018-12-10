@@ -17,7 +17,7 @@ class Question extends Component {
                     questionText={question.fields.question}
                     questionType={questionType}
                     questionSign={question.fields.sign}
-                    scaleFactor={question.fields.scale_alpha}
+                    scaleAlpha={question.fields.scale_alpha}
                     subCategoryId={subCategoryId}
                 />
             </li>

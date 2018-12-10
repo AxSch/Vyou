@@ -1,6 +1,6 @@
 import actionTypes from './actionTypes';
 
-const setAnswer = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleFactor, categoryName) => ({
+const setAnswer = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleAlpha, categoryName) => ({
   type: actionTypes.SET_ANSWER,
   payload: {
     categoryId: categoryId,
@@ -13,7 +13,7 @@ const setAnswer = (categoryId, answerValue, questionId, question, questionSign, 
       questionId: questionId,
       answerValue: answerValue,
       questionSign: questionSign,
-      scaleFactor: scaleFactor,
+      scaleAlpha: scaleAlpha,
       lastUpdated: lastUpdated
     },
   }
@@ -73,6 +73,25 @@ const sendAnswersFailure = (error) => ({
   }
 });
 
+const updateAnswers = () => ({
+  type: actionTypes.UPDATE_ANSWERS
+});
+
+const updateAnswersSuccess = (answer, statusCode) => ({
+  type: actionTypes.UPDATE_ANSWERS_SUCCESS,
+  payload: {
+    answer,
+    statusCode
+  }
+});
+
+const updateAnswersFailure = (error) => ({
+  type: actionTypes.UPDATE_ANSWERS_FAILURE,
+  payload: {
+    error
+  }
+});
+
 const answerActions = {
   setAnswer,
   resetAllAnswers,
@@ -82,7 +101,10 @@ const answerActions = {
   fetchCompletedAnswersFailure,
   sendAnswers,
   sendAnswersSuccess,
-  sendAnswersFailure
+  sendAnswersFailure,
+  updateAnswers,
+  updateAnswersSuccess,
+  updateAnswersFailure
 };
 
 export default answerActions;
