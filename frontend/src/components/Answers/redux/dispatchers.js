@@ -1,9 +1,9 @@
 import answerActions from './actions';
 import answersService from '../../../services/answersService';
 
-const setAnswerDispatcher = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleFactor, categoryName) => {
+const setAnswerDispatcher = (categoryId, answerValue, questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleAlpha, categoryName) => {
   return dispatch => {
-    dispatch(answerActions.setAnswer(categoryId, Number(answerValue), questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleFactor, categoryName));
+    dispatch(answerActions.setAnswer(categoryId, Number(answerValue), questionId, question, questionSign, lastUpdated, questionType, subCategoryId, scaleAlpha, categoryName));
   }
 }
 
@@ -34,18 +34,37 @@ const fetchCompPersonalityDispatcher = (userId, categoryId, questionType) => {
   }
 }
 
-const sendPSAnswersDispatcher = (userId, answer) => {
+const sendPSAnswersDispatcher = (userId, answer, index) => {
   return dispatch => {
     dispatch(answerActions.sendAnswers);
-    answersService.sendPersonalityAnswers(userId, answer)
-    .then(
-      response => {
-        dispatch(answerActions.sendAnswersSuccess(response.data));
-      },
-      error => {
-        dispatch(answerActions.sendAnswersFailure(error.data));
-      }
-    );
+    if (answer !== true) {
+      answersService.sendPersonalityAnswers(userId, answer, index)
+      .then(
+        response => {
+          dispatch(answerActions.sendAnswersSuccess(response.data));
+        },
+        error => {
+          dispatch(answerActions.sendAnswersFailure(error.data));
+        }
+      ); 
+    }
+  }
+}
+
+const updatePSAnswersDispatcher = (userId, answer, index) => {
+  return dispatch => {
+    dispatch(answerActions.sendAnswers);
+    if (answer !== true) {
+      answersService.updatePersonalityAnswers(userId, answer, index)
+      .then(
+        response => {
+          dispatch(answerActions.sendAnswersSuccess(response.data));
+        },
+        error => {
+          dispatch(answerActions.sendAnswersFailure(error.data));
+        }
+      ); 
+    }
   }
 }
 
@@ -55,7 +74,8 @@ const answersDispatchers = {
   resetAllAnswersDispatcher,
   validateAnswersDispatcher,
   fetchCompPersonalityDispatcher,
-  sendPSAnswersDispatcher
+  sendPSAnswersDispatcher,
+  updatePSAnswersDispatcher
 };
 
 export default answersDispatchers;
