@@ -15,7 +15,7 @@ class EnergyLevelAnswersSerializer(serializers.ModelSerializer):
 class EnergyFlowAnswersSerializer(serializers.ModelSerializer):
   class Meta:
    model = EnergyFlowAnswers
-   fields = ('question_id', 'question', 'category_name', 'subcategory_name', 'answer_score', 'profile')
+   fields = ('question_id', 'question', 'category_name', 'category_id', 'subcategory_name', 'answer_score', 'profile')
 
 
 class EnergyMappingAnswersSerializer(serializers.ModelSerializer):
