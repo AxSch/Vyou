@@ -240,8 +240,6 @@ const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId
   }
 }
 
-
-
 const validateAnswers = (state, answers, questions, categoryId, questionType, subCategoryId) => {
   let newState = _.clone(state);
   switch(questionType) {
@@ -293,7 +291,6 @@ const validateAnswers = (state, answers, questions, categoryId, questionType, su
       return state;
   }
 }
-
 
 const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, subCategoryId) => {
   let newState = _.clone(state);
@@ -360,6 +357,19 @@ const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, sub
   }
 }
 
+const checkIfCompleted = (state, categoryId) => {
+  let newState = _.clone(state)
+  if (newState.completedPersonality[categoryId].length > 0) {
+    console.log(newState);
+    newState.completedPersonality[categoryId] = {
+      ...newState.completedPersonality[categoryId],
+      completed: true
+    }
+    console.log(newState);
+  }
+  return newState;
+}
+
 const checkAnswerSent = (state, statusCode, answer) => {
   let newState = _.clone(state);
   if (statusCode === 201) {
@@ -368,14 +378,15 @@ const checkAnswerSent = (state, statusCode, answer) => {
       status: statusCode,
       answer: answer
     }
+    return newState;
   } else {
     newState.answersSent = {
       sent: false,
       status: statusCode,
       answer: answer
     }
+    return newState;
   }
-  return newState;
 }
 
 const answersReducer = (state=initialState, action) => {
@@ -396,7 +407,8 @@ const answersReducer = (state=initialState, action) => {
       return state
     case actionTypes.FETCH_COMPLETED_ANSWERS_SUCCESS:
       const setCompletedAnsState = updateCompletedAnswer(state, action.payload.completedAnswers, action.payload.categoryId, action.payload.questionType)
-      return setCompletedAnsState;
+      const checkState = checkIfCompleted(setCompletedAnsState, action.payload.categoryId);
+      return checkState;
     case actionTypes.FETCH_COMPLETED_ANSWERS_FAILURE:
       return {
         ...state,
@@ -405,10 +417,10 @@ const answersReducer = (state=initialState, action) => {
     case actionTypes.SEND_ANSWERS:
       return state
     case actionTypes.SEND_ANSWERS_SUCCESS:
-      // const sentState = checkAnswerSent(state, action.payload.statusCode, action.payload.answer);
-      // return sentState;
-      console.log(actionTypes.SEND_ANSWERS_SUCCESS);
-      break;
+      const sentState = checkAnswerSent(state, action.payload.statusCode, action.payload.answer);
+      return sentState;
+      // console.log(actionTypes.SEND_ANSWERS_SUCCESS);
+      // break;
     case actionTypes.SEND_ANSWERS_FAILURE:
     return {
       ...state,
