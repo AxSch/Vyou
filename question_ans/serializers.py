@@ -4,7 +4,7 @@ from .models import PersonalityAnswers, EnergyLevelAnswers, EnergyFlowAnswers, E
 class PersonalityAnswersSerializer(serializers.ModelSerializer):
   class Meta:
    model = PersonalityAnswers
-   fields = ('question_id', 'question', 'question_sign','category_name', 'category_id', 'scale_alpha', 'answer_score', 'profile', 'answer_last_updated', 'answer_created')
+   fields = ('id', 'question_id', 'question', 'question_sign','category_name', 'category_id', 'scale_alpha', 'answer_score', 'profile', 'answer_last_updated', 'answer_created')
 
 
 class EnergyLevelAnswersSerializer(serializers.ModelSerializer):

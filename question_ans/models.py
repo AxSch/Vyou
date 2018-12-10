@@ -11,7 +11,7 @@ class PersonalityAnswers(models.Model):
   question_id = models.IntegerField()
   question = models.CharField(max_length=64)
   question_sign = models.CharField(max_length=16)
-  scale_alpha = models.IntegerField()
+  scale_alpha = models.FloatField(null=True, default=None, blank=True)
   answer_score = models.IntegerField()
   answer_last_updated = models.DateField(auto_now=True, blank=True)
   answer_created = models.DateField(auto_now_add=True)
