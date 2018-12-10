@@ -24,8 +24,11 @@ const mapDispatchToProps = dispatch => (
         fetchEMQuestions: questionsDispatchers.requestEMQuestionsDispatcher,
         resetAllAnswers: answersDispatchers.resetAllAnswersDispatcher,
         fetchCompPSQuestions: answersDispatchers.fetchCompPersonalityDispatcher,
-        sendAnswers: answersDispatchers.sendPSAnswersDispatcher,
-        updateAnswers: answersDispatchers.updatePSAnswersDispatcher
+        fetchCompEFQuestions: answersDispatchers.fetchCompEFDispatcher,
+        sendPSAnswers: answersDispatchers.sendPSAnswersDispatcher,
+        updatePSAnswers: answersDispatchers.updatePSAnswersDispatcher,
+        sendEFAnswers: answersDispatchers.sendEFAnswersDispatcher,
+        updateEFAnswers: answersDispatchers.updateEFAnswersDispatcher
     }, dispatch)
 );
 
