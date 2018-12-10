@@ -1,16 +1,30 @@
 import request from "axios";
 
-const sendPersonalityAnswers = (userId, question) => {
+const sendPersonalityAnswers = (userId, question, index) => {
   return request
   .post("/api/v1/answers/personality_answers/", {
-  question_id: question.questionId,
+  question_id: index,
   question: question.question,
   question_sign: question.questionSign,
   category_name: question.categoryName,
   scale_alpha: question.scaleAlpha,
-  answer_text: question.answer_text,
   answer_score: question.value,
   category_id: question.categoryId,
+  profile: userId
+  }
+)
+}
+
+const updatePersonalityAnswers = (userId, answer, index) => {
+  return request
+  .put(`/api/v1/answers/personality_answers/${index}/`, {
+  question_id: answer.question_id,
+  question: answer.question,
+  question_sign: answer.question_sign,
+  category_name: answer.category_name,
+  category_id: answer.category_id,
+  scale_alpha: answer.scale_alpha,
+  answer_score: answer.answer_score,
   profile: userId
   }
 )
@@ -31,6 +45,7 @@ const fetchCompPersonalityAnswers = (userId, categoryId) => {
 
 const answersService = {
   sendPersonalityAnswers,
+  updatePersonalityAnswers,
   fetchCompPersonalityAnswers
 };
 
