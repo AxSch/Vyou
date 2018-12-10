@@ -25,6 +25,7 @@ const mapDispatchToProps = dispatch => (
         resetAllAnswers: answersDispatchers.resetAllAnswersDispatcher,
         fetchCompPSQuestions: answersDispatchers.fetchCompPersonalityDispatcher,
         sendAnswers: answersDispatchers.sendPSAnswersDispatcher,
+        updateAnswers: answersDispatchers.updatePSAnswersDispatcher
     }, dispatch)
 );
 

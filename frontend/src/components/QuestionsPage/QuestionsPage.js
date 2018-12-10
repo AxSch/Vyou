@@ -39,10 +39,10 @@ class QuestionsPage extends Component {
     }
 
     renderCategoryQuestions(category) {
-        const { personalityQuestions, energyFlowQuestions, energyLevelQuestions, energyMappingQuestions, resetAllAnswers, answers, fetchCompPSQuestions, profile, sendAnswers } = this.props;
+        const { personalityQuestions, energyFlowQuestions, energyLevelQuestions, energyMappingQuestions, resetAllAnswers, answers, fetchCompPSQuestions, profile, sendAnswers, updateAnswers } = this.props;
         switch(category) {
             case 'PERSONALITY':
-                return <PersonalityQuestions questions={personalityQuestions} answers={answers} resetAllAnswers={resetAllAnswers} fetchCompPSQuestions={fetchCompPSQuestions} profile={profile} sendAnswers={sendAnswers} />;
+                return <PersonalityQuestions questions={personalityQuestions} answers={answers} resetAllAnswers={resetAllAnswers} fetchCompPSQuestions={fetchCompPSQuestions} profile={profile} sendAnswers={sendAnswers} updateAnswers={updateAnswers} />;
             case 'ENERGYFLOW':
                 return <EnergyFlowQuestions questions={energyFlowQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>;
             case 'ENERGYLEVEL':
