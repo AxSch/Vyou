@@ -16,11 +16,20 @@ class PersonalityQuestions extends Component {
         this.handleBackPageClick = this.handleBackPageClick.bind(this);
         this.handleNextButton = this.handleNextButton.bind(this);
     }
+    
     componentDidMount() {
         const { resetAllAnswers, profile, fetchCompPSQuestions } = this.props;
         const { categoryId, questionType } = this.state;
         resetAllAnswers();
         fetchCompPSQuestions(profile.userId, categoryId, questionType)
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        const { profile, fetchCompPSQuestions } = this.props;
+        const { categoryId, questionType } = this.state;
+        if (categoryId !== prevState.categoryId) {
+            fetchCompPSQuestions(profile.userId, categoryId, questionType);
+        }
     }
 
     handleSubmit(e) {
@@ -45,14 +54,18 @@ class PersonalityQuestions extends Component {
     }
 
     handlePageClick() {
-        const { answers, profile, sendAnswers, questions } = this.props;
+        const { answers, profile, sendAnswers, questions, updateAnswers } = this.props;
         const { categoryId, questionType } = this.state;
         
-        const questionCategory = questions.filter((question) => question.fields.id === categoryId);
-        console.log(questionCategory);
         if (answers.answeredPersonality[categoryId].isValid === true) {
-            Object.values(answers.answeredPersonality[categoryId]).forEach((answer) => {
-                sendAnswers(profile.userId, answer);
+            Object.values(answers.answeredPersonality[categoryId]).forEach((answer, index) => {
+                if (answers.completedPersonality[categoryId].completed === true) {
+                    Object.values(answers.completedPersonality[categoryId]).forEach((completedAns) => {
+                        updateAnswers(profile.userId, completedAns, completedAns.id);
+                    })
+                } else {
+                    sendAnswers(profile.userId, answer, (index + 1));
+                }
             })
             this.setState (prevState => {
                 return {
