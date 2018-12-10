@@ -150,6 +150,54 @@ const initialState = {
       isValid: null
     }
   },
+  completedEnergyFlow: {
+    1 : {
+      isValid: null
+    },
+    2 : {
+      isValid: null
+    },
+    3 : {
+      isValid: null
+    }
+  },
+  completedEnergyLevel: {
+    1 : {
+      isValid: null
+    },
+  },
+  completedEnergyMapping: {
+    1 : {
+      1 : {},
+      2 : {},
+      3 : {}
+    },
+    2 : {
+      1 : {},
+      2 : {},
+      3 : {}
+    },
+    3 : {
+      1 : {},
+      2 : {},
+      3 : {}
+    },
+    4 : {
+      1 : {},
+      2 : {},
+      3 : {}
+    },
+    5 : {
+      1 : {},
+      2 : {},
+      3 : {}
+    },
+    6 : {
+      1 : {},
+      2 : {},
+      3 : {}
+    },
+  },
   error: null,
   answersSent: {
     status: null,
@@ -357,8 +405,51 @@ const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, sub
   }
 }
 
-const checkIfCompleted = (state, categoryId) => {
+const checkIfCompleted = (state, categoryId, questionType, subCategoryId) => {
   let newState = _.clone(state)
+  switch (questionType) {
+    case 'PS':
+      if (newState.completedPersonality[categoryId].length > 0) {
+        newState.completedPersonality[categoryId] = {
+          ...newState.completedPersonality[categoryId],
+          completed: true
+        }  
+        return newState;
+      }
+      break;
+    case 'EL':
+        if (newState.completedEnergyLevel[categoryId].length > 0) {
+          newState.completedEnergyLevel[categoryId] = {
+            ...newState.completedEnergyLevel[categoryId],
+            completed: true
+          }  
+          return newState;
+        }
+        break;
+    case 'EF':
+        if (newState.completedEnergyFlow[categoryId].length > 0) {
+          newState.completedEnergyFlow[categoryId] = {
+            ...newState.completedEnergyFlow[categoryId],
+            completed: true
+          }  
+          return newState;
+        }
+        break;
+    case 'EM':
+        if (newState.completedEnergyMapping[categoryId].length > 0) {
+          newState.completedEnergyMapping[categoryId] = {
+            ...newState.completedEnergyMapping[categoryId],
+            [subCategoryId]: {
+              completed: true
+
+            }
+          }  
+          return newState;
+        }
+        break;
+      default:
+        return newState;
+  }
   if (newState.completedPersonality[categoryId].length > 0) {
     // console.log(newState);
     newState.completedPersonality[categoryId] = {
