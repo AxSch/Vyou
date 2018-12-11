@@ -15,6 +15,33 @@ const sendPersonalityAnswers = (userId, answer, index) => {
 )
 }
 
+const sendEnergyFlowAnswers = (userId, answer, index) => {
+  return request
+  .post("/api/v1/answers/energy_flow_answers/", {
+    question_id: index,
+    question: answer.question,
+    category_name: answer.categoryName,
+    category_id: answer.categoryId,
+    subcategory_name: answer.subCategoryName,
+    answer_score: answer.value,
+    profile: userId
+  }
+)
+}
+
+const sendEnergyLevelAnswers = (userId, answer, index) => {
+  return request
+  .post("/api/v1/answers/energy_level_answers/", {
+    question_id: index,
+    question: answer.question,
+    category_name: answer.categoryName,
+    category_id: answer.categoryId,
+    answer_score: answer.value,
+    profile: userId
+  }
+)
+}
+
 const updatePersonalityAnswers = (userId, answer, index) => {
   return request
   .put(`/api/v1/answers/personality_answers/${index}/`, {
@@ -30,20 +57,6 @@ const updatePersonalityAnswers = (userId, answer, index) => {
 )
 }
 
-const sendEnergyFlowAnswers = (userId, answer, index) => {
-  return request
-  .post("/api/v1/answers/energy_flow_answers/", {
-    question_id: index,
-    question: answer.question,
-    category_name: answer.categoryName,
-    category_id: answer.categoryId,
-    subcategory_name: answer.subCategoryName,
-    answer_score: answer.value,
-    profile: userId
-  }
-)
-}
-
 const updateEnergyFlowAnswers = (userId, answer, index) => {
   return request
   .put(`/api/v1/answers/energy_flow_answers/${index}/`, {
@@ -54,6 +67,19 @@ const updateEnergyFlowAnswers = (userId, answer, index) => {
   subcategory_name: answer.subcategory_name,
   answer_score: answer.answer_score,
   profile: userId
+  }
+)
+}
+
+const updateEnergyLevelAnswers = (userId, answer, index) => {
+  return request
+  .put(`/api/v1/answers/energy_level_answers/${index}/`, {
+    question_id: answer.question_id,
+    question: answer.question,
+    category_name: answer.category_name,
+    category_id: answer.category_id,
+    answer_score: answer.answer_score,
+    profile: userId
   }
 )
 }
@@ -95,9 +121,11 @@ const fetchCompELAnswers = (userId, categoryId) => {
 
 const answersService = {
   sendPersonalityAnswers,
-  updatePersonalityAnswers,
   sendEnergyFlowAnswers,
+  sendEnergyLevelAnswers,
+  updatePersonalityAnswers,
   updateEnergyFlowAnswers,
+  updateEnergyLevelAnswers,
   fetchCompPersonalityAnswers,
   fetchCompEFAnswers,
   fetchCompELAnswers
