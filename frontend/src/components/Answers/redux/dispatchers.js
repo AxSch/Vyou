@@ -98,6 +98,23 @@ const sendEFAnswersDispatcher = (userId, answer, index) => {
   }
 }
 
+const sendELAnswersDispatcher = (userId, answer, index) => {
+  return dispatch => {
+    dispatch(answerActions.sendAnswers);
+    if (answer !== true) {
+      answersService.sendEnergyLevelAnswers(userId, answer, index)
+      .then(
+        response => {
+          dispatch(answerActions.sendAnswersSuccess(response.data));
+        },
+        error => {
+          dispatch(answerActions.sendAnswersFailure(error.data));
+        }
+      ); 
+    }
+  }
+}
+
 const updatePSAnswersDispatcher = (userId, answer, index) => {
   return dispatch => {
     dispatch(answerActions.updateAnswers);
@@ -132,6 +149,23 @@ const updateEFAnswersDispatcher = (userId, answer, index) => {
   }
 }
 
+const updateELAnswersDispatcher = (userId, answer, index) => {
+  return dispatch => {
+    dispatch(answerActions.updateAnswers);
+    if (answer !== true) {
+      answersService.updateEnergyLevelAnswers(userId, answer, index)
+      .then(
+        response => {
+          dispatch(answerActions.updateAnswersSuccess(response.data));
+        },
+        error => {
+          dispatch(answerActions.updateAnswersFailure(error.data));
+        }
+      ); 
+    }
+  }
+}
+
 
 
 const answersDispatchers = {
@@ -143,8 +177,10 @@ const answersDispatchers = {
   fetchCompELDispatcher,
   sendPSAnswersDispatcher,
   sendEFAnswersDispatcher,
+  sendELAnswersDispatcher,
   updatePSAnswersDispatcher,
-  updateEFAnswersDispatcher
+  updateEFAnswersDispatcher,
+  updateELAnswersDispatcher
 };
 
 export default answersDispatchers;
