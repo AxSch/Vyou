@@ -366,19 +366,7 @@ const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, sub
     case 'EM':
       newState.answeredEnergyMapping = {
         ...newState.answeredEnergyMapping,
-        [categoryId]: {
-          ...newState.answeredEnergyMapping[categoryId],
-          [subCategoryId]: {
-            ...newState.answeredEnergyMapping[categoryId][subCategoryId],
-            [userAnswers.questionId]: {
-              ...newState.answeredEnergyMapping[categoryId][subCategoryId][userAnswers.questionId],
-              question: userAnswers.question,
-              questionSign: userAnswers.questionSign,
-              value: userAnswers.answerValue,
-              lastUpdated: userAnswers.lastUpdated
-            }
-          }
-        }
+        [categoryId]: [...userAnswers]
       }
       return newState;
     default:
