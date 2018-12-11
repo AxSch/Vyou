@@ -49,11 +49,43 @@ const fetchCompEFDispatcher = (userId, categoryId, questionType) => {
   }
 }
 
+const fetchCompELDispatcher = (userId, categoryId, questionType) => {
+  return dispatch => {
+    dispatch(answerActions.fetchCompletedAnswers);
+    answersService.fetchCompELAnswers(userId, categoryId)
+    .then(
+      response => {
+        dispatch(answerActions.fetchCompletedAnswersSuccess(response.data, categoryId, questionType));
+      },
+      error => {
+        dispatch(answerActions.fetchCompletedAnswersFailure(error.data));
+      }
+    );
+  }
+}
+
 const sendPSAnswersDispatcher = (userId, answer, index) => {
   return dispatch => {
     dispatch(answerActions.sendAnswers);
     if (answer !== true) {
       answersService.sendPersonalityAnswers(userId, answer, index)
+      .then(
+        response => {
+          dispatch(answerActions.sendAnswersSuccess(response.data));
+        },
+        error => {
+          dispatch(answerActions.sendAnswersFailure(error.data));
+        }
+      ); 
+    }
+  }
+}
+
+const sendEFAnswersDispatcher = (userId, answer, index) => {
+  return dispatch => {
+    dispatch(answerActions.sendAnswers);
+    if (answer !== true) {
+      answersService.sendEnergyFlowAnswers(userId, answer, index)
       .then(
         response => {
           dispatch(answerActions.sendAnswersSuccess(response.data));
@@ -77,23 +109,6 @@ const updatePSAnswersDispatcher = (userId, answer, index) => {
         },
         error => {
           dispatch(answerActions.updateAnswersFailure(error.data));
-        }
-      ); 
-    }
-  }
-}
-
-const sendEFAnswersDispatcher = (userId, answer, index) => {
-  return dispatch => {
-    dispatch(answerActions.sendAnswers);
-    if (answer !== true) {
-      answersService.sendEnergyFlowAnswers(userId, answer, index)
-      .then(
-        response => {
-          dispatch(answerActions.sendAnswersSuccess(response.data));
-        },
-        error => {
-          dispatch(answerActions.sendAnswersFailure(error.data));
         }
       ); 
     }
@@ -125,6 +140,7 @@ const answersDispatchers = {
   validateAnswersDispatcher,
   fetchCompPersonalityDispatcher,
   fetchCompEFDispatcher,
+  fetchCompELDispatcher,
   sendPSAnswersDispatcher,
   sendEFAnswersDispatcher,
   updatePSAnswersDispatcher,
