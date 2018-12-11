@@ -16,6 +16,8 @@ class PersonalityAnswersView(viewsets.ModelViewSet):
 class EnergyLevelAnswersView(viewsets.ModelViewSet):
   queryset = EnergyLevelAnswers.objects.all()
   serializer_class = EnergyLevelAnswersSerializer
+  filter_backends = (DjangoFilterBackend,)
+  filter_fields = ('profile', 'category_id',)
 
 class EnergyFlowAnswersView(viewsets.ModelViewSet):
   queryset = EnergyFlowAnswers.objects.all()
@@ -26,4 +28,6 @@ class EnergyFlowAnswersView(viewsets.ModelViewSet):
 class EnergyMappingAnswersView(viewsets.ModelViewSet):
   queryset = EnergyMappingAnswers.objects.all()
   serializer_class = EnergyMappingAnswersSerializer
+  filter_backends = (DjangoFilterBackend,)
+  filter_fields = ('profile', 'category_id',)
 
