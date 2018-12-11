@@ -68,15 +68,15 @@ const sendPSAnswersDispatcher = (userId, answer, index) => {
 
 const updatePSAnswersDispatcher = (userId, answer, index) => {
   return dispatch => {
-    dispatch(answerActions.sendAnswers);
+    dispatch(answerActions.updateAnswers);
     if (answer !== true) {
       answersService.updatePersonalityAnswers(userId, answer, index)
       .then(
         response => {
-          dispatch(answerActions.sendAnswersSuccess(response.data));
+          dispatch(answerActions.updateAnswersSuccess(response.data));
         },
         error => {
-          dispatch(answerActions.sendAnswersFailure(error.data));
+          dispatch(answerActions.updateAnswersFailure(error.data));
         }
       ); 
     }
@@ -102,15 +102,15 @@ const sendEFAnswersDispatcher = (userId, answer, index) => {
 
 const updateEFAnswersDispatcher = (userId, answer, index) => {
   return dispatch => {
-    dispatch(answerActions.sendAnswers);
+    dispatch(answerActions.updateAnswers);
     if (answer !== true) {
       answersService.updateEnergyFlowAnswers(userId, answer, index)
       .then(
         response => {
-          dispatch(answerActions.sendAnswersSuccess(response.data));
+          dispatch(answerActions.updateAnswersSuccess(response.data));
         },
         error => {
-          dispatch(answerActions.sendAnswersFailure(error.data));
+          dispatch(answerActions.updateAnswersFailure(error.data));
         }
       ); 
     }
