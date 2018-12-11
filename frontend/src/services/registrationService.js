@@ -1,10 +1,10 @@
 import request from "axios";
 
-const registerUser = (email, password, password2) => {
+const registerUser = (email, password1, password2) => {
   return request
   .post("/api/v1/registration/", {
       email: email,
-      password: password,
+      password1: password1,
       password2: password2
     }
   )
