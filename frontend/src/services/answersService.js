@@ -80,6 +80,17 @@ const fetchCompEFAnswers = (userId, categoryId) => {
 )
 }
 
+const fetchCompELAnswers = (userId, categoryId) => {
+  return request
+  .get("/api/v1/answers/energy_level_answers/", {
+    params: {
+      profile: userId,
+      category_id: categoryId
+    }
+  }
+)
+}
+
 
 
 const answersService = {
@@ -88,7 +99,8 @@ const answersService = {
   sendEnergyFlowAnswers,
   updateEnergyFlowAnswers,
   fetchCompPersonalityAnswers,
-  fetchCompEFAnswers
+  fetchCompEFAnswers,
+  fetchCompELAnswers
 };
 
 export default answersService;
