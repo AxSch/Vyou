@@ -1,8 +1,3 @@
-// import config from 'config';
-// import { authHeader } from '../helpers/auth-header';
-
-
-
 
 
 const handleResponse = (response) => {
@@ -45,12 +40,7 @@ const logout = () => {
 
 const authService = {
   login,
-  logout,
-  // signup,
-  // getAll,
-  // getById,
-  // update,
-  // delete: deleteUser
+  logout
 };
 
 export default authService;
