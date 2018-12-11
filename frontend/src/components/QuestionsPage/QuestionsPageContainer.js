@@ -29,7 +29,9 @@ const mapDispatchToProps = dispatch => (
         sendPSAnswers: answersDispatchers.sendPSAnswersDispatcher,
         updatePSAnswers: answersDispatchers.updatePSAnswersDispatcher,
         sendEFAnswers: answersDispatchers.sendEFAnswersDispatcher,
-        updateEFAnswers: answersDispatchers.updateEFAnswersDispatcher
+        updateEFAnswers: answersDispatchers.updateEFAnswersDispatcher,
+        sendELAnswers: answersDispatchers.sendELAnswersDispatcher,
+        updateELAnswers: answersDispatchers.updateELAnswersDispatcher
     }, dispatch)
 );
 
