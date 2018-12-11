@@ -358,19 +358,9 @@ const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, sub
       }
       return newState;
     case 'EL':
-      newState.answeredEnergyLevel = {
-        ...newState.answeredEnergyLevel,
-        [categoryId]: {
-          ...newState.answeredEnergyLevel[categoryId],
-          [userAnswers.questionId]: {
-            ...newState.answeredEnergyLevel[categoryId][userAnswers.questionId],
-            question: userAnswers.question,
-            questionSign: userAnswers.questionSign,
-            value: userAnswers.answerValue,
-            lastUpdated: userAnswers.lastUpdated,
-    
-          }
-        }
+      newState.completedEnergyLevel = {
+        ...newState.completedEnergyLevel,
+        [categoryId]: [...userAnswers]
       }
       return newState;
     case 'EM':
@@ -441,14 +431,6 @@ const checkIfCompleted = (state, categoryId, questionType, subCategoryId) => {
       default:
         return newState;
   }
-  // if (newState.completedPersonality[categoryId].length > 0) {
-  //   // console.log(newState);
-  //   newState.completedPersonality[categoryId] = {
-  //     ...newState.completedPersonality[categoryId],
-  //     completed: true
-  //   }
-  //   // console.log(newState);
-  // }
   return newState;
 }
 
