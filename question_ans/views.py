@@ -20,6 +20,8 @@ class EnergyLevelAnswersView(viewsets.ModelViewSet):
 class EnergyFlowAnswersView(viewsets.ModelViewSet):
   queryset = EnergyFlowAnswers.objects.all()
   serializer_class = EnergyFlowAnswersSerializer
+  filter_backends = (DjangoFilterBackend,)
+  filter_fields = ('profile', 'category_id',)
 
 class EnergyMappingAnswersView(viewsets.ModelViewSet):
   queryset = EnergyMappingAnswers.objects.all()
