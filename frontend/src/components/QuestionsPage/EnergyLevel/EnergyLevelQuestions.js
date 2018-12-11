@@ -44,6 +44,29 @@ class EnergyLevelQuestions extends Component {
         }
     }
 
+    handleSubmit(e) {
+        const { answers, profile, sendAnswers, updateAnswers } = this.props;
+        const { categoryId } = this.state;
+
+        e.preventDefault();
+        if (answers.answeredEnergyLevel[categoryId].isValid === true) {
+            Object.values(answers.answeredEnergyLevel[categoryId]).forEach((answer, index) => {
+                if (answers.completedEnergyLevel[categoryId].completed === true) {
+                    Object.values(answers.completedEnergyLevel[categoryId]).forEach((completedAns) => {
+                        updateAnswers(profile.userId, completedAns, completedAns.id);
+                    })
+                } else {
+                    sendAnswers(profile.userId, answer, (index + 1));
+                }
+            })
+            this.setState (prevState => {
+                return {
+                    categoryId: prevState.categoryId + 1
+                }
+            }, () => {});
+        }
+    }
+
     render() {
         const { questions } = this.props;
         const { categoryId, questionType, subCategory, isValid } = this.state;
@@ -52,7 +75,7 @@ class EnergyLevelQuestions extends Component {
             <div>
                 <h2>Energy Level Questions</h2>
                 <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType} subCategory={subCategory}/>
-                {isValid === true ? <button onClick={this.handleSubmit}>Submit</button> : <button onClick={this.handleIsValid(categoryId)}>Next</button>}
+                {isValid === true ? <button onClick={(e) => this.handleSubmit(e)}>Submit</button> : <button onClick={this.handleIsValid(categoryId)}>Next</button>}
             </div>
         );
     }
