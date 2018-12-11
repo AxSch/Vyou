@@ -83,6 +83,41 @@ const updatePSAnswersDispatcher = (userId, answer, index) => {
   }
 }
 
+const sendEFAnswersDispatcher = (userId, answer, index) => {
+  return dispatch => {
+    dispatch(answerActions.sendAnswers);
+    if (answer !== true) {
+      answersService.sendEnergyFlowAnswers(userId, answer, index)
+      .then(
+        response => {
+          dispatch(answerActions.sendAnswersSuccess(response.data));
+        },
+        error => {
+          dispatch(answerActions.sendAnswersFailure(error.data));
+        }
+      ); 
+    }
+  }
+}
+
+const updateEFAnswersDispatcher = (userId, answer, index) => {
+  return dispatch => {
+    dispatch(answerActions.sendAnswers);
+    if (answer !== true) {
+      answersService.updateEnergyFlowAnswers(userId, answer, index)
+      .then(
+        response => {
+          dispatch(answerActions.sendAnswersSuccess(response.data));
+        },
+        error => {
+          dispatch(answerActions.sendAnswersFailure(error.data));
+        }
+      ); 
+    }
+  }
+}
+
+
 
 const answersDispatchers = {
   setAnswerDispatcher,
@@ -91,7 +126,9 @@ const answersDispatchers = {
   fetchCompPersonalityDispatcher,
   fetchCompEFDispatcher,
   sendPSAnswersDispatcher,
-  updatePSAnswersDispatcher
+  sendEFAnswersDispatcher,
+  updatePSAnswersDispatcher,
+  updateEFAnswersDispatcher
 };
 
 export default answersDispatchers;

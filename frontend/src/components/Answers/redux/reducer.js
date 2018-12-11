@@ -351,9 +351,9 @@ const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, sub
       }
       return newState;
     case 'EF':
-      newState.answeredEnergyFlow = {
+      newState.completedEnergyFlow = {
         ...newState.completedEnergyFlow,
-        ...newState.completedEnergyFlow,
+        ...newState.completedEnergyFlow[categoryId],
         [categoryId]: [...userAnswers]
       }
       return newState;
@@ -489,7 +489,7 @@ const answersReducer = (state=initialState, action) => {
       return state
     case actionTypes.FETCH_COMPLETED_ANSWERS_SUCCESS:
       const setCompletedAnsState = updateCompletedAnswer(state, action.payload.completedAnswers, action.payload.categoryId, action.payload.questionType)
-      const checkState = checkIfCompleted(setCompletedAnsState, action.payload.categoryId);
+      const checkState = checkIfCompleted(setCompletedAnsState, action.payload.categoryId, action.payload.questionType);
       return checkState;
     case actionTypes.FETCH_COMPLETED_ANSWERS_FAILURE:
       return {

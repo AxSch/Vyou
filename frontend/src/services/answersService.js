@@ -33,11 +33,12 @@ const updatePersonalityAnswers = (userId, answer, index) => {
 const sendEnergyFlowAnswers = (userId, answer, index) => {
   return request
   .post("/api/v1/answers/energy_flow_answers/", {
-    question_id: answer.question_id,
+    question_id: index,
     question: answer.question,
-    category_name: answer.category_name,
-    subcategory_name: answer.category_id,
-    answer_score: answer.answer_score,
+    category_name: answer.categoryName,
+    category_id: answer.categoryId,
+    subcategory_name: answer.subCategoryName,
+    answer_score: answer.value,
     profile: userId
   }
 )
@@ -49,7 +50,8 @@ const updateEnergyFlowAnswers = (userId, answer, index) => {
   question_id: answer.question_id,
   question: answer.question,
   category_name: answer.category_name,
-  subcategory_name: answer.category_id,
+  category_id: answer.category_id,
+  subcategory_name: answer.subcategory_name,
   answer_score: answer.answer_score,
   profile: userId
   }
