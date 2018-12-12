@@ -18,7 +18,7 @@ class LoginPage extends Component {
     }
 
     redirectToTarget = () => {
-        this.props.history.push('/accounts/profile');
+        this.props.history.push('accounts/profile/');
     }
 
     handleChange = (event) => {
@@ -52,7 +52,7 @@ class LoginPage extends Component {
                 <form name="form">
                     <div>
                         <label htmlFor="email">Email</label>
-                        <input type="text" value={email} name="email" onChange={this.handleChange}/>
+                        <input type="email" value={email} name="email" onChange={this.handleChange}/>
                     </div>
                     <div>
                         <label htmlFor="password">Password</label>
