@@ -74,7 +74,7 @@ class RegisterPage extends Component {
   }
 
   handleSubmit(e) {
-    // e.preventDefault();
+    e.preventDefault();
     this.onValidate();
     const { register } = this.props;
     const { isValid, email, password1, password2 } = this.state;
