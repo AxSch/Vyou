@@ -8,11 +8,11 @@ const intitialState = {
 
 const registrationReducer = (state=intitialState, action) => {
   switch(action.type){
-    case actionTypes.REQUEST_QUESTIONS:
+    case actionTypes.REGISTRATION_REQUEST:
       return {
         ...state,
       }
-    case actionTypes.FETCH_QUESTIONS_SUCCESS:
+    case actionTypes.REGISTRATION_REQUEST_SUCCESS:
       return {
         ...state,
         registration: {
@@ -20,7 +20,7 @@ const registrationReducer = (state=intitialState, action) => {
           statusCode: action.payload.statusCode
         }
       }
-    case actionTypes.FETCH_QUESTIONS_FAILURE:
+    case actionTypes.REGISTRATION_REQUEST_FAILURE:
       return {
         ...state,
         error: action.payload.error
