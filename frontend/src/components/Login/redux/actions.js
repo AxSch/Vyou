@@ -23,15 +23,15 @@ const loginFailure = (email, error) => ({
   }
 });
 
-const loggedOut = () => ({
-  type: actionTypes.LOGGED_OUT,
+const logOut = () => ({
+  type: actionTypes.LOG_OUT
 });
 
 const loginActions = {
   loginRequest,
   loginSuccess,
   loginFailure,
-  loggedOut
+  logOut
 }
 
 export default loginActions;

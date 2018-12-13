@@ -19,9 +19,14 @@ const loginDispatcher = (email, password) => {
 }
 
 const logoutDispatcher = () => {
-  authService.logout();
-  return {
-    type: loginActions.LOGOUT,
+  return dispatch => {
+    dispatch(loginActions.logOut);
+    authService.logout()
+      .then(
+        () => {
+          dispatch(loginActions.logOut)
+        }
+      )
   }
 }
 

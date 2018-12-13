@@ -6,7 +6,7 @@ const initialState = {
   loggedIn: false,
   loggedOut: true,
   error: null,
-  token: null,
+  token: localStorage.getItem("token")
 }
 
 const loginReducer = (state=initialState, action) => {
@@ -18,17 +18,19 @@ const loginReducer = (state=initialState, action) => {
           loggingIn: true,
         }
         case actionTypes.LOGIN_SUCCESS:
-        return {
-          ...state,
-          loggedIn: true,
-          loggedOut: false,
-          token: action.payload.token.key, 
-        }
+          localStorage.setItem("token", action.payload.token.key)
+          return {
+            ...state,
+            loggedIn: true,
+            loggedOut: false,
+          // token: action.payload.token.key, 
+          }
       case actionTypes.LOGIN_FAILURE:
         return {
-          error: action.payload.error,
+          error: action.payload.error
         }
-      case actionTypes.LOGGED_OUT:
+      case actionTypes.LOG_OUT:
+        localStorage.removeItem("token");
         return {
           loggedOut: true,
         }

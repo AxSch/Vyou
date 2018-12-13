@@ -1,4 +1,4 @@
-
+import request from "axios";
 
 const handleResponse = (response) => {
   return response.text().then((text) => {
@@ -34,12 +34,25 @@ const login = (email, password) => {
     });
 }
 
+const loginUser = (email, password) => {
+  return request
+  .post('/api/v1/auth/login', {
+    email: email,
+    password: password
+  })
+}
+
+
+
 const logout = () => {
   localStorage.removeItem('email');
+  return request
+  .post('/api/v1/auth/logout', {})
 }
 
 const authService = {
   login,
+  loginUser,
   logout
 };
 
