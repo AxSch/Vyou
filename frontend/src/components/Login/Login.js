@@ -19,7 +19,9 @@ class LoginPage extends Component {
 
     componentDidUpdate(prevProps, prevState) {
         if (prevProps.userLogin.loggedIn !== this.props.userLogin.loggedIn) {
-            this.redirectToTarget();
+            if (this.props.userLogin.loggedIn) {
+                this.redirectToTarget();
+            }
         }
     }
 
@@ -35,23 +37,17 @@ class LoginPage extends Component {
     }
     
     handleSubmit = (e) => {
+        e.preventDefault();
         const { email, password } = this.state;
+        const { loginAction } = this.props;
+        
         if (email && password) {
-            this.props.loginAction(email, password);
-            // if (this.props.userLogin.loggedIn === true){
-            //     this.setState({
-            //         toProfile: true
-            //     });
-            //     console.log(this.state.toProfile);
-            // }
-            // return;
+            loginAction(email, password);
         }
-        return;
     }
 
     render() {
         const { email, password } = this.state;
-        const { userLogin } = this.props;
         return (
             <div>
                 <h2>Login</h2>
