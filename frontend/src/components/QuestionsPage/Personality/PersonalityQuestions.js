@@ -36,11 +36,25 @@ class PersonalityQuestions extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.setState (prevState => {
-            return {
-                isSubmitted: true
-            }
-        }, () => {});
+        const { answers, profile, sendAnswers, updateAnswers } = this.props;
+        const { categoryId } = this.state;
+
+        if (answers.answeredPersonality[categoryId].isValid === true) {
+            Object.values(answers.answeredPersonality[categoryId]).forEach((answer, index) => {
+                if (answers.completedPersonality[categoryId].completed === true) {
+                    Object.values(answers.completedPersonality[categoryId]).forEach((completedAns) => {
+                        updateAnswers(profile.userId, completedAns, completedAns.id);
+                    })
+                } else {
+                    sendAnswers(profile.userId, answer, (index + 1));
+                }
+            })
+            this.setState (prevState => {
+                return {
+                    isSubmitted: true
+                }
+            }, () => {});
+        }
     }
 
     handleNextButton(count) {
@@ -60,7 +74,7 @@ class PersonalityQuestions extends Component {
     }
 
     handlePageClick() {
-        const { answers, profile, sendAnswers, questions, updateAnswers } = this.props;
+        const { answers, profile, sendAnswers, updateAnswers } = this.props;
         const { categoryId } = this.state;
         
         if (answers.answeredPersonality[categoryId].isValid === true) {
@@ -97,8 +111,8 @@ class PersonalityQuestions extends Component {
             <div>
                 <h2>Personality Questions</h2>
                 {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType}/>}
-                {this.handleBackButton(categoryId)}
-                {this.handleNextButton(categoryId)}
+                {!isSubmitted ? this.handleBackButton(categoryId) : null}
+                {!isSubmitted ? this.handleNextButton(categoryId) : null}
             </div>
         );
     }
