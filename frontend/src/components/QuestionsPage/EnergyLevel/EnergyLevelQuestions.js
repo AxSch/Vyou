@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import QuestionFactory from '../Question/QuestionFactory';
-
+import CompletionPage from '../CompletionPage/CompletionPage';
 
 class EnergyLevelQuestions extends Component {
     constructor(props) {
@@ -11,7 +11,8 @@ class EnergyLevelQuestions extends Component {
             categoryId: 1,
             questionType: 'EL',
             subCategory: true,
-            isValid: null
+            isValid: null,
+            isSubmitted: false
         };
 
         this.handleIsValid = this.handleIsValid.bind(this);
@@ -59,9 +60,19 @@ class EnergyLevelQuestions extends Component {
                 if (answers.completedEnergyLevel[categoryId].completed === true) {
                     Object.values(answers.completedEnergyLevel[categoryId]).forEach((completedAns) => {
                         updateAnswers(profile.userId, completedAns, completedAns.id);
+                        this.setState (prevState => {
+                            return {
+                                isSubmitted: true
+                            }
+                        }, () => {});
                     })
                 } else {
                     sendAnswers(profile.userId, answer, (index + 1));
+                    this.setState (prevState => {
+                        return {
+                            isSubmitted: true
+                        }
+                    }, () => {});
                 }
             })
             this.setState (prevState => {
@@ -74,12 +85,12 @@ class EnergyLevelQuestions extends Component {
 
     render() {
         const { questions } = this.props;
-        const { categoryId, questionType, subCategory, isValid } = this.state;
+        const { categoryId, questionType, subCategory, isValid, isSubmitted } = this.state;
  
         return (
             <div>
                 <h2>Energy Level Questions</h2>
-                <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType} subCategory={subCategory}/>
+                {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType} subCategory={subCategory}/>}
                 {isValid === true ? <button onClick={(e) => this.handleSubmit(e)}>Submit</button> : <button onClick={this.handleIsValid(categoryId)}>Next</button>}
             </div>
         );
