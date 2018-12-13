@@ -12,7 +12,8 @@ const mapStateToProps = (state, ownProps) => {
       energyLevelQuestions: state.questions.energyLevelQuestions,
       energyMappingQuestions: state.questions.energyMappingQuestions,
       answers: state.answers,
-      profile: state.profile
+      profile: state.profile,
+      login: state.login
     }
 };
 
