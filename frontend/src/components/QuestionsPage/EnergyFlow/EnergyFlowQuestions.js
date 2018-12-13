@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import QuestionFactory from '../Question/QuestionFactory';
-
+import CompletionPage from '../CompletionPage/CompletionPage';
 
 class EnergyFlowQuestions extends Component {
     constructor(props) {
@@ -9,11 +9,13 @@ class EnergyFlowQuestions extends Component {
 
         this.state = {
             categoryId: 1,
-            questionType: 'EF'
+            questionType: 'EF',
+            isSubmitted: false
         };
 
         this.handlePageClick = this.handlePageClick.bind(this);
         this.handleBackPageClick = this.handleBackPageClick.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     componentDidMount() {
@@ -31,11 +33,20 @@ class EnergyFlowQuestions extends Component {
         }
     }
 
+    handleSubmit(e) {
+        e.preventDefault();
+        this.setState (prevState => {
+            return {
+                isSubmitted: true
+            }
+        }, () => {});
+    }
+
     handleNextButton(categoryId) {
         if (categoryId === 1 || categoryId < 3) {
             return <button onClick={this.handlePageClick}>Next</button>
         } else if (categoryId === 3) {
-            return <button onClick={this.handleSubmit}>Submit</button>
+            return <button onClick={(e) => this.handleSubmit(e)}>Submit</button>
         }
     }
 
@@ -80,12 +91,12 @@ class EnergyFlowQuestions extends Component {
 
     render() {
         const { questions } = this.props;
-        const { categoryId, questionType, subCategory } = this.state;
+        const { categoryId, questionType, subCategory, isSubmitted } = this.state;
  
         return (
             <div>
                 <h2>Energy Flow Questions</h2>
-                <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType}/>
+                {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType}/>}
                 {this.handleBackButton(categoryId)}
                 {this.handleNextButton(categoryId)}
             </div>
