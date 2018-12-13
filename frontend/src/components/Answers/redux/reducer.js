@@ -369,7 +369,8 @@ const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, sub
         ...newState.completedEnergyMapping,
         [categoryId]: {
           ...newState.completedEnergyMapping[categoryId],
-          [subCategoryId]: {
+          ...newState.completedEnergyMapping[userAnswers[0].subcategory_id],
+          [userAnswers[0].subcategory_id]: {
             ...newState.completedEnergyMapping[categoryId][subCategoryId],
             ...userAnswers
           }
