@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import QuestionFactory from '../Question/QuestionFactory';
-
+import CompletionPage from '../CompletionPage/CompletionPage';
 
 class PersonalityQuestions extends Component {
     constructor(props) {
@@ -10,11 +10,13 @@ class PersonalityQuestions extends Component {
         this.state = {
             categoryId: 1,
             questionType: 'PS',
+            isSubmitted: false
         };
 
         this.handlePageClick = this.handlePageClick.bind(this);
         this.handleBackPageClick = this.handleBackPageClick.bind(this);
         this.handleNextButton = this.handleNextButton.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
     
     componentDidMount() {
@@ -34,7 +36,11 @@ class PersonalityQuestions extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        // sendAnswers();
+        this.setState (prevState => {
+            return {
+                isSubmitted: true
+            }
+        }, () => {});
     }
 
     handleNextButton(count) {
@@ -55,7 +61,7 @@ class PersonalityQuestions extends Component {
 
     handlePageClick() {
         const { answers, profile, sendAnswers, questions, updateAnswers } = this.props;
-        const { categoryId, questionType } = this.state;
+        const { categoryId } = this.state;
         
         if (answers.answeredPersonality[categoryId].isValid === true) {
             Object.values(answers.answeredPersonality[categoryId]).forEach((answer, index) => {
@@ -85,12 +91,12 @@ class PersonalityQuestions extends Component {
 
     render() {
         const { questions } = this.props;
-        const { categoryId, questionType } = this.state;
+        const { categoryId, questionType, isSubmitted} = this.state;
  
         return (
             <div>
                 <h2>Personality Questions</h2>
-                <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType}/>
+                {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType}/>}
                 {this.handleBackButton(categoryId)}
                 {this.handleNextButton(categoryId)}
             </div>
