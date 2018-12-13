@@ -29,5 +29,5 @@ class EnergyMappingAnswersView(viewsets.ModelViewSet):
   queryset = EnergyMappingAnswers.objects.all()
   serializer_class = EnergyMappingAnswersSerializer
   filter_backends = (DjangoFilterBackend,)
-  filter_fields = ('profile', 'category_id',)
+  filter_fields = ('profile', 'category_id','subcategory_id')
 

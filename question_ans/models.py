@@ -47,7 +47,7 @@ class EnergyFlowAnswers(models.Model):
 
 class EnergyMappingAnswers(models.Model):
   question_id = models.IntegerField()
-  question = models.CharField(max_length=64)
+  question = models.CharField(max_length=256)
   category_name = models.CharField(max_length=32)
   category_id = models.IntegerField(default=1)
   subcategory_name = models.CharField(max_length=32)
