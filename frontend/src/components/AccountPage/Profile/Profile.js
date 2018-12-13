@@ -1,20 +1,5 @@
 import React, { Component } from 'react';
 class Profile extends Component {
-    constructor(props) {
-        super(props);
-
-        this.renderProfileHeaderSection = this.renderProfileHeaderSection.bind(this);
-        this.renderImageSection = this.renderImageSection.bind(this);
-        this.renderBioSection = this.renderBioSection.bind(this);
-        this.renderQuestionsSection = this.renderQuestionsSection.bind(this);
-        this.checkFacebookComplete = this.checkFacebookComplete.bind(this);
-        this.checkLinkedInComplete = this.checkLinkedInComplete.bind(this);
-        this.checkTwitterComplete = this.checkTwitterComplete.bind(this);
-        this.checkGitHubComplete = this.checkGitHubComplete.bind(this);
-        this.checkInstaComplete = this.checkInstaComplete.bind(this);
-        this.renderConnectedAccountsSection = this.renderConnectedAccountsSection.bind(this);
-        this.renderProfessionSection = this.renderProfessionSection.bind(this);
-    }
 
     renderProfileHeaderSection (name, addressCity, addressCountry, dateJoined) {
       return (
