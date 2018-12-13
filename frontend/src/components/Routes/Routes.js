@@ -16,8 +16,8 @@ const routes = () => {
       <Route path="/accounts/login/" component={LoginContainer}/>
       <Route path="/accounts/profile/" component={ProfilePageContainer}/>
       <Route path="/accounts/settings/" component={AccountSettingsContainer}/>
-      <Route path="/register" component={RegisterContainer}/>
-      <Route path="/questions" component={QuestionsPageContainer}/>
+      <Route path="/register/" component={RegisterContainer}/>
+      <Route path="/questions/" component={QuestionsPageContainer}/>
       <Route component={NotFound} />
   </Switch>
   );
