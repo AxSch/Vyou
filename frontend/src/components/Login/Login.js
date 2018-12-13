@@ -10,6 +10,12 @@ class LoginPage extends Component {
             password: '',
         };
     }
+    componentDidMount(){
+        const { userLogin } = this.props;
+        if (userLogin.loggedIn) {
+            this.redirectToTarget();
+        }
+    }
 
     componentDidUpdate(prevProps, prevState) {
         if (prevProps.userLogin.token !== this.props.userLogin.token) {
@@ -18,7 +24,7 @@ class LoginPage extends Component {
     }
 
     redirectToTarget = () => {
-        this.props.history.push('accounts/profile/');
+        this.props.history.push('/accounts/profile/');
     }
 
     handleChange = (event) => {
@@ -28,8 +34,7 @@ class LoginPage extends Component {
         });
     }
     
-    handleSubmit = (event) => {
-        event.preventDefault();
+    handleSubmit = () => {
         const { email, password } = this.state;
         if (email && password) {
             this.props.loginAction(email, password);
@@ -45,7 +50,8 @@ class LoginPage extends Component {
     }
 
     render() {
-        const { email, password} = this.state;
+        const { email, password } = this.state;
+        const { userLogin } = this.props;
         return (
             <div>
                 <h2>Login</h2>
