@@ -4,9 +4,9 @@ import LoginContainer from '../Login/LoginContainer';
 import ProfilePageContainer from '../AccountPage/ProfilePageContainer';
 import AccountSettingsContainer from '../AccountPage/AccountSettings/AccountSettingsContainer';
 import QuestionsPageContainer from '../QuestionsPage/QuestionsPageContainer';
-import HomePageContainer from '../HomePage/HomePageContainer';
 import NotFound from '../ErrorPages/NotFound';
 import RegisterContainer from '../Registration/RegisterContainer';
+import HomePageContainer from '../HomePage/HomePageContainer';
 
 
 const routes = () => {
