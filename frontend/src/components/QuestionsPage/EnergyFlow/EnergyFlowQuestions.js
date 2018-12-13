@@ -35,6 +35,26 @@ class EnergyFlowQuestions extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
+        const { answers, profile, sendAnswers, updateAnswers } = this.props;
+        const { categoryId } = this.state;
+        
+        if (answers.answeredEnergyFlow[categoryId].isValid === true) {
+            Object.values(answers.answeredEnergyFlow[categoryId]).forEach((answer, index) => {
+                // console.log(answers.completedEnergyFlow[categoryId].completed);
+                if (answers.completedEnergyFlow[categoryId].completed === true) {
+                    Object.values(answers.completedEnergyFlow[categoryId]).forEach((completedAns) => {
+                        updateAnswers(profile.userId, completedAns, completedAns.id);
+                    })
+                } else {
+                    sendAnswers(profile.userId, answer, (index + 1));
+                }
+            })
+            this.setState (prevState => {
+                return {
+                    categoryId: prevState.categoryId + 1
+                }
+            }, () => {});
+        }
         this.setState (prevState => {
             return {
                 isSubmitted: true
@@ -97,8 +117,8 @@ class EnergyFlowQuestions extends Component {
             <div>
                 <h2>Energy Flow Questions</h2>
                 {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType}/>}
-                {this.handleBackButton(categoryId)}
-                {this.handleNextButton(categoryId)}
+                {!isSubmitted ? this.handleBackButton(categoryId) : null}
+                {!isSubmitted ? this.handleNextButton(categoryId) : null}
             </div>
         );
     }

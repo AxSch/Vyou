@@ -156,7 +156,7 @@ class EnergyMappingQuestions extends Component {
                 <h2>Energy Mapping Questions</h2>
                 {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType} subCategory={subCategory} subCategoryId={subCategoryId}/>}
                 {this.handleBackButton(subCategoryId, categoryId)}
-                {isValid ? <button onClick={(e) => this.handleOnSubmitClick(e)}>Submit</button> : <button onClick={(e) => this.handleNextPageClick(e)}>Next</button>}
+                {!isSubmitted ? isValid ? <button onClick={(e) => this.handleOnSubmitClick(e)}>Submit</button> : <button onClick={(e) => this.handleNextPageClick(e)}>Next</button> : null}
                 {/* {isValid === true ? <button onClick={(e) => this.handleNextPageClick(e)}>Submit</button> : <button onClick={this.handleIsValid(categoryId, subCategoryId)}>Next</button>} */}
             </div>
         );
