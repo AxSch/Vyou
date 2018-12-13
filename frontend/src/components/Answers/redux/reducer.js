@@ -365,16 +365,8 @@ const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, sub
       }
       return newState;
     case 'EM':
-      newState.completedEnergyMapping = {
-        ...newState.completedEnergyMapping,
-        [categoryId]: {
-          ...newState.completedEnergyMapping[categoryId],
-          ...newState.completedEnergyMapping[userAnswers[0].subcategory_id],
-          [userAnswers[0].subcategory_id]: {
-            ...newState.completedEnergyMapping[categoryId][subCategoryId],
-            ...userAnswers
-          }
-        }
+      newState.completedEnergyMapping[categoryId][subCategoryId] = {
+          ...userAnswers
       }
       return newState;
     default:
@@ -413,11 +405,11 @@ const checkIfCompleted = (state, categoryId, questionType, subCategoryId) => {
         }
         break;
     case 'EM':
-        if (newState.completedEnergyMapping[categoryId].length > 0) {
-          newState.completedEnergyMapping[categoryId] = {
-            ...newState.completedEnergyMapping[categoryId],
+        if (Object.values(newState.completedEnergyMapping[categoryId][subCategoryId]).length > 0) {
+          newState.completedEnergyMapping[categoryId][subCategoryId] = {
+            ...newState.completedEnergyMapping[categoryId][subCategoryId],
             completed: true
-          }  
+          } 
           return newState;
         }
         break;
@@ -463,8 +455,8 @@ const answersReducer = (state=initialState, action) => {
     case actionTypes.FETCH_COMPLETED_ANSWERS:
       return state
     case actionTypes.FETCH_COMPLETED_ANSWERS_SUCCESS:
-      const setCompletedAnsState = updateCompletedAnswer(state, action.payload.completedAnswers, action.payload.categoryId, action.payload.questionType)
-      const checkState = checkIfCompleted(setCompletedAnsState, action.payload.categoryId, action.payload.questionType);
+      const setCompletedAnsState = updateCompletedAnswer(state, action.payload.completedAnswers, action.payload.categoryId, action.payload.questionType, action.payload.subCategoryId)
+      const checkState = checkIfCompleted(setCompletedAnsState, action.payload.categoryId, action.payload.questionType, action.payload.subCategoryId);
       return checkState;
     case actionTypes.FETCH_COMPLETED_ANSWERS_FAILURE:
       return {

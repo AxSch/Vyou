@@ -15,7 +15,7 @@ class QuestionFactory extends Component {
     if (subCategory) {
       const questionCategory = questions.filter((question) => question.fields.id === categoryId);
       const questionSubCategory = questionCategory.filter((question) => question.fields.subCategory_id === subCategoryId);
-
+      console.log(questionSubCategory);
       return questionSubCategory.map((question) => {
         return (
           <Question question={question} questionType={questionType} subCategoryId={subCategoryId}/>

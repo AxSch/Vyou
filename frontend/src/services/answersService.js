@@ -60,6 +60,10 @@ const sendEnergyMappingAnswers = (userId, answer, index) => {
 const updatePersonalityAnswers = (userId, answer, index) => {
   return request
   .put(`/api/v1/answers/personality_answers/${index}/`, {
+  params: {
+    profile: userId,
+    category_id: answer.category_id
+  },
   question_id: answer.question_id,
   question: answer.question,
   question_sign: answer.question_sign,
@@ -75,6 +79,10 @@ const updatePersonalityAnswers = (userId, answer, index) => {
 const updateEnergyFlowAnswers = (userId, answer, index) => {
   return request
   .put(`/api/v1/answers/energy_flow_answers/${index}/`, {
+  params: {
+    profile: userId,
+    category_id: answer.category_id
+  },
   question_id: answer.question_id,
   question: answer.question,
   category_name: answer.category_name,
@@ -89,6 +97,10 @@ const updateEnergyFlowAnswers = (userId, answer, index) => {
 const updateEnergyLevelAnswers = (userId, answer, index) => {
   return request
   .put(`/api/v1/answers/energy_level_answers/${index}/`, {
+    params: {
+      profile: userId,
+      category_id: answer.category_id
+    },
     question_id: answer.question_id,
     question: answer.question,
     category_name: answer.category_name,
@@ -102,14 +114,19 @@ const updateEnergyLevelAnswers = (userId, answer, index) => {
 const updateEnergyMappingAnswers = (userId, answer, index) => {
   return request
   .put(`/api/v1/answers/energy_mapping_answers/${index}/`, {
-    question_id: answer.question_id,
-    question: answer.question,
-    category_name: answer.category_name,
-    category_id: answer.category_id,
-    subcategory_name: answer.subcategory_name,
-    subcategory_id: answer.subcategory_id,
-    answer_score: answer.answer_score,
-    profile: userId
+    params: {
+      profile: userId,
+      category_id: answer.category_id,
+      subcategory_id: answer.subcategory_id
+    },
+      question_id: answer.question_id,
+      question: answer.question,
+      category_name: answer.category_name,
+      category_id: answer.category_id,
+      subcategory_name: answer.subcategory_name,
+      subcategory_id: answer.subcategory_id,
+      answer_score: answer.answer_score,
+      profile: userId
   }
 )
 }
@@ -147,12 +164,13 @@ const fetchCompELAnswers = (userId, categoryId) => {
 )
 }
 
-const fetchCompEMAnswers = (userId, categoryId) => {
+const fetchCompEMAnswers = (userId, categoryId, subCategoryId) => {
   return request
   .get("/api/v1/answers/energy_mapping_answers/", {
     params: {
       profile: userId,
-      category_id: categoryId
+      category_id: categoryId,
+      subcategory_id: subCategoryId
     }
   }
 )
