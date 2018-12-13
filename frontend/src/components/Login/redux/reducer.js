@@ -29,10 +29,16 @@ const loginReducer = (state=initialState, action) => {
         return {
           error: action.payload.error
         }
+      case actionTypes.REQUEST_LOG_OUT:
+        return {
+          logoutRequest: true
+        };
       case actionTypes.LOG_OUT:
         localStorage.removeItem("token");
         return {
           loggedOut: true,
+          message: action.payload.message,
+          userEmail: null
         }
     default:
       return state;
