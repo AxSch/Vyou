@@ -1,7 +1,5 @@
 import loginActions from '../redux/actions';
 import authService from '../../../services/authService';
-// import history from '../../../helpers/history';
-// import
 
 const loginDispatcher = (email, password) => {
   return dispatch => {
@@ -20,14 +18,14 @@ const loginDispatcher = (email, password) => {
 
 const logoutDispatcher = () => {
   return dispatch => {
-    dispatch(loginActions.logOut);
+    dispatch(loginActions.requestlogOut());
     authService.logout()
       .then(
-        () => {
-          dispatch(loginActions.logOut)
+        (res) => {
+          dispatch(loginActions.logOut(res.data))
         }
-      )
-  }
+      );
+  };
 }
 
 export {
@@ -35,4 +33,3 @@ export {
   logoutDispatcher,
 };
 
-// export default loginDispatchers;

@@ -23,14 +23,23 @@ const loginFailure = (email, error) => ({
   }
 });
 
-const logOut = () => ({
-  type: actionTypes.LOG_OUT
+const requestlogOut = () => ({
+  type: actionTypes.REQUEST_LOG_OUT
+});
+
+
+const logOut = (message) => ({
+  type: actionTypes.LOG_OUT,
+  payload: {
+    message
+  }
 });
 
 const loginActions = {
   loginRequest,
   loginSuccess,
   loginFailure,
+  requestlogOut,
   logOut
 }
 

@@ -36,7 +36,7 @@ const login = (email, password) => {
 
 const loginUser = (email, password) => {
   return request
-  .post('/api/v1/auth/login', {
+  .post('/api/v1/auth/login/', {
     email: email,
     password: password
   })
@@ -45,9 +45,8 @@ const loginUser = (email, password) => {
 
 
 const logout = () => {
-  localStorage.removeItem('email');
   return request
-  .post('/api/v1/auth/logout', {})
+  .post('/api/v1/auth/logout/')
 }
 
 const authService = {
