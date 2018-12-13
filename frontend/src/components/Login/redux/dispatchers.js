@@ -6,8 +6,8 @@ const loginDispatcher = (email, password) => {
     dispatch(loginActions.loginRequest(email, password));
     authService.login(email, password)
       .then(
-        user => {
-          dispatch(loginActions.loginSuccess(user));
+        res => {
+          dispatch(loginActions.loginSuccess(res));
         },
         error => {
           dispatch(loginActions.loginFailure(error.toString()));
