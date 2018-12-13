@@ -12,6 +12,6 @@ urlpatterns = [
   path('questions/', include('personality_api.urls')),
   path('answers/', include('question_ans.urls')),
   path('auth/', include('rest_auth.urls')),
-  url(r'registration/.$', include('rest_auth.registration.urls')),
+  url(r'registration/', include('rest_auth.registration.urls')),
   path('refresh-token/', refresh_jwt_token),
 ]
