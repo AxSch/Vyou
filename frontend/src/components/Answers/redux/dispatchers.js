@@ -64,13 +64,13 @@ const fetchCompELDispatcher = (userId, categoryId, questionType) => {
   }
 }
 
-const fetchCompEMDispatcher = (userId, categoryId, questionType) => {
+const fetchCompEMDispatcher = (userId, categoryId, questionType, subCategoryId) => {
   return dispatch => {
     dispatch(answerActions.fetchCompletedAnswers);
-    answersService.fetchCompEMAnswers(userId, categoryId)
+    answersService.fetchCompEMAnswers(userId, categoryId, subCategoryId)
     .then(
       response => {
-        dispatch(answerActions.fetchCompletedAnswersSuccess(response.data, categoryId, questionType));
+        dispatch(answerActions.fetchCompletedAnswersSuccess(response.data, categoryId, questionType, subCategoryId));
       },
       error => {
         dispatch(answerActions.fetchCompletedAnswersFailure(error.data));

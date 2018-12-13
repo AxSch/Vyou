@@ -40,12 +40,13 @@ const fetchCompletedAnswers = () => ({
   type: actionTypes.FETCH_COMPLETED_ANSWERS
 });
 
-const fetchCompletedAnswersSuccess = (completedAnswers, categoryId, questionType) => ({
+const fetchCompletedAnswersSuccess = (completedAnswers, categoryId, questionType, subCategoryId) => ({
   type: actionTypes.FETCH_COMPLETED_ANSWERS_SUCCESS,
   payload: {
     completedAnswers,
     categoryId,
-    questionType
+    questionType,
+    subCategoryId
   }
 });
 
