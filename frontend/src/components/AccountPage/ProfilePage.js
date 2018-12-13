@@ -1,7 +1,8 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import AccountSettingsContainer from './AccountSettings/AccountSettingsContainer';
 import ProfileContainer from './Profile/ProfileContainer';
+import RequestUserLogIn from '../Login/RequestUserLogIn/RequestUserLogIn';
 class Profile extends PureComponent {
     constructor(props) {
         super(props);
@@ -48,17 +49,29 @@ class Profile extends PureComponent {
     renderAccountSettings() {
         return (
             <ul>
-                <li><Link to="/accounts/settings">account settings</Link></li>
+                <li><Link to="/accounts/settings/">account settings</Link></li>
             </ul>
         )
+    }
+
+    checkUserLoggedIn(isLoggedIn, profile) {
+        if(isLoggedIn) {
+            return (
+                <Fragment>
+                    {isLoggedIn ? this.renderAccountSettings() : null}
+                    {this.checkProfileExists(profile)}
+                </Fragment>
+            );
+        } else {
+            return <RequestUserLogIn />
+        }
     }
 
     render() {
         const { userLoggedIn, profile} = this.props;
         return (
             <div className="col-md-6 col-md-offset-3">
-                {userLoggedIn ? this.renderAccountSettings() : null}
-                {this.checkProfileExists(profile)}
+                {this.checkUserLoggedIn(userLoggedIn, profile)}
             </div>
         );
     }
