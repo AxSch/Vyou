@@ -18,7 +18,7 @@ class LoginPage extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (prevProps.userLogin.token !== this.props.userLogin.token) {
+        if (prevProps.userLogin.loggedIn !== this.props.userLogin.loggedIn) {
             this.redirectToTarget();
         }
     }
@@ -34,7 +34,7 @@ class LoginPage extends Component {
         });
     }
     
-    handleSubmit = () => {
+    handleSubmit = (e) => {
         const { email, password } = this.state;
         if (email && password) {
             this.props.loginAction(email, password);
@@ -65,7 +65,7 @@ class LoginPage extends Component {
                         <input type="password" value={password} name="password" onChange={this.handleChange}/>
                     </div>
                     <div>
-                        <button onClick={this.handleSubmit}>Login</button>
+                        <button onClick={(e) => this.handleSubmit(e)}>Login</button>
                         <Link to="/register">Register</Link>
                     </div>
                 </form>
