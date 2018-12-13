@@ -64,6 +64,21 @@ const fetchCompELDispatcher = (userId, categoryId, questionType) => {
   }
 }
 
+const fetchCompEMDispatcher = (userId, categoryId, questionType) => {
+  return dispatch => {
+    dispatch(answerActions.fetchCompletedAnswers);
+    answersService.fetchCompEMAnswers(userId, categoryId)
+    .then(
+      response => {
+        dispatch(answerActions.fetchCompletedAnswersSuccess(response.data, categoryId, questionType));
+      },
+      error => {
+        dispatch(answerActions.fetchCompletedAnswersFailure(error.data));
+      }
+    );
+  }
+}
+
 const sendPSAnswersDispatcher = (userId, answer, index) => {
   return dispatch => {
     dispatch(answerActions.sendAnswers);
@@ -103,6 +118,23 @@ const sendELAnswersDispatcher = (userId, answer, index) => {
     dispatch(answerActions.sendAnswers);
     if (answer !== true) {
       answersService.sendEnergyLevelAnswers(userId, answer, index)
+      .then(
+        response => {
+          dispatch(answerActions.sendAnswersSuccess(response.data));
+        },
+        error => {
+          dispatch(answerActions.sendAnswersFailure(error.data));
+        }
+      ); 
+    }
+  }
+}
+
+const sendEMAnswersDispatcher = (userId, answer, index) => {
+  return dispatch => {
+    dispatch(answerActions.sendAnswers);
+    if (answer !== true) {
+      answersService.sendEnergyMappingAnswers(userId, answer, index)
       .then(
         response => {
           dispatch(answerActions.sendAnswersSuccess(response.data));
@@ -166,6 +198,23 @@ const updateELAnswersDispatcher = (userId, answer, index) => {
   }
 }
 
+const updateEMAnswersDispatcher = (userId, answer, index) => {
+  return dispatch => {
+    dispatch(answerActions.updateAnswers);
+    if (answer !== true) {
+      answersService.updateEnergyMappingAnswers(userId, answer, index)
+      .then(
+        response => {
+          dispatch(answerActions.updateAnswersSuccess(response.data));
+        },
+        error => {
+          dispatch(answerActions.updateAnswersFailure(error.data));
+        }
+      ); 
+    }
+  }
+}
+
 
 
 const answersDispatchers = {
@@ -175,12 +224,15 @@ const answersDispatchers = {
   fetchCompPersonalityDispatcher,
   fetchCompEFDispatcher,
   fetchCompELDispatcher,
+  fetchCompEMDispatcher,
   sendPSAnswersDispatcher,
   sendEFAnswersDispatcher,
   sendELAnswersDispatcher,
+  sendEMAnswersDispatcher,
   updatePSAnswersDispatcher,
   updateEFAnswersDispatcher,
-  updateELAnswersDispatcher
+  updateELAnswersDispatcher,
+  updateEMAnswersDispatcher
 };
 
 export default answersDispatchers;

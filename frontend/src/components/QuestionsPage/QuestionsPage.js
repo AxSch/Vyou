@@ -39,7 +39,27 @@ class QuestionsPage extends Component {
     }
 
     renderCategoryQuestions(category) {
-        const { personalityQuestions, energyFlowQuestions, energyLevelQuestions, energyMappingQuestions, resetAllAnswers, answers, fetchCompPSQuestions, fetchCompEFQuestions, fetchCompELQuestions, profile, sendPSAnswers, sendEFAnswers, sendELAnswers, updatePSAnswers, updateEFAnswers, updateELAnswers } = this.props;
+        const { 
+            personalityQuestions, 
+            energyFlowQuestions, 
+            energyLevelQuestions, 
+            energyMappingQuestions, 
+            resetAllAnswers, 
+            answers, 
+            fetchCompPSQuestions, 
+            fetchCompEFQuestions, 
+            fetchCompELQuestions, 
+            fetchCompEMQuestions,  
+            profile, sendPSAnswers, 
+            sendEFAnswers, 
+            sendELAnswers, 
+            sendEMAnswers, 
+            updatePSAnswers, 
+            updateEFAnswers, 
+            updateELAnswers, 
+            updateEMAnswers
+        } = this.props;
+        
         switch(category) {
             case 'PERSONALITY':
                 return <PersonalityQuestions questions={personalityQuestions} answers={answers} resetAllAnswers={resetAllAnswers} fetchCompPSQuestions={fetchCompPSQuestions} profile={profile} sendAnswers={sendPSAnswers} updateAnswers={updatePSAnswers} />;
@@ -48,7 +68,7 @@ class QuestionsPage extends Component {
             case 'ENERGYLEVEL':
                 return <EnergyLevelQuestions questions={energyLevelQuestions} answers={answers} resetAllAnswers={resetAllAnswers} fetchCompELQuestions={fetchCompELQuestions} profile={profile} sendAnswers={sendELAnswers} updateAnswers={updateELAnswers}/>;
             case 'ENERGYMAPPING':
-                return <EnergyMappingQuestions questions={energyMappingQuestions} answers={answers} resetAllAnswers={resetAllAnswers}/>;
+                return <EnergyMappingQuestions questions={energyMappingQuestions} answers={answers} resetAllAnswers={resetAllAnswers} fetchCompEMQuestions={fetchCompEMQuestions} profile={profile} sendAnswers={sendEMAnswers} updateAnswers={updateEMAnswers}/>;
             default:
                 return null;
         }

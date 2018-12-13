@@ -168,35 +168,35 @@ const initialState = {
   },
   completedEnergyMapping: {
     1 : {
-      1 : {},
-      2 : {},
-      3 : {}
+      1: {},
+      2: {},
+      3: {}
     },
     2 : {
-      1 : {},
-      2 : {},
-      3 : {}
+      1: {},
+      2: {},
+      3: {}
     },
     3 : {
-      1 : {},
-      2 : {},
-      3 : {}
+      1: {},
+      2: {},
+      3: {}
     },
     4 : {
-      1 : {},
-      2 : {},
-      3 : {}
+      1: {},
+      2: {},
+      3: {}
     },
     5 : {
-      1 : {},
-      2 : {},
-      3 : {}
+      1: {},
+      2: {},
+      3: {}
     },
     6 : {
-      1 : {},
-      2 : {},
-      3 : {}
-    },
+      1: {},
+      2: {},
+      3: {}
+    }
   },
   error: null,
   answersSent: {
@@ -276,6 +276,7 @@ const updateAnswer = (state, userAnswer, categoryId, questionType, subCategoryId
               categoryId: categoryId,
               categoryName: userAnswer.categoryName,
               subCategoryId: subCategoryId,
+              subCategoryName: userAnswer.subCategoryName,
               value: userAnswer.answerValue,
               lastUpdated: userAnswer.lastUpdated
             }
@@ -364,9 +365,15 @@ const updateCompletedAnswer = (state, userAnswers, categoryId, questionType, sub
       }
       return newState;
     case 'EM':
-      newState.answeredEnergyMapping = {
-        ...newState.answeredEnergyMapping,
-        [categoryId]: [...userAnswers]
+      newState.completedEnergyMapping = {
+        ...newState.completedEnergyMapping,
+        [categoryId]: {
+          ...newState.completedEnergyMapping[categoryId],
+          [subCategoryId]: {
+            ...newState.completedEnergyMapping[categoryId][subCategoryId],
+            ...userAnswers
+          }
+        }
       }
       return newState;
     default:
@@ -408,10 +415,7 @@ const checkIfCompleted = (state, categoryId, questionType, subCategoryId) => {
         if (newState.completedEnergyMapping[categoryId].length > 0) {
           newState.completedEnergyMapping[categoryId] = {
             ...newState.completedEnergyMapping[categoryId],
-            [subCategoryId]: {
-              completed: true
-
-            }
+            completed: true
           }  
           return newState;
         }

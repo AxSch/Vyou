@@ -21,7 +21,12 @@ class EnergyLevelQuestions extends Component {
         const { resetAllAnswers, profile, fetchCompELQuestions } = this.props;
         const { categoryId, questionType } = this.state;
         resetAllAnswers();
-        fetchCompELQuestions(profile.userId, categoryId, questionType)
+        fetchCompELQuestions(profile.userId, categoryId, questionType);
+        this.setState (prevState => {
+            return {
+                isValid: false
+            }
+        }, () => {});
     }
 
     componentDidUpdate(prevProps, prevState) {
