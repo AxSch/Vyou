@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import LoginPage from './Login';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'react-router-dom';
-import {loginDispatcher, logoutDispatcher} from './redux/dispatchers';
+import { loginDispatcher } from './redux/dispatchers';
 
 const mapStateToProps = (state, ownProps) => {
     return {
