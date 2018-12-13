@@ -5,10 +5,8 @@ import { withRouter } from 'react-router-dom';
 import { logoutDispatcher } from '../Login/redux/dispatchers';
 
 const mapStateToProps = (state, ownProps) => ({
-    userEmail: state.login.userEmail,
-    userLoggedIn: state.login.loggedIn,
-    users: state.users.allUsers,
-    profile: state.profile
+    logoutMsg: state.login.message,
+    userLoggedIn: state.login.loggedIn
 });
 
 const mapDispatchToProps = dispatch => (
