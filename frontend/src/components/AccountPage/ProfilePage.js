@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AccountSettingsContainer from './AccountSettings/AccountSettingsContainer';
 import ProfileContainer from './Profile/ProfileContainer';
 import RequestUserLogIn from '../Login/RequestUserLogIn/RequestUserLogIn';
+import NavBarContainer from '../NavBar/NavBarContainer';
 class Profile extends PureComponent {
     constructor(props) {
         super(props);
@@ -71,6 +72,7 @@ class Profile extends PureComponent {
         const { userLoggedIn, profile} = this.props;
         return (
             <div className="col-md-6 col-md-offset-3">
+                <NavBarContainer />
                 {this.checkUserLoggedIn(userLoggedIn, profile)}
             </div>
         );

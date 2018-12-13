@@ -5,6 +5,7 @@ import EnergyFlowQuestions from './EnergyFlow/EnergyFlowQuestions';
 import EnergyLevelQuestions from './EnergyLevel/EnergyLevelQuestions';
 import EnergyMappingQuestions from './EnergyMapping/EnergyMappingQuestions';
 import RequestUserLogIn from '../Login/RequestUserLogIn/RequestUserLogIn';
+import NavBarContainer from '../NavBar/NavBarContainer';
 
 
 class QuestionsPage extends Component {
@@ -108,6 +109,7 @@ class QuestionsPage extends Component {
         const { login } = this.props;
         return (
             <div>
+                <NavBarContainer />
                 {this.checkUserLoggedIn(login.loggedIn)}
             </div>
         );
