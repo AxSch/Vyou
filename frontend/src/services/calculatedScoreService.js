@@ -10,9 +10,9 @@ const energyScore = (profile) => {
   .get(`/api/v1/calculations/energy_score/${profile}/`)
 }
 
-const calculateScoreService = {
+const calculatedScoreService = {
   personalityScore,
   energyScore
 }
 
-export default calculateScoreService;
+export default calculatedScoreService;
