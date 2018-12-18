@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import CalculationView
-
+from .views import PersonalityAnswersScoreView, EnergyAnswersScoreView
+from django.conf.urls import url
 
 urlpatterns = [
-    path('calculate/', CalculationView.as_view(), name="calculate"),
+  url('^personality_score/(?P<profile>.+)/$', PersonalityAnswersScoreView.as_view()),
+  url('^energy_score/(?P<profile>.+)/$', EnergyAnswersScoreView.as_view())
 ]
