@@ -32,6 +32,7 @@ class AccountSettings extends PureComponent {
       this.handleStateUpdate = this.handleStateUpdate.bind(this);
       this.onInputChange = this.onInputChange.bind(this);
       this.onSubmitChange = this.onSubmitChange.bind(this);
+      // this.validate = this.validate.bind(this);
     }
 
     componentDidMount() {
@@ -62,264 +63,161 @@ class AccountSettings extends PureComponent {
       }
     }
 
+    // validate() {
+    //   this.form.current.reportValidity();
+    // }
+
     renderUserSex(userSex) {
       if (userSex === "Female"){
         return (
           <label>
             Sex:
-            <input type="radio" name="sex" value={"Male"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Male
-            <input type="radio" name="sex" value={"Female"} checked onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Female
-            <input type="radio" name="sex" value={"Other"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Other
+            <input type="radio" required name="sex" value={"Male"} onChange={(e) => this.onInputChange(e.target.value, "sex")}  />Male
+            <input type="radio" required name="sex" value={"Female"} checked onChange={(e) => this.onInputChange(e.target.value, "sex")} />Female
+            <input type="radio" required name="sex" value={"Other"} onChange={(e) => this.onInputChange(e.target.value, "sex")} />Other
           </label>
         );
       } else if (userSex === "Male") {
         return (
           <label>
             Sex:
-            <input type="radio" name="sex" value={"Male"} checked onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Male
-            <input type="radio" name="sex" value={"Female"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Female
-            <input type="radio" name="sex" value={"Other"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Other
+            <input type="radio" required name="sex" value={"Male"} checked onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Male
+            <input type="radio" required name="sex" value={"Female"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Female
+            <input type="radio" required name="sex" value={"Other"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Other
           </label>
         )
       } else if (userSex === "Other") {
         return (
           <label>
             Sex:
-            <input type="radio" name="sex" value={"Male"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Male
-            <input type="radio" name="sex" value={"Female"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Female
-            <input type="radio" name="sex" value={"Other"} checked onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Other
+            <input type="radio" required name="sex" value={"Male"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Male
+            <input type="radio" required name="sex" value={"Female"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Female
+            <input type="radio" required name="sex" value={"Other"} checked onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Other
           </label>
         );
       } else {
         return(
           <label>
               Sex:
-              <input type="radio" name="sex" value={"Male"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Male
-              <input type="radio" name="sex" value={"Female"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Female
-              <input type="radio" name="sex" value={"Other"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Other
+              <input type="radio" required name="sex" value={"Male"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Male
+              <input type="radio" required name="sex" value={"Female"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Female
+              <input type="radio" required name="sex" value={"Other"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Other
           </label>
         );
       }
     }
 
     renderUserName(userName){
-      if (userName === "n/a") {
         return (
           <label>
             Name:
-            <input type="text" name="name" onChange={(e) => this.onInputChange(e.target.value, "name")} />
+            <input type="text" required defaultValue={userName === "n/a" ? 'required' : userName}name="name" onChange={(e) => this.onInputChange(e.target.value, "name")} />
           </label>
         );
-      } else {
-        return (
-          <label>
-            Name:
-            <input type="text" name="name" defaultValue={userName} onChange={(e) => this.onInputChange(e.target.value, "name")}/>
-          </label>
-        );
-      }
     }
 
     renderUserEmail(userEmail) {
       return (
         <label>
             Email:
-            <input type="text" name="email" defaultValue={userEmail} onChange={(e) => this.onInputChange(e.target.value, "email")}/>
+            <input type="text" required name="email" defaultValue={userEmail} onChange={(e) => this.onInputChange(e.target.value, "email")}/>
         </label>
       );
     }
 
     renderDateEmail(userDob) {
-      if (userDob === "n/a") {
-        return (
-          <label>
-            Date of Birth:
-            <input type="date" name="dateOfBirth" onChange={(e) => this.onInputChange(e.target.value, "dob")}/>
-          </label>
-        );
-      } else {
-        return (
-          <label>
-            Date of Birth:
-            <input type="date" name="dateOfBirth" defaultValue={userDob} onChange={(e) => this.onInputChange(e.target.value, "dob")}/>
-          </label>
-        );
-      }
+      return (
+        <label>
+          Date of Birth:
+          <input type="date" required defaultValue={userDob === "n/a" ? '': userDob} name="dateOfBirth" onChange={(e) => this.onInputChange(e.target.value, "dob")}/>
+        </label>
+      );
     }
 
     renderUserImg(userImg) {
-      if (userImg === "https://www.testuserImg.com") {
-        return (
-          <label>
-            Profile Picture:
-            <input type="file" name="userImg" accept="image/png, image/jpeg" onChange={(e) => this.onInputChange(e.target.value, "userImg")} />
-          </label>
-        );
-      } else {
-        return (
-          <label>
-            Profile Picture:
-            <input type="file" name="userImg" accept="image/png, image/jpeg" defaultValue={userImg} onChange={(e) => this.onInputChange(e.target.value, "userImg")} />
-          </label>
-        );
-      }
+      return (
+        <label>
+          Profile Picture:
+          <input type="file" defaultValue={userImg === "https://www.testuserImg.com" ? "https://www.testuserImg.com" : userImg} name="userImg" accept="image/png, image/jpeg" onChange={(e) => this.onInputChange(e.target.value, "userImg")} />
+        </label>
+      );
     }
 
     renderAddressNo(userAddressNo) {
-      if (userAddressNo === "n/a") {
-        return (
-          <Fragment>
-            <label htmlFor={"addressNo"}>House/apartment Number</label>
-            <input type="text" name="addressNo" onChange={(e) => this.onInputChange(e.target.value, "addressNo")}/>
-          </Fragment>
-        );   
-      } else {
-          return (
-            <Fragment>
-              <label htmlFor={"addressNo"}>House/apartment Number</label>
-              <input type="text" name="addressNo" defaultValue={userAddressNo} onChange={(e) => this.onInputChange(e.target.value, "addressNo")}/>
-            </Fragment>
-          );
-
-      }
+      return (
+        <Fragment>
+          <label htmlFor={"addressNo"}>House/apartment Number</label>
+          <input type="text" required defaultValue={userAddressNo === "n/a" ? 'required' : userAddressNo} name="addressNo" onChange={(e) => this.onInputChange(e.target.value, "addressNo")}/>
+        </Fragment>
+      );
     }
 
     renderAddressStreet(userAddressStreet) {
-      if (userAddressStreet === "n/a") {
-        return (
-          <Fragment>
-            <label htmlFor={"addressStreet"}>Street</label>
-            <input type="text" name="addressStreet" onChange={(e) => this.onInputChange(e.target.value, "addressStreet")}/>
-          </Fragment>
-        );   
-      } else {
-          return (
-            <Fragment>
-              <label htmlFor={"addressStreet"}>Street</label>
-              <input type="text" name="addressStreet" defaultValue={userAddressStreet} onChange={(e) => this.onInputChange(e.target.value, "addressStreet")}/>
-            </Fragment>
-          );
-
-      }
+      return (
+        <Fragment>
+          <label htmlFor={"addressStreet"}>Street</label>
+          <input type="text" required defaultValue={userAddressStreet === "n/a" ? 'required' : userAddressStreet} name="addressStreet" onChange={(e) => this.onInputChange(e.target.value, "addressStreet")}/>
+        </Fragment>
+      );
     }
 
     renderAddressCity(userAddressCity) {
-      if (userAddressCity === "n/a") {
-        return (
-          <Fragment>
-            <label htmlFor={"addressCity"}>City</label>
-            <input type="text" name="addressCity" onChange={(e) => this.onInputChange(e.target.value, "addressCity")}/>
-          </Fragment>
-        );   
-      } else {
-          return (
-            <Fragment>
-              <label htmlFor={"addressCity"}>City</label>
-              <input type="text" name="addressCity" defaultValue={userAddressCity} onChange={(e) => this.onInputChange(e.target.value, "addressCity")}/>
-            </Fragment>
-          );
-
-      }
+      return (
+        <Fragment>
+          <label htmlFor={"addressCity"}>City</label>
+          <input type="text" required defaultValue={userAddressCity === "n/a" ? 'required' : userAddressCity} name="addressCity" onChange={(e) => this.onInputChange(e.target.value, "addressCity")}/>
+        </Fragment>
+      );
     }
 
     renderAddressPostCode(userAddressPostCode) {
-      if (userAddressPostCode === "n/a") {
-        return (
-          <Fragment>
-            <label htmlFor={"addressPostCode"}>Post Code</label>
-            <input type="text" name="addressPostCode" onChange={(e) => this.onInputChange(e.target.value, "addressPostCode")}/>
-          </Fragment>
-        );   
-      } else {
-          return (
-            <Fragment>
-              <label htmlFor={"addressPostCode"}>Post Code</label>
-              <input type="text" name="addressPostCode" defaultValue={userAddressPostCode} onChange={(e) => this.onInputChange(e.target.value, "addressPostCode")}/>
-            </Fragment>
-          );
-
-      }
+      return (
+        <Fragment>
+          <label htmlFor={"addressPostCode"}>Post Code</label>
+          <input type="text" defaultValue={userAddressPostCode === "n/a" ? 'required': userAddressPostCode} required name="addressPostCode" onChange={(e) => this.onInputChange(e.target.value, "addressPostCode")}/>
+        </Fragment>
+      );   
     }
 
     renderAddressCountry(userAddressCity) {
-      if (userAddressCity === 'n/a') {
         return (
           <label>
             Country
-            <select defaultValue="----" name="addressCountry" onChange={(e) => this.onInputChange(e.target.value, "addressCountry")}>
+            <select defaultValue={userAddressCity === 'n/a' ? "----" : userAddressCity} required name="addressCountry" onChange={(e) => this.onInputChange(e.target.value, "addressCountry")}>
               {accountSettingsUtils.renderCountriesOptions()}
             </select>
             
           </label>
         );
-      } else {
-        return (
-          <label>
-            Country
-            <select defaultValue={userAddressCity} name="addressCountry" onChange={(e) => this.onInputChange(e.target.value, "addressCountry")}>
-              {accountSettingsUtils.renderCountriesOptions()}
-            </select>
-          </label>
-        );
-      }
     }
 
     renderJobTitle(userJobTitle) {
-      if (userJobTitle === 'n/a') {
-        return (
-          <label>
-            Job Title:
-            <input type="text" name="jobTitle" onChange={(e) => this.onInputChange(e.target.value, "jobTitle")}/>
-          </label>
-        );
-      } else {
-        return (
-          <label>
-            Job Title:
-            <input type="text" name="jobTitle" defaultValue={userJobTitle} onChange={(e) => this.onInputChange(e.target.value, "jobTitle")}/>
-          </label>
-        );
-      }
+      return (
+        <label>
+          Job Title:
+          <input type="text" required defaultValue={userJobTitle === 'n/a' ? 'required' : userJobTitle} name="jobTitle" onChange={(e) => this.onInputChange(e.target.value, "jobTitle")}/>
+        </label>
+      );
     }
 
     renderJobIndustry(userJobIndustry) {
-      if (userJobIndustry === 'n/a') {
         return (
           <label>
             Industry:
-            <select defaultValue="----" onChange={(e) => this.onInputChange(e.target.value, "jobIndustry")}>
+            <select defaultValue={userJobIndustry === 'n/a' ? "----" : userJobIndustry} required onChange={(e) => this.onInputChange(e.target.value, "jobIndustry")}>
               {accountSettingsUtils.renderIndustryOptions()}
             </select> 
           </label>
         );
-      } else {
-        return (
-          <label>
-            Industry:
-            <select defaultValue={userJobIndustry} onChange={(e) => this.onInputChange(e.target.value, "jobIndustry")}>
-              {accountSettingsUtils.renderIndustryOptions()}
-            </select> 
-          </label>
-        );
-      }
     }
 
     renderUserBio(userBio) {
-      if (userBio === 'n/a') {
         return (
           <label>
               Summary:
-              <textarea maxLength={250} rows={4} cols={32} onChange={(e) => this.onInputChange(e.target.value, "bio")} />
+              <textarea defaultValue={userBio === 'n/a' ? 'required' : userBio} required maxLength={250} rows={4} cols={32} onChange={(e) => this.onInputChange(e.target.value, "bio")} />
           </label>
         );
-      } else {
-        return (
-          <label>
-              Summary:
-              <textarea defaultValue={userBio} maxLength={250} rows={4} cols={32} onChange={(e) => this.onInputChange(e.target.value, "bio")} />
-          </label>
-        );
-      }
     }
 
     renderUserEducation(userEducation) {
@@ -434,7 +332,7 @@ class AccountSettings extends PureComponent {
       const { email } = this.state;
       return (
         <Fragment>
-            <form>
+            <form ref={this.form} onSubmit={this.onSubmitChange}>
               <fieldset>
                 <legend>Basic info</legend>
                   {this.renderUserName(profile.userProfile.name)}
@@ -466,7 +364,7 @@ class AccountSettings extends PureComponent {
                   {this.renderUserTWLink(profile.userProfile.twitter_profile)}
                   {this.renderUserINLink(profile.userProfile.instagram_profile)}
               </fieldset>
-              <button onClick={(e) => this.onSubmitChange(e)}>Save Changes</button>
+              <button>Save Changes</button>
             </form>
         </Fragment>
       );
