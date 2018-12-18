@@ -12,8 +12,8 @@ const mapStateToProps = (state, ownProps) => ({
 
 const mapDispatchToProps = dispatch => (
     bindActionCreators({
-        energyScore: calculatedScoreDispatchers.getENScoreDispatcher,
-        personalityScore: calculatedScoreDispatchers.getPSScoreDispatcher,
+        getEnergyScore: calculatedScoreDispatchers.getENScoreDispatcher,
+        getPersonalityScore: calculatedScoreDispatchers.getPSScoreDispatcher,
     }, dispatch)
 );
 
