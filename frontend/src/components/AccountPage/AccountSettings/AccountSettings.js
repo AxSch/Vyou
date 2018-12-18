@@ -32,7 +32,6 @@ class AccountSettings extends PureComponent {
       this.handleStateUpdate = this.handleStateUpdate.bind(this);
       this.onInputChange = this.onInputChange.bind(this);
       this.onSubmitChange = this.onSubmitChange.bind(this);
-      // this.validate = this.validate.bind(this);
     }
 
     componentDidMount() {
@@ -62,10 +61,6 @@ class AccountSettings extends PureComponent {
         }, () => {});
       }
     }
-
-    // validate() {
-    //   this.form.current.reportValidity();
-    // }
 
     renderUserSex(userSex) {
       if (userSex === "Female"){
