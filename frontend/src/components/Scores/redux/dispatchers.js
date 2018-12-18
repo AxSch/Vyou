@@ -16,7 +16,7 @@ const getPSScoreDispatcher = (profile, subject) => {
   }
 }
 
-const getENScoreDispatcher = (profile, subject)  => {
+const getENScoreDispatcher = (profile, subject) => {
     return dispatch => {
       dispatch(answerActions.fetchCalculatedScore());
       calculatedScoreService.energyScore(profile)
