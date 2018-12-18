@@ -60,22 +60,22 @@ class Answers extends Component {
         return (
             <div>
                 <label htmlFor={`stronglyAgree-${questionId}`}>Strongly Agree</label>
-                <input required type="radio" name={`answers-${questionId}`} value={3} id={`stronglyAgree-${questionId}`} onChange={(e) => this.handleOnChange(e)}/> 
+                <input type="radio" required name={`answers-${questionId}`} value={3} id={`stronglyAgree-${questionId}`} onChange={(e) => this.handleOnChange(e)}/> 
                 
                 <label htmlFor={`slightlyAgree-${questionId}`}>Slightly Agree</label>
-                <input required type="radio" name={`answers-${questionId}`} value={2} id={`slightlyAgree-${questionId}`} onChange={(e) => this.handleOnChange(e)}/>  
+                <input type="radio" required name={`answers-${questionId}`} value={2} id={`slightlyAgree-${questionId}`} onChange={(e) => this.handleOnChange(e)}/>  
                 
                 <label htmlFor={`agree-${questionId}`}>Agree</label>
-                <input required type="radio" name={`answers-${questionId}`} value={1} id={`agree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />  
+                <input type="radio" required name={`answers-${questionId}`} value={1} id={`agree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />  
                 
                 <label htmlFor={`disagree-${questionId}`}>Disagree</label>
-                <input required type="radio" name={`answers-${questionId}`} value={-1} id={`disagree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />  
+                <input type="radio" required name={`answers-${questionId}`} value={-1} id={`disagree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />  
                 
                 <label htmlFor={`slightlyDisagree-${questionId}`}>Slightly Disagree</label>
-                <input required type="radio" name={`answers-${questionId}`} value={-2} id={`slightlyDisagree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />  
+                <input type="radio" required name={`answers-${questionId}`} value={-2} id={`slightlyDisagree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />  
                 
                 <label htmlFor={`stronglyDisagree-${questionId}`}>Strongly Disagree</label>
-                <input required type="radio" name={`answers-${questionId}`} value={-3} id={`stronglyDisagree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />                         
+                <input type="radio" required name={`answers-${questionId}`} value={-3} id={`stronglyDisagree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />                         
             </div>
         );
     }
