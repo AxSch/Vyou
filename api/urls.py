@@ -14,4 +14,5 @@ urlpatterns = [
   path('auth/', include('rest_auth.urls')),
   url(r'registration/', include('rest_auth.registration.urls')),
   path('refresh-token/', refresh_jwt_token),
+  path('calculations/', include('calculations.urls')),
 ]
