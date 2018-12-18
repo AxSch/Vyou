@@ -1,6 +1,13 @@
 from django.urls import include, path
-from .views import PersonalityAnswersView, EnergyLevelAnswersView, EnergyFlowAnswersView, EnergyMappingAnswersView
+from .views import (
+  PersonalityAnswersView,
+  EnergyLevelAnswersView,
+  EnergyFlowAnswersView,
+  EnergyMappingAnswersView
+)
 from rest_framework.routers import DefaultRouter
+from django.conf.urls import url
+
 
 router = DefaultRouter()
 router.register('personality_answers', PersonalityAnswersView)

@@ -6,7 +6,6 @@ class PersonalityAnswersSerializer(serializers.ModelSerializer):
    model = PersonalityAnswers
    fields = ('id', 'question_id', 'question', 'question_sign','category_name', 'category_id', 'scale_alpha', 'answer_score', 'profile', 'answer_last_updated', 'answer_created')
 
-
 class EnergyLevelAnswersSerializer(serializers.ModelSerializer):
   class Meta:
    model = EnergyLevelAnswers

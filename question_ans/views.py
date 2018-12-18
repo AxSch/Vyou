@@ -1,17 +1,30 @@
 from django.shortcuts import render
+from rest_framework.views import APIView
+import numpy as np
+from rest_framework.response import Response
+
+from django.http import JsonResponse
 from rest_framework import generics
 from rest_framework import viewsets
 from django_filters.rest_framework import DjangoFilterBackend
-from .models import PersonalityAnswers, EnergyLevelAnswers, EnergyFlowAnswers, EnergyMappingAnswers
-from .serializers import PersonalityAnswersSerializer, EnergyLevelAnswersSerializer, EnergyFlowAnswersSerializer, EnergyMappingAnswersSerializer
-
+from .models import (
+  PersonalityAnswers,
+  EnergyLevelAnswers, 
+  EnergyFlowAnswers, 
+  EnergyMappingAnswers
+)
+from .serializers import ( 
+  PersonalityAnswersSerializer,
+  EnergyLevelAnswersSerializer,
+  EnergyFlowAnswersSerializer,
+  EnergyMappingAnswersSerializer
+)
 # Create your views here.
 class PersonalityAnswersView(viewsets.ModelViewSet):
   queryset = PersonalityAnswers.objects.all()
   serializer_class = PersonalityAnswersSerializer
   filter_backends = (DjangoFilterBackend,)
   filter_fields = ('profile', 'category_id',)
-
 
 class EnergyLevelAnswersView(viewsets.ModelViewSet):
   queryset = EnergyLevelAnswers.objects.all()
