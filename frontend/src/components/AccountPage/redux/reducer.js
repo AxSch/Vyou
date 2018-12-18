@@ -30,6 +30,7 @@ const profileReducer = (state=initialStateProfile, action) => {
         };
         newState.error = action.payload.error;
         newState.hasProfile = false
+        newState.userProfile.name = '';
         return newState;
       case actionTypes.SET_USER_ID:
         return newState = {
