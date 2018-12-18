@@ -7,7 +7,7 @@ const getUsers = () => {
 
 const getUserProfile = (userId) => {
   return request
-  .get(`/api/v1/profiles/${userId}`)
+  .get(`/api/v1/profiles/${userId}/`)
 }
 
 const createUserProfile = (userProfileData) => {
