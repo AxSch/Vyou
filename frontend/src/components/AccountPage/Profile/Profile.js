@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UserScoresContainer from '../../Scores/UserScores/UserScoresContainer';
 class Profile extends Component {
 
     renderProfileHeaderSection (name, addressCity, addressCountry, dateJoined) {
@@ -116,6 +117,7 @@ class Profile extends Component {
               {this.renderProfessionSection(userProfile.job_title, userProfile.job_industry, userProfile.education)}
               {this.renderQuestionsSection()}
               {this.renderConnectedAccountsSection(userProfile)}
+              <UserScoresContainer />
             </div>
         );
     }
