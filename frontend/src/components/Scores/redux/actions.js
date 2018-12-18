@@ -4,10 +4,11 @@ const fetchCalculatedScore = () => ({
   type: actionTypes.FETCH_SCORE
 });
 
-const fetchCalculatedSuccess = (score) => ({
+const fetchCalculatedSuccess = (score, subject) => ({
   type: actionTypes.FETCH_SCORE_SUCCESS,
   payload: {
-    score
+    score,
+    subject
   }
 });
 
