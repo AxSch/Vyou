@@ -24,8 +24,15 @@ class Profile extends PureComponent {
     getUserId(email) {
         const { users, userLoggedIn } = this.props;
         if (userLoggedIn) {
-            const userObj = users.filter((user) => user.email === email);
-            return userObj[0].id;
+            if (users.length > 0) {
+                const userObj = users.filter((user) => user.email === email);
+                if (userObj) {
+                    return userObj[0].id;
+                }
+                else {
+                    return 0;
+                }
+            }
         }
         return null;
     }
@@ -36,9 +43,9 @@ class Profile extends PureComponent {
         } else {
             return (
                 <div>
-                    <h3>Profile has been completed...</h3>
+                    {!profile.hasProfile ? <h3>Profile has been not completed...</h3> : <h3>Account information</h3>}
                     <div>
-                        <p>Please fill out the information below:</p>
+                        {!profile.hasProfile ? <p>Please fill out the information below:</p> : <p>Remember to click save for any changes you make!</p>}
                         <AccountSettingsContainer />
                     </div>
                 </div>
