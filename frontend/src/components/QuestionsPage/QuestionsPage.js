@@ -35,9 +35,7 @@ class QuestionsPage extends Component {
             return {
                 category: value
             }
-        }, () => {
-            console.log(value)
-        });
+        }, () => {});
     }
 
     renderCategoryQuestions(category) {
