@@ -1,24 +1,15 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-
+import NavBarContainer from '../NavBar/NavBarContainer';
 
 class HomePage extends Component {
-  // renderLogin = () => {
-  //   return (
-      
-  //   );
-  // }
+  
   render() {
+
     return (
       <div>
+        <NavBarContainer />
         <div>
-          <h1>NavBar</h1>
-          <ul>
-            <li><Link to="/accounts/login">Login</Link></li>
-            <li><Link to="/accounts/profile">Profile</Link></li>
-            <li>Logout</li>
-            <li>About Us</li>
-          </ul>
+          <h1>Welcome</h1>
         </div>
       </div>
     );

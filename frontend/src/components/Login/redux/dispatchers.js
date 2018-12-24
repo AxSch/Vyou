@@ -1,18 +1,13 @@
 import loginActions from '../redux/actions';
-import userService from '../../../services/userService';
-// import history from '../../../helpers/history';
-// import
-
-
-
+import authService from '../../../services/authService';
 
 const loginDispatcher = (email, password) => {
   return dispatch => {
     dispatch(loginActions.loginRequest(email, password));
-    userService.login(email, password)
+    authService.login(email, password)
       .then(
-        user => {
-          dispatch(loginActions.loginSuccess(user));
+        res => {
+          dispatch(loginActions.loginSuccess(res));
         },
         error => {
           dispatch(loginActions.loginFailure(error.toString()));
@@ -22,10 +17,15 @@ const loginDispatcher = (email, password) => {
 }
 
 const logoutDispatcher = () => {
-  userService.logout();
-  return {
-    type: loginActions.LOGOUT,
-  }
+  return dispatch => {
+    dispatch(loginActions.requestlogOut());
+    authService.logout()
+      .then(
+        (res) => {
+          dispatch(loginActions.logOut(res.data))
+        }
+      );
+  };
 }
 
 export {
@@ -33,4 +33,3 @@ export {
   logoutDispatcher,
 };
 
-// export default loginDispatchers;

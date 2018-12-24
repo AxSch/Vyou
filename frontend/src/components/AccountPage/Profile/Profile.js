@@ -1,27 +1,123 @@
-import React, { PureComponent } from 'react';
-// import { connect } from 'react-redux';
+import React, { Component } from 'react';
+import UserScoresContainer from '../../Scores/UserScores/UserScoresContainer';
+class Profile extends Component {
 
-class Profile extends PureComponent {
-    checkUserLogged = (email) => {
-        if (email !== null) {
-            return (
-                <div>
-                    <h1>Welcome</h1>
-                    <p>{email}</p>
-                </div>
-            );
-        } return (
-            <div>
-                <h1>Unauthorized</h1>
-                <p>Please enter the correct login details</p>
-            </div>
-        )
+    renderProfileHeaderSection (name, addressCity, addressCountry, dateJoined) {
+      return (
+        <div>
+          <h3>Welcome back, {name} </h3>
+          <p>{addressCity}, {addressCountry} - Joined {dateJoined}</p>
+        </div>
+      );
     }
+    
+    renderImageSection(url, name) {
+      if (url !== "https://www.testuserImg.com") {
+        return(
+          <div>
+            <img className=""
+                src={url}
+                alt={`userImg-for-${name}`} 
+            />
+          </div>
+        );
+      }
+      return null;
+    }
+
+    renderBioSection(bio) {
+      return (
+        <div>
+          <p>{bio !== "n/a" ? bio: null}</p>
+        </div>
+      );
+    }
+
+    renderQuestionsSection(answers, questions) {
+      return (
+        <div>
+          <h4>Questions</h4>
+          <p></p>
+        </div>
+      );
+    }
+
+    checkFacebookComplete(fbLink) {
+      if(fbLink === "https://www.testFB.com") {
+        // return IncompleteIconComponent
+      } else {
+        // return CompleteIconComponent
+      }
+    }
+    
+    checkLinkedInComplete(lINLink) {
+      if(lINLink === "https://www.testLIN.com") {
+        // return IncompleteIconComponent
+      } else {
+        // return CompleteIconComponent
+      }
+    }
+    
+    checkTwitterComplete(twLink) {
+      if(twLink === "https://www.testTW.com") {
+        // return IncompleteIconComponent
+      } else {
+        // return CompleteIconComponent
+      }
+    }
+    
+    checkGitHubComplete(ghLink) {
+      if(ghLink === "https://www.testGH.com") {
+        // return IncompleteIconComponent
+      } else {
+        // return CompleteIconComponent
+      }
+    }
+    
+    checkInstaComplete(instaLink) {
+      if(instaLink === "https://www.testIG.com") {
+        // return IncompleteIconComponent
+      } else {
+        // return CompleteIconComponent
+      }
+    }
+    
+    renderConnectedAccountsSection(account) {
+      return (
+        <div>
+          <h4>Connected accounts</h4>
+          <p>{this.checkFacebookComplete(account.facebook_profile)}</p>
+          <p>{this.checkLinkedInComplete(account.linkedIn_profile)}</p>
+          <p>{this.checkGitHubComplete(account.gitHub_profile)}</p>
+          <p>{this.checkTwitterComplete(account.twitter_profile)}</p>
+          <p>{this.checkInstaComplete(account.instagram_profile)}</p>
+        </div>
+      );
+    }
+
+    renderProfessionSection(jobTitle, jobIndustry, education) {
+      return (
+        <div>
+          <h4>Professional Info</h4>
+          <p>{jobTitle}</p>
+          <p>{jobIndustry}</p>
+          <p>{education}</p>
+        </div>
+      );
+    }
+
     render() {
-        const { userEmail } = this.props;
+        const { userProfile } = this.props;
+
         return (
-            <div className="col-md-6 col-md-offset-3">
-                {this.checkUserLogged(userEmail)}
+            <div>
+              {this.renderProfileHeaderSection(userProfile.name, userProfile.address_city, userProfile.address_country, userProfile.creation_date)}
+              {this.renderImageSection(userProfile.user_img, userProfile.name)}
+              {this.renderBioSection(userProfile.bio)}
+              {this.renderProfessionSection(userProfile.job_title, userProfile.job_industry, userProfile.education)}
+              {this.renderQuestionsSection()}
+              {this.renderConnectedAccountsSection(userProfile)}
+              <UserScoresContainer />
             </div>
         );
     }

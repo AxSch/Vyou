@@ -12,11 +12,16 @@ vapp/management/commands/__pycache__/
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
-personality_api/__pycache__/
-personality_api/migrations/__pycache__/
-question_ans/__pycache__/
-question_ans/migrations/__pycache__/
-user_profile/__pycache__/
-user_profile/migrations/__pycache__/
 users_api/__pycache__/
 users_api/migrations/__pycache__/
+personality_api/__pycache__/
+personality_api/migrations/__pycache__/
+user_profile/__pycache__/
+user_profile/migrations/__pycache__/
+question_ans/__pycache__/
+question_ans/migrations/__pycache__/
+webpack-stats.dev.json
+api/management/__pycache__/
+api/management/commands/__pycache__/
+calculations/__pycache__/
+calculations/migrations/__pycache__/

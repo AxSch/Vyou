@@ -1,0 +1,7 @@
+const actionTypes = {
+  FETCH_SCORE: 'FETCH_SCORE',
+  FETCH_SCORE_SUCCESS: 'FETCH_SCORE_SUCCESS',
+  FETCH_SCORE_FAILURE: 'FETCH_SCORE_FAILURE'
+}
+
+export default actionTypes;

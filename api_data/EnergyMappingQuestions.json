@@ -1,0 +1,1407 @@
+[{
+        "id": 1,
+        "fields": {
+            "question": "I have a strong sense of purpose at work.",
+            "subCategory_name": "Purpose",
+            "subCategory_id": 1,
+            "category_name": "Belief",
+            "id": 1
+        }
+    },
+    {
+        "id": 2,
+        "fields": {
+            "question": "I feel lost about what I really want to do.",
+            "subCategory_name": "Purpose",
+            "subCategory_id": 1,
+            "category_name": "Belief",
+            "id": 1
+        }
+    },
+    {
+        "id": 3,
+        "fields": {
+            "question": "I have a clear direction.",
+            "subCategory_name": "Purpose",
+            "subCategory_id": 1,
+            "category_name": "Belief",
+            "id": 1
+        }
+    },
+    {
+        "id": 4,
+        "fields": {
+            "question": "I know what my unique contribution to the world is.",
+            "subCategory_name": "Purpose",
+            "subCategory_id": 1,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 5,
+        "fields": {
+            "question": "I am contributing to something important at work.",
+            "subCategory_name": "Purpose",
+            "subCategory_id": 1,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 6,
+        "fields": {
+            "question": "I don’t see much point in what I am doing.",
+            "subCategory_name": "Purpose",
+            "subCategory_id": 1,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 7,
+        "fields": {
+            "question": "The work that I do makes a difference.",
+            "subCategory_name": "Purpose",
+            "subCategory_id": 1,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 8,
+        "fields": {
+            "question": "On a day-to-day basis, I am passionate about the work I do.",
+            "subCategory_name": "Purpose",
+            "subCategory_id": 1,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 9,
+        "fields": {
+            "question": "The work that I do doesn’t seem to matter.",
+            "subCategory_name": "Purpose",
+            "subCategory_id": 1,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 10,
+        "fields": {
+            "question": "I feel unstoppable.",
+            "subCategory_name": "Hope",
+            "subCategory_id": 2,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 11,
+        "fields": {
+            "question": "I see a lot of ways around problems I am facing (pathways).",
+            "subCategory_name": "Hope",
+            "subCategory_id": 2,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 12,
+        "fields": {
+            "question": "Too many things are getting in my way (willpower).",
+            "subCategory_name": "Hope",
+            "subCategory_id": 2,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 13,
+        "fields": {
+            "question": "Too many things are getting in my way (willpower).",
+            "subCategory_name": "Hope",
+            "subCategory_id": 2,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 14,
+        "fields": {
+            "question": "I can’t see a way to overcome the big challenges I am experiencing at work (pathways).",
+            "subCategory_name": "Hope",
+            "subCategory_id": 2,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 15,
+        "fields": {
+            "question": "I feel stuck (pathways).",
+            "subCategory_name": "Hope",
+            "subCategory_id": 2,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 16,
+        "fields": {
+            "question": "I am always being blocked from what I am trying to do (willpower).",
+            "subCategory_name": "Hope",
+            "subCategory_id": 2,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 17,
+        "fields": {
+            "question": "I currently feel unstoppable, no matter what comes my way.",
+            "subCategory_name": "Hope",
+            "subCategory_id": 2,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 18,
+        "fields": {
+            "question": "Overall, I feel optimistic about my work.",
+            "subCategory_name": "Optimism",
+            "subCategory_id": 3,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 19,
+        "fields": {
+            "question": "In uncertain times, I tend to expect the worst.",
+            "subCategory_name": "Optimism",
+            "subCategory_id": 3,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 20,
+        "fields": {
+            "question": "I look on the bright side of things even when things go wrong.",
+            "subCategory_name": "Optimism",
+            "subCategory_id": 3,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 21,
+        "fields": {
+            "question": "Things tend to work out for the best for me in the end.",
+            "subCategory_name": "Optimism",
+            "subCategory_id": 3,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 22,
+        "fields": {
+            "question": "Overall, I expect more good things to happen than bad at work.",
+            "subCategory_name": "Optimism",
+            "subCategory_id": 3,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 23,
+        "fields": {
+            "question": "I don’t count on good things happening to me.",
+            "subCategory_name": "Optimism",
+            "subCategory_id": 3,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 24,
+        "fields": {
+            "question": "If something can go wrong for me, it will.",
+            "subCategory_name": "Optimism",
+            "subCategory_id": 3,
+            "category_name": "Belief",
+            "id": 1
+
+        }
+    },
+    {
+        "id": 25,
+        "fields": {
+            "question": "On the whole, I am satisfied with myself at work.",
+            "subCategory_name": "Confidence",
+            "subCategory_id": 1,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 26,
+        "fields": {
+            "question": "I don’t have much to be proud of at work at the moment.",
+            "subCategory_name": "Confidence",
+            "subCategory_id": 1,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 27,
+        "fields": {
+            "question": "On the whole, I am satisfied with myself at work.",
+            "subCategory_name": "Confidence",
+            "subCategory_id": 1,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 28,
+        "fields": {
+            "question": "Overall, I feel I bring a number of good qualities to work.",
+            "subCategory_name": "Confidence",
+            "subCategory_id": 1,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 29,
+        "fields": {
+            "question": "I often feel useless at work.",
+            "subCategory_name": "Confidence",
+            "subCategory_id": 1,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 30,
+        "fields": {
+            "question": "I am as good as other people at work.",
+            "subCategory_name": "Confidence",
+            "subCategory_id": 1,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 31,
+        "fields": {
+            "question": "I am highly capable.",
+            "subCategory_name": "Self Belief",
+            "subCategory_id": 2,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 32,
+        "fields": {
+            "question": "I am setting myself higher targets than what is expected.",
+            "subCategory_name": "Self Belief",
+            "subCategory_id": 2,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 33,
+        "fields": {
+            "question": "I am able to perform well in any situation at work.",
+            "subCategory_name": "Self Belief",
+            "subCategory_id": 2,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 34,
+        "fields": {
+            "question": "I don’t feel able to make a positive impact at work.",
+            "subCategory_name": "Self Belief",
+            "subCategory_id": 2,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 35,
+        "fields": {
+            "question": "I am playing it safe in what I do at the moment.",
+            "subCategory_name": "Self Belief",
+            "subCategory_id": 2,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 36,
+        "fields": {
+            "question": "I feel needy at the moment.",
+            "subCategory_name": "Self Belief",
+            "subCategory_id": 2,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 37,
+        "fields": {
+            "question": "I continue to excel in what I do despite a difficult situation or lack of support.",
+            "subCategory_name": "Self Belief",
+            "subCategory_id": 2,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 38,
+        "fields": {
+            "question": "I am highly capable at work.",
+            "subCategory_name": "Self Belief",
+            "subCategory_id": 2,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 39,
+        "fields": {
+            "question": "I can be myself at work.",
+            "subCategory_name": "Authenticity",
+            "subCategory_id": 3,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 40,
+        "fields": {
+            "question": "I am able to act with integrity day-to-day.",
+            "subCategory_name": "Authenticity",
+            "subCategory_id": 3,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 41,
+        "fields": {
+            "question": "Overall, I feel I can be the same person at work as I am at home.",
+            "subCategory_name": "Authenticity",
+            "subCategory_id": 3,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 42,
+        "fields": {
+            "question": "I have to act in ways that don’t align with who I am.",
+            "subCategory_name": "Authenticity",
+            "subCategory_id": 3,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 43,
+        "fields": {
+            "question": "My work environment makes it difficult to for me to be myself.",
+            "subCategory_name": "Authenticity",
+            "subCategory_id": 3,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 44,
+        "fields": {
+            "question": "My work demands do not compromise my personal values.",
+            "subCategory_name": "Authenticity",
+            "subCategory_id": 3,
+            "category_name": "Integrity",
+            "id": 2
+
+        }
+    },
+    {
+        "id": 45,
+        "fields": {
+            "question": "I feel like an equal at work.",
+            "subCategory_name": "Inclusion",
+            "subCategory_id": 1,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+
+    {
+        "id": 46,
+        "fields": {
+            "question": "My ideas and suggestions tend to be disregarded.",
+            "subCategory_name": "Inclusion",
+            "subCategory_id": 1,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 47,
+        "fields": {
+            "question": "When I have something to say, people listen to me.",
+            "subCategory_name": "Inclusion",
+            "subCategory_id": 1,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 48,
+        "fields": {
+            "question": "I wish my ideas would be more seriously considered by others.",
+            "subCategory_name": "Inclusion",
+            "subCategory_id": 1,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 49,
+        "fields": {
+            "question": "I am given equal opportunities to do the things I want to do.",
+            "subCategory_name": "Inclusion",
+            "subCategory_id": 1,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 50,
+        "fields": {
+            "question": "Overall, I feel like an equal to others.",
+            "subCategory_name": "Inclusion",
+            "subCategory_id": 1,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 51,
+        "fields": {
+            "question": "Often I feel forgotten.",
+            "subCategory_name": "Inclusion",
+            "subCategory_id": 1,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 52,
+        "fields": {
+            "question": "I feel that I belong at my workplace.",
+            "subCategory_name": "Connection",
+            "subCategory_id": 2,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 53,
+        "fields": {
+            "question": "I feel like an outsider at work.",
+            "subCategory_name": "Connection",
+            "subCategory_id": 2,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 54,
+        "fields": {
+            "question": "I feel valued at work.",
+            "subCategory_name": "Connection",
+            "subCategory_id": 2,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 55,
+        "fields": {
+            "question": "I feel understood by others at work.",
+            "subCategory_name": "Connection",
+            "subCategory_id": 2,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 56,
+        "fields": {
+            "question": "I don’t feel that I fit in at work.",
+            "subCategory_name": "Connection",
+            "subCategory_id": 2,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 57,
+        "fields": {
+            "question": "I would describe myself as a misfit at work.",
+            "subCategory_name": "Connection",
+            "subCategory_id": 2,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 58,
+        "fields": {
+            "question": "I feel part of the team at work.",
+            "subCategory_name": "Connection",
+            "subCategory_id": 2,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 59,
+        "fields": {
+            "question": "I have no sense of togetherness at work.",
+            "subCategory_name": "Connection",
+            "subCategory_id": 2,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 60,
+        "fields": {
+            "question": "I feel disconnected to those around me at work.",
+            "subCategory_name": "Connection",
+            "subCategory_id": 2,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 61,
+        "fields": {
+            "question": "Even around people I know at work, I don’t feel I belong.",
+            "subCategory_name": "Connection",
+            "subCategory_id": 2,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 62,
+        "fields": {
+            "question": "I can be open about how I feel at work.",
+            "subCategory_name": "Trust",
+            "subCategory_id": 3,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 63,
+        "fields": {
+            "question": "I feel safe to say how I truly feel.",
+            "subCategory_name": "Trust",
+            "subCategory_id": 3,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 64,
+        "fields": {
+            "question": "I have to make sure I think before speaking my mind.",
+            "subCategory_name": "Trust",
+            "subCategory_id": 3,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 65,
+        "fields": {
+            "question": "I can say how I feel without thinking.",
+            "subCategory_name": "Trust",
+            "subCategory_id": 3,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 66,
+        "fields": {
+            "question": "I feel guarded in my emotions.",
+            "subCategory_name": "Trust",
+            "subCategory_id": 3,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 67,
+        "fields": {
+            "question": "I feel I often have to be defensive at work.",
+            "subCategory_name": "Trust",
+            "subCategory_id": 3,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 68,
+        "fields": {
+            "question": "I keep how I feel to myself to protect myself.",
+            "subCategory_name": "Trust",
+            "subCategory_id": 3,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 69,
+        "fields": {
+            "question": "There is no trust.",
+            "subCategory_name": "Trust",
+            "subCategory_id": 3,
+            "category_name": "Belonging",
+            "id": 3
+
+        }
+    },
+    {
+        "id": 70,
+        "fields": {
+            "question": "I feel fearless at work.",
+            "subCategory_name": "Fearlessness",
+            "subCategory_id": 1,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 71,
+        "fields": {
+            "question": "I fear for the future at work.",
+            "subCategory_name": "Fearlessness",
+            "subCategory_id": 1,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 72,
+        "fields": {
+            "question": "I have a lot to be worried about at work.",
+            "subCategory_name": "Fearlessness",
+            "subCategory_id": 1,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 73,
+        "fields": {
+            "question": "I feel free to make human mistakes without judgement.",
+            "subCategory_name": "Fearlessness",
+            "subCategory_id": 1,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 74,
+        "fields": {
+            "question": "I feel trusted to do my job.",
+            "subCategory_name": "Autonomy",
+            "subCategory_id": 2,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 75,
+        "fields": {
+            "question": "I feel micromanaged in everything I do.",
+            "subCategory_name": "Autonomy",
+            "subCategory_id": 2,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 76,
+        "fields": {
+            "question": "I feel free to make independent decisions.",
+            "subCategory_name": "Autonomy",
+            "subCategory_id": 2,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 77,
+        "fields": {
+            "question": "Things I do are questioned.",
+            "subCategory_name": "Autonomy",
+            "subCategory_id": 2,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 78,
+        "fields": {
+            "question": "I am often overruled.",
+            "subCategory_name": "Autonomy",
+            "subCategory_id": 2,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 79,
+        "fields": {
+            "question": "I often feel undermined.",
+            "subCategory_name": "Autonomy",
+            "subCategory_id": 2,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 80,
+        "fields": {
+            "question": "I feel in control.",
+            "subCategory_name": "Control",
+            "subCategory_id": 3,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 81,
+        "fields": {
+            "question": "I can take charge of my work.",
+            "subCategory_name": "Control",
+            "subCategory_id": 3,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 82,
+        "fields": {
+            "question": "My work feels out of control.",
+            "subCategory_name": "Control",
+            "subCategory_id": 3,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 83,
+        "fields": {
+            "question": "I have plans.",
+            "subCategory_name": "Control",
+            "subCategory_id": 3,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 84,
+        "fields": {
+            "question": "I feel all over the place.",
+            "subCategory_name": "Control",
+            "subCategory_id": 3,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 85,
+        "fields": {
+            "question": "I feel I have little choice in what I do.",
+            "subCategory_name": "Control",
+            "subCategory_id": 3,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 86,
+        "fields": {
+            "question": "I can choose what I want to do at work.",
+            "subCategory_name": "Control",
+            "subCategory_id": 3,
+            "category_name": "Freedom",
+            "id": 4
+
+        }
+    },
+    {
+        "id": 87,
+        "fields": {
+            "question": "I am excited about my work.",
+            "subCategory_name": "Vigor",
+            "subCategory_id": 1,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 88,
+        "fields": {
+            "question": "I feel strong and vigorous in how I approach my work.",
+            "subCategory_name": "Vigor",
+            "subCategory_id": 1,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 89,
+        "fields": {
+            "question": "I always perservere, even when things don’t go well.",
+            "subCategory_name": "Vigor",
+            "subCategory_id": 1,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 90,
+        "fields": {
+            "question": "I can continue my work for very long periods of time.",
+            "subCategory_name": "Vigor",
+            "subCategory_id": 1,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 91,
+        "fields": {
+            "question": "I can continue my work for very long periods of time.",
+            "subCategory_name": "Vigor",
+            "subCategory_id": 1,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 92,
+        "fields": {
+            "question": "My job challenges me in a positive way.",
+            "subCategory_name": "Dedication",
+            "subCategory_id": 2,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 93,
+        "fields": {
+            "question": "I feel inspired by my work.",
+            "subCategory_name": "Dedication",
+            "subCategory_id": 2,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 94,
+        "fields": {
+            "question": "I like to go above and beyond with my work.",
+            "subCategory_name": "Dedication",
+            "subCategory_id": 2,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 95,
+        "fields": {
+            "question": "I’ll put the extra hours in willingly and without complaint.",
+            "subCategory_name": "Dedication",
+            "subCategory_id": 2,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 96,
+        "fields": {
+            "question": "I get carried away when I am working.",
+            "subCategory_name": "Flow",
+            "subCategory_id": 3,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 97,
+        "fields": {
+            "question": "When I am working, I forget everything else around me.",
+            "subCategory_name": "Flow",
+            "subCategory_id": 3,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 98,
+        "fields": {
+            "question": "I see my work as part of who I am.",
+            "subCategory_name": "Flow",
+            "subCategory_id": 3,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 99,
+        "fields": {
+            "question": "I find it difficult to detach from my work.",
+            "subCategory_name": "Flow",
+            "subCategory_id": 3,
+            "category_name": "Engagement",
+            "id": 5
+
+        }
+    },
+    {
+        "id": 100,
+        "fields": {
+            "question": "I feel mentally 'on-it'.",
+            "subCategory_name": "Alertness",
+            "subCategory_id": 1,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 101,
+        "fields": {
+            "question": "I feel alert in my day-to-day.",
+            "subCategory_name": "Alertness",
+            "subCategory_id": 1,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 102,
+        "fields": {
+            "question": "My thinking feels foggy.",
+            "subCategory_name": "Alertness",
+            "subCategory_id": 1,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 103,
+        "fields": {
+            "question": "I am find it easy to remember information when I need to.",
+            "subCategory_name": "Alertness",
+            "subCategory_id": 1,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 104,
+        "fields": {
+            "question": "My head feels clear.",
+            "subCategory_name": "Alertness",
+            "subCategory_id": 1,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 105,
+        "fields": {
+            "question": "I am finding it difficult to concentrate.",
+            "subCategory_name": "Alertness",
+            "subCategory_id": 1,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 106,
+        "fields": {
+            "question": "I keep forgetting things.",
+            "subCategory_name": "Alertness",
+            "subCategory_id": 1,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 107,
+        "fields": {
+            "question": "I feel clumsy in my actions.",
+            "subCategory_name": "Alertness",
+            "subCategory_id": 1,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 108,
+        "fields": {
+            "question": "I feel clumsy in my actions.",
+            "subCategory_name": "Alertness",
+            "subCategory_id": 1,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 109,
+        "fields": {
+            "question": "I am mindful of my actions through out the day.",
+            "subCategory_name": "Presence",
+            "subCategory_id": 2,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 110,
+        "fields": {
+            "question": "I pay careful attention to what is happening around me at work.",
+            "subCategory_name": "Presence",
+            "subCategory_id": 2,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 111,
+        "fields": {
+            "question": "I feel in the moment most of the time.",
+            "subCategory_name": "Presence",
+            "subCategory_id": 2,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 112,
+        "fields": {
+            "question": "My thoughts often wander about other things when speaking to others.",
+            "subCategory_name": "Presence",
+            "subCategory_id": 2,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 113,
+        "fields": {
+            "question": "It seems I am running on automatic most of the time without much awareness of what I am doing.",
+            "subCategory_name": "Presence",
+            "subCategory_id": 2,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 114,
+        "fields": {
+            "question": "I rush through my work activities without being really attentive to them.",
+            "subCategory_name": "Presence",
+            "subCategory_id": 2,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 115,
+        "fields": {
+            "question": "I tend to realise how I feel about something later on rather than in the moment.",
+            "subCategory_name": "Presence",
+            "subCategory_id": 2,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 116,
+        "fields": {
+            "question": "I do jobs and tasks without really thinking.",
+            "subCategory_name": "Presence",
+            "subCategory_id": 2,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 117,
+        "fields": {
+            "question": "I find myself preoccupied with the past or future.",
+            "subCategory_name": "Presence",
+            "subCategory_id": 2,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 118,
+        "fields": {
+            "question": "I find myself making mistakes because I’m not paying attention or I’m thinking of something else.",
+            "subCategory_name": "Presence",
+            "subCategory_id": 2,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 119,
+        "fields": {
+            "question": "Time feel like it is just running away faster than it should.",
+            "subCategory_name": "Presence",
+            "subCategory_id": 2,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 120,
+        "fields": {
+            "question": "I am full of ideas.",
+            "subCategory_name": "Sparkiness",
+            "subCategory_id": 3,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 121,
+        "fields": {
+            "question": "I see endless possibilities to improve things.",
+            "subCategory_name": "Sparkiness",
+            "subCategory_id": 3,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 122,
+        "fields": {
+            "question": "I am making things important to me happen.",
+            "subCategory_name": "Sparkiness",
+            "subCategory_id": 3,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 123,
+        "fields": {
+            "question": "I don’t have many solutions to problems at the moment.",
+            "subCategory_name": "Sparkiness",
+            "subCategory_id": 3,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 124,
+        "fields": {
+            "question": "I am confident in putting forward suggestions.",
+            "subCategory_name": "Sparkiness",
+            "subCategory_id": 3,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 125,
+        "fields": {
+            "question": "I feel creative in my thinking.",
+            "subCategory_name": "Sparkiness",
+            "subCategory_id": 3,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 126,
+        "fields": {
+            "question": "I don’t have headspace to think of new ideas.",
+            "subCategory_name": "Sparkiness",
+            "subCategory_id": 3,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 127,
+        "fields": {
+            "question": "I don’t have headspace to think of new ideas.",
+            "subCategory_name": "Sparkiness",
+            "subCategory_id": 3,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    },
+    {
+        "id": 128,
+        "fields": {
+            "question": "have to put up with the current situation as there are no alternatives.",
+            "subCategory_name": "Sparkiness",
+            "subCategory_id": 3,
+            "category_name": "Aliveness",
+            "id": 6
+
+        }
+    }
+]

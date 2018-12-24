@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+from datetime import timedelta
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,9 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'vyou.eu-west-2.elasticbeanstalk.com',
-    'vyou-dev.eu-west-2.elasticbeanstalk.com',
-    'vyou-staging.eu-west-2.elasticbeanstalk.com',
+    'vyoudev.eu-west-2.elasticbeanstalk.com'
 ]
 
 
@@ -44,7 +43,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'webpack_loader',
     'api',
+    'users_api',
+    'personality_api',
+    'user_profile',
+    'question_ans',
+    'calculations',
     'rest_framework',
+    'knox',
     'rest_framework_swagger',
     'rest_framework.authtoken',
     'rest_auth',
@@ -52,6 +57,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'django_filters',
     # 'allauth.socialaccount.providers.google',
     # 'allauth.socialaccount.providers.facebook',
     # 'allauth.socialaccount.providers.linkedin',
@@ -74,6 +80,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'vapp.urls'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 TEMPLATES = [
     {
@@ -103,16 +111,23 @@ WEBPACK_LOADER = {
 }
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
+    # 'DEFAULT_PERMISSION_CLASSES': (
+    #     'rest_framework.permissions.IsAuthenticated',
+    # ),
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-        'rest_framework.authentication.BasicAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
     ],
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',)
+    # 'DEFAULT_AUTHENTICATION_CLASSES': [
+    #     'knox.auth.TokenAuthentication',
+    #     'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+    #     'rest_framework.authentication.BasicAuthentication',
+    #     'rest_framework.authentication.SessionAuthentication',
+    # ],
 
 }
+
+REST_USE_JWT = True
 
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000',
@@ -131,7 +146,11 @@ DATABASES = {
     }
 }
 
-
+JWT_AUTH = {
+    'JWT_AUTH_HEADER_PREFIX': 'JWT',
+    'JWT_ALLOW_REFRESH': True,
+    'JWT_EXPIRATION_DELTA': timedelta(hours=1)
+}
 
 
 # Password validation
@@ -168,7 +187,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-# AUTH_USER_MODEL = 'api.User'
+AUTH_USER_MODEL = 'users_api.CustomUser'
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
