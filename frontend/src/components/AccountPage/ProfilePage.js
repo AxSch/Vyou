@@ -80,7 +80,9 @@ class Profile extends PureComponent {
         return (
             <div className="col-md-6 col-md-offset-3">
                 <NavBarContainer />
-                {this.checkUserLoggedIn(userLoggedIn, profile)}
+                <div className="main-container">
+                    {this.checkUserLoggedIn(userLoggedIn, profile)}
+                </div>
             </div>
         );
     }

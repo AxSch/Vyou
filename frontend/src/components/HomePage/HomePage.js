@@ -8,8 +8,10 @@ class HomePage extends Component {
     return (
       <div>
         <NavBarContainer />
-        <div>
-          <h1>Welcome</h1>
+        <div className="main-container">
+          <div>
+            <h1>Welcome</h1>
+          </div>
         </div>
       </div>
     );

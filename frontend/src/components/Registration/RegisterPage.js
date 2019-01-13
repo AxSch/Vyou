@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import HeaderBar from "../HeaderBar/HeaderBar";
 
 class RegisterPage extends Component {
   constructor(props) {
@@ -95,18 +96,42 @@ class RegisterPage extends Component {
     const { hasAccount } = this.state;
 
     return (
-      <div>
-        <form>
-            <label htmlFor={"email"}>email</label>
-            <input required type="email" name="email" onChange={(e) => this.onInputChange(e.target.value, "email")}/>
-            {hasAccount ? <span>Account already exists</span> : null}
-            <label htmlFor={"passsword"}>password</label>
-            <input required type="password" name="passsword" onChange={(e) => this.onInputChange(e.target.value, "password1")}/>
-            <label htmlFor={"passwordConfirm"}>confirm password</label>
-            <input required type="password" name="passwordConfirm" onChange={(e) => this.onInputChange(e.target.value, "password2")}/>
-            {hasAccount ? <button disabled onClick={(e) => this.handleSubmit(e)}>Submit</button> : <button onClick={(e) => this.handleSubmit(e)}>Submit</button>}
-        </form>
-      </div>
+      <React.Fragment>
+          <HeaderBar/>
+          <div className="main-container">
+              <div className="centered-content centered-content--with-form">
+                  <form className="full-width">
+                      <div className="form-header">
+                          <h1>
+                              Register
+                          </h1>
+                          <p>
+                              Morbi vel fringilla lacus. Morbi pulvinar quis turpis faucibus.
+                          </p>
+                      </div>
+                      <div className="form-group inline-label">
+                          {hasAccount ? <span>Account already exists</span> : null}
+                          <input required type="email" name="email" onChange={(e) => this.onInputChange(e.target.value, "email")}/>
+                          <label htmlFor="email">Email</label>
+                      </div>
+
+                      <div className="form-group inline-label">
+                          <input required type="password" name="passsword" onChange={(e) => this.onInputChange(e.target.value, "password1")}/>
+                          <label htmlFor="password">Password</label>
+                      </div>
+
+                      <div className="form-group inline-label">
+                          <input required type="password" name="passwordConfirm" onChange={(e) => this.onInputChange(e.target.value, "password2")}/>
+                          <label htmlFor="passwordConfirm">Confirm Password</label>
+                      </div>
+
+                      <div className="form-group">
+                          {hasAccount ? <button disabled onClick={(e) => this.handleSubmit(e)}>Submit</button> : <button onClick={(e) => this.handleSubmit(e)}>Submit</button>}
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </React.Fragment>
     );
   }
 }

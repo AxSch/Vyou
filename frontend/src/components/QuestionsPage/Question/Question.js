@@ -8,9 +8,12 @@ class Question extends Component {
         const { question, questionType, subCategoryId } = this.props;
         return (
           <Fragment>
-              <li key={question.id}>
-                {question.fields.question}
-                <AnswersContainer 
+              <div className="question-container" key={question.id}>
+                <p className="question">
+                  {question.fields.question}
+                </p>
+
+                <AnswersContainer
                     questionId={question.id}
                     categoryId={question.fields.id}
                     categoryName={question.fields.category_name}
@@ -21,7 +24,7 @@ class Question extends Component {
                     subCategoryId={subCategoryId}
                     subCategoryName={question.fields.subCategory_name}
                 />
-            </li>
+            </div>
           </Fragment>
         );
     }

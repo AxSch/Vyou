@@ -80,22 +80,24 @@ class QuestionsPage extends Component {
         if (isLogged) {
             return (
                 <Fragment>
-                    <h2>Questions</h2>
-                    <div>
-                        <h4>Progress</h4>
+                    <div className="main-container">
+                        <h2>Questions</h2>
+                        <div>
+                            <h4>Progress</h4>
+                        </div>
+                        <div>
+                            <h4>Topics</h4>
+                            <label htmlFor={"personality"}>Personality</label>
+                            <input type="radio" name={"questions"} value={"PERSONALITY"} id={"personality"} onChange={(e) => this.handleOnChange(e)}/>
+                            <label htmlFor={"energyLevel"}>Energy Levels</label>
+                            <input type="radio" name={"questions"} value={"ENERGYLEVEL"} id={"energyLevel"} onChange={(e) => this.handleOnChange(e)}/>
+                            <label htmlFor={"energyFlow"}>Energy Flow</label>
+                            <input type="radio" name={"questions"} value={"ENERGYFLOW"} id={"energyFlow"} onChange={(e) => this.handleOnChange(e)}/>
+                            <label htmlFor={"energyMapping"}>Energy Mapping</label>
+                            <input type="radio" name={"questions"} value={"ENERGYMAPPING"} id={"energyMapping"} onChange={(e) => this.handleOnChange(e)}/>
+                        </div>
+                        {this.renderCategoryQuestions(category)}
                     </div>
-                    <div>
-                        <h4>Topics</h4>
-                        <label htmlFor={"personality"}>Personality</label>
-                        <input type="radio" name={"questions"} value={"PERSONALITY"} id={"personality"} onChange={(e) => this.handleOnChange(e)}/>
-                        <label htmlFor={"energyLevel"}>Energy Levels</label>
-                        <input type="radio" name={"questions"} value={"ENERGYLEVEL"} id={"energyLevel"} onChange={(e) => this.handleOnChange(e)}/>
-                        <label htmlFor={"energyFlow"}>Energy Flow</label>
-                        <input type="radio" name={"questions"} value={"ENERGYFLOW"} id={"energyFlow"} onChange={(e) => this.handleOnChange(e)}/>
-                        <label htmlFor={"energyMapping"}>Energy Mapping</label>
-                        <input type="radio" name={"questions"} value={"ENERGYMAPPING"} id={"energyMapping"} onChange={(e) => this.handleOnChange(e)}/>
-                    </div>
-                    {this.renderCategoryQuestions(category)}
                 </Fragment>
             );
         } else {
