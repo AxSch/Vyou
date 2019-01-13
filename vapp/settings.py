@@ -138,8 +138,8 @@ CORS_ORIGIN_WHITELIST = (
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'vyoudevdb',
-        'USER': 'Kozzimodo',
+        'NAME': 'vyou-development',
+        'USER': 'paul',
         'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '5432',
