@@ -8,23 +8,24 @@ class QuestionFactory extends Component {
 
     this.renderQuestion = this.renderQuestion.bind(this);
     this.renderQuestionCategory = this.renderQuestionCategory.bind(this);
-}
+  }
+
   renderQuestion = (questions, categoryId, questionType, subCategory) => {
     const { subCategoryId } = this.props;
 
     if (subCategory) {
       const questionCategory = questions.filter((question) => question.fields.id === categoryId);
       const questionSubCategory = questionCategory.filter((question) => question.fields.subCategory_id === subCategoryId);
-      console.log(questionSubCategory);
+      // console.log(questionSubCategoryq);
       return questionSubCategory.map((question) => {
         return (
-          <Question question={question} questionType={questionType} subCategoryId={subCategoryId}/>
+          <Question key={`${questionType}_${question.id}`} question={question} questionType={questionType} subCategoryId={subCategoryId}/>
         );
       });
     } else {
       return questions.filter((question) => question.fields.id === categoryId).map((question) => {
           return (
-              <Question question={question} questionType={questionType}/>
+              <Question key={`${questionType}_${question.id}`} question={question} questionType={questionType}/>
           );
       })
     }
