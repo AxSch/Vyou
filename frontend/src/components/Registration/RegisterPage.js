@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HeaderBar from "../HeaderBar/HeaderBar";
+import HeaderBarContainer from "../HeaderBar/HeaderBarContainer";
 
 class RegisterPage extends Component {
   constructor(props) {
@@ -97,7 +97,7 @@ class RegisterPage extends Component {
 
     return (
       <React.Fragment>
-          <HeaderBar/>
+          <HeaderBarContainer/>
           <div className="main-container">
               <div className="centered-content centered-content--with-form">
                   <form className="full-width">

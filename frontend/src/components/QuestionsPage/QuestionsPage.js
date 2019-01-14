@@ -80,7 +80,7 @@ class QuestionsPage extends Component {
         if (isLogged) {
             return (
                 <Fragment>
-                    <h2>Questions</h2>
+                    {/*<h2>Questions</h2>*/}
                     <div>
                         {/*<h4>Progress</h4>*/}
                     </div>
@@ -104,13 +104,13 @@ class QuestionsPage extends Component {
     }
 
     render() {
-        console.log("QuestionsPage");
-
         const { login } = this.props;
         return (
             <div>
                 <NavBarContainer />
-                {this.checkUserLoggedIn(login.loggedIn)}
+                <div className="main-container">
+                    {this.checkUserLoggedIn(login.loggedIn)}
+                </div>
             </div>
         );
     }

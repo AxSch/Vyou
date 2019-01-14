@@ -115,7 +115,7 @@ class EnergyFlowQuestions extends Component {
  
         return (
             <div>
-                <h2>Energy Flow Questions</h2>
+                <h2>Energy Flow</h2>
                 {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType}/>}
                 {!isSubmitted ? this.handleBackButton(categoryId) : null}
                 {!isSubmitted ? this.handleNextButton(categoryId) : null}

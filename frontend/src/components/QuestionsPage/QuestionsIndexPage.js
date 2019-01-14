@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import {Link} from 'react-router-dom';
+import NavBarContainer from "../NavBar/NavBarContainer";
+import HeaderBarContainer from "../HeaderBar/HeaderBarContainer";
 
 class QuestionsIndexPage extends Component {
     constructor(props) {
@@ -10,12 +12,41 @@ class QuestionsIndexPage extends Component {
 
         return (
             <div>
-                questions index
-                <br/>
-                <Link to="/questions/personality">Personality</Link> <br/>
-                <Link to="/questions/energyflow">Energy Flow</Link> <br/>
-                <Link to="/questions/energylevel">Energy Level</Link> <br/>
-                <Link to="/questions/energymapping">Energy Mapping</Link> <br/>
+                <NavBarContainer />
+
+                <div className="main-container">
+                    <HeaderBarContainer/>
+
+                    <div className="tasks-container">
+                        <div className="task">
+                            <Link to="/questions/personality">
+                                <span className="task-category">Questionnaire</span>
+                                <span className="task-title">Personality</span>
+                            </Link>
+                        </div>
+
+                        <div className="task">
+                            <Link to="/questions/energyflow">
+                                <span className="task-category">Questionnaire</span>
+                                <span className="task-title">Energy Flow</span>
+                            </Link>
+                        </div>
+
+                        <div className="task">
+                            <Link to="/questions/energylevel">
+                                <span className="task-category">Questionnaire</span>
+                                <span className="task-title">Energy Level</span>
+                            </Link>
+                        </div>
+
+                        <div className="task">
+                            <Link to="/questions/energymapping">
+                                <span className="task-category">Questionnaire</span>
+                                <span className="task-title">Energy Mapping</span>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

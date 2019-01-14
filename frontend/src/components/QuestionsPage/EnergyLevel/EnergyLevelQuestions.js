@@ -89,7 +89,7 @@ class EnergyLevelQuestions extends Component {
  
         return (
             <div>
-                <h2>Energy Level Questions</h2>
+                <h2>Energy Level</h2>
                 {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType} subCategory={subCategory}/>}
                 {!isSubmitted ? isValid === true ? <button onClick={(e) => this.handleSubmit(e)}>Submit</button> : <button onClick={this.handleIsValid(categoryId)}>Next</button> : null}
             </div>
