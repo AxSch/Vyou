@@ -20,29 +20,37 @@ class QuestionsIndexPage extends Component {
                     <div className="tasks-container">
                         <div className="task">
                             <Link to="/questions/personality">
-                                <span className="task-category">Questionnaire</span>
-                                <span className="task-title">Personality</span>
+                                <div className="task-details">
+                                    <span className="category">Questionnaire</span>
+                                    <span className="title">Personality</span>
+                                </div>
                             </Link>
                         </div>
 
                         <div className="task">
                             <Link to="/questions/energyflow">
-                                <span className="task-category">Questionnaire</span>
-                                <span className="task-title">Energy Flow</span>
+                                <div className="task-details">
+                                    <span className="category">Questionnaire</span>
+                                    <span className="title">Energy Flow</span>
+                                </div>
                             </Link>
                         </div>
 
                         <div className="task">
                             <Link to="/questions/energylevel">
-                                <span className="task-category">Questionnaire</span>
-                                <span className="task-title">Energy Level</span>
+                                <div className="task-details">
+                                    <span className="category">Questionnaire</span>
+                                    <span className="title">Energy Level</span>
+                                </div>
                             </Link>
                         </div>
 
                         <div className="task">
                             <Link to="/questions/energymapping">
-                                <span className="task-category">Questionnaire</span>
-                                <span className="task-title">Energy Mapping</span>
+                                <div className="task-details">
+                                    <span className="category">Questionnaire</span>
+                                    <span className="title">Energy Mapping</span>
+                                </div>
                             </Link>
                         </div>
                     </div>
