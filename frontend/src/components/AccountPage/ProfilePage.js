@@ -20,7 +20,7 @@ class Profile extends PureComponent {
         setUserId(userId);
         fetchProfile(userId);
     }
-    
+
     getUserId(email) {
         const { users, userLoggedIn } = this.props;
         if (userLoggedIn) {
@@ -36,7 +36,7 @@ class Profile extends PureComponent {
         }
         return null;
     }
-    
+
     checkProfileExists(profile) {
         if (profile.hasProfile) {
             return <ProfileContainer />
@@ -52,7 +52,7 @@ class Profile extends PureComponent {
             );
         }
     }
-    
+
 
     renderAccountSettings() {
         return (

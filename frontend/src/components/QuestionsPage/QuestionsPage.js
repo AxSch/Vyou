@@ -6,7 +6,7 @@ import EnergyLevelQuestions from './EnergyLevel/EnergyLevelQuestions';
 import EnergyMappingQuestions from './EnergyMapping/EnergyMappingQuestions';
 import RequestUserLogIn from '../Login/RequestUserLogIn/RequestUserLogIn';
 import NavBarContainer from '../NavBar/NavBarContainer';
-
+import HeaderBarContainer from "../HeaderBar/HeaderBarContainer";
 
 class QuestionsPage extends Component {
     constructor(props) {
@@ -28,7 +28,7 @@ class QuestionsPage extends Component {
         fetchEMQuestions('EM');
 
     }
-    
+
     handleOnChange(e) {
         const value = e.target.value;
         this.setState(prevState => {
@@ -39,27 +39,27 @@ class QuestionsPage extends Component {
     }
 
     renderCategoryQuestions(category) {
-        const { 
-            personalityQuestions, 
-            energyFlowQuestions, 
-            energyLevelQuestions, 
-            energyMappingQuestions, 
-            resetAllAnswers, 
-            answers, 
-            fetchCompPSQuestions, 
-            fetchCompEFQuestions, 
-            fetchCompELQuestions, 
-            fetchCompEMQuestions,  
-            profile, sendPSAnswers, 
-            sendEFAnswers, 
-            sendELAnswers, 
-            sendEMAnswers, 
-            updatePSAnswers, 
-            updateEFAnswers, 
-            updateELAnswers, 
+        const {
+            personalityQuestions,
+            energyFlowQuestions,
+            energyLevelQuestions,
+            energyMappingQuestions,
+            resetAllAnswers,
+            answers,
+            fetchCompPSQuestions,
+            fetchCompEFQuestions,
+            fetchCompELQuestions,
+            fetchCompEMQuestions,
+            profile, sendPSAnswers,
+            sendEFAnswers,
+            sendELAnswers,
+            sendEMAnswers,
+            updatePSAnswers,
+            updateEFAnswers,
+            updateELAnswers,
             updateEMAnswers
         } = this.props;
-        
+
         switch(category) {
             case 'PERSONALITY':
                 return <PersonalityQuestions questions={personalityQuestions} answers={answers} resetAllAnswers={resetAllAnswers} fetchCompPSQuestions={fetchCompPSQuestions} profile={profile} sendAnswers={sendPSAnswers} updateAnswers={updatePSAnswers} />;
@@ -76,7 +76,7 @@ class QuestionsPage extends Component {
 
     checkUserLoggedIn(isLogged){
         const { category } = this.state;
-        
+
         if (isLogged) {
             return (
                 <Fragment>
@@ -109,6 +109,7 @@ class QuestionsPage extends Component {
             <div>
                 <NavBarContainer />
                 <div className="main-container">
+                    <HeaderBarContainer/>
                     {this.checkUserLoggedIn(login.loggedIn)}
                 </div>
             </div>

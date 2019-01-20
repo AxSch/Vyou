@@ -79,10 +79,20 @@ a {
   left: 70px;
   height: 100%;
   width: calc(100% - 80px);
+  padding-left: 25px;
+}
+
+.sidebar + .main-container h2 {
+  font-size: 1.5em;
+  color: #7655ef;
 }
 
 .sidebar.expanded + .main-container {
   left: 270px;
+}
+
+.question-list-container .question-list {
+  padding-left: 0;
 }
 
 .centered-content {
@@ -176,8 +186,15 @@ button:hover {
 /** Questions **/
 .question-container {
   clear: both;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
+
+.question-container .question {
+  font-size: 2em;
+  font-weight: 400;
+  padding: 1.5em 0;
+}
+
 .answers-container .answer {
   float: left;
   /*text-align: center;*/
@@ -205,8 +222,25 @@ button:hover {
   background: #121025;
 }
 
+@keyframes inactiveAnswerHover {
+  0% {
+    background: #121025;
+  }
+
+  100% {
+    background: #17142f;
+  }
+}
+
 .answers-container .answer label span:hover {
   background: #050308;
+
+  animation-name: inactiveAnswerHover;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
 }
 
 .answers-container .answer label input[type=radio]:checked + span {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Question from './Question';
+import TransitionGroup from 'react-transition-group/TransitionGroup'
 
 class QuestionFactory extends Component {
   constructor(props) {
@@ -30,7 +31,7 @@ class QuestionFactory extends Component {
       })
     }
   }
-  
+
   renderQuestionCategory = (questions, categoryId) => {
     const questionList = questions.filter((question) => question.fields.QuestionCategory.id === categoryId);
     // console.log(questionList[0].fields);
@@ -45,11 +46,11 @@ class QuestionFactory extends Component {
   render() {
     const { questionsArray, categoryId, questionType, subCategory } = this.props;
     return (
-      <div>
+      <div className='question-list-container'>
         {/* {renderQuestionCategory(questionsArray, index)} */}
-      <ul>
-       {this.renderQuestion(questionsArray, categoryId, questionType, subCategory)}
-      </ul>
+        <div className='question-list'>
+         {this.renderQuestion(questionsArray, categoryId, questionType, subCategory)}
+        </div>
     </div>
     );
   }
