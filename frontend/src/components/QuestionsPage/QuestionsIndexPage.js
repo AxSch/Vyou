@@ -18,7 +18,7 @@ class QuestionsIndexPage extends Component {
                     <HeaderBarContainer/>
 
                     <div className="tasks-container">
-                        <div className="task">
+                        <div className="task" id="personality-task">
                             <Link to="/questions/personality">
                                 <div className="task-details">
                                     <span className="category">Questionnaire</span>
@@ -27,7 +27,7 @@ class QuestionsIndexPage extends Component {
                             </Link>
                         </div>
 
-                        <div className="task">
+                        <div className="task" id="energyflow-task">
                             <Link to="/questions/energyflow">
                                 <div className="task-details">
                                     <span className="category">Questionnaire</span>
@@ -36,7 +36,7 @@ class QuestionsIndexPage extends Component {
                             </Link>
                         </div>
 
-                        <div className="task">
+                        <div className="task" id="energylevel-task">
                             <Link to="/questions/energylevel">
                                 <div className="task-details">
                                     <span className="category">Questionnaire</span>
@@ -45,7 +45,7 @@ class QuestionsIndexPage extends Component {
                             </Link>
                         </div>
 
-                        <div className="task">
+                        <div className="task" id="energymapping-task">
                             <Link to="/questions/energymapping">
                                 <div className="task-details">
                                     <span className="category">Questionnaire</span>

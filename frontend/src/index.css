@@ -298,3 +298,8 @@ button:hover {
   margin: 5px 0;
   font-size: 1.4em;
 }
+
+.task#energyflow-task {
+  background-image: url(energyflow-task.gif);
+  background-size: cover;
+}
