@@ -104,7 +104,7 @@ And for production build:
 
 * cd into `frontend` and run `yarn install`
 
-* Run `yarn start`. 
+* Run `yarn start`.
 
 Once this has been done, any changes during development will be reflected at the localhost:8000 address.
 

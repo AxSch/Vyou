@@ -1,0 +1,44 @@
+@import 'transitions.css';
+@import 'modules/headerbar.css';
+@import 'modules/questions.css';
+@import 'modules/sidebar.css';
+@import 'modules/tasks.css';
+
+html, * {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Montserrat', sans-serif;
+
+  background: #1e1c3a;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all .2s;
+}
+
+a {
+  color: #6038aa;
+}
+
+.main-container > nav {
+  border-bottom: 1px solid #121025;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.centered-content {
+  width: 60%;
+  margin: auto;
+}
+
+.centered-content--with-form {
+  width: 40%;
+}

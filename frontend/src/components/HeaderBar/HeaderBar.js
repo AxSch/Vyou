@@ -32,8 +32,8 @@ class HeaderBar extends Component {
             <li><a href="" className="navbar-brand">VYou</a></li>
           </ul>
 
-          <ul>
-            {userLoggedIn ? <li><Link onClick={(e) => this.handleLogout(e)} to="/"><i className="fas fa-sign-out-alt"></i><span>Logout</span></Link></li> : null}
+          <ul className="account-actions">
+            {userLoggedIn ? <li><Link onClick={(e) => this.handleLogout(e)} to="/"><i className="far fa-user-circle"></i><span>Logout</span></Link></li> : null}
           </ul>
         </div>
       </nav>

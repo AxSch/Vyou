@@ -1,0 +1,46 @@
+.tasks-container .task {
+  background: #242043;
+  display: inline-block;
+  height: 350px;
+  width: 20%;
+  max-width: 280px;
+  margin: 0 20px 0 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.tasks-container .task:hover {
+  background: #111129;
+}
+
+.tasks-container .task a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tasks-container .task .task-details {
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 30px 25px;
+}
+
+.tasks-container .task .task-details .category {
+  display: inline-block;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.tasks-container .task .task-details .title {
+  display: inline-block;
+  width: 100%;
+  margin: 5px 0;
+  font-size: 1.4em;
+}
+
+.task#energyflow-task {
+  background-image: url(../../energyflow-task.gif);
+  background-size: cover;
+}

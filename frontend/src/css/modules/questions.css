@@ -1,0 +1,84 @@
+.question-list-container .question-list {
+  padding-left: 0;
+}
+
+.question-container {
+  clear: both;
+  margin-bottom: 150px;
+}
+
+.question-container .question {
+  font-size: 2em;
+  font-weight: 400;
+  padding: 1.5em 0;
+}
+
+.answers-container .answer {
+  float: left;
+  /*text-align: center;*/
+  /*padding: 15px 22px;*/
+  margin-right: 8px;
+
+
+  /*background: #121025;*/
+}
+
+.answers-container .answer label {
+  /*border: 1px solid red;*/
+  width: 100%;
+}
+
+.answers-container .answer label span {
+  display: block;
+  min-width: 50px;
+  padding: 15px 22px;
+
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+
+  background: #121025;
+}
+
+.answers-container .answer label input[type=radio] + span::after {
+  position: relative;
+  border: 2px solid red;
+}
+
+.answers-container .answer:hover label input[type=radio] + span {
+}
+
+/* .answers-container .answer label:hover input[type=radio]:not(:checked) + span {
+  background: #050308;
+
+  animation-name: inactiveAnswerHover;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+}
+.answers-container .answer label:hover input[type=radio] + span::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  border-radius: 30px;
+} */
+
+.answers-container .answer label input[type=radio]:checked + span {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7655ef+0,4c4996+99 */
+  background: #7655ef; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #7655ef 0%, #4c4996 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #7655ef 0%,#4c4996 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #7655ef 0%,#4c4996 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7655ef', endColorstr='#4c4996',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.answers-container .answer input[type=radio] {
+  opacity: 0;
+  display: none;
+}
