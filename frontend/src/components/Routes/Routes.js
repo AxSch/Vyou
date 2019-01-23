@@ -8,7 +8,7 @@ import QuestionsPageContainer from '../QuestionsPage/QuestionsPageContainer';
 import NotFound from '../ErrorPages/NotFound';
 import RegisterContainer from '../Registration/RegisterContainer';
 import HomePageContainer from '../HomePage/HomePageContainer';
-
+import ProfileContainer from '../Profile/ProfileContainer';
 
 const routes = () => {
   return (
@@ -20,6 +20,7 @@ const routes = () => {
       <Route path="/register/" component={RegisterContainer}/>
       <Route exact path="/questions" component={QuestionsPageIndexContainer}/>
       <Route path="/questions/:questionId" component={QuestionsPageContainer}/>
+      <Route path="/profile" component={ProfileContainer}/>
       <Route component={NotFound} />
   </Switch>
   );
