@@ -1,0 +1,81 @@
+form input[type=text],
+form input[type=email],
+form input[type=password] {
+  background: #121025;
+  color: #fff;
+  padding: 10px 8px;
+  font-size: 1rem;
+}
+
+form.full-width .form-group input {
+  width: 100%;
+}
+
+form .form-group {
+  height: 5em;
+}
+
+form .form-group.inline-label {
+  position: relative;
+  padding: 15px 0 15px 0;
+}
+
+form .form-group.inline-label label {
+  position: absolute;
+  left: 10px;
+  top: 28px;
+}
+form .form-group.inline-label input:focus + label {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.8em;
+  top: -0.2em;
+}
+
+form .form-header h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+form .form-header p {
+  font-weight: 300;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 16px 25px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius:  30px;
+  border-radius:  30px;
+  border: none;
+  color: #fff;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7655ef+0,4c4996+99 */
+  background: #7655ef; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #7655ef 0%, #4c4996 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #7655ef 0%,#4c4996 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #7655ef 0%,#4c4996 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7655ef', endColorstr='#4c4996',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+button:hover {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 16px 25px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius:  30px;
+  border-radius:  30px;
+  border: none;
+  color: #fff;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9b87ed+0,616093+100 */
+  background: #9b87ed; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #9b87ed 0%, #616093 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #9b87ed 0%,#616093 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #9b87ed 0%,#616093 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b87ed', endColorstr='#616093',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+button + button {
+  margin-left: 50px;
+}

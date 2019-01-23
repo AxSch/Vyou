@@ -17,7 +17,7 @@ on GitHub.
 
 Start of by activating your virtual python env and using the commands below to install the required dependencies and get setup.
 
-## Python, Django & Postgres setup
+### Python, Django & Postgres setup
 
 * Install `python3` via brew
 * Clone the repo
@@ -104,7 +104,7 @@ And for production build:
 
 * cd into `frontend` and run `yarn install`
 
-* Run `yarn start`. 
+* Run `yarn start`.
 
 Once this has been done, any changes during development will be reflected at the localhost:8000 address.
 
@@ -125,7 +125,7 @@ eb init
 
 * deploy to environment
 ```
-eb deploy <env_name>
+eb deploy
 ```
 ### Todos
 

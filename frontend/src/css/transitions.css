@@ -1,0 +1,9 @@
+@keyframes inactiveAnswerHover {
+  0% {
+    background: #121025;
+  }
+
+  100% {
+    background: #17142f;
+  }
+}

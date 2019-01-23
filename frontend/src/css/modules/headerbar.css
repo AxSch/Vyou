@@ -1,0 +1,6 @@
+.account-actions {
+  list-style-type: none;
+}
+.account-actions li a i {
+  padding-right: 10px;
+}

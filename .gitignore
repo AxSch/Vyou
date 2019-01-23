@@ -23,3 +23,8 @@ personality_api/migrations/__pycache__/
 users_api/migrations/__pycache__/
 users_api/__pycache__/
 user_profile/__pycache__/
+
+.idea
+venv
+
+webpack-stats.*

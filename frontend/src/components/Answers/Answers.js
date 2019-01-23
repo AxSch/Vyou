@@ -58,24 +58,48 @@ class Answers extends Component {
         const { questionId } = this.props;
 
         return (
-            <div>
-                <label htmlFor={`stronglyAgree-${questionId}`}>Strongly Agree</label>
-                <input type="radio" required name={`answers-${questionId}`} value={3} id={`stronglyAgree-${questionId}`} onChange={(e) => this.handleOnChange(e)}/> 
-                
-                <label htmlFor={`slightlyAgree-${questionId}`}>Slightly Agree</label>
-                <input type="radio" required name={`answers-${questionId}`} value={2} id={`slightlyAgree-${questionId}`} onChange={(e) => this.handleOnChange(e)}/>  
-                
-                <label htmlFor={`agree-${questionId}`}>Agree</label>
-                <input type="radio" required name={`answers-${questionId}`} value={1} id={`agree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />  
-                
-                <label htmlFor={`disagree-${questionId}`}>Disagree</label>
-                <input type="radio" required name={`answers-${questionId}`} value={-1} id={`disagree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />  
-                
-                <label htmlFor={`slightlyDisagree-${questionId}`}>Slightly Disagree</label>
-                <input type="radio" required name={`answers-${questionId}`} value={-2} id={`slightlyDisagree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />  
-                
-                <label htmlFor={`stronglyDisagree-${questionId}`}>Strongly Disagree</label>
-                <input type="radio" required name={`answers-${questionId}`} value={-3} id={`stronglyDisagree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />                         
+            <div className="answers-container">
+                <div className="answer">
+                    <label htmlFor={`stronglyAgree-${questionId}`}>
+                        <input type="radio" required name={`answers-${questionId}`} value={3} id={`stronglyAgree-${questionId}`} onChange={(e) => this.handleOnChange(e)}/>
+                        <span>Strongly Agree</span>
+                    </label>
+                </div>
+
+                <div className="answer">
+                    <label htmlFor={`slightlyAgree-${questionId}`}>
+                        <input type="radio" required name={`answers-${questionId}`} value={2} id={`slightlyAgree-${questionId}`} onChange={(e) => this.handleOnChange(e)}/>
+                        <span>Slightly Agree</span>
+                    </label>
+                </div>
+
+                <div className="answer">
+                    <label htmlFor={`agree-${questionId}`}>
+                        <input type="radio" required name={`answers-${questionId}`} value={1} id={`agree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />
+                        <span>Agree</span>
+                    </label>
+                </div>
+
+                <div className="answer">
+                    <label htmlFor={`disagree-${questionId}`}>
+                        <input type="radio" required name={`answers-${questionId}`} value={-1} id={`disagree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />
+                        <span>Disagree</span>
+                    </label>
+                </div>
+
+                <div className="answer">
+                    <label htmlFor={`slightlyDisagree-${questionId}`}>
+                        <input type="radio" required name={`answers-${questionId}`} value={-2} id={`slightlyDisagree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />
+                        <span>Slightly Disagree</span>
+                    </label>
+                </div>
+
+                <div className="answer">
+                    <label htmlFor={`stronglyDisagree-${questionId}`}>
+                        <input type="radio" required name={`answers-${questionId}`} value={-3} id={`stronglyDisagree-${questionId}`} onChange={(e) => this.handleOnChange(e)} />
+                        <span>Strongly Disagree</span>
+                    </label>
+                </div>
             </div>
         );
     }

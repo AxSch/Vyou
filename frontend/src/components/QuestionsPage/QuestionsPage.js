@@ -6,14 +6,14 @@ import EnergyLevelQuestions from './EnergyLevel/EnergyLevelQuestions';
 import EnergyMappingQuestions from './EnergyMapping/EnergyMappingQuestions';
 import RequestUserLogIn from '../Login/RequestUserLogIn/RequestUserLogIn';
 import NavBarContainer from '../NavBar/NavBarContainer';
-
+import HeaderBarContainer from "../HeaderBar/HeaderBarContainer";
 
 class QuestionsPage extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            category: '',
+            category: (props.match.params.hasOwnProperty('questionId') ? props.match.params.questionId.toUpperCase() : ''),
         };
 
         this.renderCategoryQuestions = this.renderCategoryQuestions.bind(this);
@@ -28,7 +28,7 @@ class QuestionsPage extends Component {
         fetchEMQuestions('EM');
 
     }
-    
+
     handleOnChange(e) {
         const value = e.target.value;
         this.setState(prevState => {
@@ -39,27 +39,27 @@ class QuestionsPage extends Component {
     }
 
     renderCategoryQuestions(category) {
-        const { 
-            personalityQuestions, 
-            energyFlowQuestions, 
-            energyLevelQuestions, 
-            energyMappingQuestions, 
-            resetAllAnswers, 
-            answers, 
-            fetchCompPSQuestions, 
-            fetchCompEFQuestions, 
-            fetchCompELQuestions, 
-            fetchCompEMQuestions,  
-            profile, sendPSAnswers, 
-            sendEFAnswers, 
-            sendELAnswers, 
-            sendEMAnswers, 
-            updatePSAnswers, 
-            updateEFAnswers, 
-            updateELAnswers, 
+        const {
+            personalityQuestions,
+            energyFlowQuestions,
+            energyLevelQuestions,
+            energyMappingQuestions,
+            resetAllAnswers,
+            answers,
+            fetchCompPSQuestions,
+            fetchCompEFQuestions,
+            fetchCompELQuestions,
+            fetchCompEMQuestions,
+            profile, sendPSAnswers,
+            sendEFAnswers,
+            sendELAnswers,
+            sendEMAnswers,
+            updatePSAnswers,
+            updateEFAnswers,
+            updateELAnswers,
             updateEMAnswers
         } = this.props;
-        
+
         switch(category) {
             case 'PERSONALITY':
                 return <PersonalityQuestions questions={personalityQuestions} answers={answers} resetAllAnswers={resetAllAnswers} fetchCompPSQuestions={fetchCompPSQuestions} profile={profile} sendAnswers={sendPSAnswers} updateAnswers={updatePSAnswers} />;
@@ -76,24 +76,24 @@ class QuestionsPage extends Component {
 
     checkUserLoggedIn(isLogged){
         const { category } = this.state;
-        
+
         if (isLogged) {
             return (
                 <Fragment>
-                    <h2>Questions</h2>
+                    {/*<h2>Questions</h2>*/}
                     <div>
-                        <h4>Progress</h4>
+                        {/*<h4>Progress</h4>*/}
                     </div>
                     <div>
-                        <h4>Topics</h4>
-                        <label htmlFor={"personality"}>Personality</label>
-                        <input type="radio" name={"questions"} value={"PERSONALITY"} id={"personality"} onChange={(e) => this.handleOnChange(e)}/>
-                        <label htmlFor={"energyLevel"}>Energy Levels</label>
-                        <input type="radio" name={"questions"} value={"ENERGYLEVEL"} id={"energyLevel"} onChange={(e) => this.handleOnChange(e)}/>
-                        <label htmlFor={"energyFlow"}>Energy Flow</label>
-                        <input type="radio" name={"questions"} value={"ENERGYFLOW"} id={"energyFlow"} onChange={(e) => this.handleOnChange(e)}/>
-                        <label htmlFor={"energyMapping"}>Energy Mapping</label>
-                        <input type="radio" name={"questions"} value={"ENERGYMAPPING"} id={"energyMapping"} onChange={(e) => this.handleOnChange(e)}/>
+                        {/*<h4>Topics</h4>*/}
+                        {/*<label htmlFor={"personality"}>Personality</label>*/}
+                        {/*<input type="radio" name={"questions"} value={"PERSONALITY"} id={"personality"} onChange={(e) => this.handleOnChange(e)}/>*/}
+                        {/*<label htmlFor={"energyLevel"}>Energy Levels</label>*/}
+                        {/*<input type="radio" name={"questions"} value={"ENERGYLEVEL"} id={"energyLevel"} onChange={(e) => this.handleOnChange(e)}/>*/}
+                        {/*<label htmlFor={"energyFlow"}>Energy Flow</label>*/}
+                        {/*<input type="radio" name={"questions"} value={"ENERGYFLOW"} id={"energyFlow"} onChange={(e) => this.handleOnChange(e)}/>*/}
+                        {/*<label htmlFor={"energyMapping"}>Energy Mapping</label>*/}
+                        {/*<input type="radio" name={"questions"} value={"ENERGYMAPPING"} id={"energyMapping"} onChange={(e) => this.handleOnChange(e)}/>*/}
                     </div>
                     {this.renderCategoryQuestions(category)}
                 </Fragment>
@@ -108,7 +108,10 @@ class QuestionsPage extends Component {
         return (
             <div>
                 <NavBarContainer />
-                {this.checkUserLoggedIn(login.loggedIn)}
+                <div className="main-container">
+                    <HeaderBarContainer/>
+                    {this.checkUserLoggedIn(login.loggedIn)}
+                </div>
             </div>
         );
     }

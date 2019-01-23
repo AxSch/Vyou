@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
                 ('job_industry', models.CharField(max_length=64)),
                 ('bio', models.TextField()),
                 ('education', models.CharField(max_length=64)),
-                ('user_img', models.URLField()),
+                ('user_img', models.TextField()),
                 ('creation_date', models.DateField(auto_now_add=True)),
                 ('last_update', models.DateField(auto_now=True)),
                 ('facebook_profile', models.URLField()),

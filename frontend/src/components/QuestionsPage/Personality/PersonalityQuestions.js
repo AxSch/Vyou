@@ -109,7 +109,7 @@ class PersonalityQuestions extends Component {
  
         return (
             <div>
-                <h2>Personality Questions</h2>
+                <h2>Personality</h2>
                 {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType}/>}
                 {!isSubmitted ? this.handleBackButton(categoryId) : null}
                 {!isSubmitted ? this.handleNextButton(categoryId) : null}

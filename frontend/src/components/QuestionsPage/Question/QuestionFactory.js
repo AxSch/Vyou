@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Question from './Question';
+// import TransitionGroup from 'react-transition-group/TransitionGroup'
 
 class QuestionFactory extends Component {
   constructor(props) {
@@ -8,28 +9,29 @@ class QuestionFactory extends Component {
 
     this.renderQuestion = this.renderQuestion.bind(this);
     this.renderQuestionCategory = this.renderQuestionCategory.bind(this);
-}
+  }
+
   renderQuestion = (questions, categoryId, questionType, subCategory) => {
     const { subCategoryId } = this.props;
 
     if (subCategory) {
       const questionCategory = questions.filter((question) => question.fields.id === categoryId);
       const questionSubCategory = questionCategory.filter((question) => question.fields.subCategory_id === subCategoryId);
-      console.log(questionSubCategory);
+      // console.log(questionSubCategoryq);
       return questionSubCategory.map((question) => {
         return (
-          <Question question={question} questionType={questionType} subCategoryId={subCategoryId}/>
+          <Question key={`${questionType}_${question.id}`} question={question} questionType={questionType} subCategoryId={subCategoryId}/>
         );
       });
     } else {
       return questions.filter((question) => question.fields.id === categoryId).map((question) => {
           return (
-              <Question question={question} questionType={questionType}/>
+              <Question key={`${questionType}_${question.id}`} question={question} questionType={questionType}/>
           );
       })
     }
   }
-  
+
   renderQuestionCategory = (questions, categoryId) => {
     const questionList = questions.filter((question) => question.fields.QuestionCategory.id === categoryId);
     // console.log(questionList[0].fields);
@@ -44,11 +46,11 @@ class QuestionFactory extends Component {
   render() {
     const { questionsArray, categoryId, questionType, subCategory } = this.props;
     return (
-      <div>
+      <div className='question-list-container'>
         {/* {renderQuestionCategory(questionsArray, index)} */}
-      <ul>
-       {this.renderQuestion(questionsArray, categoryId, questionType, subCategory)}
-      </ul>
+        <div className='question-list'>
+         {this.renderQuestion(questionsArray, categoryId, questionType, subCategory)}
+        </div>
     </div>
     );
   }

@@ -20,7 +20,7 @@ class Profile extends PureComponent {
         setUserId(userId);
         fetchProfile(userId);
     }
-    
+
     getUserId(email) {
         const { users, userLoggedIn } = this.props;
         if (userLoggedIn) {
@@ -36,7 +36,7 @@ class Profile extends PureComponent {
         }
         return null;
     }
-    
+
     checkProfileExists(profile) {
         if (profile.hasProfile) {
             return <ProfileContainer />
@@ -52,7 +52,7 @@ class Profile extends PureComponent {
             );
         }
     }
-    
+
 
     renderAccountSettings() {
         return (
@@ -80,7 +80,9 @@ class Profile extends PureComponent {
         return (
             <div className="col-md-6 col-md-offset-3">
                 <NavBarContainer />
-                {this.checkUserLoggedIn(userLoggedIn, profile)}
+                <div className="main-container">
+                    {this.checkUserLoggedIn(userLoggedIn, profile)}
+                </div>
             </div>
         );
     }

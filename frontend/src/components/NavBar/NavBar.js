@@ -6,18 +6,8 @@ class NavBar extends Component {
     super(props);
 
     this.state = {
-        isLoggedIn: true,
+        expanded: false
     };
-  }
-
-  handleLogout(e) {
-    const { logout } = this.props;
-    this.setState(() => {
-      return {
-        isLoggedIn: false
-      }
-    }, () => {});
-    logout();
   }
 
   renderLoggoutMsg(logoutMsg, isLoggedIn) {
@@ -26,19 +16,29 @@ class NavBar extends Component {
     }
     return null;
   }
-  
+
   render() {
     const { logoutMsg, userLoggedIn } = this.props;
     const { isLoggedIn } = this.state;
+
+    let navbarClass = "sidebar";
+    if(this.state.expanded) {
+      navbarClass += " expanded";
+    }
+
     return (
-      <div>
-        <ul>
-          {!userLoggedIn ? <li><Link to="/accounts/login">Login</Link></li> : null}
-          <li><Link to="/accounts/profile">Profile</Link></li>
-          <li><Link to="/questions">Questions</Link></li>
-          {!userLoggedIn ? <li><Link to="/register">Register</Link></li> : null}
-          {userLoggedIn ? <li><Link onClick={(e) => this.handleLogout(e)} to="/">Logout</Link></li> : null}
+      <div className={navbarClass}>
+        <ul className="primary-actions">
+          {!userLoggedIn ? <li><Link to="/accounts/login"><i className="fas fa-sign-in-alt"></i><span>Login</span></Link></li> : null}
+          <li><Link to="/"><i className="fas fa-home"></i><span>Dashboard</span></Link></li>
+          <li><Link to="/questions"><i className="fas fa-ellipsis-v"></i><span>Tasks</span></Link></li>
+            {userLoggedIn && <li><Link to="/accounts/profile"><i className="far fa-id-card"></i><span>Profile</span></Link></li>}
+          {!userLoggedIn ? <li><Link to="/register"><i className="far fa-id-card"></i><span>Register</span></Link></li> : null}
           {this.renderLoggoutMsg(logoutMsg, isLoggedIn)}
+        </ul>
+
+        <ul className="secondary-actions">
+            <li><a href="#expand" className="toggle-expand" onClick={() => this.setState({expanded: !this.state.expanded})}>&gt;&gt;</a></li>
         </ul>
       </div>
     );
@@ -47,4 +47,3 @@ class NavBar extends Component {
 }
 
 export default NavBar;
-
