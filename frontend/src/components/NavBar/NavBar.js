@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class NavBar extends Component {
@@ -16,7 +16,7 @@ class NavBar extends Component {
     }
     return null;
   }
-  
+
   render() {
     const { logoutMsg, userLoggedIn } = this.props;
     const { isLoggedIn } = this.state;
@@ -38,7 +38,7 @@ class NavBar extends Component {
         </ul>
 
         <ul className="secondary-actions">
-            <li><a href="#" className="toggle-expand" onClick={() => this.setState({expanded: !this.state.expanded})}>&gt;&gt;</a></li>
+            <li><a href="#expand" className="toggle-expand" onClick={() => this.setState({expanded: !this.state.expanded})}>&gt;&gt;</a></li>
         </ul>
       </div>
     );
@@ -47,4 +47,3 @@ class NavBar extends Component {
 }
 
 export default NavBar;
-

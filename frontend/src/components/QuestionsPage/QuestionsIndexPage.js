@@ -1,20 +1,15 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import NavBarContainer from "../NavBar/NavBarContainer";
 import HeaderBarContainer from "../HeaderBar/HeaderBarContainer";
 
 class QuestionsIndexPage extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
-        console.log("QuestionsIndexPage");
-
         return (
             <div>
                 <NavBarContainer />
 
-                <div className="main-container">
+                <div className="main-container" style={{clear: 'both'}}>
                     <HeaderBarContainer/>
 
                     <div className="tasks-container">
