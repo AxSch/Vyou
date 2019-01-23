@@ -1,4 +1,5 @@
 @import 'transitions.css';
+@import 'forms.css';
 @import 'modules/headerbar.css';
 @import 'modules/questions.css';
 @import 'modules/sidebar.css';
@@ -21,7 +22,7 @@ body {
 
 * {
   box-sizing: border-box;
-  transition: all .2s;
+  /* transition: all .2s; */
 }
 
 a {

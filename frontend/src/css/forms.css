@@ -75,3 +75,7 @@ button:hover {
   background: linear-gradient(135deg, #9b87ed 0%,#616093 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b87ed', endColorstr='#616093',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+button + button {
+  margin-left: 50px;
+}
