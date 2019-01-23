@@ -20,7 +20,7 @@ class Profile(models.Model):
   job_industry = models.CharField(max_length=64, default="n/a")
   bio = models.TextField()
   education = models.CharField(max_length=64, default="n/a")
-  user_img = models.URLField(max_length=200)
+  user_img = models.TextField(max_length=200, default="")
   creation_date = models.DateField(auto_now_add=True)
   last_update = models.DateField(auto_now=True)
   facebook_profile = models.URLField(max_length=200)
