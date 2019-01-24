@@ -108,6 +108,10 @@ const setUserIdFailure = (error) => ({
   }
 });
 
+const userLoggedOut = () => ({
+  type: actionTypes.CLEAR_PROFILE,
+});
+
 const profileActions = {
   getAllUsers,
   getAllUsersSuccess,
@@ -126,7 +130,8 @@ const profileActions = {
   deleteUserProfileFailure,
   setUserId,
   setUserIdSuccess,
-  setUserIdFailure
+  setUserIdFailure,
+  userLoggedOut
 };
 
 export default profileActions;
