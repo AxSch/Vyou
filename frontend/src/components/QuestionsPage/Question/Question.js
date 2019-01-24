@@ -12,7 +12,7 @@ class Question extends Component {
                 <p className="question">
                   {question.fields.question}
                 </p>
-
+                
                 <AnswersContainer
                     questionId={question.id}
                     categoryId={question.fields.id}
@@ -22,7 +22,7 @@ class Question extends Component {
                     questionSign={question.fields.sign}
                     scaleAlpha={question.fields.scale_alpha}
                     subCategoryId={subCategoryId}
-                    subCategoryName={question.fields.subCategory_name}
+                    subCategoryName={question.fields.subCategory_name ? question.fields.subCategory_name : question.fields.subCategory}
                 />
             </div>
           </Fragment>
