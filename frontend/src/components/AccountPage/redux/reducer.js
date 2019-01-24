@@ -78,6 +78,8 @@ const profileReducer = (state=initialStateProfile, action) => {
         };
         newState.error = action.payload.error;
         return newState;
+      case actionTypes.CLEAR_PROFILE:
+        return initialStateProfile;
     default:
       return state;
   }
