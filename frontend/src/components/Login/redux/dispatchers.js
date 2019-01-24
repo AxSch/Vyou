@@ -1,4 +1,5 @@
 import loginActions from '../redux/actions';
+import profileActions from '../../AccountPage/redux/actions';
 import authService from '../../../services/authService';
 
 const loginDispatcher = (email, password) => {
@@ -19,6 +20,7 @@ const loginDispatcher = (email, password) => {
 const logoutDispatcher = () => {
   return dispatch => {
     dispatch(loginActions.requestlogOut());
+    dispatch(profileActions.userLoggedOut())
     authService.logout()
       .then(
         (res) => {
