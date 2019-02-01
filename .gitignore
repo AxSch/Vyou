@@ -28,3 +28,4 @@ user_profile/__pycache__/
 venv
 
 webpack-stats.*
+webpack-stats.dev.json
