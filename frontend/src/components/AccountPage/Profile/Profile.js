@@ -10,14 +10,14 @@ class Profile extends Component {
         </div>
       );
     }
-    
+
     renderImageSection(url, name) {
       if (url !== "https://www.testuserImg.com") {
         return(
           <div>
             <img className=""
                 src={url}
-                alt={`userImg-for-${name}`} 
+                alt={`userImg-for-${name}`}
             />
           </div>
         );
@@ -49,7 +49,7 @@ class Profile extends Component {
         // return CompleteIconComponent
       }
     }
-    
+
     checkLinkedInComplete(lINLink) {
       if(lINLink === "https://www.testLIN.com") {
         // return IncompleteIconComponent
@@ -57,7 +57,7 @@ class Profile extends Component {
         // return CompleteIconComponent
       }
     }
-    
+
     checkTwitterComplete(twLink) {
       if(twLink === "https://www.testTW.com") {
         // return IncompleteIconComponent
@@ -65,7 +65,7 @@ class Profile extends Component {
         // return CompleteIconComponent
       }
     }
-    
+
     checkGitHubComplete(ghLink) {
       if(ghLink === "https://www.testGH.com") {
         // return IncompleteIconComponent
@@ -73,7 +73,7 @@ class Profile extends Component {
         // return CompleteIconComponent
       }
     }
-    
+
     checkInstaComplete(instaLink) {
       if(instaLink === "https://www.testIG.com") {
         // return IncompleteIconComponent
@@ -81,7 +81,7 @@ class Profile extends Component {
         // return CompleteIconComponent
       }
     }
-    
+
     renderConnectedAccountsSection(account) {
       return (
         <div>

@@ -107,11 +107,7 @@ class QuestionsPage extends Component {
         const { login } = this.props;
         return (
             <div>
-                <NavBarContainer />
-                <div className="main-container">
-                    <HeaderBarContainer/>
-                    {this.checkUserLoggedIn(login.loggedIn)}
-                </div>
+                {this.checkUserLoggedIn(login.loggedIn)}
             </div>
         );
     }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import QuestionFactory from '../Question/QuestionFactory';
 import CompletionPage from '../CompletionPage/CompletionPage';
+import Squiggles from '../../VYou/Squiggles';
 
 class PersonalityQuestions extends Component {
     constructor(props) {
@@ -18,7 +19,7 @@ class PersonalityQuestions extends Component {
         this.handleNextButton = this.handleNextButton.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    
+
     componentDidMount() {
         const { resetAllAnswers, profile, fetchCompPSQuestions } = this.props;
         const { categoryId, questionType } = this.state;
@@ -76,7 +77,7 @@ class PersonalityQuestions extends Component {
     handlePageClick() {
         const { answers, profile, sendAnswers, updateAnswers } = this.props;
         const { categoryId } = this.state;
-        
+
         if (answers.answeredPersonality[categoryId].isValid === true) {
             Object.values(answers.answeredPersonality[categoryId]).forEach((answer, index) => {
                 if (answers.completedPersonality[categoryId].completed === true) {
@@ -106,9 +107,11 @@ class PersonalityQuestions extends Component {
     render() {
         const { questions } = this.props;
         const { categoryId, questionType, isSubmitted} = this.state;
- 
+
         return (
-            <div>
+            <div className="question-category-container">
+                <Squiggles />
+
                 <h2>Personality</h2>
                 {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType}/>}
                 {!isSubmitted ? this.handleBackButton(categoryId) : null}

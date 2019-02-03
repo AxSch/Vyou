@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import QuestionFactory from '../Question/QuestionFactory';
 import CompletionPage from '../CompletionPage/CompletionPage';
+import Squiggles from '../../VYou/Squiggles';
 
 class EnergyFlowQuestions extends Component {
     constructor(props) {
@@ -37,7 +38,7 @@ class EnergyFlowQuestions extends Component {
         e.preventDefault();
         const { answers, profile, sendAnswers, updateAnswers } = this.props;
         const { categoryId } = this.state;
-        
+
         if (answers.answeredEnergyFlow[categoryId].isValid === true) {
             Object.values(answers.answeredEnergyFlow[categoryId]).forEach((answer, index) => {
                 // console.log(answers.completedEnergyFlow[categoryId].completed);
@@ -112,9 +113,11 @@ class EnergyFlowQuestions extends Component {
     render() {
         const { questions } = this.props;
         const { categoryId, questionType, subCategory, isSubmitted } = this.state;
- 
+
         return (
-            <div>
+            <div className="question-category-container">
+                <Squiggles />
+
                 <h2>Energy Flow</h2>
                 {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType}/>}
                 {!isSubmitted ? this.handleBackButton(categoryId) : null}

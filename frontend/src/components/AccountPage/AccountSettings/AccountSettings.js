@@ -5,7 +5,7 @@ class AccountSettings extends PureComponent {
     constructor(props) {
       super(props);
       const { userEmail, profile } = this.props;
-      
+
       this.state = {
         user: profile.userId,
         name: null,
@@ -28,7 +28,7 @@ class AccountSettings extends PureComponent {
         gitHubProfile: "https://www.testGH.com",
         instagramProfile: "https://www.testIG.com",
       };
-      
+
       this.handleStateUpdate = this.handleStateUpdate.bind(this);
       this.onInputChange = this.onInputChange.bind(this);
       this.onSubmitChange = this.onSubmitChange.bind(this);
@@ -171,7 +171,7 @@ class AccountSettings extends PureComponent {
           <label htmlFor={"addressPostCode"}>Post Code</label>
           <input type="text" defaultValue={userAddressPostCode === "n/a" ? 'required': userAddressPostCode} required name="addressPostCode" onChange={(e) => this.onInputChange(e.target.value, "addressPostCode")}/>
         </Fragment>
-      );   
+      );
     }
 
     renderAddressCountry(userAddressCity) {
@@ -181,7 +181,7 @@ class AccountSettings extends PureComponent {
             <select defaultValue={userAddressCity === 'n/a' ? "----" : userAddressCity} required name="addressCountry" onChange={(e) => this.onInputChange(e.target.value, "addressCountry")}>
               {accountSettingsUtils.renderCountriesOptions()}
             </select>
-            
+
           </label>
         );
     }
@@ -201,7 +201,7 @@ class AccountSettings extends PureComponent {
             Industry:
             <select defaultValue={userJobIndustry === 'n/a' ? "----" : userJobIndustry} required onChange={(e) => this.onInputChange(e.target.value, "jobIndustry")}>
               {accountSettingsUtils.renderIndustryOptions()}
-            </select> 
+            </select>
           </label>
         );
     }
@@ -268,7 +268,7 @@ class AccountSettings extends PureComponent {
         );
       }
     }
-    
+
     renderUserGHLink(userGHLink) {
       if (userGHLink === 'https://www.testGH.com') {
         return (
@@ -372,7 +372,7 @@ class AccountSettings extends PureComponent {
         }
       }, () => {});
     }
-    
+
     onInputChange(value, name) {
       switch(name) {
         case "name":
@@ -443,13 +443,13 @@ class AccountSettings extends PureComponent {
       }
       return null;
     }
-    
+
     onSubmitChange(e) {
       e.preventDefault();
       const { userEmail, createProfile, profile, updateProfile } = this.props;
-      const { 
+      const {
         name,
-        email, 
+        email,
         dob,
         sex,
         userImg,

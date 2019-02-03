@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import QuestionFactory from '../Question/QuestionFactory';
 import CompletionPage from '../CompletionPage/CompletionPage';
-
+import Squiggles from '../../VYou/Squiggles';
 
 class EnergyMappingQuestions extends Component {
     constructor(props) {
@@ -36,7 +36,7 @@ class EnergyMappingQuestions extends Component {
             fetchCompEMQuestions(profile.userId, categoryId, questionType, subCategoryId);
         }
     }
-    
+
     checkSubCateValid(answers) {
         const { categoryId, subCategoryId } = this.state;
         if (answers.answeredEnergyMapping[categoryId][subCategoryId].isValid) {
@@ -60,7 +60,7 @@ class EnergyMappingQuestions extends Component {
     handleUpdateSend() {
         const { answers, profile, updateAnswers, sendAnswers } = this.props;
         const { categoryId, subCategoryId } = this.state;
-        
+
         Object.values(answers.answeredEnergyMapping[categoryId][subCategoryId]).forEach((answer, index) => {
             if (answers.completedEnergyMapping[categoryId][subCategoryId].completed === true) {
                 Object.values(answers.completedEnergyMapping[categoryId][subCategoryId]).forEach((completedAns) => {
@@ -71,11 +71,11 @@ class EnergyMappingQuestions extends Component {
             }
         })
     }
-    
+
     handleOnSubmitClick(e) {
         const { categoryId, subCategoryId } = this.state;
         e.preventDefault();
-        
+
         if (categoryId < 6) {
             if (subCategoryId < 3) {
                 this.handleUpdateSend();
@@ -98,7 +98,7 @@ class EnergyMappingQuestions extends Component {
                 }, () => {
                     console.log(this.state.categoryId);
                 })
-            }   
+            }
         } else {
             this.handleUpdateSend();
             this.setState((prevState) => {
@@ -150,9 +150,11 @@ class EnergyMappingQuestions extends Component {
     render() {
         const { questions, answers } = this.props;
         const { categoryId, questionType, subCategory, subCategoryId, isValid, isSubmitted } = this.state;
- 
+
         return (
-            <div>
+            <div className="question-category-container">
+                <Squiggles />
+                
                 <h2>Energy Mapping</h2>
                 {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType} subCategory={subCategory} subCategoryId={subCategoryId}/>}
                 {this.handleBackButton(subCategoryId, categoryId)}

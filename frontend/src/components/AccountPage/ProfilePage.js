@@ -78,11 +78,8 @@ class Profile extends PureComponent {
     render() {
         const { userLoggedIn, profile} = this.props;
         return (
-            <div className="col-md-6 col-md-offset-3">
-                <NavBarContainer />
-                <div className="main-container">
-                    {this.checkUserLoggedIn(userLoggedIn, profile)}
-                </div>
+            <div className="col-sm-12">
+                {this.checkUserLoggedIn(userLoggedIn, profile)}
             </div>
         );
     }

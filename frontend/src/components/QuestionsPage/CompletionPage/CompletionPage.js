@@ -13,7 +13,7 @@ class CompletionPage extends Component {
         case 'EL':
           return "Energy Levels Questions";
         case 'EM':
-          return "Energy Mapping Questions";    
+          return "Energy Mapping Questions";
         default:
           break;
       }
@@ -23,7 +23,7 @@ class CompletionPage extends Component {
         return (
             <div>
                 <h3>{this.renderTitle(questionType)} are Completed & Submitted!</h3>
-                <Link to="/accounts/profile/">Return to Profile</Link>
+                <Link to="/accounts/profile">Return to Profile</Link>
             </div>
         );
     }

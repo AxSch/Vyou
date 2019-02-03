@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import QuestionFactory from '../Question/QuestionFactory';
 import CompletionPage from '../CompletionPage/CompletionPage';
+import Squiggles from '../../VYou/Squiggles';
 
 class EnergyLevelQuestions extends Component {
     constructor(props) {
@@ -17,7 +18,7 @@ class EnergyLevelQuestions extends Component {
 
         this.handleIsValid = this.handleIsValid.bind(this);
     }
-    
+
     componentDidMount() {
         const { resetAllAnswers, profile, fetchCompELQuestions } = this.props;
         const { categoryId, questionType } = this.state;
@@ -38,7 +39,7 @@ class EnergyLevelQuestions extends Component {
         }
     }
 
-    
+
     handleIsValid(categoryId) {
         const { answers } = this.props;
         if (answers.answeredEnergyLevel[categoryId].isValid === true) {
@@ -86,9 +87,11 @@ class EnergyLevelQuestions extends Component {
     render() {
         const { questions } = this.props;
         const { categoryId, questionType, subCategory, isValid, isSubmitted } = this.state;
- 
+
         return (
-            <div>
+            <div className="question-category-container">
+                <Squiggles />
+                
                 <h2>Energy Level</h2>
                 {isSubmitted ? <CompletionPage questionType={questionType} /> : <QuestionFactory questionsArray={questions} categoryId={categoryId} questionType={questionType} subCategory={subCategory}/>}
                 {!isSubmitted ? isValid === true ? <button onClick={(e) => this.handleSubmit(e)}>Submit</button> : <button onClick={this.handleIsValid(categoryId)}>Next</button> : null}

@@ -31,16 +31,16 @@ class LoginPage extends Component {
 
     handleChange = (event) => {
         const { name, value } = event.target;
-        this.setState({ 
+        this.setState({
             [name]: value
         });
     }
-    
+
     handleSubmit = (e) => {
         e.preventDefault();
         const { email, password } = this.state;
         const { loginAction } = this.props;
-        
+
         if (email && password) {
             loginAction(email, password);
         }
@@ -49,7 +49,7 @@ class LoginPage extends Component {
     render() {
         const { email, password } = this.state;
         return (
-            <div>
+            <div className='login'>
                 <h2>Login</h2>
                 <form name="form">
                     <div>
