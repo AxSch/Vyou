@@ -40,7 +40,26 @@
   font-size: 1.4em;
 }
 
-.task#energyflow-task {
-  background-image: url(../../energyflow-task.gif);
+.task#personality-task {
+  background-image: url(../../images/questionnaire-tile1.svg);
   background-size: cover;
+}
+
+.task#energylevel-task {
+  background-image: url(../../images/questionnaire-tile2.svg);
+  background-size: cover;
+}
+
+.task#energyflow-task {
+  background-image: url(../../images/questionnaire-tile3.svg);
+  background-size: cover;
+}
+
+.task#energyflow-task {
+  background-image: url(../../images/questionnaire-tile4.svg);
+  background-size: cover;
+}
+
+.main-container .tasks-container .task .task-details span {
+  display: none;
 }

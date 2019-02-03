@@ -50,12 +50,16 @@ button {
   border: none;
   color: #fff;
 
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7655ef+0,4c4996+99 */
   background: #7655ef; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #7655ef 0%, #4c4996 99%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #7655ef 0%,#4c4996 99%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #7655ef 0%,#4c4996 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7655ef', endColorstr='#4c4996',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: -moz-linear-gradient(-45deg, #7655ef 50%, #8c4df5 89%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #7655ef 50%,#8c4df5 89%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #7655ef 50%,#8c4df5 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7655ef', endColorstr='#8c4df5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
 }
 
 button:hover {

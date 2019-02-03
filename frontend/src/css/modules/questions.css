@@ -1,3 +1,12 @@
+.question-category-container {
+  margin-top: 10%;
+  padding: 0 10% 50px 10%;
+}
+
+.question-category-container h2 {
+  font-weight: bold;
+}
+
 .question-list-container .question-list {
   padding-left: 0;
 }
@@ -38,6 +47,7 @@
   border-radius: 30px;
 
   background: #121025;
+  font-weight: bold;
 }
 
 .answers-container .answer label input[type=radio] + span::after {
@@ -72,10 +82,24 @@
 .answers-container .answer label input[type=radio]:checked + span {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7655ef+0,4c4996+99 */
   background: #7655ef; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #7655ef 0%, #4c4996 99%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #7655ef 0%,#4c4996 99%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #7655ef 0%,#4c4996 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7655ef', endColorstr='#4c4996',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: -moz-linear-gradient(-45deg, #7655ef 50%, #8c4df5 89%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #7655ef 50%,#8c4df5 89%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #7655ef 50%,#8c4df5 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7655ef', endColorstr='#8c4df5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.answers-container .answer label input[type=radio]:checked + span:hover {
+  background-position: 100% 0;
+
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .answers-container .answer input[type=radio] {

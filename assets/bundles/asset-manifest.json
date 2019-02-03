@@ -1,7 +1,16 @@
 {
-  "main.css": "css/main.4da08020.css",
-  "main.css.map": "css/main.4da08020.css.map",
-  "main.js": "js/main.3ccfb983.js",
-  "main.js.map": "js/main.3ccfb983.js.map",
-  "media/energyflow-task.gif": "media/energyflow-task.99c51ce4.gif"
+  "main.css": "css/main.8aec309e.css",
+  "main.css.map": "css/main.8aec309e.css.map",
+  "main.js": "js/main.d3a4409a.js",
+  "main.js.map": "js/main.d3a4409a.js.map",
+  "media/questionnaire-tile1.svg": "media/questionnaire-tile1.f65edc7b.svg",
+  "media/questionnaire-tile2.svg": "media/questionnaire-tile2.ce572db9.svg",
+  "media/questionnaire-tile3.svg": "media/questionnaire-tile3.47ac654e.svg",
+  "media/questionnaire-tile4.svg": "media/questionnaire-tile4.44177103.svg",
+  "media/squiggle-login-left.svg": "media/squiggle-login-left.8ef5ecde.svg",
+  "media/squiggle-login-right.svg": "media/squiggle-login-right.cb3f24e2.svg",
+  "media/squiggle-register-left.svg": "media/squiggle-register-left.1fc581c8.svg",
+  "media/squiggle-register-right.svg": "media/squiggle-register-right.3dee0ac2.svg",
+  "media/squiggle-small-1.svg": "media/squiggle-small-1.ee80c6a3.svg",
+  "media/squiggle-small-2.svg": "media/squiggle-small-2.2b2be902.svg"
 }

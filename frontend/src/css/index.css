@@ -29,10 +29,16 @@ a {
   color: #6038aa;
 }
 
-.main-container > nav {
+#root > nav {
   border-bottom: 1px solid #121025;
   padding-bottom: 10px;
   margin-bottom: 10px;
+  margin-left: 70px;
+  padding-left: 30px;
+}
+
+#root > nav a {
+  color: #fff;
 }
 
 .centered-content {
@@ -42,4 +48,136 @@ a {
 
 .centered-content--with-form {
   width: 40%;
+}
+
+@keyframes squiggle-glide {
+  0% {
+    right: 35%;
+  }
+
+  100% {
+    right: 110%;
+  }
+}
+@keyframes squiggle-glide-small {
+  0% {
+    right: -5%;
+  }
+
+  100% {
+    right: 110%;
+  }
+}
+@keyframes squiggle-glide-small-fast {
+  0% {
+    right: 55%;
+  }
+
+  100% {
+    right: 110%;
+  }
+}
+
+span.squiggle {
+  width: 140px;
+  height: 40%;
+  background: url(../images/squiggle-small-1.svg) no-repeat;
+  position: fixed;
+  top: 30%;
+  opacity: .8;
+
+  animation: 260s linear 0 infinite squiggle-glide;
+  z-index: -1;
+}
+
+span.squiggle-small {
+  animation-duration: 400s;
+  top: 10%;
+
+  animation: 360s linear 0 infinite squiggle-glide-small-fast !important;
+}
+
+span.squiggle:nth-of-type(odd) {
+  width: 100px;
+  height: 22px;
+  animation: 360s linear 0 infinite squiggle-glide-small;
+  opacity: .2;
+}
+
+span.squiggle:nth-of-type(even) {
+  width: 150px;
+  height: 22px;
+  top: 70%;
+}
+
+span.squiggle-small {
+  width: 40px;
+  height: 20px;
+  background: url(../images/squiggle-small-2.svg) no-repeat;
+  opacity: 0.2;
+}
+
+#root .homepage .main-container {
+  /* background: url(../images/squiggle-home.svg) no-repeat; */
+  /* background-position: center 100%;
+  background-size: 110%; */
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+#root .login {
+  height: 100%;
+  background: url(../images/squiggle-login-left.svg) no-repeat bottom left, url(../images/squiggle-login-right.svg) no-repeat bottom right;
+  /* background-size: cover; */
+}
+
+#root .register {
+  height: 100%;
+  background: url(../images/squiggle-register-left.svg) no-repeat bottom left, url(../images/squiggle-register-right.svg) no-repeat bottom right;
+  /* background-size: cover; */
+}
+
+.score-chart-container {
+  width: 100%;
+  max-height: 400px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+
+  background: repeating-linear-gradient(
+    0deg,
+    #363370,
+    #363370 0px,
+    #1d1d38 1px,
+    #1d1d38 40px
+  );
+}
+.score-chart-container::after {
+  clear: both;
+}
+
+.score-chart-container .score {
+  border-top: 2px solid #813988;
+  display: inline-block;
+  width: 160px;
+  margin: 1px;
+  vertical-align: bottom;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7655ef+0,4c4996+99 */
+  background: #7655ef; /* Old browsers */
+  background: -moz-linear-gradient(top, #342759 0%, #1e1c3a 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #342759 0%,#1e1c3a 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #342759 0%,#1e1c3a 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#342759', endColorstr='#1e1c3a',GradientType=0 ); /* IE6-9 */
+}
+
+.score-chart-container .score h3 {
+  font-size: 12px;
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
