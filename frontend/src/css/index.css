@@ -1,4 +1,4 @@
-@import 'transitions.css';
+/* @import 'transitions.css';
 @import 'forms.css';
 @import 'modules/headerbar.css';
 @import 'modules/questions.css';
@@ -526,22 +526,22 @@ button + button {
 }
 
 .task#personality-task {
-  background-image: url(../images/questionnaire-tile1.svg);
+  background-image: url(./images/questionnaire-tile1.svg);
   background-size: cover;
 }
 
 .task#energylevel-task {
-  background-image: url(../images/questionnaire-tile2.svg);
+  background-image: url(./images/questionnaire-tile2.svg);
   background-size: cover;
 }
 
 .task#energyflow-task {
-  background-image: url(../images/questionnaire-tile3.svg);
+  background-image: url(./images/questionnaire-tile3.svg);
   background-size: cover;
 }
 
 .task#energyflow-task {
-  background-image: url(../images/questionnaire-tile4.svg);
+  background-image: url(./images/questionnaire-tile4.svg);
   background-size: cover;
 }
 

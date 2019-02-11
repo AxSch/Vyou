@@ -1,1 +1,550 @@
-@import './css/index.css';
+/* @import 'transitions.css';
+@import 'forms.css';
+@import 'modules/headerbar.css';
+@import 'modules/questions.css';
+@import 'modules/sidebar.css';
+@import 'modules/tasks.css'; */
+
+html, * {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Montserrat', sans-serif;
+
+  background: #1e1c3a;
+}
+
+* {
+  box-sizing: border-box;
+  /* transition: all .2s; */
+}
+
+a {
+  color: #6038aa;
+}
+
+#root > nav {
+  border-bottom: 1px solid #121025;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+  padding-left: 30px;
+}
+
+#root > nav a {
+  color: #fff;
+}
+
+.centered-content {
+  width: 60%;
+  margin: auto;
+}
+
+.centered-content--with-form {
+  width: 40%;
+}
+
+@keyframes squiggle-glide {
+  0% {
+    right: 35%;
+  }
+
+  100% {
+    right: 110%;
+  }
+}
+@keyframes squiggle-glide-small {
+  0% {
+    right: -5%;
+  }
+
+  100% {
+    right: 110%;
+  }
+}
+@keyframes squiggle-glide-small-fast {
+  0% {
+    right: 55%;
+  }
+
+  100% {
+    right: 110%;
+  }
+}
+
+span.squiggle {
+  width: 140px;
+  height: 40%;
+  background: url(./images/squiggle-small-1.svg) no-repeat;
+  position: fixed;
+  top: 30%;
+  opacity: .8;
+
+  animation: 260s linear 10 infinite squiggle-glide;
+  z-index: -1;
+}
+
+span.squiggle-small {
+  animation-duration: 400s;
+  top: 10%;
+
+  animation: 360s linear 0 infinite squiggle-glide-small-fast !important;
+}
+
+span.squiggle:nth-of-type(odd) {
+  width: 100px;
+  height: 22px;
+  animation: 360s linear 0 infinite squiggle-glide-small;
+  opacity: .2;
+}
+
+span.squiggle:nth-of-type(even) {
+  width: 150px;
+  height: 22px;
+  top: 70%;
+}
+
+span.squiggle-small {
+  width: 40px;
+  height: 20px;
+  background: url(./images/squiggle-small-2.svg) no-repeat;
+  opacity: 0.2;
+}
+
+#root .homepage .main-container {
+  /* background: url(../images/squiggle-home.svg) no-repeat; */
+  /* background-position: center 100%;
+  background-size: 110%; */
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+#root .login {
+  height: 100%;
+  background: url(./images/squiggle-login-left.svg) no-repeat bottom left, url(./images/squiggle-login-right.svg) no-repeat bottom right;
+  /* background-size: cover; */
+}
+
+#root .register {
+  height: 100%;
+  background: url(./images/squiggle-register-left.svg) no-repeat bottom left, url(./images/squiggle-register-right.svg) no-repeat bottom right;
+  /* background-size: cover; */
+}
+
+.score-chart-container {
+  width: 100%;
+  max-height: 400px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+
+  background: repeating-linear-gradient(
+    0deg,
+    #363370,
+    #363370 0px,
+    #1d1d38 1px,
+    #1d1d38 40px
+  );
+}
+.score-chart-container::after {
+  clear: both;
+}
+
+.score-chart-container .score {
+  border-top: 2px solid #813988;
+  display: inline-block;
+  width: 160px;
+  margin: 1px;
+  vertical-align: bottom;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7655ef+0,4c4996+99 */
+  background: #7655ef; /* Old browsers */
+  background: -moz-linear-gradient(top, #342759 0%, #1e1c3a 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #342759 0%,#1e1c3a 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #342759 0%,#1e1c3a 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#342759', endColorstr='#1e1c3a',GradientType=0 ); /* IE6-9 */
+}
+
+.score-chart-container .score h3 {
+  font-size: 12px;
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+/** FIXME: Move these styles into modules **/
+@keyframes inactiveAnswerHover {
+  0% {
+    background: #121025;
+  }
+
+  100% {
+    background: #17142f;
+  }
+}
+form input[type=text],
+form input[type=email],
+form input[type=password] {
+  background: #121025;
+  color: #fff;
+  padding: 10px 8px;
+  font-size: 1rem;
+}
+
+form.full-width .form-group input {
+  width: 100%;
+}
+
+form .form-group {
+  height: 5em;
+}
+
+form .form-group.inline-label {
+  position: relative;
+  padding: 15px 0 15px 0;
+}
+
+form .form-group.inline-label label {
+  position: absolute;
+  left: 10px;
+  top: 28px;
+}
+form .form-group.inline-label input:focus + label {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.8em;
+  top: -0.2em;
+}
+
+form .form-header h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+form .form-header p {
+  font-weight: 300;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 16px 25px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius:  30px;
+  border-radius:  30px;
+  border: none;
+  color: #fff;
+
+  background: #7655ef; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #7655ef 50%, #8c4df5 89%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #7655ef 50%,#8c4df5 89%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #7655ef 50%,#8c4df5 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7655ef', endColorstr='#8c4df5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+button:hover {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 16px 25px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius:  30px;
+  border-radius:  30px;
+  border: none;
+  color: #fff;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9b87ed+0,616093+100 */
+  background: #9b87ed; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #9b87ed 0%, #616093 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #9b87ed 0%,#616093 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #9b87ed 0%,#616093 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b87ed', endColorstr='#616093',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+button + button {
+  margin-left: 50px;
+}
+.account-actions {
+  list-style-type: none;
+}
+.account-actions li a i {
+  padding-right: 10px;
+}
+.question-category-container {
+  margin-top: 10%;
+  padding: 0 10% 50px 10%;
+}
+
+.question-category-container h2 {
+  font-weight: bold;
+}
+
+.question-list-container .question-list {
+  padding-left: 0;
+}
+
+.question-container {
+  clear: both;
+  margin-bottom: 150px;
+}
+
+.question-container .question {
+  font-size: 2em;
+  font-weight: 400;
+  padding: 1.5em 0;
+}
+
+.answers-container .answer {
+  float: left;
+  /*text-align: center;*/
+  /*padding: 15px 22px;*/
+  margin-right: 8px;
+
+
+  /*background: #121025;*/
+}
+
+.answers-container .answer label {
+  /*border: 1px solid red;*/
+  width: 100%;
+}
+
+.answers-container .answer label span {
+  display: block;
+  min-width: 50px;
+  padding: 15px 22px;
+
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+
+  background: #121025;
+  font-weight: bold;
+}
+
+.answers-container .answer label input[type=radio] + span::after {
+  position: relative;
+  border: 2px solid red;
+}
+
+.answers-container .answer:hover label input[type=radio] + span {
+}
+
+/* .answers-container .answer label:hover input[type=radio]:not(:checked) + span {
+  background: #050308;
+
+  animation-name: inactiveAnswerHover;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+}
+.answers-container .answer label:hover input[type=radio] + span::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  border-radius: 30px;
+} */
+
+.answers-container .answer label input[type=radio]:checked + span {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7655ef+0,4c4996+99 */
+  background: #7655ef; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #7655ef 50%, #8c4df5 89%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #7655ef 50%,#8c4df5 89%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #7655ef 50%,#8c4df5 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7655ef', endColorstr='#8c4df5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.answers-container .answer label input[type=radio]:checked + span:hover {
+  background-position: 100% 0;
+
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.answers-container .answer input[type=radio] {
+  opacity: 0;
+  display: none;
+}
+.sidebar {
+  background: #111023;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 70px;
+
+  transition: all .2s;
+}
+
+.sidebar.expanded {
+  width: 270px;
+}
+
+.sidebar .primary-actions {
+  margin-top: 150px;
+}
+
+.sidebar li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sidebar.expanded li {
+  overflow: hidden;
+}
+
+.sidebar.expanded li a {
+  width: 100%;
+  text-align: left;
+  padding-left: 25px;
+}
+
+.sidebar li a span {
+  display: none;
+}
+
+.sidebar.expanded li a span {
+  display: inline-block;
+  width: 20px;
+  border: 1px solid transparent;
+}
+
+.sidebar li a i {
+  display: inline-block;
+  width: 40px;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar ul.toggle-menu li {
+  border: none;
+}
+
+.sidebar ul li {
+  border-bottom: 1px solid #1f1f3b;
+  display: block;
+  width: 100%;
+  left: 60px;
+  text-align: left;
+}
+
+.sidebar ul li a {
+  padding: 15px;
+}
+.sidebar ul li a.active {
+  background: #1e1c3a;
+}
+
+.sidebar + .main-container {
+  position: absolute;
+  left: 100px;
+  height: 100%;
+  width: calc(100% - 300px);
+}
+
+.sidebar + .main-container h2 {
+  font-size: 1.5em;
+  color: #7655ef;
+}
+
+.sidebar.expanded + .main-container {
+  left: 300px;
+}
+.tasks-container .task {
+  background: #242043;
+  display: inline-block;
+  height: 350px;
+  width: 20%;
+  max-width: 280px;
+  margin: 0 20px 0 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.tasks-container .task:hover {
+  background: #111129;
+}
+
+.tasks-container .task a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tasks-container .task .task-details {
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 30px 25px;
+}
+
+.tasks-container .task .task-details .category {
+  display: inline-block;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.tasks-container .task .task-details .title {
+  display: inline-block;
+  width: 100%;
+  margin: 5px 0;
+  font-size: 1.4em;
+}
+
+.task#personality-task {
+  background-image: url(./images/questionnaire-tile1.svg);
+  background-size: cover;
+}
+
+.task#energylevel-task {
+  background-image: url(./images/questionnaire-tile2.svg);
+  background-size: cover;
+}
+
+.task#energyflow-task {
+  background-image: url(./images/questionnaire-tile3.svg);
+  background-size: cover;
+}
+
+.task#energyflow-task {
+  background-image: url(./images/questionnaire-tile4.svg);
+  background-size: cover;
+}
+
+.main-container .tasks-container .task .task-details span {
+  display: none;
+}
