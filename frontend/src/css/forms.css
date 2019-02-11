@@ -5,6 +5,16 @@ form input[type=password] {
   color: #fff;
   padding: 10px 8px;
   font-size: 1rem;
+  border: none;
+}
+
+form div > label {
+  float: left;
+  width: 100px;
+}
+
+form > div {
+  margin-bottom: 20px;
 }
 
 form.full-width .form-group input {

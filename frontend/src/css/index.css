@@ -86,7 +86,7 @@ span.squiggle {
   top: 30%;
   opacity: .8;
 
-  animation: 260s linear 0 infinite squiggle-glide;
+  animation: 260s linear 10 infinite squiggle-glide;
   z-index: -1;
 }
 
@@ -425,7 +425,6 @@ button + button {
 }
 
 .sidebar.expanded li a {
-  border: 1px solid red;
   width: 100%;
   text-align: left;
   padding-left: 25px;
