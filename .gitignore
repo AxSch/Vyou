@@ -27,5 +27,3 @@ user_profile/__pycache__/
 .idea
 venv
 
-webpack-stats.*
-webpack-stats.dev.json
