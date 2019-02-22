@@ -209,13 +209,26 @@
         background: #17142f;
       }
     }
+
     form input[type=text],
     form input[type=email],
-    form input[type=password] {
+    form input[type=password],
+    form textarea,
+    form input[type] {
       background: #121025;
       color: #fff;
       padding: 10px 8px;
       font-size: 1rem;
+      border: none;
+    }
+
+    form div > label {
+      float: left;
+      width: 100px;
+    }
+
+    form > div {
+      margin-bottom: 20px;
     }
 
     form.full-width .form-group input {
@@ -294,6 +307,11 @@
     button + button {
       margin-left: 50px;
     }
+
+    form.account-settings label {
+      margin-bottom: 10px;
+    }
+
     .account-actions {
       list-style-type: none;
     }
@@ -576,3 +594,4 @@
 </body>
 
 </html>
+w

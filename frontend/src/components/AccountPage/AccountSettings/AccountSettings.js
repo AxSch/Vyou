@@ -66,37 +66,37 @@ class AccountSettings extends PureComponent {
       if (userSex === "Female"){
         return (
           <label>
-            Sex:
-            <input type="radio" required name="sex" value={"Male"} onChange={(e) => this.onInputChange(e.target.value, "sex")}  />Male
-            <input type="radio" required name="sex" value={"Female"} checked onChange={(e) => this.onInputChange(e.target.value, "sex")} />Female
-            <input type="radio" required name="sex" value={"Other"} onChange={(e) => this.onInputChange(e.target.value, "sex")} />Other
+            Sex:  <br/>
+            <input type="radio" required name="sex" value={"Male"} onChange={(e) => this.onInputChange(e.target.value, "sex")}  /> Male &nbsp;
+            <input type="radio" required name="sex" value={"Female"} checked onChange={(e) => this.onInputChange(e.target.value, "sex")} /> Female &nbsp;
+            <input type="radio" required name="sex" value={"Other"} onChange={(e) => this.onInputChange(e.target.value, "sex")} /> Other
           </label>
         );
       } else if (userSex === "Male") {
         return (
           <label>
-            Sex:
-            <input type="radio" required name="sex" value={"Male"} checked onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Male
-            <input type="radio" required name="sex" value={"Female"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Female
-            <input type="radio" required name="sex" value={"Other"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Other
+            Sex: <br/>
+            <input type="radio" required name="sex" value={"Male"} checked onChange={(e) => this.onInputChange(e.target.value, "sex")}/> Male &nbsp;
+            <input type="radio" required name="sex" value={"Female"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/> Female &nbsp;
+            <input type="radio" required name="sex" value={"Other"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/> Other
           </label>
         )
       } else if (userSex === "Other") {
         return (
           <label>
-            Sex:
-            <input type="radio" required name="sex" value={"Male"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Male
-            <input type="radio" required name="sex" value={"Female"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Female
-            <input type="radio" required name="sex" value={"Other"} checked onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Other
+            Sex: <br/>
+            <input type="radio" required name="sex" value={"Male"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/> Male &nbsp;
+            <input type="radio" required name="sex" value={"Female"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/> Female &nbsp;
+            <input type="radio" required name="sex" value={"Other"} checked onChange={(e) => this.onInputChange(e.target.value, "sex")}/> Other
           </label>
         );
       } else {
         return(
           <label>
-              Sex:
-              <input type="radio" required name="sex" value={"Male"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Male
-              <input type="radio" required name="sex" value={"Female"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Female
-              <input type="radio" required name="sex" value={"Other"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/>Other
+              Sex: <br/>
+              <input type="radio" required name="sex" value={"Male"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/> Male &nbsp;
+              <input type="radio" required name="sex" value={"Female"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/> Female &nbsp;
+              <input type="radio" required name="sex" value={"Other"} onChange={(e) => this.onInputChange(e.target.value, "sex")}/> Other
           </label>
         );
       }
@@ -327,36 +327,36 @@ class AccountSettings extends PureComponent {
       const { email } = this.state;
       return (
         <Fragment>
-            <form ref={this.form} onSubmit={this.onSubmitChange}>
+            <form ref={this.form} onSubmit={this.onSubmitChange} className='account-settings'>
               <fieldset>
                 <legend>Basic info</legend>
-                  {this.renderUserName(profile.userProfile.name)}
-                  {this.renderUserEmail(email)}
-                  {this.renderUserSex(profile.userProfile.sex)}
-                  {this.renderDateEmail(profile.userProfile.dob)}
-                  {this.renderUserImg(profile.userProfile.user_img)}
+                  {this.renderUserName(profile.userProfile.name)} <br/>
+                  {this.renderUserEmail(email)} <br/>
+                  {this.renderUserSex(profile.userProfile.sex)} <br/>
+                  {this.renderDateEmail(profile.userProfile.dob)} <br/>
+                  {this.renderUserImg(profile.userProfile.user_img)} <br/>
               </fieldset>
               <fieldset>
                 <legend>Address</legend>
-                  {this.renderAddressNo(profile.userProfile.address_no)}
-                  {this.renderAddressStreet(profile.userProfile.address_street)}
-                  {this.renderAddressCity(profile.userProfile.address_city)}
-                  {this.renderAddressPostCode(profile.userProfile.address_postcode)}
-                  {this.renderAddressCountry(profile.userProfile.address_country)}
+                  <label>{this.renderAddressNo(profile.userProfile.address_no)}</label> <br/>
+                  <label>{this.renderAddressStreet(profile.userProfile.address_street)}</label> <br/>
+                  <label>{this.renderAddressCity(profile.userProfile.address_city)}</label> <br/>
+                  <label>{this.renderAddressPostCode(profile.userProfile.address_postcode)}</label> <br/>
+                  <label>{this.renderAddressCountry(profile.userProfile.address_country)}</label>
               </fieldset>
               <fieldset>
                 <legend>Profession</legend>
-                  {this.renderJobTitle(profile.userProfile.job_title)}
-                  {this.renderJobIndustry(profile.userProfile.job_industry)}
-                  {this.renderUserBio(profile.userProfile.bio)}
+                  {this.renderJobTitle(profile.userProfile.job_title)} <br/>
+                  {this.renderJobIndustry(profile.userProfile.job_industry)} <br/>
+                  {this.renderUserBio(profile.userProfile.bio)} <br/>
                   {this.renderUserEducation(profile.userProfile.education)}
               </fieldset>
               <fieldset>
                 <legend>Connected Accounts</legend>
-                  {this.renderUserFBLink(profile.userProfile.facebook_profile)}
-                  {this.renderUserLINLink(profile.userProfile.linkedIn_profile)}
-                  {this.renderUserGHLink(profile.userProfile.gitHub_profile)}
-                  {this.renderUserTWLink(profile.userProfile.twitter_profile)}
+                  {this.renderUserFBLink(profile.userProfile.facebook_profile)} <br/>
+                  {this.renderUserLINLink(profile.userProfile.linkedIn_profile)} <br/>
+                  {this.renderUserGHLink(profile.userProfile.gitHub_profile)} <br/>
+                  {this.renderUserTWLink(profile.userProfile.twitter_profile)} <br/>
                   {this.renderUserINLink(profile.userProfile.instagram_profile)}
               </fieldset>
               <button>Save Changes</button>
